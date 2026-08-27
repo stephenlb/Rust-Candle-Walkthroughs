@@ -1,921 +1,3 @@
-[1m[92m    Checking[0m rust-candle-course v0.1.0 (/Users/stephen/Desktop/rust-candle-course)
-[1m[91merror[E0277][0m[1m: the trait bound `Vec<f64>: WithDType` is not satisfied[0m
-   [1m[94m--> [0msrc/main.rs:9:27
-    [1m[94m|[0m
-[1m[94m  9[0m [1m[94m|[0m     Ok(Tensor::from_slice(data.as_slice(), (1, 1), device)?)
-    [1m[94m|[0m        [1m[94m------------------[0m [1m[91m^^^^^^^^^^^^^^^[0m [1m[91mthe trait `WithDType` is not implemented for `Vec<f64>`[0m
-    [1m[94m|[0m        [1m[94m|[0m
-    [1m[94m|[0m        [1m[94mrequired by a bound introduced by this call[0m
-    [1m[94m|[0m
-    [1m[94m= [0m[1mhelp[0m: the following other types implement trait `WithDType`:
-              candle_core::F4
-              candle_core::F6E2M3
-              candle_core::F6E3M2
-              candle_core::F8E8M0
-              f32
-              f64
-              float8::F8E4M3
-              half::bfloat::bf16
-            and 6 others
-[1m[92mnote[0m: required by a bound in `candle_core::Tensor::from_slice`
-   [1m[94m--> [0m/Users/stephen/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/candle-core-0.11.0/src/tensor.rs:564:47
-    [1m[94m|[0m
-[1m[94m564[0m [1m[94m|[0m     pub fn from_slice<S: ShapeWithOneHole, D: crate::WithDType>(
-    [1m[94m|[0m                                               [1m[92m^^^^^^^^^^^^^^^^[0m [1m[92mrequired by this bound in `Tensor::from_slice`[0m
-
-[1mFor more information about this error, try `rustc --explain E0277`.[0m
-[1m[91merror[0m: could not compile `rust-candle-course` (bin "rust-candle-course") due to 1 previous error
-[1m[38;5;255m[48;5;240m rust-candle-course [0m[1m[38;5;235m[48;5;204m check [0m[1m[38;5;235m[48;5;9m  1 error  [0m
-[1m[92m    Checking[0m rust-candle-course v0.1.0 (/Users/stephen/Desktop/rust-candle-course)
-[1m[91merror[E0277][0m[1m: the trait bound `Vec<f64>: WithDType` is not satisfied[0m
-   [1m[94m--> [0msrc/main.rs:9:27
-    [1m[94m|[0m
-[1m[94m  9[0m [1m[94m|[0m [1m[94m...[0mOk(Tensor::from_slice(&data.as_slice(), ([1m[94m...[0m
-    [1m[94m|[0m       [1m[94m------------------[0m [1m[91m^^^^^^^^^^^^^^^^[0m [1m[91munsatisfied trait bound[0m
-    [1m[94m|[0m       [1m[94m|[0m
-    [1m[94m|[0m       [1m[94mrequired by a bound introduced by this call[0m
-    [1m[94m|[0m
-    [1m[94m= [0m[1mhelp[0m: the trait `WithDType` is not implemented for `Vec<f64>`
-    [1m[94m= [0m[1mhelp[0m: the following other types implement trait `WithDType`:
-              candle_core::F4
-              candle_core::F6E2M3
-              candle_core::F6E3M2
-              candle_core::F8E8M0
-              f32
-              f64
-              float8::F8E4M3
-              half::bfloat::bf16
-            and 6 others
-[1m[92mnote[0m: required by a bound in `candle_core::Tensor::from_slice`
-   [1m[94m--> [0m/Users/stephen/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/candle-core-0.11.0/src/tensor.rs:564:47
-    [1m[94m|[0m
-[1m[94m564[0m [1m[94m|[0m [1m[94m...[0mle, D: crate::WithDType>(
-    [1m[94m|[0m           [1m[92m^^^^^^^^^^^^^^^^[0m [1m[92mrequired by this bound in `Tensor::from_slice`[0m
-
-[1mFor more information about this error, try `rustc --explain E0277`.[0m
-[1m[91merror[0m: could not compile `rust-candle-course` (bin "rust-candle-course") due to 1 previous error
-[1m[38;5;255m[48;5;240m rust-candle-course [0m[1m[38;5;235m[48;5;204m check [0m[1m[38;5;235m[48;5;9m  1 error  [0m
-[1m[92m    Checking[0m rust-candle-course v0.1.0 (/Users/stephen/Desktop/rust-candle-course)
-[1m[91merror[E0658][0m[1m: use of unstable library feature `str_as_str`[0m
- [1m[94m--> [0msrc/main.rs:9:32
-  [1m[94m|[0m
-[1m[94m9[0m [1m[94m|[0m [1m[94m...[0mom_slice(data.as_slice(), (1, 1), dev[1m[94m...[0m
-  [1m[94m|[0m                  [1m[91m^^^^^^^^[0m
-  [1m[94m|[0m
-  [1m[94m= [0m[1mnote[0m: see issue #130366 <https://github.com/rust-lang/rust/issues/130366> for more information
-  [1m[94m= [0m[1mhelp[0m: add `#![feature(str_as_str)]` to the crate attributes to enable
-  [1m[94m= [0m[1mnote[0m: this compiler was built on 2026-06-12; consider upgrading it if it is out of date
-
-[1m[91merror[E0277][0m[1m: the trait bound `&[f64]: WithDType` is not satisfied[0m
-   [1m[94m--> [0msrc/main.rs:9:27
-    [1m[94m|[0m
-[1m[94m  9[0m [1m[94m|[0m [1m[94m...[0mOk(Tensor::from_slice(data.as_slice(), ([1m[94m...[0m
-    [1m[94m|[0m       [1m[94m------------------[0m [1m[91m^^^^^^^^^^^^^^^[0m [1m[91munsatisfied trait bound[0m
-    [1m[94m|[0m       [1m[94m|[0m
-    [1m[94m|[0m       [1m[94mrequired by a bound introduced by this call[0m
-    [1m[94m|[0m
-    [1m[94m= [0m[1mhelp[0m: the trait `WithDType` is not implemented for `&[f64]`
-    [1m[94m= [0m[1mhelp[0m: the following other types implement trait `WithDType`:
-              candle_core::F4
-              candle_core::F6E2M3
-              candle_core::F6E3M2
-              candle_core::F8E8M0
-              f32
-              f64
-              float8::F8E4M3
-              half::bfloat::bf16
-            and 6 others
-[1m[92mnote[0m: required by a bound in `candle_core::Tensor::from_slice`
-   [1m[94m--> [0m/Users/stephen/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/candle-core-0.11.0/src/tensor.rs:564:47
-    [1m[94m|[0m
-[1m[94m564[0m [1m[94m|[0m [1m[94m...[0mle, D: crate::WithDType>(
-    [1m[94m|[0m           [1m[92m^^^^^^^^^^^^^^^^[0m [1m[92mrequired by this bound in `Tensor::from_slice`[0m
-
-[1mSome errors have detailed explanations: E0277, E0658.[0m
-[1mFor more information about an error, try `rustc --explain E0277`.[0m
-[1m[91merror[0m: could not compile `rust-candle-course` (bin "rust-candle-course") due to 2 previous errors
-[1m[38;5;255m[48;5;240m rust-candle-course [0m[1m[38;5;235m[48;5;204m check [0m[1m[38;5;235m[48;5;9m  2 errors  [0m
-[1m[92m    Checking[0m rust-candle-course v0.1.0 (/Users/stephen/Desktop/rust-candle-course)
-[1m[91merror[E0277][0m[1m: the trait bound `&[f64]: WithDType` is not satisfied[0m
-   [1m[94m--> [0msrc/main.rs:9:27
-    [1m[94m|[0m
-[1m[94m  9[0m [1m[94m|[0m     Ok(Tensor::from_slice(data, (1, 1)[1m[94m...[0m
-    [1m[94m|[0m        [1m[94m------------------[0m [1m[91m^^^^[0m [1m[91munsatisfied trait bound[0m
-    [1m[94m|[0m        [1m[94m|[0m
-    [1m[94m|[0m        [1m[94mrequired by a bound introduced by this call[0m
-    [1m[94m|[0m
-    [1m[94m= [0m[1mhelp[0m: the trait `WithDType` is not implemented for `&[f64]`
-    [1m[94m= [0m[1mhelp[0m: the following other types implement trait `WithDType`:
-              candle_core::F4
-              candle_core::F6E2M3
-              candle_core::F6E3M2
-              candle_core::F8E8M0
-              f32
-              f64
-              float8::F8E4M3
-              half::bfloat::bf16
-            and 6 others
-[1m[92mnote[0m: required by a bound in `candle_core::Tensor::from_slice`
-   [1m[94m--> [0m/Users/stephen/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/candle-core-0.11.0/src/tensor.rs:564:47
-    [1m[94m|[0m
-[1m[94m564[0m [1m[94m|[0m [1m[94m...[0mle, D: crate::WithDType>(
-    [1m[94m|[0m           [1m[92m^^^^^^^^^^^^^^^^[0m [1m[92mrequired by this bound in `Tensor::from_slice`[0m
-
-[1mFor more information about this error, try `rustc --explain E0277`.[0m
-[1m[91merror[0m: could not compile `rust-candle-course` (bin "rust-candle-course") due to 1 previous error
-[1m[38;5;255m[48;5;240m rust-candle-course [0m[1m[38;5;235m[48;5;204m check [0m[1m[38;5;235m[48;5;9m  1 error  [0m
-[1m[92m    Checking[0m rust-candle-course v0.1.0 (/Users/stephen/Desktop/rust-candle-course)
-[1m[91merror[E0277][0m[1m: the trait bound `&[f64]: WithDType` is not satisfied[0m
-   [1m[94m--> [0msrc/main.rs:9:27
-    [1m[94m|[0m
-[1m[94m  9[0m [1m[94m|[0m     Ok(Tensor::from_slice(data, (1, 1)[1m[94m...[0m
-    [1m[94m|[0m        [1m[94m------------------[0m [1m[91m^^^^[0m [1m[91munsatisfied trait bound[0m
-    [1m[94m|[0m        [1m[94m|[0m
-    [1m[94m|[0m        [1m[94mrequired by a bound introduced by this call[0m
-    [1m[94m|[0m
-    [1m[94m= [0m[1mhelp[0m: the trait `WithDType` is not implemented for `&[f64]`
-    [1m[94m= [0m[1mhelp[0m: the following other types implement trait `WithDType`:
-              candle_core::F4
-              candle_core::F6E2M3
-              candle_core::F6E3M2
-              candle_core::F8E8M0
-              f32
-              f64
-              float8::F8E4M3
-              half::bfloat::bf16
-            and 6 others
-[1m[92mnote[0m: required by a bound in `candle_core::Tensor::from_slice`
-   [1m[94m--> [0m/Users/stephen/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/candle-core-0.11.0/src/tensor.rs:564:47
-    [1m[94m|[0m
-[1m[94m564[0m [1m[94m|[0m [1m[94m...[0mle, D: crate::WithDType>(
-    [1m[94m|[0m           [1m[92m^^^^^^^^^^^^^^^^[0m [1m[92mrequired by this bound in `Tensor::from_slice`[0m
-
-[1mFor more information about this error, try `rustc --explain E0277`.[0m
-[1m[91merror[0m: could not compile `rust-candle-course` (bin "rust-candle-course") due to 1 previous error
-[1m[38;5;255m[48;5;240m rust-candle-course [0m[1m[38;5;235m[48;5;204m check [0m[1m[38;5;235m[48;5;9m  1 error  [0m
-[1m[92m    Checking[0m rust-candle-course v0.1.0 (/Users/stephen/Desktop/rust-candle-course)
-[1m[91merror[0m[1m: unexpected closing delimiter: `}`[0m
-  [1m[94m--> [0msrc/main.rs:11:1
-   [1m[94m|[0m
-[1m[94m 4[0m [1m[94m|[0m fn load_data(device: &Device) -> Result<Tensor> {
-   [1m[94m|[0m                                                 [1m[94m-[0m [1m[94mthe nearest open delimiter[0m
-[1m[94m 5[0m [1m[94m|[0m     //let data: &[f32] = &[1.0, 2.0, 3.0, 4.0, 5.0, [1m[94m...[0m
-[1m[94m 6[0m [1m[94m|[0m     let data: &[f64]] = &[
-   [1m[94m|[0m                     [1m[94m-[0m [1m[94mmissing open `[` for this delimiter[0m
-[1m[94m...[0m
-[1m[94m11[0m [1m[94m|[0m }
-   [1m[94m|[0m [1m[91m^[0m [1m[91munexpected closing delimiter[0m
-
-[1m[91merror[0m: could not compile `rust-candle-course` (bin "rust-candle-course") due to 1 previous error
-[1m[38;5;255m[48;5;240m rust-candle-course [0m[1m[38;5;235m[48;5;204m check [0m[1m[38;5;235m[48;5;9m  1 error  [0m
-[1m[92m    Checking[0m rust-candle-course v0.1.0 (/Users/stephen/Desktop/rust-candle-course)
-[1m[91merror[0m[1m: unexpected closing delimiter: `}`[0m
-  [1m[94m--> [0msrc/main.rs:11:1
-   [1m[94m|[0m
-[1m[94m 4[0m [1m[94m|[0m fn load_data(device: &Device) -> Result<Tensor> {
-   [1m[94m|[0m                                                 [1m[94m-[0m [1m[94mthe nearest open delimiter[0m
-[1m[94m 5[0m [1m[94m|[0m     //let data: &[f32] = &[1.0, 2.0, 3.0, 4.0, 5.0, [1m[94m...[0m
-[1m[94m 6[0m [1m[94m|[0m     let data: &[f64]] = &[
-   [1m[94m|[0m                     [1m[94m-[0m [1m[94mmissing open `[` for this delimiter[0m
-[1m[94m...[0m
-[1m[94m11[0m [1m[94m|[0m }
-   [1m[94m|[0m [1m[91m^[0m [1m[91munexpected closing delimiter[0m
-
-[1m[91merror[0m: could not compile `rust-candle-course` (bin "rust-candle-course") due to 1 previous error
-[1m[38;5;255m[48;5;240m rust-candle-course [0m[1m[38;5;235m[48;5;204m check [0m[1m[38;5;235m[48;5;9m  1 error  [0m
-[1m[92m    Checking[0m rust-candle-course v0.1.0 (/Users/stephen/Desktop/rust-candle-course)
-[1m[91merror[0m[1m: unexpected closing delimiter: `}`[0m
-  [1m[94m--> [0msrc/main.rs:11:1
-   [1m[94m|[0m
-[1m[94m 4[0m [1m[94m|[0m fn load_data(device: &Device) -> Result<Tensor> {
-   [1m[94m|[0m                                                 [1m[94m-[0m [1m[94mthe nearest open delimiter[0m
-[1m[94m 5[0m [1m[94m|[0m     //let data: &[f32] = &[1.0, 2.0, 3.0, 4.0, 5.0, [1m[94m...[0m
-[1m[94m 6[0m [1m[94m|[0m     let data: &[f64]] = &[
-   [1m[94m|[0m                     [1m[94m-[0m [1m[94mmissing open `[` for this delimiter[0m
-[1m[94m...[0m
-[1m[94m11[0m [1m[94m|[0m }
-   [1m[94m|[0m [1m[91m^[0m [1m[91munexpected closing delimiter[0m
-
-[1m[91merror[0m: could not compile `rust-candle-course` (bin "rust-candle-course") due to 1 previous error
-[1m[38;5;255m[48;5;240m rust-candle-course [0m[1m[38;5;235m[48;5;204m check [0m[1m[38;5;235m[48;5;9m  1 error  [0m
-[1m[92m    Checking[0m rust-candle-course v0.1.0 (/Users/stephen/Desktop/rust-candle-course)
-[1m[91merror[0m[1m: unexpected closing delimiter: `}`[0m
-  [1m[94m--> [0msrc/main.rs:11:1
-   [1m[94m|[0m
-[1m[94m 4[0m [1m[94m|[0m fn load_data(device: &Device) -> Result<Tensor> {
-   [1m[94m|[0m                                                 [1m[94m-[0m [1m[94mthe nearest open delimiter[0m
-[1m[94m 5[0m [1m[94m|[0m     //let data: &[f32] = &[1.0, 2.0, 3.0, 4.0, 5.0, [1m[94m...[0m
-[1m[94m 6[0m [1m[94m|[0m     let data: &[f64]] = &[
-   [1m[94m|[0m                     [1m[94m-[0m [1m[94mmissing open `[` for this delimiter[0m
-[1m[94m...[0m
-[1m[94m11[0m [1m[94m|[0m }
-   [1m[94m|[0m [1m[91m^[0m [1m[91munexpected closing delimiter[0m
-
-[1m[91merror[0m: could not compile `rust-candle-course` (bin "rust-candle-course") due to 1 previous error
-[1m[38;5;255m[48;5;240m rust-candle-course [0m[1m[38;5;235m[48;5;204m check [0m[1m[38;5;235m[48;5;9m  1 error  [0m
-[1m[92m    Checking[0m rust-candle-course v0.1.0 (/Users/stephen/Desktop/rust-candle-course)
-[1m[91merror[0m[1m: unexpected closing delimiter: `}`[0m
-  [1m[94m--> [0msrc/main.rs:11:1
-   [1m[94m|[0m
-[1m[94m 4[0m [1m[94m|[0m fn load_data(device: &Device) -> Result<Tensor> {
-   [1m[94m|[0m                                                 [1m[94m-[0m [1m[94mthe nearest open delimiter[0m
-[1m[94m 5[0m [1m[94m|[0m     //let data: &[f32] = &[1.0, 2.0, 3.0, 4.0, 5.0, [1m[94m...[0m
-[1m[94m 6[0m [1m[94m|[0m     let data: &[f64]] = &[
-   [1m[94m|[0m                     [1m[94m-[0m [1m[94mmissing open `[` for this delimiter[0m
-[1m[94m...[0m
-[1m[94m11[0m [1m[94m|[0m }
-   [1m[94m|[0m [1m[91m^[0m [1m[91munexpected closing delimiter[0m
-
-[1m[91merror[0m: could not compile `rust-candle-course` (bin "rust-candle-course") due to 1 previous error
-[1m[38;5;255m[48;5;240m rust-candle-course [0m[1m[38;5;235m[48;5;204m check [0m[1m[38;5;235m[48;5;9m  1 error  [0m
-[1m[92m    Checking[0m rust-candle-course v0.1.0 (/Users/stephen/Desktop/rust-candle-course)
-[1m[91merror[0m[1m: unexpected closing delimiter: `}`[0m
- [1m[94m--> [0msrc/main.rs:9:1
-  [1m[94m|[0m
-[1m[94m4[0m [1m[94m|[0m fn load_data(device: &Device) -> Result<Tensor> {
-  [1m[94m|[0m                                                 [1m[94m-[0m [1m[94mthe nearest open delimiter[0m
-[1m[94m5[0m [1m[94m|[0m     //let data: &[f32] = &[1.0, 2.0, 3.0, 4.0, 5.0, [1m[94m...[0m
-[1m[94m6[0m [1m[94m|[0m     let data: &[f64]] = &[1.0f64];
-  [1m[94m|[0m                     [1m[94m-[0m [1m[94mmissing open `[` for this delimiter[0m
-[1m[94m...[0m
-[1m[94m9[0m [1m[94m|[0m }
-  [1m[94m|[0m [1m[91m^[0m [1m[91munexpected closing delimiter[0m
-
-[1m[91merror[0m: could not compile `rust-candle-course` (bin "rust-candle-course") due to 1 previous error
-[1m[38;5;255m[48;5;240m rust-candle-course [0m[1m[38;5;235m[48;5;204m check [0m[1m[38;5;235m[48;5;9m  1 error  [0m
-[1m[92m    Checking[0m rust-candle-course v0.1.0 (/Users/stephen/Desktop/rust-candle-course)
-[1m[91merror[0m[1m: unexpected closing delimiter: `}`[0m
-  [1m[94m--> [0msrc/main.rs:10:1
-   [1m[94m|[0m
-[1m[94m 4[0m [1m[94m|[0m fn load_data(device: &Device) -> Result<Tensor> {
-   [1m[94m|[0m                                                 [1m[94m-[0m [1m[94mthe nearest open delimiter[0m
-[1m[94m 5[0m [1m[94m|[0m     //let data: &[f32] = &[1.0, 2.0, 3.0, 4.0, 5.0, [1m[94m...[0m
-[1m[94m 6[0m [1m[94m|[0m     let data: &[f64]] = &[1.0f64];
-   [1m[94m|[0m                     [1m[94m-[0m [1m[94mmissing open `[` for this delimiter[0m
-[1m[94m...[0m
-[1m[94m10[0m [1m[94m|[0m }
-   [1m[94m|[0m [1m[91m^[0m [1m[91munexpected closing delimiter[0m
-
-[1m[91merror[0m: could not compile `rust-candle-course` (bin "rust-candle-course") due to 1 previous error
-[1m[38;5;255m[48;5;240m rust-candle-course [0m[1m[38;5;235m[48;5;204m check [0m[1m[38;5;235m[48;5;9m  1 error  [0m
-[1m[92m    Checking[0m rust-candle-course v0.1.0 (/Users/stephen/Desktop/rust-candle-course)
-[1m[91merror[0m[1m: unexpected closing delimiter: `}`[0m
-  [1m[94m--> [0msrc/main.rs:10:1
-   [1m[94m|[0m
-[1m[94m 4[0m [1m[94m|[0m fn load_data(device: &Device) -> Result<Tensor> {
-   [1m[94m|[0m                                                 [1m[94m-[0m [1m[94mthe nearest open delimiter[0m
-[1m[94m 5[0m [1m[94m|[0m     //let data: &[f32] = &[1.0, 2.0, 3.0, 4.0, 5.0, [1m[94m...[0m
-[1m[94m 6[0m [1m[94m|[0m     let data: &[f32]] = &[1.0f32];
-   [1m[94m|[0m                     [1m[94m-[0m [1m[94mmissing open `[` for this delimiter[0m
-[1m[94m...[0m
-[1m[94m10[0m [1m[94m|[0m }
-   [1m[94m|[0m [1m[91m^[0m [1m[91munexpected closing delimiter[0m
-
-[1m[91merror[0m: could not compile `rust-candle-course` (bin "rust-candle-course") due to 1 previous error
-[1m[38;5;255m[48;5;240m rust-candle-course [0m[1m[38;5;235m[48;5;204m check [0m[1m[38;5;235m[48;5;9m  1 error  [0m
-[1m[92m    Checking[0m rust-candle-course v0.1.0 (/Users/stephen/Desktop/rust-candle-course)
-[1m[33mwarning[0m[1m: function `load_data` is never used[0m
- [1m[94m--> [0msrc/main.rs:4:4
-  [1m[94m|[0m
-[1m[94m4[0m [1m[94m|[0m fn load_data(device: &Device) -> Result<[1m[94m...[0m
-  [1m[94m|[0m    [1m[33m^^^^^^^^^[0m
-  [1m[94m|[0m
-  [1m[94m= [0m[1mnote[0m: `#[warn(dead_code)]` (part of `#[warn(unused)]`) on by default
-
-[1m[33mwarning[0m: `rust-candle-course` (bin "rust-candle-course") generated 1 warning
-[1m[92m    Finished[0m `dev` profile [unoptimized + debuginfo] target(s) in 0.13s
-[1m[38;5;255m[48;5;240m rust-candle-course [0m[1m[38;5;235m[48;5;204m check [0m[1m[38;5;235m[48;5;11m  1 warning  [0m
-[1m[92m    Checking[0m rust-candle-course v0.1.0 (/Users/stephen/Desktop/rust-candle-course)
-[1m[91merror[E0277][0m[1m: the trait bound `&[f32]: WithDType` is not satisfied[0m
-   [1m[94m--> [0msrc/main.rs:7:45
-    [1m[94m|[0m
-[1m[94m  7[0m [1m[94m|[0m [1m[94m...[0mor = Tensor::from_slice(data, (1,1)[1m[94m...[0m
-    [1m[94m|[0m         [1m[94m------------------[0m [1m[91m^^^^[0m [1m[91munsatisfied trait bound[0m
-    [1m[94m|[0m         [1m[94m|[0m
-    [1m[94m|[0m         [1m[94mrequired by a bound introduced by this call[0m
-    [1m[94m|[0m
-    [1m[94m= [0m[1mhelp[0m: the trait `WithDType` is not implemented for `&[f32]`
-    [1m[94m= [0m[1mhelp[0m: the following other types implement trait `WithDType`:
-              candle_core::F4
-              candle_core::F6E2M3
-              candle_core::F6E3M2
-              candle_core::F8E8M0
-              f32
-              f64
-              float8::F8E4M3
-              half::bfloat::bf16
-            and 6 others
-[1m[92mnote[0m: required by a bound in `candle_core::Tensor::from_slice`
-   [1m[94m--> [0m/Users/stephen/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/candle-core-0.11.0/src/tensor.rs:564:47
-    [1m[94m|[0m
-[1m[94m564[0m [1m[94m|[0m [1m[94m...[0mle, D: crate::WithDType>(
-    [1m[94m|[0m           [1m[92m^^^^^^^^^^^^^^^^[0m [1m[92mrequired by this bound in `Tensor::from_slice`[0m
-
-[1mFor more information about this error, try `rustc --explain E0277`.[0m
-[1m[91merror[0m: could not compile `rust-candle-course` (bin "rust-candle-course") due to 1 previous error
-[1m[38;5;255m[48;5;240m rust-candle-course [0m[1m[38;5;235m[48;5;204m check [0m[1m[38;5;235m[48;5;9m  1 error  [0m
-[1m[92m    Checking[0m rust-candle-course v0.1.0 (/Users/stephen/Desktop/rust-candle-course)
-[1m[33mwarning[0m[1m: function `load_data` is never used[0m
- [1m[94m--> [0msrc/main.rs:4:4
-  [1m[94m|[0m
-[1m[94m4[0m [1m[94m|[0m fn load_data(device: &Device) -> Result<[1m[94m...[0m
-  [1m[94m|[0m    [1m[33m^^^^^^^^^[0m
-  [1m[94m|[0m
-  [1m[94m= [0m[1mnote[0m: `#[warn(dead_code)]` (part of `#[warn(unused)]`) on by default
-
-[1m[33mwarning[0m: `rust-candle-course` (bin "rust-candle-course") generated 1 warning
-[1m[92m    Finished[0m `dev` profile [unoptimized + debuginfo] target(s) in 0.13s
-[1m[38;5;255m[48;5;240m rust-candle-course [0m[1m[38;5;235m[48;5;204m check [0m[1m[38;5;235m[48;5;11m  1 warning  [0m
-[1m[92m    Checking[0m rust-candle-course v0.1.0 (/Users/stephen/Desktop/rust-candle-course)
-[1m[33mwarning[0m[1m: function `load_data` is never used[0m
- [1m[94m--> [0msrc/main.rs:4:4
-  [1m[94m|[0m
-[1m[94m4[0m [1m[94m|[0m fn load_data(device: &Device) -> Result<[1m[94m...[0m
-  [1m[94m|[0m    [1m[33m^^^^^^^^^[0m
-  [1m[94m|[0m
-  [1m[94m= [0m[1mnote[0m: `#[warn(dead_code)]` (part of `#[warn(unused)]`) on by default
-
-[1m[33mwarning[0m: `rust-candle-course` (bin "rust-candle-course") generated 1 warning
-[1m[92m    Finished[0m `dev` profile [unoptimized + debuginfo] target(s) in 0.12s
-[1m[38;5;255m[48;5;240m rust-candle-course [0m[1m[38;5;235m[48;5;204m check [0m[1m[38;5;235m[48;5;11m  1 warning  [0m
-[1m[33mwarning[0m[1m: function `load_data` is never used[0m
- [1m[94m--> [0msrc/main.rs:4:4
-  [1m[94m|[0m
-[1m[94m4[0m [1m[94m|[0m fn load_data(device: &Device) -> Result<[1m[94m...[0m
-  [1m[94m|[0m    [1m[33m^^^^^^^^^[0m
-  [1m[94m|[0m
-  [1m[94m= [0m[1mnote[0m: `#[warn(dead_code)]` (part of `#[warn(unused)]`) on by default
-
-[1m[33mwarning[0m: `rust-candle-course` (bin "rust-candle-course") generated 1 warning
-[1m[92m    Finished[0m `dev` profile [unoptimized + debuginfo] target(s) in 0.07s
-[1m[38;5;255m[48;5;240m rust-candle-course [0m[1m[38;5;235m[48;5;204m check [0m[1m[38;5;235m[48;5;11m  1 warning  [0m
-[1m[92m    Checking[0m rust-candle-course v0.1.0 (/Users/stephen/Desktop/rust-candle-course)
-[1m[33mwarning[0m[1m: function `load_data` is never used[0m
- [1m[94m--> [0msrc/main.rs:4:4
-  [1m[94m|[0m
-[1m[94m4[0m [1m[94m|[0m fn load_data(device: &Device) -> Result<[1m[94m...[0m
-  [1m[94m|[0m    [1m[33m^^^^^^^^^[0m
-  [1m[94m|[0m
-  [1m[94m= [0m[1mnote[0m: `#[warn(dead_code)]` (part of `#[warn(unused)]`) on by default
-
-[1m[33mwarning[0m: `rust-candle-course` (bin "rust-candle-course") generated 1 warning
-[1m[92m    Finished[0m `dev` profile [unoptimized + debuginfo] target(s) in 0.12s
-[1m[38;5;255m[48;5;240m rust-candle-course [0m[1m[38;5;235m[48;5;204m check [0m[1m[38;5;235m[48;5;11m  1 warning  [0m
-[1m[92m    Checking[0m rust-candle-course v0.1.0 (/Users/stephen/Desktop/rust-candle-course)
-[1m[33mwarning[0m[1m: function `load_data` is never used[0m
- [1m[94m--> [0msrc/main.rs:4:4
-  [1m[94m|[0m
-[1m[94m4[0m [1m[94m|[0m fn load_data(device: &Device) -> Result<[1m[94m...[0m
-  [1m[94m|[0m    [1m[33m^^^^^^^^^[0m
-  [1m[94m|[0m
-  [1m[94m= [0m[1mnote[0m: `#[warn(dead_code)]` (part of `#[warn(unused)]`) on by default
-
-[1m[33mwarning[0m: `rust-candle-course` (bin "rust-candle-course") generated 1 warning
-[1m[92m    Finished[0m `dev` profile [unoptimized + debuginfo] target(s) in 0.15s
-[1m[38;5;255m[48;5;240m rust-candle-course [0m[1m[38;5;235m[48;5;204m check [0m[1m[38;5;235m[48;5;11m  1 warning  [0m
-[1m[92m    Checking[0m rust-candle-course v0.1.0 (/Users/stephen/Desktop/rust-candle-course)
-[1m[33mwarning[0m[1m: function `load_data` is never used[0m
- [1m[94m--> [0msrc/main.rs:4:4
-  [1m[94m|[0m
-[1m[94m4[0m [1m[94m|[0m fn load_data(device: &Device) -> Result<[1m[94m...[0m
-  [1m[94m|[0m    [1m[33m^^^^^^^^^[0m
-  [1m[94m|[0m
-  [1m[94m= [0m[1mnote[0m: `#[warn(dead_code)]` (part of `#[warn(unused)]`) on by default
-
-[1m[33mwarning[0m: `rust-candle-course` (bin "rust-candle-course") generated 1 warning
-[1m[92m    Finished[0m `dev` profile [unoptimized + debuginfo] target(s) in 0.13s
-[1m[38;5;255m[48;5;240m rust-candle-course [0m[1m[38;5;235m[48;5;204m check [0m[1m[38;5;235m[48;5;11m  1 warning  [0m
-[1m[92m    Checking[0m rust-candle-course v0.1.0 (/Users/stephen/Desktop/rust-candle-course)
-[1m[33mwarning[0m[1m: function `load_data` is never used[0m
- [1m[94m--> [0msrc/main.rs:4:4
-  [1m[94m|[0m
-[1m[94m4[0m [1m[94m|[0m fn load_data(device: &Device) -> Result<[1m[94m...[0m
-  [1m[94m|[0m    [1m[33m^^^^^^^^^[0m
-  [1m[94m|[0m
-  [1m[94m= [0m[1mnote[0m: `#[warn(dead_code)]` (part of `#[warn(unused)]`) on by default
-
-[1m[33mwarning[0m: `rust-candle-course` (bin "rust-candle-course") generated 1 warning
-[1m[92m    Finished[0m `dev` profile [unoptimized + debuginfo] target(s) in 0.12s
-[1m[38;5;255m[48;5;240m rust-candle-course [0m[1m[38;5;235m[48;5;204m check [0m[1m[38;5;235m[48;5;11m  1 warning  [0m
-[1m[92m    Checking[0m rust-candle-course v0.1.0 (/Users/stephen/Desktop/rust-candle-course)
-[1m[91merror[0m[1m: expected `;`, found `Ok`[0m
-  [1m[94m--> [0msrc/main.rs:20:29
-   [1m[94m|[0m
-[1m[94m20[0m [1m[94m|[0m     let data: Tensor = Vkkkk
-   [1m[94m|[0m                             [1m[91m^[0m [1m[91mhelp: add `;` here[0m
-[1m[94m21[0m [1m[94m|[0m
-[1m[94m22[0m [1m[94m|[0m     Ok(())
-   [1m[94m|[0m     [1m[94m--[0m [1m[94munexpected token[0m
-
-[1m[91merror[E0425][0m[1m: cannot find value `Vkkkk` in this scope[0m
-  [1m[94m--> [0msrc/main.rs:20:24
-   [1m[94m|[0m
-[1m[94m20[0m [1m[94m|[0m     let data: Tensor = Vkkkk
-   [1m[94m|[0m                        [1m[91m^^^^^[0m [1m[91mnot found in this scope[0m
-
-[1mFor more information about this error, try `rustc --explain E0425`.[0m
-[1m[91merror[0m: could not compile `rust-candle-course` (bin "rust-candle-course") due to 2 previous errors
-[1m[38;5;255m[48;5;240m rust-candle-course [0m[1m[38;5;235m[48;5;204m check [0m[1m[38;5;235m[48;5;9m  2 errors  [0m
-[1m[92m    Checking[0m rust-candle-course v0.1.0 (/Users/stephen/Desktop/rust-candle-course)
-[1m[91merror[0m[1m: expected `;`, found `Ok`[0m
-  [1m[94m--> [0msrc/main.rs:19:29
-   [1m[94m|[0m
-[1m[94m19[0m [1m[94m|[0m     let data: Tensor = Vkkkk
-   [1m[94m|[0m                             [1m[91m^[0m [1m[91mhelp: add `;` here[0m
-[1m[94m20[0m [1m[94m|[0m
-[1m[94m21[0m [1m[94m|[0m     Ok(())
-   [1m[94m|[0m     [1m[94m--[0m [1m[94munexpected token[0m
-
-[1m[91merror[E0425][0m[1m: cannot find value `Vkkkk` in this scope[0m
-  [1m[94m--> [0msrc/main.rs:19:24
-   [1m[94m|[0m
-[1m[94m19[0m [1m[94m|[0m     let data: Tensor = Vkkkk
-   [1m[94m|[0m                        [1m[91m^^^^^[0m [1m[91mnot found in this scope[0m
-
-[1mFor more information about this error, try `rustc --explain E0425`.[0m
-[1m[91merror[0m: could not compile `rust-candle-course` (bin "rust-candle-course") due to 2 previous errors
-[1m[38;5;255m[48;5;240m rust-candle-course [0m[1m[38;5;235m[48;5;204m check [0m[1m[38;5;235m[48;5;9m  2 errors  [0m
-[1m[92m    Checking[0m rust-candle-course v0.1.0 (/Users/stephen/Desktop/rust-candle-course)
-[1m[91merror[E0308][0m[1m: mismatched types[0m
-  [1m[94m--> [0msrc/main.rs:20:24
-   [1m[94m|[0m
-[1m[94m20[0m [1m[94m|[0m     let data: Tensor = load_data(&device);
-   [1m[94m|[0m               [1m[94m------[0m   [1m[91m^^^^^^^^^^^^^^^^^^[0m [1m[91mexpected `Tensor`, found `Result<Tensor, Error>`[0m
-   [1m[94m|[0m               [1m[94m|[0m
-   [1m[94m|[0m               [1m[94mexpected due to this[0m
-   [1m[94m|[0m
-   [1m[94m= [0m[1mnote[0m: expected struct `candle_core::Tensor`
-                found enum `[1m[35mResult[0m[1m[35m<[0mcandle_core::Tensor, [1m[35manyhow::Error[0m[1m[35m>[0m`
-[1m[96mhelp[0m: use the `?` operator to extract the `Result<candle_core::Tensor, anyhow::Error>` value, propagating a `Result::Err` value to the caller
-   [1m[94m|[0m
-[1m[94m20[0m [1m[94m| [0m    let data: Tensor = load_data(&device)[92m?[0m;
-   [1m[94m|[0m                                          [92m+[0m
-
-[1mFor more information about this error, try `rustc --explain E0308`.[0m
-[1m[91merror[0m: could not compile `rust-candle-course` (bin "rust-candle-course") due to 1 previous error
-[1m[38;5;255m[48;5;240m rust-candle-course [0m[1m[38;5;235m[48;5;204m check [0m[1m[38;5;235m[48;5;9m  1 error  [0m
-[1m[92m    Checking[0m rust-candle-course v0.1.0 (/Users/stephen/Desktop/rust-candle-course)
-[1m[33mwarning[0m[1m: unused variable: `data`[0m
-  [1m[94m--> [0msrc/main.rs:20:9
-   [1m[94m|[0m
-[1m[94m20[0m [1m[94m|[0m     let data: Tensor = load_data(&device)?;
-   [1m[94m|[0m         [1m[33m^^^^[0m [1m[33mhelp: if this is intentional, prefix it with an underscore: `_data`[0m
-   [1m[94m|[0m
-   [1m[94m= [0m[1mnote[0m: `#[warn(unused_variables)]` (part of `#[warn(unused)]`) on by default
-
-[1m[33mwarning[0m: `rust-candle-course` (bin "rust-candle-course") generated 1 warning (run `cargo fix --bin "rust-candle-course" -p rust-candle-course` to apply 1 suggestion)
-[1m[92m    Finished[0m `dev` profile [unoptimized + debuginfo] target(s) in 0.13s
-[1m[38;5;255m[48;5;240m rust-candle-course [0m[1m[38;5;235m[48;5;204m check [0m[1m[38;5;235m[48;5;11m  1 warning  [0m
-[1m[92m    Checking[0m rust-candle-course v0.1.0 (/Users/stephen/Desktop/rust-candle-course)
-[1m[33mwarning[0m[1m: unused variable: `data`[0m
-  [1m[94m--> [0msrc/main.rs:20:9
-   [1m[94m|[0m
-[1m[94m20[0m [1m[94m|[0m     let data: Tensor = load_data(&device)?;
-   [1m[94m|[0m         [1m[33m^^^^[0m [1m[33mhelp: if this is intentional, prefix it with an underscore: `_data`[0m
-   [1m[94m|[0m
-   [1m[94m= [0m[1mnote[0m: `#[warn(unused_variables)]` (part of `#[warn(unused)]`) on by default
-
-[1m[33mwarning[0m: `rust-candle-course` (bin "rust-candle-course") generated 1 warning (run `cargo fix --bin "rust-candle-course" -p rust-candle-course` to apply 1 suggestion)
-[1m[92m    Finished[0m `dev` profile [unoptimized + debuginfo] target(s) in 0.12s
-[1m[38;5;255m[48;5;240m rust-candle-course [0m[1m[38;5;235m[48;5;204m check [0m[1m[38;5;235m[48;5;11m  1 warning  [0m
-[1m[92m    Checking[0m rust-candle-course v0.1.0 (/Users/stephen/Desktop/rust-candle-course)
-[1m[91merror[E0308][0m[1m: mismatched types[0m
-  [1m[94m--> [0msrc/main.rs:17:32
-   [1m[94m|[0m
-[1m[94m17[0m [1m[94m|[0m fn normalize(data: &Tensor) -> Result<Tensor> {
-   [1m[94m|[0m    [1m[94m---------[0m                   [1m[91m^^^^^^^^^^^^^^[0m [1m[91mexpected `Result<Tensor, Error>`, found `()`[0m
-   [1m[94m|[0m    [1m[94m|[0m
-   [1m[94m|[0m    [1m[94mimplicitly returns `()` as its body has no tail or `return` expression[0m
-   [1m[94m|[0m
-   [1m[94m= [0m[1mnote[0m:   expected enum `[1m[35mResult<candle_core::Tensor, anyhow::Error>[0m`
-           found unit type `[1m[35m()[0m`
-
-[1m[33mwarning[0m[1m: unused variable: `data`[0m
-  [1m[94m--> [0msrc/main.rs:24:9
-   [1m[94m|[0m
-[1m[94m24[0m [1m[94m|[0m     let data: Tensor = load_data(&device)?;
-   [1m[94m|[0m         [1m[33m^^^^[0m [1m[33mhelp: if this is intentional, prefix it with an underscore: `_data`[0m
-   [1m[94m|[0m
-   [1m[94m= [0m[1mnote[0m: `#[warn(unused_variables)]` (part of `#[warn(unused)]`) on by default
-
-[1mFor more information about this error, try `rustc --explain E0308`.[0m
-[1m[33mwarning[0m: `rust-candle-course` (bin "rust-candle-course") generated 1 warning
-[1m[91merror[0m: could not compile `rust-candle-course` (bin "rust-candle-course") due to 1 previous error; 1 warning emitted
-[1m[38;5;255m[48;5;240m rust-candle-course [0m[1m[38;5;235m[48;5;204m check [0m[1m[38;5;235m[48;5;9m  1 error  [0m[1m[38;5;235m[48;5;11m  1 warning  [0m
-[1m[92m    Checking[0m rust-candle-course v0.1.0 (/Users/stephen/Desktop/rust-candle-course)
-[1m[33mwarning[0m[1m: unused variable: `data`[0m
-  [1m[94m--> [0msrc/main.rs:24:9
-   [1m[94m|[0m
-[1m[94m24[0m [1m[94m|[0m     let data: Tensor = load_data(&device)?;
-   [1m[94m|[0m         [1m[33m^^^^[0m [1m[33mhelp: if this is intentional, prefix it with an underscore: `_data`[0m
-   [1m[94m|[0m
-   [1m[94m= [0m[1mnote[0m: `#[warn(unused_variables)]` (part of `#[warn(unused)]`) on by default
-
-[1m[33mwarning[0m: `rust-candle-course` (bin "rust-candle-course") generated 1 warning (run `cargo fix --bin "rust-candle-course" -p rust-candle-course` to apply 1 suggestion)
-[1m[92m    Finished[0m `dev` profile [unoptimized + debuginfo] target(s) in 0.13s
-[1m[38;5;255m[48;5;240m rust-candle-course [0m[1m[38;5;235m[48;5;204m check [0m[1m[38;5;235m[48;5;11m  1 warning  [0m
-[1m[92m    Checking[0m rust-candle-course v0.1.0 (/Users/stephen/Desktop/rust-candle-course)
-[1m[91merror[E0116][0m[1m: cannot define inherent `impl` for a type outside of the crate where the type is defined[0m
-  [1m[94m--> [0msrc/main.rs:17:1
-   [1m[94m|[0m
-[1m[94m17[0m [1m[94m|[0m impl Tensor {
-   [1m[94m|[0m [1m[91m^^^^^^^^^^^[0m [1m[91mimpl for type defined outside of crate[0m
-   [1m[94m|[0m
-   [1m[94m= [0m[1mhelp[0m: consider defining a trait and implementing it for the type or using a newtype wrapper like `struct MyType(ExternalType);` and implement it
-   [1m[94m= [0m[1mnote[0m: for more details about the orphan rules, see <https://doc.rust-lang.org/reference/items/implementations.html?highlight=orphan#orphan-rules>
-
-[1m[91merror[E0616][0m[1m: field `device` of struct `candle_core::tensor::Tensor_` is private[0m
-  [1m[94m--> [0msrc/main.rs:19:34
-   [1m[94m|[0m
-[1m[94m19[0m [1m[94m|[0m         Ok(Tensor::new(1.0, self.device))
-   [1m[94m|[0m                                  [1m[91m^^^^^^[0m [1m[91mprivate field[0m
-   [1m[94m|[0m
-[1m[96mhelp[0m: a method `device` also exists, call it with parentheses
-   [1m[94m|[0m
-[1m[94m19[0m [1m[94m| [0m        Ok(Tensor::new(1.0, self.device[92m()[0m))
-   [1m[94m|[0m                                        [92m++[0m
-
-[1m[91merror[E0308][0m[1m: mismatched types[0m
-  [1m[94m--> [0msrc/main.rs:19:12
-   [1m[94m|[0m
-[1m[94m19[0m [1m[94m|[0m         Ok(Tensor::new(1.0, self.device))
-   [1m[94m|[0m         [1m[94m--[0m [1m[91m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m [1m[91mexpected `Tensor`, found `Result<Tensor, Error>`[0m
-   [1m[94m|[0m         [1m[94m|[0m
-   [1m[94m|[0m         [1m[94marguments to this enum variant are incorrect[0m
-   [1m[94m|[0m
-   [1m[94m= [0m[1mnote[0m: expected struct `candle_core::Tensor`
-                found enum `[1m[35mResult[0m[1m[35m<[0mcandle_core::Tensor, [1m[35mcandle_core::Error[0m[1m[35m>[0m`
-[1m[96mhelp[0m: the type constructed contains `Result<candle_core::Tensor, candle_core::Error>` due to the type of the argument passed
-  [1m[94m--> [0msrc/main.rs:19:9
-   [1m[94m|[0m
-[1m[94m19[0m [1m[94m|[0m         Ok(Tensor::new(1.0, self.device))
-   [1m[94m|[0m         [1m[96m^^^[0m[1m[94m-----------------------------[0m[1m[96m^[0m
-   [1m[94m|[0m            [1m[94m|[0m
-   [1m[94m|[0m            [1m[94mthis argument influences the type of `Ok`[0m
-[1m[92mnote[0m: tuple variant defined here
-  [1m[94m--> [0m/rustc/65407954098ca3c19f0d46092cb374b5d3e9dc3c/library/core/src/result.rs:561:4
-[1m[96mhelp[0m: use the `?` operator to extract the `Result<candle_core::Tensor, candle_core::Error>` value, propagating a `Result::Err` value to the caller
-   [1m[94m|[0m
-[1m[94m19[0m [1m[94m| [0m        Ok(Tensor::new(1.0, self.device)[92m?[0m)
-   [1m[94m|[0m                                         [92m+[0m
-
-[1m[33mwarning[0m[1m: unused variable: `data`[0m
-  [1m[94m--> [0msrc/main.rs:29:9
-   [1m[94m|[0m
-[1m[94m29[0m [1m[94m|[0m     let data: Tensor = load_data(&device)?;
-   [1m[94m|[0m         [1m[33m^^^^[0m [1m[33mhelp: if this is intentional, prefix it with an underscore: `_data`[0m
-   [1m[94m|[0m
-   [1m[94m= [0m[1mnote[0m: `#[warn(unused_variables)]` (part of `#[warn(unused)]`) on by default
-
-[1mSome errors have detailed explanations: E0116, E0308, E0616.[0m
-[1mFor more information about an error, try `rustc --explain E0116`.[0m
-[1m[33mwarning[0m: `rust-candle-course` (bin "rust-candle-course") generated 1 warning
-[1m[91merror[0m: could not compile `rust-candle-course` (bin "rust-candle-course") due to 3 previous errors; 1 warning emitted
-[1m[38;5;255m[48;5;240m rust-candle-course [0m[1m[38;5;235m[48;5;204m check [0m[1m[38;5;235m[48;5;9m  3 errors  [0m[1m[38;5;235m[48;5;11m  1 warning  [0m
-[1m[92m    Checking[0m rust-candle-course v0.1.0 (/Users/stephen/Desktop/rust-candle-course)
-[1m[91merror[E0425][0m[1m: cannot find type `Tenor` in this scope[0m
-  [1m[94m--> [0msrc/main.rs:21:20
-   [1m[94m|[0m
-[1m[94m21[0m [1m[94m|[0m impl TensorExt for Tenor {
-   [1m[94m|[0m                    [1m[91m^^^^^[0m
-   [1m[94m|[0m
-  [1m[94m::: [0m/Users/stephen/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/candle-core-0.11.0/src/tensor.rs:68:1
-   [1m[94m|[0m
-[1m[94m68[0m [1m[94m|[0m pub struct Tensor(Arc<Tensor_>);
-   [1m[94m|[0m [1m[94m-----------------[0m [1m[94msimilarly named struct `Tensor` defined here[0m
-   [1m[94m|[0m
-[1m[96mhelp[0m: a struct with a similar name exists
-   [1m[94m|[0m
-[1m[94m21[0m [1m[94m| [0mimpl TensorExt for Ten[92ms[0mor {
-   [1m[94m|[0m                       [92m+[0m
-
-[1m[33mwarning[0m[1m: unused variable: `data`[0m
-  [1m[94m--> [0msrc/main.rs:33:9
-   [1m[94m|[0m
-[1m[94m33[0m [1m[94m|[0m     let data: Tensor = load_data(&device)?;
-   [1m[94m|[0m         [1m[33m^^^^[0m [1m[33mhelp: if this is intentional, prefix it with an underscore: `_data`[0m
-   [1m[94m|[0m
-   [1m[94m= [0m[1mnote[0m: `#[warn(unused_variables)]` (part of `#[warn(unused)]`) on by default
-
-[1mFor more information about this error, try `rustc --explain E0425`.[0m
-[1m[33mwarning[0m: `rust-candle-course` (bin "rust-candle-course") generated 1 warning
-[1m[91merror[0m: could not compile `rust-candle-course` (bin "rust-candle-course") due to 1 previous error; 1 warning emitted
-[1m[38;5;255m[48;5;240m rust-candle-course [0m[1m[38;5;235m[48;5;204m check [0m[1m[38;5;235m[48;5;9m  1 error  [0m[1m[38;5;235m[48;5;11m  1 warning  [0m
-[1m[92m    Checking[0m rust-candle-course v0.1.0 (/Users/stephen/Desktop/rust-candle-course)
-[1m[91merror[E0277][0m[1m: the size for values of type `Self` cannot be known at compilation time[0m
-  [1m[94m--> [0msrc/main.rs:18:38
-   [1m[94m|[0m
-[1m[94m18[0m [1m[94m|[0m     fn norm(&self, data: &Tensor) -> Result<Self>;
-   [1m[94m|[0m                                      [1m[91m^^^^^^^^^^^^[0m [1m[91mdoesn't have a size known at compile-time[0m
-   [1m[94m|[0m
-[1m[92mnote[0m: required by an implicit `Sized` bound in `Result`
-  [1m[94m--> [0m/rustc/65407954098ca3c19f0d46092cb374b5d3e9dc3c/library/core/src/result.rs:557:0
-[1m[96mhelp[0m: consider further restricting `Self`
-   [1m[94m|[0m
-[1m[94m18[0m [1m[94m| [0m    fn norm(&self, data: &Tensor) -> Result<Self>[92m where Self: Sized[0m;
-   [1m[94m|[0m                                                   [92m+++++++++++++++++[0m
-
-[1m[91merror[E0616][0m[1m: field `device` of struct `candle_core::tensor::Tensor_` is private[0m
-  [1m[94m--> [0msrc/main.rs:23:34
-   [1m[94m|[0m
-[1m[94m23[0m [1m[94m|[0m         Ok(Tensor::new(1.0, self.device))
-   [1m[94m|[0m                                  [1m[91m^^^^^^[0m [1m[91mprivate field[0m
-   [1m[94m|[0m
-[1m[96mhelp[0m: a method `device` also exists, call it with parentheses
-   [1m[94m|[0m
-[1m[94m23[0m [1m[94m| [0m        Ok(Tensor::new(1.0, self.device[92m()[0m))
-   [1m[94m|[0m                                        [92m++[0m
-
-[1m[91merror[E0308][0m[1m: mismatched types[0m
-  [1m[94m--> [0msrc/main.rs:23:12
-   [1m[94m|[0m
-[1m[94m23[0m [1m[94m|[0m         Ok(Tensor::new(1.0, self.device))
-   [1m[94m|[0m         [1m[94m--[0m [1m[91m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m [1m[91mexpected `Tensor`, found `Result<Tensor, Error>`[0m
-   [1m[94m|[0m         [1m[94m|[0m
-   [1m[94m|[0m         [1m[94marguments to this enum variant are incorrect[0m
-   [1m[94m|[0m
-   [1m[94m= [0m[1mnote[0m: expected struct `candle_core::Tensor`
-                found enum `[1m[35mResult[0m[1m[35m<[0mcandle_core::Tensor, [1m[35mcandle_core::Error[0m[1m[35m>[0m`
-[1m[96mhelp[0m: the type constructed contains `Result<candle_core::Tensor, candle_core::Error>` due to the type of the argument passed
-  [1m[94m--> [0msrc/main.rs:23:9
-   [1m[94m|[0m
-[1m[94m23[0m [1m[94m|[0m         Ok(Tensor::new(1.0, self.device))
-   [1m[94m|[0m         [1m[96m^^^[0m[1m[94m-----------------------------[0m[1m[96m^[0m
-   [1m[94m|[0m            [1m[94m|[0m
-   [1m[94m|[0m            [1m[94mthis argument influences the type of `Ok`[0m
-[1m[92mnote[0m: tuple variant defined here
-  [1m[94m--> [0m/rustc/65407954098ca3c19f0d46092cb374b5d3e9dc3c/library/core/src/result.rs:561:4
-[1m[96mhelp[0m: use the `?` operator to extract the `Result<candle_core::Tensor, candle_core::Error>` value, propagating a `Result::Err` value to the caller
-   [1m[94m|[0m
-[1m[94m23[0m [1m[94m| [0m        Ok(Tensor::new(1.0, self.device)[92m?[0m)
-   [1m[94m|[0m                                         [92m+[0m
-
-[1m[33mwarning[0m[1m: unused variable: `data`[0m
-  [1m[94m--> [0msrc/main.rs:33:9
-   [1m[94m|[0m
-[1m[94m33[0m [1m[94m|[0m     let data: Tensor = load_data(&device)?;
-   [1m[94m|[0m         [1m[33m^^^^[0m [1m[33mhelp: if this is intentional, prefix it with an underscore: `_data`[0m
-   [1m[94m|[0m
-   [1m[94m= [0m[1mnote[0m: `#[warn(unused_variables)]` (part of `#[warn(unused)]`) on by default
-
-[1mSome errors have detailed explanations: E0277, E0308, E0616.[0m
-[1mFor more information about an error, try `rustc --explain E0277`.[0m
-[1m[33mwarning[0m: `rust-candle-course` (bin "rust-candle-course") generated 1 warning
-[1m[91merror[0m: could not compile `rust-candle-course` (bin "rust-candle-course") due to 3 previous errors; 1 warning emitted
-[1m[38;5;255m[48;5;240m rust-candle-course [0m[1m[38;5;235m[48;5;204m check [0m[1m[38;5;235m[48;5;9m  3 errors  [0m[1m[38;5;235m[48;5;11m  1 warning  [0m
-[1m[92m    Checking[0m rust-candle-course v0.1.0 (/Users/stephen/Desktop/rust-candle-course)
-[1m[91merror[E0277][0m[1m: the size for values of type `Self` cannot be known at compilation time[0m
-  [1m[94m--> [0msrc/main.rs:18:38
-   [1m[94m|[0m
-[1m[94m18[0m [1m[94m|[0m     fn norm(&self, data: &Tensor) -> Result<Self>;
-   [1m[94m|[0m                                      [1m[91m^^^^^^^^^^^^[0m [1m[91mdoesn't have a size known at compile-time[0m
-   [1m[94m|[0m
-[1m[92mnote[0m: required by an implicit `Sized` bound in `Result`
-  [1m[94m--> [0m/rustc/65407954098ca3c19f0d46092cb374b5d3e9dc3c/library/core/src/result.rs:557:0
-[1m[96mhelp[0m: consider further restricting `Self`
-   [1m[94m|[0m
-[1m[94m18[0m [1m[94m| [0m    fn norm(&self, data: &Tensor) -> Result<Self>[92m where Self: Sized[0m;
-   [1m[94m|[0m                                                   [92m+++++++++++++++++[0m
-
-[1m[91merror[E0616][0m[1m: field `device` of struct `candle_core::tensor::Tensor_` is private[0m
-  [1m[94m--> [0msrc/main.rs:23:34
-   [1m[94m|[0m
-[1m[94m23[0m [1m[94m|[0m         Ok(Tensor::new(1.0, self.device))
-   [1m[94m|[0m                                  [1m[91m^^^^^^[0m [1m[91mprivate field[0m
-   [1m[94m|[0m
-[1m[96mhelp[0m: a method `device` also exists, call it with parentheses
-   [1m[94m|[0m
-[1m[94m23[0m [1m[94m| [0m        Ok(Tensor::new(1.0, self.device[92m()[0m))
-   [1m[94m|[0m                                        [92m++[0m
-
-[1m[91merror[E0308][0m[1m: mismatched types[0m
-  [1m[94m--> [0msrc/main.rs:23:12
-   [1m[94m|[0m
-[1m[94m23[0m [1m[94m|[0m         Ok(Tensor::new(1.0, self.device))
-   [1m[94m|[0m         [1m[94m--[0m [1m[91m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m [1m[91mexpected `Tensor`, found `Result<Tensor, Error>`[0m
-   [1m[94m|[0m         [1m[94m|[0m
-   [1m[94m|[0m         [1m[94marguments to this enum variant are incorrect[0m
-   [1m[94m|[0m
-   [1m[94m= [0m[1mnote[0m: expected struct `candle_core::Tensor`
-                found enum `[1m[35mResult[0m[1m[35m<[0mcandle_core::Tensor, [1m[35mcandle_core::Error[0m[1m[35m>[0m`
-[1m[96mhelp[0m: the type constructed contains `Result<candle_core::Tensor, candle_core::Error>` due to the type of the argument passed
-  [1m[94m--> [0msrc/main.rs:23:9
-   [1m[94m|[0m
-[1m[94m23[0m [1m[94m|[0m         Ok(Tensor::new(1.0, self.device))
-   [1m[94m|[0m         [1m[96m^^^[0m[1m[94m-----------------------------[0m[1m[96m^[0m
-   [1m[94m|[0m            [1m[94m|[0m
-   [1m[94m|[0m            [1m[94mthis argument influences the type of `Ok`[0m
-[1m[92mnote[0m: tuple variant defined here
-  [1m[94m--> [0m/rustc/65407954098ca3c19f0d46092cb374b5d3e9dc3c/library/core/src/result.rs:561:4
-[1m[96mhelp[0m: use the `?` operator to extract the `Result<candle_core::Tensor, candle_core::Error>` value, propagating a `Result::Err` value to the caller
-   [1m[94m|[0m
-[1m[94m23[0m [1m[94m| [0m        Ok(Tensor::new(1.0, self.device)[92m?[0m)
-   [1m[94m|[0m                                         [92m+[0m
-
-[1m[33mwarning[0m[1m: unused variable: `data`[0m
-  [1m[94m--> [0msrc/main.rs:33:9
-   [1m[94m|[0m
-[1m[94m33[0m [1m[94m|[0m     let data: Tensor = load_data(&device)?;
-   [1m[94m|[0m         [1m[33m^^^^[0m [1m[33mhelp: if this is intentional, prefix it with an underscore: `_data`[0m
-   [1m[94m|[0m
-   [1m[94m= [0m[1mnote[0m: `#[warn(unused_variables)]` (part of `#[warn(unused)]`) on by default
-
-[1mSome errors have detailed explanations: E0277, E0308, E0616.[0m
-[1mFor more information about an error, try `rustc --explain E0277`.[0m
-[1m[33mwarning[0m: `rust-candle-course` (bin "rust-candle-course") generated 1 warning
-[1m[91merror[0m: could not compile `rust-candle-course` (bin "rust-candle-course") due to 3 previous errors; 1 warning emitted
-[1m[38;5;255m[48;5;240m rust-candle-course [0m[1m[38;5;235m[48;5;204m check [0m[1m[38;5;235m[48;5;9m  3 errors  [0m[1m[38;5;235m[48;5;11m  1 warning  [0m
-[1m[92m    Checking[0m rust-candle-course v0.1.0 (/Users/stephen/Desktop/rust-candle-course)
-[1m[91merror[E0277][0m[1m: the size for values of type `Self` cannot be known at compilation time[0m
-  [1m[94m--> [0msrc/main.rs:18:38
-   [1m[94m|[0m
-[1m[94m18[0m [1m[94m|[0m     fn norm(&self, data: &Tensor) -> Result<Self>;
-   [1m[94m|[0m                                      [1m[91m^^^^^^^^^^^^[0m [1m[91mdoesn't have a size known at compile-time[0m
-   [1m[94m|[0m
-[1m[92mnote[0m: required by an implicit `Sized` bound in `Result`
-  [1m[94m--> [0m/rustc/65407954098ca3c19f0d46092cb374b5d3e9dc3c/library/core/src/result.rs:557:0
-[1m[96mhelp[0m: consider further restricting `Self`
-   [1m[94m|[0m
-[1m[94m18[0m [1m[94m| [0m    fn norm(&self, data: &Tensor) -> Result<Self>[92m where Self: Sized[0m;
-   [1m[94m|[0m                                                   [92m+++++++++++++++++[0m
-
-[1m[91merror[E0308][0m[1m: mismatched types[0m
-  [1m[94m--> [0msrc/main.rs:23:12
-   [1m[94m|[0m
-[1m[94m23[0m [1m[94m|[0m         Ok(Tensor::new(1.0, self.device()))
-   [1m[94m|[0m         [1m[94m--[0m [1m[91m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m [1m[91mexpected `Tensor`, found `Result<Tensor, Error>`[0m
-   [1m[94m|[0m         [1m[94m|[0m
-   [1m[94m|[0m         [1m[94marguments to this enum variant are incorrect[0m
-   [1m[94m|[0m
-   [1m[94m= [0m[1mnote[0m: expected struct `candle_core::Tensor`
-                found enum `[1m[35mResult[0m[1m[35m<[0mcandle_core::Tensor, [1m[35mcandle_core::Error[0m[1m[35m>[0m`
-[1m[96mhelp[0m: the type constructed contains `Result<candle_core::Tensor, candle_core::Error>` due to the type of the argument passed
-  [1m[94m--> [0msrc/main.rs:23:9
-   [1m[94m|[0m
-[1m[94m23[0m [1m[94m|[0m         Ok(Tensor::new(1.0, self.device()))
-   [1m[94m|[0m         [1m[96m^^^[0m[1m[94m-------------------------------[0m[1m[96m^[0m
-   [1m[94m|[0m            [1m[94m|[0m
-   [1m[94m|[0m            [1m[94mthis argument influences the type of `Ok`[0m
-[1m[92mnote[0m: tuple variant defined here
-  [1m[94m--> [0m/rustc/65407954098ca3c19f0d46092cb374b5d3e9dc3c/library/core/src/result.rs:561:4
-[1m[96mhelp[0m: use the `?` operator to extract the `Result<candle_core::Tensor, candle_core::Error>` value, propagating a `Result::Err` value to the caller
-   [1m[94m|[0m
-[1m[94m23[0m [1m[94m| [0m        Ok(Tensor::new(1.0, self.device())[92m?[0m)
-   [1m[94m|[0m                                           [92m+[0m
-
-[1m[33mwarning[0m[1m: unused variable: `data`[0m
-  [1m[94m--> [0msrc/main.rs:33:9
-   [1m[94m|[0m
-[1m[94m33[0m [1m[94m|[0m     let data: Tensor = load_data(&device)?;
-   [1m[94m|[0m         [1m[33m^^^^[0m [1m[33mhelp: if this is intentional, prefix it with an underscore: `_data`[0m
-   [1m[94m|[0m
-   [1m[94m= [0m[1mnote[0m: `#[warn(unused_variables)]` (part of `#[warn(unused)]`) on by default
-
-[1mSome errors have detailed explanations: E0277, E0308.[0m
-[1mFor more information about an error, try `rustc --explain E0277`.[0m
-[1m[33mwarning[0m: `rust-candle-course` (bin "rust-candle-course") generated 1 warning
-[1m[91merror[0m: could not compile `rust-candle-course` (bin "rust-candle-course") due to 2 previous errors; 1 warning emitted
-[1m[38;5;255m[48;5;240m rust-candle-course [0m[1m[38;5;235m[48;5;204m check [0m[1m[38;5;235m[48;5;9m  2 errors  [0m[1m[38;5;235m[48;5;11m  1 warning  [0m
-[1m[92m    Checking[0m rust-candle-course v0.1.0 (/Users/stephen/Desktop/rust-candle-course)
-[1m[91merror[E0277][0m[1m: the size for values of type `Self` cannot be known at compilation time[0m
-  [1m[94m--> [0msrc/main.rs:18:38
-   [1m[94m|[0m
-[1m[94m18[0m [1m[94m|[0m     fn norm(&self, data: &Tensor) -> Result<Self>;
-   [1m[94m|[0m                                      [1m[91m^^^^^^^^^^^^[0m [1m[91mdoesn't have a size known at compile-time[0m
-   [1m[94m|[0m
-[1m[92mnote[0m: required by an implicit `Sized` bound in `Result`
-  [1m[94m--> [0m/rustc/65407954098ca3c19f0d46092cb374b5d3e9dc3c/library/core/src/result.rs:557:0
-[1m[96mhelp[0m: consider further restricting `Self`
-   [1m[94m|[0m
-[1m[94m18[0m [1m[94m| [0m    fn norm(&self, data: &Tensor) -> Result<Self>[92m where Self: Sized[0m;
-   [1m[94m|[0m                                                   [92m+++++++++++++++++[0m
-
-[1m[91merror[E0308][0m[1m: mismatched types[0m
-  [1m[94m--> [0msrc/main.rs:23:12
-   [1m[94m|[0m
-[1m[94m23[0m [1m[94m|[0m         Ok(Tensor::new(1.0, self.device()))
-   [1m[94m|[0m         [1m[94m--[0m [1m[91m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m [1m[91mexpected `Tensor`, found `Result<Tensor, Error>`[0m
-   [1m[94m|[0m         [1m[94m|[0m
-   [1m[94m|[0m         [1m[94marguments to this enum variant are incorrect[0m
-   [1m[94m|[0m
-   [1m[94m= [0m[1mnote[0m: expected struct `candle_core::Tensor`
-                found enum `[1m[35mResult[0m[1m[35m<[0mcandle_core::Tensor, [1m[35mcandle_core::Error[0m[1m[35m>[0m`
-[1m[96mhelp[0m: the type constructed contains `Result<candle_core::Tensor, candle_core::Error>` due to the type of the argument passed
-  [1m[94m--> [0msrc/main.rs:23:9
-   [1m[94m|[0m
-[1m[94m23[0m [1m[94m|[0m         Ok(Tensor::new(1.0, self.device()))
-   [1m[94m|[0m         [1m[96m^^^[0m[1m[94m-------------------------------[0m[1m[96m^[0m
-   [1m[94m|[0m            [1m[94m|[0m
-   [1m[94m|[0m            [1m[94mthis argument influences the type of `Ok`[0m
-[1m[92mnote[0m: tuple variant defined here
-  [1m[94m--> [0m/rustc/65407954098ca3c19f0d46092cb374b5d3e9dc3c/library/core/src/result.rs:561:4
-[1m[96mhelp[0m: use the `?` operator to extract the `Result<candle_core::Tensor, candle_core::Error>` value, propagating a `Result::Err` value to the caller
-   [1m[94m|[0m
-[1m[94m23[0m [1m[94m| [0m        Ok(Tensor::new(1.0, self.device())[92m?[0m)
-   [1m[94m|[0m                                           [92m+[0m
-
-[1m[33mwarning[0m[1m: unused variable: `data`[0m
-  [1m[94m--> [0msrc/main.rs:33:9
-   [1m[94m|[0m
-[1m[94m33[0m [1m[94m|[0m     let data: Tensor = load_data(&device)?;
-   [1m[94m|[0m         [1m[33m^^^^[0m [1m[33mhelp: if this is intentional, prefix it with an underscore: `_data`[0m
-   [1m[94m|[0m
-   [1m[94m= [0m[1mnote[0m: `#[warn(unused_variables)]` (part of `#[warn(unused)]`) on by default
-
-[1mSome errors have detailed explanations: E0277, E0308.[0m
-[1mFor more information about an error, try `rustc --explain E0277`.[0m
-[1m[33mwarning[0m: `rust-candle-course` (bin "rust-candle-course") generated 1 warning
-[1m[91merror[0m: could not compile `rust-candle-course` (bin "rust-candle-course") due to 2 previous errors; 1 warning emitted
-[1m[38;5;255m[48;5;240m rust-candle-course [0m[1m[38;5;235m[48;5;204m check [0m[1m[38;5;235m[48;5;9m  2 errors  [0m[1m[38;5;235m[48;5;11m  1 warning  [0m
-[1m[92m    Checking[0m rust-candle-course v0.1.0 (/Users/stephen/Desktop/rust-candle-course)
-[1m[91merror[E0277][0m[1m: the size for values of type `Self` cannot be known at compilation time[0m
-  [1m[94m--> [0msrc/main.rs:18:38
-   [1m[94m|[0m
-[1m[94m18[0m [1m[94m|[0m     fn norm(&self, data: &Tensor) -> Result<Self>;
-   [1m[94m|[0m                                      [1m[91m^^^^^^^^^^^^[0m [1m[91mdoesn't have a size known at compile-time[0m
-   [1m[94m|[0m
-[1m[92mnote[0m: required by an implicit `Sized` bound in `Result`
-  [1m[94m--> [0m/rustc/65407954098ca3c19f0d46092cb374b5d3e9dc3c/library/core/src/result.rs:557:0
-[1m[96mhelp[0m: consider further restricting `Self`
-   [1m[94m|[0m
-[1m[94m18[0m [1m[94m| [0m    fn norm(&self, data: &Tensor) -> Result<Self>[92m where Self: Sized[0m;
-   [1m[94m|[0m                                                   [92m+++++++++++++++++[0m
-
-[1m[91merror[E0308][0m[1m: mismatched types[0m
-  [1m[94m--> [0msrc/main.rs:23:12
-   [1m[94m|[0m
-[1m[94m23[0m [1m[94m|[0m         Ok(Tensor::new(1.0, self.device()))
-   [1m[94m|[0m         [1m[94m--[0m [1m[91m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m [1m[91mexpected `Tensor`, found `Result<Tensor, Error>`[0m
-   [1m[94m|[0m         [1m[94m|[0m
-   [1m[94m|[0m         [1m[94marguments to this enum variant are incorrect[0m
-   [1m[94m|[0m
-   [1m[94m= [0m[1mnote[0m: expected struct `candle_core::Tensor`
-                found enum `[1m[35mResult[0m[1m[35m<[0mcandle_core::Tensor, [1m[35mcandle_core::Error[0m[1m[35m>[0m`
-[1m[96mhelp[0m: the type constructed contains `Result<candle_core::Tensor, candle_core::Error>` due to the type of the argument passed
-  [1m[94m--> [0msrc/main.rs:23:9
-   [1m[94m|[0m
-[1m[94m23[0m [1m[94m|[0m         Ok(Tensor::new(1.0, self.device()))
-   [1m[94m|[0m         [1m[96m^^^[0m[1m[94m-------------------------------[0m[1m[96m^[0m
-   [1m[94m|[0m            [1m[94m|[0m
-   [1m[94m|[0m            [1m[94mthis argument influences the type of `Ok`[0m
-[1m[92mnote[0m: tuple variant defined here
-  [1m[94m--> [0m/rustc/65407954098ca3c19f0d46092cb374b5d3e9dc3c/library/core/src/result.rs:561:4
-[1m[96mhelp[0m: use the `?` operator to extract the `Result<candle_core::Tensor, candle_core::Error>` value, propagating a `Result::Err` value to the caller
-   [1m[94m|[0m
-[1m[94m23[0m [1m[94m| [0m        Ok(Tensor::new(1.0, self.device())[92m?[0m)
-   [1m[94m|[0m                                           [92m+[0m
-
-[1m[33mwarning[0m[1m: unused variable: `data`[0m
-  [1m[94m--> [0msrc/main.rs:33:9
-   [1m[94m|[0m
-[1m[94m33[0m [1m[94m|[0m     let data: Tensor = load_data(&device)?;
-   [1m[94m|[0m         [1m[33m^^^^[0m [1m[33mhelp: if this is intentional, prefix it with an underscore: `_data`[0m
-   [1m[94m|[0m
-   [1m[94m= [0m[1mnote[0m: `#[warn(unused_variables)]` (part of `#[warn(unused)]`) on by default
-
-[1mSome errors have detailed explanations: E0277, E0308.[0m
-[1mFor more information about an error, try `rustc --explain E0277`.[0m
-[1m[33mwarning[0m: `rust-candle-course` (bin "rust-candle-course") generated 1 warning
-[1m[91merror[0m: could not compile `rust-candle-course` (bin "rust-candle-course") due to 2 previous errors; 1 warning emitted
-[1m[38;5;255m[48;5;240m rust-candle-course [0m[1m[38;5;235m[48;5;204m check [0m[1m[38;5;235m[48;5;9m  2 errors  [0m[1m[38;5;235m[48;5;11m  1 warning  [0m
-[1m[92m    Checking[0m rust-candle-course v0.1.0 (/Users/stephen/Desktop/rust-candle-course)
-[1m[91merror[E0308][0m[1m: mismatched types[0m
-  [1m[94m--> [0msrc/main.rs:23:12
-   [1m[94m|[0m
-[1m[94m23[0m [1m[94m|[0m         Ok(Tensor::new(1.0, self.device()))
-   [1m[94m|[0m         [1m[94m--[0m [1m[91m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m [1m[91mexpected `Tensor`, found `Result<Tensor, Error>`[0m
-   [1m[94m|[0m         [1m[94m|[0m
-   [1m[94m|[0m         [1m[94marguments to this enum variant are incorrect[0m
-   [1m[94m|[0m
-   [1m[94m= [0m[1mnote[0m: expected struct `candle_core::Tensor`
-                found enum `[1m[35mResult[0m[1m[35m<[0mcandle_core::Tensor, [1m[35mcandle_core::Error[0m[1m[35m>[0m`
-[1m[96mhelp[0m: the type constructed contains `Result<candle_core::Tensor, candle_core::Error>` due to the type of the argument passed
-  [1m[94m--> [0msrc/main.rs:23:9
-   [1m[94m|[0m
-[1m[94m23[0m [1m[94m|[0m         Ok(Tensor::new(1.0, self.device()))
-   [1m[94m|[0m         [1m[96m^^^[0m[1m[94m-------------------------------[0m[1m[96m^[0m
-   [1m[94m|[0m            [1m[94m|[0m
-   [1m[94m|[0m            [1m[94mthis argument influences the type of `Ok`[0m
-[1m[92mnote[0m: tuple variant defined here
-  [1m[94m--> [0m/rustc/65407954098ca3c19f0d46092cb374b5d3e9dc3c/library/core/src/result.rs:561:4
-[1m[96mhelp[0m: use the `?` operator to extract the `Result<candle_core::Tensor, candle_core::Error>` value, propagating a `Result::Err` value to the caller
-   [1m[94m|[0m
-[1m[94m23[0m [1m[94m| [0m        Ok(Tensor::new(1.0, self.device())[92m?[0m)
-   [1m[94m|[0m                                           [92m+[0m
-
-[1m[33mwarning[0m[1m: unused variable: `data`[0m
-  [1m[94m--> [0msrc/main.rs:33:9
-   [1m[94m|[0m
-[1m[94m33[0m [1m[94m|[0m     let data: Tensor = load_data(&device)?;
-   [1m[94m|[0m         [1m[33m^^^^[0m [1m[33mhelp: if this is intentional, prefix it with an underscore: `_data`[0m
-   [1m[94m|[0m
-   [1m[94m= [0m[1mnote[0m: `#[warn(unused_variables)]` (part of `#[warn(unused)]`) on by default
-
-[1mFor more information about this error, try `rustc --explain E0308`.[0m
-[1m[33mwarning[0m: `rust-candle-course` (bin "rust-candle-course") generated 1 warning
-[1m[91merror[0m: could not compile `rust-candle-course` (bin "rust-candle-course") due to 1 previous error; 1 warning emitted
-[1m[38;5;255m[48;5;240m rust-candle-course [0m[1m[38;5;235m[48;5;204m check [0m[1m[38;5;235m[48;5;9m  1 error  [0m[1m[38;5;235m[48;5;11m  1 warning  [0m
-[1m[92m    Checking[0m rust-candle-course v0.1.0 (/Users/stephen/Desktop/rust-candle-course)
 [1m[33mwarning[0m[1m: unused variable: `data`[0m
   [1m[94m--> [0msrc/main.rs:22:20
    [1m[94m|[0m
@@ -939,5 +21,983 @@
    [1m[94m= [0m[1mnote[0m: `#[warn(dead_code)]` (part of `#[warn(unused)]`) on by default
 
 [1m[33mwarning[0m: `rust-candle-course` (bin "rust-candle-course") generated 3 warnings (run `cargo fix --bin "rust-candle-course" -p rust-candle-course` to apply 2 suggestions)
+[1m[92m    Finished[0m `dev` profile [unoptimized + debuginfo] target(s) in 0.21s
+[1m[38;5;255m[48;5;240m rust-candle-course [0m[1m[38;5;235m[48;5;204m check [0m[1m[38;5;235m[48;5;11m  3 warnings  [0m
+[1m[92m    Checking[0m rust-candle-course v0.1.0 (/Users/stephen/Desktop/rust-candle-course)
+[1m[33mwarning[0m[1m: unused variable: `average`[0m
+  [1m[94m--> [0msrc/main.rs:23:13
+   [1m[94m|[0m
+[1m[94m23[0m [1m[94m|[0m         let average = data.mean(0)?;
+   [1m[94m|[0m             [1m[33m^^^^^^^[0m [1m[33mhelp: if this is intentional, prefix it with an underscore: `_average`[0m
+   [1m[94m|[0m
+   [1m[94m= [0m[1mnote[0m: `#[warn(unused_variables)]` (part of `#[warn(unused)]`) on by default
+
+[1m[33mwarning[0m[1m: unused variable: `data`[0m
+  [1m[94m--> [0msrc/main.rs:34:9
+   [1m[94m|[0m
+[1m[94m34[0m [1m[94m|[0m     let data: Tensor = load_data(&device)?;
+   [1m[94m|[0m         [1m[33m^^^^[0m [1m[33mhelp: if this is intentional, prefix it with an underscore: `_data`[0m
+
+[1m[33mwarning[0m[1m: trait `TensorExt` is never used[0m
+  [1m[94m--> [0msrc/main.rs:17:7
+   [1m[94m|[0m
+[1m[94m17[0m [1m[94m|[0m trait TensorExt {
+   [1m[94m|[0m       [1m[33m^^^^^^^^^[0m
+   [1m[94m|[0m
+   [1m[94m= [0m[1mnote[0m: `#[warn(dead_code)]` (part of `#[warn(unused)]`) on by default
+
+[1m[33mwarning[0m: `rust-candle-course` (bin "rust-candle-course") generated 3 warnings (run `cargo fix --bin "rust-candle-course" -p rust-candle-course` to apply 2 suggestions)
+[1m[92m    Finished[0m `dev` profile [unoptimized + debuginfo] target(s) in 0.80s
+[1m[38;5;255m[48;5;240m rust-candle-course [0m[1m[38;5;235m[48;5;204m check [0m[1m[38;5;235m[48;5;11m  3 warnings  [0m
+[1m[92m    Checking[0m rust-candle-course v0.1.0 (/Users/stephen/Desktop/rust-candle-course)
+[1m[33mwarning[0m[1m: unused variable: `average`[0m
+  [1m[94m--> [0msrc/main.rs:24:13
+   [1m[94m|[0m
+[1m[94m24[0m [1m[94m|[0m         let average = data.mean(0)?;
+   [1m[94m|[0m             [1m[33m^^^^^^^[0m [1m[33mhelp: if this is intentional, prefix it with an underscore: `_average`[0m
+   [1m[94m|[0m
+   [1m[94m= [0m[1mnote[0m: `#[warn(unused_variables)]` (part of `#[warn(unused)]`) on by default
+
+[1m[33mwarning[0m[1m: unused variable: `data`[0m
+  [1m[94m--> [0msrc/main.rs:35:9
+   [1m[94m|[0m
+[1m[94m35[0m [1m[94m|[0m     let data: Tensor = load_data(&device)?;
+   [1m[94m|[0m         [1m[33m^^^^[0m [1m[33mhelp: if this is intentional, prefix it with an underscore: `_data`[0m
+
+[1m[33mwarning[0m[1m: trait `TensorExt` is never used[0m
+  [1m[94m--> [0msrc/main.rs:18:7
+   [1m[94m|[0m
+[1m[94m18[0m [1m[94m|[0m trait TensorExt {
+   [1m[94m|[0m       [1m[33m^^^^^^^^^[0m
+   [1m[94m|[0m
+   [1m[94m= [0m[1mnote[0m: `#[warn(dead_code)]` (part of `#[warn(unused)]`) on by default
+
+[1m[33mwarning[0m: `rust-candle-course` (bin "rust-candle-course") generated 3 warnings (run `cargo fix --bin "rust-candle-course" -p rust-candle-course` to apply 2 suggestions)
 [1m[92m    Finished[0m `dev` profile [unoptimized + debuginfo] target(s) in 0.13s
 [1m[38;5;255m[48;5;240m rust-candle-course [0m[1m[38;5;235m[48;5;204m check [0m[1m[38;5;235m[48;5;11m  3 warnings  [0m
+[1m[92m    Checking[0m rust-candle-course v0.1.0 (/Users/stephen/Desktop/rust-candle-course)
+[1m[33mwarning[0m[1m: unused variable: `average`[0m
+  [1m[94m--> [0msrc/main.rs:24:13
+   [1m[94m|[0m
+[1m[94m24[0m [1m[94m|[0m         let average = data.mean(0)?;
+   [1m[94m|[0m             [1m[33m^^^^^^^[0m [1m[33mhelp: if this is intentional, prefix it with an underscore: `_average`[0m
+   [1m[94m|[0m
+   [1m[94m= [0m[1mnote[0m: `#[warn(unused_variables)]` (part of `#[warn(unused)]`) on by default
+
+[1m[33mwarning[0m[1m: unused variable: `data`[0m
+  [1m[94m--> [0msrc/main.rs:36:9
+   [1m[94m|[0m
+[1m[94m36[0m [1m[94m|[0m     let data: Tensor = load_data(&device)?;
+   [1m[94m|[0m         [1m[33m^^^^[0m [1m[33mhelp: if this is intentional, prefix it with an underscore: `_data`[0m
+
+[1m[33mwarning[0m[1m: trait `TensorExt` is never used[0m
+  [1m[94m--> [0msrc/main.rs:18:7
+   [1m[94m|[0m
+[1m[94m18[0m [1m[94m|[0m trait TensorExt {
+   [1m[94m|[0m       [1m[33m^^^^^^^^^[0m
+   [1m[94m|[0m
+   [1m[94m= [0m[1mnote[0m: `#[warn(dead_code)]` (part of `#[warn(unused)]`) on by default
+
+[1m[33mwarning[0m: `rust-candle-course` (bin "rust-candle-course") generated 3 warnings (run `cargo fix --bin "rust-candle-course" -p rust-candle-course` to apply 2 suggestions)
+[1m[92m    Finished[0m `dev` profile [unoptimized + debuginfo] target(s) in 0.12s
+[1m[38;5;255m[48;5;240m rust-candle-course [0m[1m[38;5;235m[48;5;204m check [0m[1m[38;5;235m[48;5;11m  3 warnings  [0m
+[1m[92m    Checking[0m rust-candle-course v0.1.0 (/Users/stephen/Desktop/rust-candle-course)
+[1m[33mwarning[0m[1m: unused variable: `data`[0m
+  [1m[94m--> [0msrc/main.rs:37:9
+   [1m[94m|[0m
+[1m[94m37[0m [1m[94m|[0m     let data: Tensor = load_data(&device)?;
+   [1m[94m|[0m         [1m[33m^^^^[0m [1m[33mhelp: if this is intentional, prefix it with an underscore: `_data`[0m
+   [1m[94m|[0m
+   [1m[94m= [0m[1mnote[0m: `#[warn(unused_variables)]` (part of `#[warn(unused)]`) on by default
+
+[1m[33mwarning[0m[1m: trait `TensorExt` is never used[0m
+  [1m[94m--> [0msrc/main.rs:18:7
+   [1m[94m|[0m
+[1m[94m18[0m [1m[94m|[0m trait TensorExt {
+   [1m[94m|[0m       [1m[33m^^^^^^^^^[0m
+   [1m[94m|[0m
+   [1m[94m= [0m[1mnote[0m: `#[warn(dead_code)]` (part of `#[warn(unused)]`) on by default
+
+[1m[33mwarning[0m: `rust-candle-course` (bin "rust-candle-course") generated 2 warnings (run `cargo fix --bin "rust-candle-course" -p rust-candle-course` to apply 1 suggestion)
+[1m[92m    Finished[0m `dev` profile [unoptimized + debuginfo] target(s) in 0.12s
+[1m[38;5;255m[48;5;240m rust-candle-course [0m[1m[38;5;235m[48;5;204m check [0m[1m[38;5;235m[48;5;11m  2 warnings  [0m
+[1m[92m    Checking[0m rust-candle-course v0.1.0 (/Users/stephen/Desktop/rust-candle-course)
+[1m[33mwarning[0m[1m: unused variable: `data`[0m
+  [1m[94m--> [0msrc/main.rs:37:9
+   [1m[94m|[0m
+[1m[94m37[0m [1m[94m|[0m     let data: Tensor = load_data(&device)?;
+   [1m[94m|[0m         [1m[33m^^^^[0m [1m[33mhelp: if this is intentional, prefix it with an underscore: `_data`[0m
+   [1m[94m|[0m
+   [1m[94m= [0m[1mnote[0m: `#[warn(unused_variables)]` (part of `#[warn(unused)]`) on by default
+
+[1m[33mwarning[0m[1m: trait `TensorExt` is never used[0m
+  [1m[94m--> [0msrc/main.rs:18:7
+   [1m[94m|[0m
+[1m[94m18[0m [1m[94m|[0m trait TensorExt {
+   [1m[94m|[0m       [1m[33m^^^^^^^^^[0m
+   [1m[94m|[0m
+   [1m[94m= [0m[1mnote[0m: `#[warn(dead_code)]` (part of `#[warn(unused)]`) on by default
+
+[1m[33mwarning[0m: `rust-candle-course` (bin "rust-candle-course") generated 2 warnings (run `cargo fix --bin "rust-candle-course" -p rust-candle-course` to apply 1 suggestion)
+[1m[92m    Finished[0m `dev` profile [unoptimized + debuginfo] target(s) in 0.57s
+[1m[38;5;255m[48;5;240m rust-candle-course [0m[1m[38;5;235m[48;5;204m check [0m[1m[38;5;235m[48;5;11m  2 warnings  [0m
+[1m[92m    Checking[0m rust-candle-course v0.1.0 (/Users/stephen/Desktop/rust-candle-course)
+[1m[33mwarning[0m[1m: unused variable: `data`[0m
+  [1m[94m--> [0msrc/main.rs:37:9
+   [1m[94m|[0m
+[1m[94m37[0m [1m[94m|[0m     let data: Tensor = load_data(&device)?;
+   [1m[94m|[0m         [1m[33m^^^^[0m [1m[33mhelp: if this is intentional, prefix it with an underscore: `_data`[0m
+   [1m[94m|[0m
+   [1m[94m= [0m[1mnote[0m: `#[warn(unused_variables)]` (part of `#[warn(unused)]`) on by default
+
+[1m[33mwarning[0m[1m: trait `TensorExt` is never used[0m
+  [1m[94m--> [0msrc/main.rs:18:7
+   [1m[94m|[0m
+[1m[94m18[0m [1m[94m|[0m trait TensorExt {
+   [1m[94m|[0m       [1m[33m^^^^^^^^^[0m
+   [1m[94m|[0m
+   [1m[94m= [0m[1mnote[0m: `#[warn(dead_code)]` (part of `#[warn(unused)]`) on by default
+
+[1m[33mwarning[0m: `rust-candle-course` (bin "rust-candle-course") generated 2 warnings (run `cargo fix --bin "rust-candle-course" -p rust-candle-course` to apply 1 suggestion)
+[1m[92m    Finished[0m `dev` profile [unoptimized + debuginfo] target(s) in 0.15s
+[1m[38;5;255m[48;5;240m rust-candle-course [0m[1m[38;5;235m[48;5;204m check [0m[1m[38;5;235m[48;5;11m  2 warnings  [0m
+[1m[92m    Checking[0m rust-candle-course v0.1.0 (/Users/stephen/Desktop/rust-candle-course)
+[1m[33mwarning[0m[1m: unused variable: `norm`[0m
+  [1m[94m--> [0msrc/main.rs:38:9
+   [1m[94m|[0m
+[1m[94m38[0m [1m[94m|[0m     let norm: Tensor = data.norm()?;
+   [1m[94m|[0m         [1m[33m^^^^[0m [1m[33mhelp: if this is intentional, prefix it with an underscore: `_norm`[0m
+   [1m[94m|[0m
+   [1m[94m= [0m[1mnote[0m: `#[warn(unused_variables)]` (part of `#[warn(unused)]`) on by default
+
+[1m[33mwarning[0m[1m: trait `TensorExt` is never used[0m
+  [1m[94m--> [0msrc/main.rs:18:7
+   [1m[94m|[0m
+[1m[94m18[0m [1m[94m|[0m trait TensorExt {
+   [1m[94m|[0m       [1m[33m^^^^^^^^^[0m
+   [1m[94m|[0m
+   [1m[94m= [0m[1mnote[0m: `#[warn(dead_code)]` (part of `#[warn(unused)]`) on by default
+
+[1m[33mwarning[0m: `rust-candle-course` (bin "rust-candle-course") generated 2 warnings (run `cargo fix --bin "rust-candle-course" -p rust-candle-course` to apply 1 suggestion)
+[1m[92m    Finished[0m `dev` profile [unoptimized + debuginfo] target(s) in 0.12s
+[1m[38;5;255m[48;5;240m rust-candle-course [0m[1m[38;5;235m[48;5;204m check [0m[1m[38;5;235m[48;5;11m  2 warnings  [0m
+[1m[92m    Checking[0m rust-candle-course v0.1.0 (/Users/stephen/Desktop/rust-candle-course)
+[1m[33mwarning[0m[1m: unused variable: `norm`[0m
+  [1m[94m--> [0msrc/main.rs:38:9
+   [1m[94m|[0m
+[1m[94m38[0m [1m[94m|[0m     let norm: Tensor = data.norm()?;
+   [1m[94m|[0m         [1m[33m^^^^[0m [1m[33mhelp: if this is intentional, prefix it with an underscore: `_norm`[0m
+   [1m[94m|[0m
+   [1m[94m= [0m[1mnote[0m: `#[warn(unused_variables)]` (part of `#[warn(unused)]`) on by default
+
+[1m[33mwarning[0m[1m: trait `TensorExt` is never used[0m
+  [1m[94m--> [0msrc/main.rs:18:7
+   [1m[94m|[0m
+[1m[94m18[0m [1m[94m|[0m trait TensorExt {
+   [1m[94m|[0m       [1m[33m^^^^^^^^^[0m
+   [1m[94m|[0m
+   [1m[94m= [0m[1mnote[0m: `#[warn(dead_code)]` (part of `#[warn(unused)]`) on by default
+
+[1m[33mwarning[0m: `rust-candle-course` (bin "rust-candle-course") generated 2 warnings (run `cargo fix --bin "rust-candle-course" -p rust-candle-course` to apply 1 suggestion)
+[1m[92m    Finished[0m `dev` profile [unoptimized + debuginfo] target(s) in 0.59s
+[1m[38;5;255m[48;5;240m rust-candle-course [0m[1m[38;5;235m[48;5;204m check [0m[1m[38;5;235m[48;5;11m  2 warnings  [0m
+[1m[92m    Checking[0m rust-candle-course v0.1.0 (/Users/stephen/Desktop/rust-candle-course)
+[1m[33mwarning[0m[1m: trait `TensorExt` is never used[0m
+  [1m[94m--> [0msrc/main.rs:18:7
+   [1m[94m|[0m
+[1m[94m18[0m [1m[94m|[0m trait TensorExt {
+   [1m[94m|[0m       [1m[33m^^^^^^^^^[0m
+   [1m[94m|[0m
+   [1m[94m= [0m[1mnote[0m: `#[warn(dead_code)]` (part of `#[warn(unused)]`) on by default
+
+[1m[33mwarning[0m: `rust-candle-course` (bin "rust-candle-course") generated 1 warning
+[1m[92m    Finished[0m `dev` profile [unoptimized + debuginfo] target(s) in 0.24s
+[1m[38;5;255m[48;5;240m rust-candle-course [0m[1m[38;5;235m[48;5;204m check [0m[1m[38;5;235m[48;5;11m  1 warning  [0m
+[1m[92m    Checking[0m rust-candle-course v0.1.0 (/Users/stephen/Desktop/rust-candle-course)
+[1m[91merror[E0425][0m[1m: cannot find value `average` in this scope[0m
+  [1m[94m--> [0msrc/main.rs:24:29
+   [1m[94m|[0m
+[1m[94m24[0m [1m[94m|[0m         println!("Average: {average}");
+   [1m[94m|[0m                             [1m[91m^^^^^^^[0m [1m[91mnot found in this scope[0m
+
+[1mFor more information about this error, try `rustc --explain E0425`.[0m
+[1m[91merror[0m: could not compile `rust-candle-course` (bin "rust-candle-course") due to 1 previous error
+[1m[38;5;255m[48;5;240m rust-candle-course [0m[1m[38;5;235m[48;5;204m check [0m[1m[38;5;235m[48;5;9m  1 error  [0m
+[1m[92m    Checking[0m rust-candle-course v0.1.0 (/Users/stephen/Desktop/rust-candle-course)
+[1m[33mwarning[0m[1m: trait `TensorExt` is never used[0m
+  [1m[94m--> [0msrc/main.rs:18:7
+   [1m[94m|[0m
+[1m[94m18[0m [1m[94m|[0m trait TensorExt {
+   [1m[94m|[0m       [1m[33m^^^^^^^^^[0m
+   [1m[94m|[0m
+   [1m[94m= [0m[1mnote[0m: `#[warn(dead_code)]` (part of `#[warn(unused)]`) on by default
+
+[1m[33mwarning[0m: `rust-candle-course` (bin "rust-candle-course") generated 1 warning
+[1m[92m    Finished[0m `dev` profile [unoptimized + debuginfo] target(s) in 0.12s
+[1m[38;5;255m[48;5;240m rust-candle-course [0m[1m[38;5;235m[48;5;204m check [0m[1m[38;5;235m[48;5;11m  1 warning  [0m
+[1m[92m    Checking[0m rust-candle-course v0.1.0 (/Users/stephen/Desktop/rust-candle-course)
+[1m[33mwarning[0m[1m: trait `TensorExt` is never used[0m
+  [1m[94m--> [0msrc/main.rs:18:7
+   [1m[94m|[0m
+[1m[94m18[0m [1m[94m|[0m trait TensorExt {
+   [1m[94m|[0m       [1m[33m^^^^^^^^^[0m
+   [1m[94m|[0m
+   [1m[94m= [0m[1mnote[0m: `#[warn(dead_code)]` (part of `#[warn(unused)]`) on by default
+
+[1m[33mwarning[0m: `rust-candle-course` (bin "rust-candle-course") generated 1 warning
+[1m[92m    Finished[0m `dev` profile [unoptimized + debuginfo] target(s) in 0.64s
+[1m[38;5;255m[48;5;240m rust-candle-course [0m[1m[38;5;235m[48;5;204m check [0m[1m[38;5;235m[48;5;11m  1 warning  [0m
+[1m[92m    Checking[0m rust-candle-course v0.1.0 (/Users/stephen/Desktop/rust-candle-course)
+[1m[33mwarning[0m[1m: trait `TensorExt` is never used[0m
+  [1m[94m--> [0msrc/main.rs:16:7
+   [1m[94m|[0m
+[1m[94m16[0m [1m[94m|[0m trait TensorExt {
+   [1m[94m|[0m       [1m[33m^^^^^^^^^[0m
+   [1m[94m|[0m
+   [1m[94m= [0m[1mnote[0m: `#[warn(dead_code)]` (part of `#[warn(unused)]`) on by default
+
+[1m[33mwarning[0m: `rust-candle-course` (bin "rust-candle-course") generated 1 warning
+[1m[92m    Finished[0m `dev` profile [unoptimized + debuginfo] target(s) in 0.40s
+[1m[38;5;255m[48;5;240m rust-candle-course [0m[1m[38;5;235m[48;5;204m check [0m[1m[38;5;235m[48;5;11m  1 warning  [0m
+[1m[92m    Checking[0m rust-candle-course v0.1.0 (/Users/stephen/Desktop/rust-candle-course)
+[1m[33mwarning[0m[1m: trait `TensorExt` is never used[0m
+  [1m[94m--> [0msrc/main.rs:16:7
+   [1m[94m|[0m
+[1m[94m16[0m [1m[94m|[0m trait TensorExt {
+   [1m[94m|[0m       [1m[33m^^^^^^^^^[0m
+   [1m[94m|[0m
+   [1m[94m= [0m[1mnote[0m: `#[warn(dead_code)]` (part of `#[warn(unused)]`) on by default
+
+[1m[33mwarning[0m: `rust-candle-course` (bin "rust-candle-course") generated 1 warning
+[1m[92m    Finished[0m `dev` profile [unoptimized + debuginfo] target(s) in 0.13s
+[1m[38;5;255m[48;5;240m rust-candle-course [0m[1m[38;5;235m[48;5;204m check [0m[1m[38;5;235m[48;5;11m  1 warning  [0m
+[1m[92m    Checking[0m rust-candle-course v0.1.0 (/Users/stephen/Desktop/rust-candle-course)
+[1m[33mwarning[0m[1m: trait `TensorExt` is never used[0m
+  [1m[94m--> [0msrc/main.rs:16:7
+   [1m[94m|[0m
+[1m[94m16[0m [1m[94m|[0m trait TensorExt {
+   [1m[94m|[0m       [1m[33m^^^^^^^^^[0m
+   [1m[94m|[0m
+   [1m[94m= [0m[1mnote[0m: `#[warn(dead_code)]` (part of `#[warn(unused)]`) on by default
+
+[1m[33mwarning[0m: `rust-candle-course` (bin "rust-candle-course") generated 1 warning
+[1m[92m    Finished[0m `dev` profile [unoptimized + debuginfo] target(s) in 0.12s
+[1m[38;5;255m[48;5;240m rust-candle-course [0m[1m[38;5;235m[48;5;204m check [0m[1m[38;5;235m[48;5;11m  1 warning  [0m
+[1m[92m    Checking[0m rust-candle-course v0.1.0 (/Users/stephen/Desktop/rust-candle-course)
+[1m[33mwarning[0m[1m: trait `TensorExt` is never used[0m
+  [1m[94m--> [0msrc/main.rs:16:7
+   [1m[94m|[0m
+[1m[94m16[0m [1m[94m|[0m trait TensorExt {
+   [1m[94m|[0m       [1m[33m^^^^^^^^^[0m
+   [1m[94m|[0m
+   [1m[94m= [0m[1mnote[0m: `#[warn(dead_code)]` (part of `#[warn(unused)]`) on by default
+
+[1m[33mwarning[0m: `rust-candle-course` (bin "rust-candle-course") generated 1 warning
+[1m[92m    Finished[0m `dev` profile [unoptimized + debuginfo] target(s) in 0.11s
+[1m[38;5;255m[48;5;240m rust-candle-course [0m[1m[38;5;235m[48;5;204m check [0m[1m[38;5;235m[48;5;11m  1 warning  [0m
+[1m[92m    Checking[0m rust-candle-course v0.1.0 (/Users/stephen/Desktop/rust-candle-course)
+[1m[33mwarning[0m[1m: trait `TensorExt` is never used[0m
+  [1m[94m--> [0msrc/main.rs:16:7
+   [1m[94m|[0m
+[1m[94m16[0m [1m[94m|[0m trait TensorExt {
+   [1m[94m|[0m       [1m[33m^^^^^^^^^[0m
+   [1m[94m|[0m
+   [1m[94m= [0m[1mnote[0m: `#[warn(dead_code)]` (part of `#[warn(unused)]`) on by default
+
+[1m[33mwarning[0m: `rust-candle-course` (bin "rust-candle-course") generated 1 warning
+[1m[92m    Finished[0m `dev` profile [unoptimized + debuginfo] target(s) in 0.12s
+[1m[38;5;255m[48;5;240m rust-candle-course [0m[1m[38;5;235m[48;5;204m check [0m[1m[38;5;235m[48;5;11m  1 warning  [0m
+[1m[92m    Checking[0m rust-candle-course v0.1.0 (/Users/stephen/Desktop/rust-candle-course)
+[1m[33mwarning[0m[1m: trait `TensorExt` is never used[0m
+  [1m[94m--> [0msrc/main.rs:16:7
+   [1m[94m|[0m
+[1m[94m16[0m [1m[94m|[0m trait TensorExt {
+   [1m[94m|[0m       [1m[33m^^^^^^^^^[0m
+   [1m[94m|[0m
+   [1m[94m= [0m[1mnote[0m: `#[warn(dead_code)]` (part of `#[warn(unused)]`) on by default
+
+[1m[33mwarning[0m: `rust-candle-course` (bin "rust-candle-course") generated 1 warning
+[1m[92m    Finished[0m `dev` profile [unoptimized + debuginfo] target(s) in 0.12s
+[1m[38;5;255m[48;5;240m rust-candle-course [0m[1m[38;5;235m[48;5;204m check [0m[1m[38;5;235m[48;5;11m  1 warning  [0m
+[1m[92m    Checking[0m rust-candle-course v0.1.0 (/Users/stephen/Desktop/rust-candle-course)
+[1m[33mwarning[0m[1m: trait `TensorExt` is never used[0m
+  [1m[94m--> [0msrc/main.rs:16:7
+   [1m[94m|[0m
+[1m[94m16[0m [1m[94m|[0m trait TensorExt {
+   [1m[94m|[0m       [1m[33m^^^^^^^^^[0m
+   [1m[94m|[0m
+   [1m[94m= [0m[1mnote[0m: `#[warn(dead_code)]` (part of `#[warn(unused)]`) on by default
+
+[1m[33mwarning[0m: `rust-candle-course` (bin "rust-candle-course") generated 1 warning
+[1m[92m    Finished[0m `dev` profile [unoptimized + debuginfo] target(s) in 0.12s
+[1m[38;5;255m[48;5;240m rust-candle-course [0m[1m[38;5;235m[48;5;204m check [0m[1m[38;5;235m[48;5;11m  1 warning  [0m
+[1m[92m    Checking[0m rust-candle-course v0.1.0 (/Users/stephen/Desktop/rust-candle-course)
+[1m[91merror[E0425][0m[1m: cannot find value `mean` in this scope[0m
+  [1m[94m--> [0msrc/main.rs:23:40
+   [1m[94m|[0m
+[1m[94m23[0m [1m[94m|[0m         let diff = data.broadcast_sub(&mean)?;
+   [1m[94m|[0m                                        [1m[91m^^^^[0m [1m[91mnot found in this scope[0m
+
+[1mFor more information about this error, try `rustc --explain E0425`.[0m
+[1m[91merror[0m: could not compile `rust-candle-course` (bin "rust-candle-course") due to 1 previous error
+[1m[38;5;255m[48;5;240m rust-candle-course [0m[1m[38;5;235m[48;5;204m check [0m[1m[38;5;235m[48;5;9m  1 error  [0m
+[1m[92m    Checking[0m rust-candle-course v0.1.0 (/Users/stephen/Desktop/rust-candle-course)
+[1m[33mwarning[0m[1m: trait `TensorExt` is never used[0m
+  [1m[94m--> [0msrc/main.rs:16:7
+   [1m[94m|[0m
+[1m[94m16[0m [1m[94m|[0m trait TensorExt {
+   [1m[94m|[0m       [1m[33m^^^^^^^^^[0m
+   [1m[94m|[0m
+   [1m[94m= [0m[1mnote[0m: `#[warn(dead_code)]` (part of `#[warn(unused)]`) on by default
+
+[1m[33mwarning[0m: `rust-candle-course` (bin "rust-candle-course") generated 1 warning
+[1m[92m    Finished[0m `dev` profile [unoptimized + debuginfo] target(s) in 0.12s
+[1m[38;5;255m[48;5;240m rust-candle-course [0m[1m[38;5;235m[48;5;204m check [0m[1m[38;5;235m[48;5;11m  1 warning  [0m
+[1m[92m    Checking[0m rust-candle-course v0.1.0 (/Users/stephen/Desktop/rust-candle-course)
+[1m[33mwarning[0m[1m: trait `TensorExt` is never used[0m
+  [1m[94m--> [0msrc/main.rs:16:7
+   [1m[94m|[0m
+[1m[94m16[0m [1m[94m|[0m trait TensorExt {
+   [1m[94m|[0m       [1m[33m^^^^^^^^^[0m
+   [1m[94m|[0m
+   [1m[94m= [0m[1mnote[0m: `#[warn(dead_code)]` (part of `#[warn(unused)]`) on by default
+
+[1m[33mwarning[0m: `rust-candle-course` (bin "rust-candle-course") generated 1 warning
+[1m[92m    Finished[0m `dev` profile [unoptimized + debuginfo] target(s) in 0.11s
+[1m[38;5;255m[48;5;240m rust-candle-course [0m[1m[38;5;235m[48;5;204m check [0m[1m[38;5;235m[48;5;11m  1 warning  [0m
+[1m[92m    Checking[0m rust-candle-course v0.1.0 (/Users/stephen/Desktop/rust-candle-course)
+[1m[91merror[E0308][0m[1m: mismatched types[0m
+  [1m[94m--> [0msrc/main.rs:24:12
+   [1m[94m|[0m
+[1m[94m24[0m [1m[94m|[0m         Ok(diff)
+   [1m[94m|[0m         [1m[94m--[0m [1m[91m^^^^[0m [1m[91mexpected `Tensor`, found `Result<Tensor, Error>`[0m
+   [1m[94m|[0m         [1m[94m|[0m
+   [1m[94m|[0m         [1m[94marguments to this enum variant are incorrect[0m
+   [1m[94m|[0m
+   [1m[94m= [0m[1mnote[0m: expected struct `candle_core::Tensor`
+                found enum `[1m[35mResult[0m[1m[35m<[0mcandle_core::Tensor, [1m[35mcandle_core::Error[0m[1m[35m>[0m`
+[1m[96mhelp[0m: the type constructed contains `Result<candle_core::Tensor, candle_core::Error>` due to the type of the argument passed
+  [1m[94m--> [0msrc/main.rs:24:9
+   [1m[94m|[0m
+[1m[94m24[0m [1m[94m|[0m         Ok(diff)
+   [1m[94m|[0m         [1m[96m^^^[0m[1m[94m----[0m[1m[96m^[0m
+   [1m[94m|[0m            [1m[94m|[0m
+   [1m[94m|[0m            [1m[94mthis argument influences the type of `Ok`[0m
+[1m[92mnote[0m: tuple variant defined here
+  [1m[94m--> [0m/rustc/65407954098ca3c19f0d46092cb374b5d3e9dc3c/library/core/src/result.rs:561:4
+[1m[96mhelp[0m: use the `?` operator to extract the `Result<candle_core::Tensor, candle_core::Error>` value, propagating a `Result::Err` value to the caller
+   [1m[94m|[0m
+[1m[94m24[0m [1m[94m| [0m        Ok(diff[92m?[0m)
+   [1m[94m|[0m                [92m+[0m
+
+[1mFor more information about this error, try `rustc --explain E0308`.[0m
+[1m[91merror[0m: could not compile `rust-candle-course` (bin "rust-candle-course") due to 1 previous error
+[1m[38;5;255m[48;5;240m rust-candle-course [0m[1m[38;5;235m[48;5;204m check [0m[1m[38;5;235m[48;5;9m  1 error  [0m
+[1m[92m    Checking[0m rust-candle-course v0.1.0 (/Users/stephen/Desktop/rust-candle-course)
+[1m[33mwarning[0m[1m: trait `TensorExt` is never used[0m
+  [1m[94m--> [0msrc/main.rs:16:7
+   [1m[94m|[0m
+[1m[94m16[0m [1m[94m|[0m trait TensorExt {
+   [1m[94m|[0m       [1m[33m^^^^^^^^^[0m
+   [1m[94m|[0m
+   [1m[94m= [0m[1mnote[0m: `#[warn(dead_code)]` (part of `#[warn(unused)]`) on by default
+
+[1m[33mwarning[0m: `rust-candle-course` (bin "rust-candle-course") generated 1 warning
+[1m[92m    Finished[0m `dev` profile [unoptimized + debuginfo] target(s) in 0.19s
+[1m[38;5;255m[48;5;240m rust-candle-course [0m[1m[38;5;235m[48;5;204m check [0m[1m[38;5;235m[48;5;11m  1 warning  [0m
+[1m[92m    Checking[0m rust-candle-course v0.1.0 (/Users/stephen/Desktop/rust-candle-course)
+[1m[33mwarning[0m[1m: trait `TensorExt` is never used[0m
+  [1m[94m--> [0msrc/main.rs:16:7
+   [1m[94m|[0m
+[1m[94m16[0m [1m[94m|[0m trait TensorExt {
+   [1m[94m|[0m       [1m[33m^^^^^^^^^[0m
+   [1m[94m|[0m
+   [1m[94m= [0m[1mnote[0m: `#[warn(dead_code)]` (part of `#[warn(unused)]`) on by default
+
+[1m[33mwarning[0m: `rust-candle-course` (bin "rust-candle-course") generated 1 warning
+[1m[92m    Finished[0m `dev` profile [unoptimized + debuginfo] target(s) in 0.11s
+[1m[38;5;255m[48;5;240m rust-candle-course [0m[1m[38;5;235m[48;5;204m check [0m[1m[38;5;235m[48;5;11m  1 warning  [0m
+[1m[92m    Checking[0m rust-candle-course v0.1.0 (/Users/stephen/Desktop/rust-candle-course)
+[1m[33mwarning[0m[1m: unused variable: `standard_deviation`[0m
+  [1m[94m--> [0msrc/main.rs:25:13
+   [1m[94m|[0m
+[1m[94m25[0m [1m[94m|[0m         let standard_deviation = varience.sqrt()?;
+   [1m[94m|[0m             [1m[33m^^^^^^^^^^^^^^^^^^[0m [1m[33mhelp: if this is intentional, prefix it with an underscore: `_standard_deviation`[0m
+   [1m[94m|[0m
+   [1m[94m= [0m[1mnote[0m: `#[warn(unused_variables)]` (part of `#[warn(unused)]`) on by default
+
+[1m[33mwarning[0m[1m: trait `TensorExt` is never used[0m
+  [1m[94m--> [0msrc/main.rs:16:7
+   [1m[94m|[0m
+[1m[94m16[0m [1m[94m|[0m trait TensorExt {
+   [1m[94m|[0m       [1m[33m^^^^^^^^^[0m
+   [1m[94m|[0m
+   [1m[94m= [0m[1mnote[0m: `#[warn(dead_code)]` (part of `#[warn(unused)]`) on by default
+
+[1m[33mwarning[0m: `rust-candle-course` (bin "rust-candle-course") generated 2 warnings (run `cargo fix --bin "rust-candle-course" -p rust-candle-course` to apply 1 suggestion)
+[1m[92m    Finished[0m `dev` profile [unoptimized + debuginfo] target(s) in 0.77s
+[1m[38;5;255m[48;5;240m rust-candle-course [0m[1m[38;5;235m[48;5;204m check [0m[1m[38;5;235m[48;5;11m  2 warnings  [0m
+[1m[92m    Checking[0m rust-candle-course v0.1.0 (/Users/stephen/Desktop/rust-candle-course)
+[1m[33mwarning[0m[1m: trait `TensorExt` is never used[0m
+  [1m[94m--> [0msrc/main.rs:16:7
+   [1m[94m|[0m
+[1m[94m16[0m [1m[94m|[0m trait TensorExt {
+   [1m[94m|[0m       [1m[33m^^^^^^^^^[0m
+   [1m[94m|[0m
+   [1m[94m= [0m[1mnote[0m: `#[warn(dead_code)]` (part of `#[warn(unused)]`) on by default
+
+[1m[33mwarning[0m: `rust-candle-course` (bin "rust-candle-course") generated 1 warning
+[1m[92m    Finished[0m `dev` profile [unoptimized + debuginfo] target(s) in 0.12s
+[1m[38;5;255m[48;5;240m rust-candle-course [0m[1m[38;5;235m[48;5;204m check [0m[1m[38;5;235m[48;5;11m  1 warning  [0m
+[1m[92m    Checking[0m rust-candle-course v0.1.0 (/Users/stephen/Desktop/rust-candle-course)
+[1m[33mwarning[0m[1m: trait `TensorExt` is never used[0m
+  [1m[94m--> [0msrc/main.rs:16:7
+   [1m[94m|[0m
+[1m[94m16[0m [1m[94m|[0m trait TensorExt {
+   [1m[94m|[0m       [1m[33m^^^^^^^^^[0m
+   [1m[94m|[0m
+   [1m[94m= [0m[1mnote[0m: `#[warn(dead_code)]` (part of `#[warn(unused)]`) on by default
+
+[1m[33mwarning[0m: `rust-candle-course` (bin "rust-candle-course") generated 1 warning
+[1m[92m    Finished[0m `dev` profile [unoptimized + debuginfo] target(s) in 0.12s
+[1m[38;5;255m[48;5;240m rust-candle-course [0m[1m[38;5;235m[48;5;204m check [0m[1m[38;5;235m[48;5;11m  1 warning  [0m
+[1m[92m    Checking[0m rust-candle-course v0.1.0 (/Users/stephen/Desktop/rust-candle-course)
+[1m[91merror[E0407][0m[1m: method `stephen_norm` is not a member of trait `TensorExt`[0m
+  [1m[94m--> [0msrc/main.rs:21:5
+   [1m[94m|[0m
+[1m[94m21[0m [1m[94m|[0m [1m[91m/[0m     fn stephen_norm(&self, data: &Tensor) -> R[1m[94m...[0m
+[1m[94m22[0m [1m[94m|[0m [1m[91m|[0m         let average = data.mean(0)?;
+[1m[94m23[0m [1m[94m|[0m [1m[91m|[0m         let diff = data.broadcast_sub(&average[1m[94m...[0m
+[1m[94m24[0m [1m[94m|[0m [1m[91m|[0m         let varience = diff.mean(0)?;
+[1m[94m...[0m  [1m[91m|[0m
+[1m[94m29[0m [1m[94m|[0m [1m[91m|[0m     }
+   [1m[94m|[0m [1m[91m|_____^[0m [1m[91mnot a member of trait `TensorExt`[0m
+
+[1m[91merror[E0046][0m[1m: not all trait items implemented, missing: `norm`[0m
+  [1m[94m--> [0msrc/main.rs:20:1
+   [1m[94m|[0m
+[1m[94m17[0m [1m[94m|[0m     fn norm(&self, data: &Tensor) -> Result<Tensor>;
+   [1m[94m|[0m     [1m[94m------------------------------------------------[0m [1m[94m`norm` from trait[0m
+[1m[94m...[0m
+[1m[94m20[0m [1m[94m|[0m impl TensorExt for Tensor {
+   [1m[94m|[0m [1m[91m^^^^^^^^^^^^^^^^^^^^^^^^^[0m [1m[91mmissing `norm` in implementation[0m
+
+[1m[91merror[E0599][0m[1m: no method named `stephen_norm` found for struct `candle_core::Tensor` in the current scope[0m
+  [1m[94m--> [0msrc/main.rs:39:29
+   [1m[94m|[0m
+[1m[94m39[0m [1m[94m|[0m     let norm: Tensor = data.stephen_norm()?;
+   [1m[94m|[0m                             [1m[91m^^^^^^^^^^^^[0m [1m[91mmethod not found in `candle_core::Tensor`[0m
+
+[1mSome errors have detailed explanations: E0046, E0407, E0599.[0m
+[1mFor more information about an error, try `rustc --explain E0046`.[0m
+[1m[91merror[0m: could not compile `rust-candle-course` (bin "rust-candle-course") due to 3 previous errors
+[1m[38;5;255m[48;5;240m rust-candle-course [0m[1m[38;5;235m[48;5;204m check [0m[1m[38;5;235m[48;5;9m  3 errors  [0m
+[1m[92m    Checking[0m rust-candle-course v0.1.0 (/Users/stephen/Desktop/rust-candle-course)
+[1m[91merror[E0061][0m[1m: this method takes 1 argument but 0 arguments were supplied[0m
+  [1m[94m--> [0msrc/main.rs:39:29
+   [1m[94m|[0m
+[1m[94m39[0m [1m[94m|[0m     let norm: Tensor = data.stephen_norm()?;
+   [1m[94m|[0m                             [1m[91m^^^^^^^^^^^^[0m[1m[94m--[0m [1m[94margument #1 of type `&candle_core::Tensor` is missing[0m
+   [1m[94m|[0m
+[1m[92mnote[0m: method defined here
+  [1m[94m--> [0msrc/main.rs:17:8
+   [1m[94m|[0m
+[1m[94m17[0m [1m[94m|[0m     fn stephen_norm(&self, data: &Tensor) -> Res[1m[94m...[0m
+   [1m[94m|[0m        [1m[92m^^^^^^^^^^^^[0m        [1m[94m----[0m
+[1m[96mhelp[0m: provide the argument
+   [1m[94m|[0m
+[1m[94m39[0m [1m[94m| [0m    let norm: Tensor = data.stephen_norm([92m/* &candle_core::Tensor */[0m)?;
+   [1m[94m|[0m                                          [92m++++++++++++++++++++++++++[0m
+
+[1mFor more information about this error, try `rustc --explain E0061`.[0m
+[1m[91merror[0m: could not compile `rust-candle-course` (bin "rust-candle-course") due to 1 previous error
+[1m[38;5;255m[48;5;240m rust-candle-course [0m[1m[38;5;235m[48;5;204m check [0m[1m[38;5;235m[48;5;9m  1 error  [0m
+[1m[92m    Checking[0m rust-candle-course v0.1.0 (/Users/stephen/Desktop/rust-candle-course)
+[1m[91merror[E0061][0m[1m: this method takes 1 argument but 0 arguments were supplied[0m
+  [1m[94m--> [0msrc/main.rs:39:29
+   [1m[94m|[0m
+[1m[94m39[0m [1m[94m|[0m     let norm: Tensor = data.stephen_norm()?;
+   [1m[94m|[0m                             [1m[91m^^^^^^^^^^^^[0m[1m[94m--[0m [1m[94margument #1 of type `&candle_core::Tensor` is missing[0m
+   [1m[94m|[0m
+[1m[92mnote[0m: method defined here
+  [1m[94m--> [0msrc/main.rs:17:8
+   [1m[94m|[0m
+[1m[94m17[0m [1m[94m|[0m     fn stephen_norm(&self, data: &Tensor) -> Res[1m[94m...[0m
+   [1m[94m|[0m        [1m[92m^^^^^^^^^^^^[0m        [1m[94m----[0m
+[1m[96mhelp[0m: provide the argument
+   [1m[94m|[0m
+[1m[94m39[0m [1m[94m| [0m    let norm: Tensor = data.stephen_norm([92m/* &candle_core::Tensor */[0m)?;
+   [1m[94m|[0m                                          [92m++++++++++++++++++++++++++[0m
+
+[1m[33mwarning[0m[1m: unused variable: `data`[0m
+  [1m[94m--> [0msrc/main.rs:21:28
+   [1m[94m|[0m
+[1m[94m21[0m [1m[94m|[0m [1m[94m...[0mphen_norm(&self, data: &Tensor) -> Result<Ten[1m[94m...[0m
+   [1m[94m|[0m                     [1m[33m^^^^[0m [1m[33mhelp: if this is intentional, prefix it with an underscore: `_data`[0m
+   [1m[94m|[0m
+   [1m[94m= [0m[1mnote[0m: `#[warn(unused_variables)]` (part of `#[warn(unused)]`) on by default
+
+[1mFor more information about this error, try `rustc --explain E0061`.[0m
+[1m[33mwarning[0m: `rust-candle-course` (bin "rust-candle-course") generated 1 warning
+[1m[91merror[0m: could not compile `rust-candle-course` (bin "rust-candle-course") due to 1 previous error; 1 warning emitted
+[1m[38;5;255m[48;5;240m rust-candle-course [0m[1m[38;5;235m[48;5;204m check [0m[1m[38;5;235m[48;5;9m  1 error  [0m[1m[38;5;235m[48;5;11m  1 warning  [0m
+[1m[92m    Checking[0m rust-candle-course v0.1.0 (/Users/stephen/Desktop/rust-candle-course)
+[1m[91merror[E0050][0m[1m: method `stephen_norm` has 1 parameter but the declaration in trait `TensorExt::stephen_norm` has 2[0m
+  [1m[94m--> [0msrc/main.rs:21:21
+   [1m[94m|[0m
+[1m[94m17[0m [1m[94m|[0m [1m[94m...[0mhen_norm(&self, data: &Tensor) -> Result<Tens[1m[94m...[0m
+   [1m[94m|[0m             [1m[94m--------------------[0m [1m[94mtrait requires 2 parameters[0m
+[1m[94m...[0m
+[1m[94m21[0m [1m[94m|[0m [1m[94m...[0mhen_norm(&self/*, data: &Tensor*/) -> Result<[1m[94m...[0m
+   [1m[94m|[0m             [1m[91m^^^^^[0m [1m[91mexpected 2 parameters, found 1[0m
+
+[1m[91merror[E0061][0m[1m: this method takes 1 argument but 0 arguments were supplied[0m
+  [1m[94m--> [0msrc/main.rs:39:29
+   [1m[94m|[0m
+[1m[94m39[0m [1m[94m|[0m     let norm: Tensor = data.stephen_norm()?;
+   [1m[94m|[0m                             [1m[91m^^^^^^^^^^^^[0m[1m[94m--[0m [1m[94margument #1 of type `&candle_core::Tensor` is missing[0m
+   [1m[94m|[0m
+[1m[92mnote[0m: method defined here
+  [1m[94m--> [0msrc/main.rs:17:8
+   [1m[94m|[0m
+[1m[94m17[0m [1m[94m|[0m     fn stephen_norm(&self, data: &Tensor) -> Res[1m[94m...[0m
+   [1m[94m|[0m        [1m[92m^^^^^^^^^^^^[0m        [1m[94m----[0m
+[1m[96mhelp[0m: provide the argument
+   [1m[94m|[0m
+[1m[94m39[0m [1m[94m| [0m    let norm: Tensor = data.stephen_norm([92m/* &candle_core::Tensor */[0m)?;
+   [1m[94m|[0m                                          [92m++++++++++++++++++++++++++[0m
+
+[1mSome errors have detailed explanations: E0050, E0061.[0m
+[1mFor more information about an error, try `rustc --explain E0050`.[0m
+[1m[91merror[0m: could not compile `rust-candle-course` (bin "rust-candle-course") due to 2 previous errors
+[1m[38;5;255m[48;5;240m rust-candle-course [0m[1m[38;5;235m[48;5;204m check [0m[1m[38;5;235m[48;5;9m  2 errors  [0m
+[1m[92m    Checking[0m rust-candle-course v0.1.0 (/Users/stephen/Desktop/rust-candle-course)
+[1m[91merror[E0050][0m[1m: method `stephen_norm` has 1 parameter but the declaration in trait `TensorExt::stephen_norm` has 2[0m
+  [1m[94m--> [0msrc/main.rs:21:21
+   [1m[94m|[0m
+[1m[94m17[0m [1m[94m|[0m [1m[94m...[0mhen_norm(&self, data: &Tensor) -> Result<Tens[1m[94m...[0m
+   [1m[94m|[0m             [1m[94m--------------------[0m [1m[94mtrait requires 2 parameters[0m
+[1m[94m...[0m
+[1m[94m21[0m [1m[94m|[0m [1m[94m...[0mhen_norm(&self/*, data: &Tensor*/) -> Result<[1m[94m...[0m
+   [1m[94m|[0m             [1m[91m^^^^^[0m [1m[91mexpected 2 parameters, found 1[0m
+
+[1m[91merror[E0061][0m[1m: this method takes 1 argument but 0 arguments were supplied[0m
+  [1m[94m--> [0msrc/main.rs:39:29
+   [1m[94m|[0m
+[1m[94m39[0m [1m[94m|[0m     let norm: Tensor = data.stephen_norm()?;
+   [1m[94m|[0m                             [1m[91m^^^^^^^^^^^^[0m[1m[94m--[0m [1m[94margument #1 of type `&candle_core::Tensor` is missing[0m
+   [1m[94m|[0m
+[1m[92mnote[0m: method defined here
+  [1m[94m--> [0msrc/main.rs:17:8
+   [1m[94m|[0m
+[1m[94m17[0m [1m[94m|[0m     fn stephen_norm(&self, data: &Tensor) -> Res[1m[94m...[0m
+   [1m[94m|[0m        [1m[92m^^^^^^^^^^^^[0m        [1m[94m----[0m
+[1m[96mhelp[0m: provide the argument
+   [1m[94m|[0m
+[1m[94m39[0m [1m[94m| [0m    let norm: Tensor = data.stephen_norm([92m/* &candle_core::Tensor */[0m)?;
+   [1m[94m|[0m                                          [92m++++++++++++++++++++++++++[0m
+
+[1mSome errors have detailed explanations: E0050, E0061.[0m
+[1mFor more information about an error, try `rustc --explain E0050`.[0m
+[1m[91merror[0m: could not compile `rust-candle-course` (bin "rust-candle-course") due to 2 previous errors
+[1m[38;5;255m[48;5;240m rust-candle-course [0m[1m[38;5;235m[48;5;204m check [0m[1m[38;5;235m[48;5;9m  2 errors  [0m
+[1m[92m    Checking[0m rust-candle-course v0.1.0 (/Users/stephen/Desktop/rust-candle-course)
+[1m[92m    Finished[0m `dev` profile [unoptimized + debuginfo] target(s) in 0.13s
+[1m[38;5;255m[48;5;240m rust-candle-course [0m[1m[38;5;235m[48;5;204m check [0m
+[1m[92m    Checking[0m rust-candle-course v0.1.0 (/Users/stephen/Desktop/rust-candle-course)
+[1m[92m    Finished[0m `dev` profile [unoptimized + debuginfo] target(s) in 0.11s
+[1m[38;5;255m[48;5;240m rust-candle-course [0m[1m[38;5;235m[48;5;204m check [0m
+[1m[92m    Checking[0m rust-candle-course v0.1.0 (/Users/stephen/Desktop/rust-candle-course)
+[1m[92m    Finished[0m `dev` profile [unoptimized + debuginfo] target(s) in 0.13s
+[1m[38;5;255m[48;5;240m rust-candle-course [0m[1m[38;5;235m[48;5;204m check [0m
+[1m[92m    Checking[0m rust-candle-course v0.1.0 (/Users/stephen/Desktop/rust-candle-course)
+[1m[92m    Finished[0m `dev` profile [unoptimized + debuginfo] target(s) in 0.12s
+[1m[38;5;255m[48;5;240m rust-candle-course [0m[1m[38;5;235m[48;5;204m check [0m
+[1m[92m    Checking[0m rust-candle-course v0.1.0 (/Users/stephen/Desktop/rust-candle-course)
+[1m[92m    Finished[0m `dev` profile [unoptimized + debuginfo] target(s) in 0.73s
+[1m[38;5;255m[48;5;240m rust-candle-course [0m[1m[38;5;235m[48;5;204m check [0m
+[1m[92m    Checking[0m rust-candle-course v0.1.0 (/Users/stephen/Desktop/rust-candle-course)
+[1m[92m    Finished[0m `dev` profile [unoptimized + debuginfo] target(s) in 0.12s
+[1m[38;5;255m[48;5;240m rust-candle-course [0m[1m[38;5;235m[48;5;204m check [0m
+[1m[92m    Checking[0m rust-candle-course v0.1.0 (/Users/stephen/Desktop/rust-candle-course)
+[1m[91merror[E0425][0m[1m: cannot find value `mean` in this scope[0m
+  [1m[94m--> [0msrc/main.rs:30:40
+   [1m[94m|[0m
+[1m[94m30[0m [1m[94m|[0m [1m[94m...[0mst_sub(&mean).broadcast_sub(&standard_deviati[1m[94m...[0m
+   [1m[94m|[0m            [1m[91m^^^^[0m [1m[91mnot found in this scope[0m
+
+[1m[91merror[E0599][0m[1m: no method named `broadcast_sub` found for enum `Result<T, E>` in the current scope[0m
+   [1m[94m--> [0msrc/main.rs:30:46
+    [1m[94m|[0m
+[1m[94m 30[0m [1m[94m|[0m [1m[94m...[0m = self.broadcast_sub(&mean).broadcast_sub(&s[1m[94m...[0m
+    [1m[94m|[0m       [1m[94m----[0m                      [1m[91m^^^^^^^^^^^^^[0m [1m[91mmethod not found in `Result<Tensor, Error>`[0m
+    [1m[94m|[0m       [1m[94m|[0m
+    [1m[94m|[0m       [1m[94mmethod `broadcast_sub` is available on `&candle_core::Tensor`[0m
+    [1m[94m|[0m
+[1m[92mnote[0m: the method `broadcast_sub` exists on the type `candle_core::Tensor`
+   [1m[94m--> [0m/Users/stephen/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/candle-core-0.11.0/src/tensor.rs:139:9
+    [1m[94m|[0m
+[1m[94m139[0m [1m[94m|[0m         pub fn $fn_name(&self, rhs: &Self) -> Result<Self> {
+    [1m[94m|[0m         [1m[92m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+[1m[94m...[0m
+[1m[94m620[0m [1m[94m|[0m     broadcast_binary_op!(broadcast_sub, sub);
+    [1m[94m|[0m     [1m[94m----------------------------------------[0m [1m[94min this macro invocation[0m
+    [1m[94m= [0m[1mnote[0m: the full name for the type has been written to '/Users/stephen/Desktop/rust-candle-course/target/debug/deps/rust_candle_course-705b54ebbbe0b42d.long-type-7039425409221473711.txt'
+    [1m[94m= [0m[1mnote[0m: consider using `--verbose` to print the full type name to the console
+    [1m[94m= [0m[1mnote[0m: this error originates in the macro `broadcast_binary_op` (in Nightly builds, run with -Z macro-backtrace for more info)
+[1m[96mhelp[0m: use the `?` operator to extract the `candle_core::Tensor` value, propagating a `Result::Err` value to the caller
+    [1m[94m|[0m
+[1m[94m 30[0m [1m[94m| [0m        let norm = self.broadcast_sub(&mean)[92m?[0m.broadcast_sub(&standard_deviation)?;
+    [1m[94m|[0m                                             [92m+[0m
+
+[1mSome errors have detailed explanations: E0425, E0599.[0m
+[1mFor more information about an error, try `rustc --explain E0425`.[0m
+[1m[91merror[0m: could not compile `rust-candle-course` (bin "rust-candle-course") due to 2 previous errors
+[1m[38;5;255m[48;5;240m rust-candle-course [0m[1m[38;5;235m[48;5;204m check [0m[1m[38;5;235m[48;5;9m  2 errors  [0m
+[1m[92m    Checking[0m rust-candle-course v0.1.0 (/Users/stephen/Desktop/rust-candle-course)
+[1m[91merror[E0425][0m[1m: cannot find value `mean` in this scope[0m
+  [1m[94m--> [0msrc/main.rs:30:40
+   [1m[94m|[0m
+[1m[94m30[0m [1m[94m|[0m [1m[94m...[0mst_sub(&mean).broadcast_sub(&standard_deviati[1m[94m...[0m
+   [1m[94m|[0m            [1m[91m^^^^[0m [1m[91mnot found in this scope[0m
+
+[1m[91merror[E0599][0m[1m: no method named `broadcast_sub` found for enum `Result<T, E>` in the current scope[0m
+   [1m[94m--> [0msrc/main.rs:30:46
+    [1m[94m|[0m
+[1m[94m 30[0m [1m[94m|[0m [1m[94m...[0m = self.broadcast_sub(&mean).broadcast_sub(&s[1m[94m...[0m
+    [1m[94m|[0m       [1m[94m----[0m                      [1m[91m^^^^^^^^^^^^^[0m [1m[91mmethod not found in `Result<Tensor, Error>`[0m
+    [1m[94m|[0m       [1m[94m|[0m
+    [1m[94m|[0m       [1m[94mmethod `broadcast_sub` is available on `&candle_core::Tensor`[0m
+    [1m[94m|[0m
+[1m[92mnote[0m: the method `broadcast_sub` exists on the type `candle_core::Tensor`
+   [1m[94m--> [0m/Users/stephen/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/candle-core-0.11.0/src/tensor.rs:139:9
+    [1m[94m|[0m
+[1m[94m139[0m [1m[94m|[0m         pub fn $fn_name(&self, rhs: &Self) -> Result<Self> {
+    [1m[94m|[0m         [1m[92m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+[1m[94m...[0m
+[1m[94m620[0m [1m[94m|[0m     broadcast_binary_op!(broadcast_sub, sub);
+    [1m[94m|[0m     [1m[94m----------------------------------------[0m [1m[94min this macro invocation[0m
+    [1m[94m= [0m[1mnote[0m: the full name for the type has been written to '/Users/stephen/Desktop/rust-candle-course/target/debug/deps/rust_candle_course-705b54ebbbe0b42d.long-type-10146151478200779714.txt'
+    [1m[94m= [0m[1mnote[0m: consider using `--verbose` to print the full type name to the console
+    [1m[94m= [0m[1mnote[0m: this error originates in the macro `broadcast_binary_op` (in Nightly builds, run with -Z macro-backtrace for more info)
+[1m[96mhelp[0m: use the `?` operator to extract the `candle_core::Tensor` value, propagating a `Result::Err` value to the caller
+    [1m[94m|[0m
+[1m[94m 30[0m [1m[94m| [0m        let norm = self.broadcast_sub(&mean)[92m?[0m.broadcast_sub(&standard_deviation)?;
+    [1m[94m|[0m                                             [92m+[0m
+
+[1mSome errors have detailed explanations: E0425, E0599.[0m
+[1mFor more information about an error, try `rustc --explain E0425`.[0m
+[1m[91merror[0m: could not compile `rust-candle-course` (bin "rust-candle-course") due to 2 previous errors
+[1m[38;5;255m[48;5;240m rust-candle-course [0m[1m[38;5;235m[48;5;204m check [0m[1m[38;5;235m[48;5;9m  2 errors  [0m
+[1m[92m    Checking[0m rust-candle-course v0.1.0 (/Users/stephen/Desktop/rust-candle-course)
+[1m[91merror[E0425][0m[1m: cannot find value `mean` in this scope[0m
+  [1m[94m--> [0msrc/main.rs:30:40
+   [1m[94m|[0m
+[1m[94m30[0m [1m[94m|[0m [1m[94m...[0mst_sub(&mean).broadcast_div(&standard_deviati[1m[94m...[0m
+   [1m[94m|[0m            [1m[91m^^^^[0m [1m[91mnot found in this scope[0m
+
+[1m[91merror[E0599][0m[1m: no method named `broadcast_div` found for enum `Result<T, E>` in the current scope[0m
+   [1m[94m--> [0msrc/main.rs:30:46
+    [1m[94m|[0m
+[1m[94m 30[0m [1m[94m|[0m [1m[94m...[0m = self.broadcast_sub(&mean).broadcast_div(&s[1m[94m...[0m
+    [1m[94m|[0m       [1m[94m----[0m                      [1m[91m^^^^^^^^^^^^^[0m [1m[91mmethod not found in `Result<Tensor, Error>`[0m
+    [1m[94m|[0m       [1m[94m|[0m
+    [1m[94m|[0m       [1m[94mmethod `broadcast_div` is available on `&candle_core::Tensor`[0m
+    [1m[94m|[0m
+[1m[92mnote[0m: the method `broadcast_div` exists on the type `candle_core::Tensor`
+   [1m[94m--> [0m/Users/stephen/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/candle-core-0.11.0/src/tensor.rs:139:9
+    [1m[94m|[0m
+[1m[94m139[0m [1m[94m|[0m         pub fn $fn_name(&self, rhs: &Self) -> Result<Self> {
+    [1m[94m|[0m         [1m[92m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+[1m[94m...[0m
+[1m[94m621[0m [1m[94m|[0m     broadcast_binary_op!(broadcast_div, div);
+    [1m[94m|[0m     [1m[94m----------------------------------------[0m [1m[94min this macro invocation[0m
+    [1m[94m= [0m[1mnote[0m: the full name for the type has been written to '/Users/stephen/Desktop/rust-candle-course/target/debug/deps/rust_candle_course-705b54ebbbe0b42d.long-type-18110150459106831531.txt'
+    [1m[94m= [0m[1mnote[0m: consider using `--verbose` to print the full type name to the console
+    [1m[94m= [0m[1mnote[0m: this error originates in the macro `broadcast_binary_op` (in Nightly builds, run with -Z macro-backtrace for more info)
+[1m[96mhelp[0m: use the `?` operator to extract the `candle_core::Tensor` value, propagating a `Result::Err` value to the caller
+    [1m[94m|[0m
+[1m[94m 30[0m [1m[94m| [0m        let norm = self.broadcast_sub(&mean)[92m?[0m.broadcast_div(&standard_deviation)?;
+    [1m[94m|[0m                                             [92m+[0m
+
+[1mSome errors have detailed explanations: E0425, E0599.[0m
+[1mFor more information about an error, try `rustc --explain E0425`.[0m
+[1m[91merror[0m: could not compile `rust-candle-course` (bin "rust-candle-course") due to 2 previous errors
+[1m[38;5;255m[48;5;240m rust-candle-course [0m[1m[38;5;235m[48;5;204m check [0m[1m[38;5;235m[48;5;9m  2 errors  [0m
+[1m[92m    Checking[0m rust-candle-course v0.1.0 (/Users/stephen/Desktop/rust-candle-course)
+[1m[91merror[E0425][0m[1m: cannot find value `mean` in this scope[0m
+  [1m[94m--> [0msrc/main.rs:30:40
+   [1m[94m|[0m
+[1m[94m30[0m [1m[94m|[0m [1m[94m...[0mst_sub(&mean).broadcast_div(&standard_deviati[1m[94m...[0m
+   [1m[94m|[0m            [1m[91m^^^^[0m [1m[91mnot found in this scope[0m
+
+[1m[91merror[E0599][0m[1m: no method named `broadcast_div` found for enum `Result<T, E>` in the current scope[0m
+   [1m[94m--> [0msrc/main.rs:30:46
+    [1m[94m|[0m
+[1m[94m 30[0m [1m[94m|[0m [1m[94m...[0m = self.broadcast_sub(&mean).broadcast_div(&s[1m[94m...[0m
+    [1m[94m|[0m       [1m[94m----[0m                      [1m[91m^^^^^^^^^^^^^[0m [1m[91mmethod not found in `Result<Tensor, Error>`[0m
+    [1m[94m|[0m       [1m[94m|[0m
+    [1m[94m|[0m       [1m[94mmethod `broadcast_div` is available on `&candle_core::Tensor`[0m
+    [1m[94m|[0m
+[1m[92mnote[0m: the method `broadcast_div` exists on the type `candle_core::Tensor`
+   [1m[94m--> [0m/Users/stephen/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/candle-core-0.11.0/src/tensor.rs:139:9
+    [1m[94m|[0m
+[1m[94m139[0m [1m[94m|[0m         pub fn $fn_name(&self, rhs: &Self) -> Result<Self> {
+    [1m[94m|[0m         [1m[92m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+[1m[94m...[0m
+[1m[94m621[0m [1m[94m|[0m     broadcast_binary_op!(broadcast_div, div);
+    [1m[94m|[0m     [1m[94m----------------------------------------[0m [1m[94min this macro invocation[0m
+    [1m[94m= [0m[1mnote[0m: the full name for the type has been written to '/Users/stephen/Desktop/rust-candle-course/target/debug/deps/rust_candle_course-705b54ebbbe0b42d.long-type-10907378685548610934.txt'
+    [1m[94m= [0m[1mnote[0m: consider using `--verbose` to print the full type name to the console
+    [1m[94m= [0m[1mnote[0m: this error originates in the macro `broadcast_binary_op` (in Nightly builds, run with -Z macro-backtrace for more info)
+[1m[96mhelp[0m: use the `?` operator to extract the `candle_core::Tensor` value, propagating a `Result::Err` value to the caller
+    [1m[94m|[0m
+[1m[94m 30[0m [1m[94m| [0m        let norm = self.broadcast_sub(&mean)[92m?[0m.broadcast_div(&standard_deviation)?;
+    [1m[94m|[0m                                             [92m+[0m
+
+[1mSome errors have detailed explanations: E0425, E0599.[0m
+[1mFor more information about an error, try `rustc --explain E0425`.[0m
+[1m[91merror[0m: could not compile `rust-candle-course` (bin "rust-candle-course") due to 2 previous errors
+[1m[38;5;255m[48;5;240m rust-candle-course [0m[1m[38;5;235m[48;5;204m check [0m[1m[38;5;235m[48;5;9m  2 errors  [0m
+[1m[92m    Checking[0m rust-candle-course v0.1.0 (/Users/stephen/Desktop/rust-candle-course)
+[1m[91merror[E0599][0m[1m: no method named `broadcast_div` found for enum `Result<T, E>` in the current scope[0m
+   [1m[94m--> [0msrc/main.rs:30:49
+    [1m[94m|[0m
+[1m[94m 30[0m [1m[94m|[0m [1m[94m...[0m = self.broadcast_sub(&average).broadcast_div(&s[1m[94m...[0m
+    [1m[94m|[0m       [1m[94m----[0m                         [1m[91m^^^^^^^^^^^^^[0m [1m[91mmethod not found in `Result<Tensor, Error>`[0m
+    [1m[94m|[0m       [1m[94m|[0m
+    [1m[94m|[0m       [1m[94mmethod `broadcast_div` is available on `&candle_core::Tensor`[0m
+    [1m[94m|[0m
+[1m[92mnote[0m: the method `broadcast_div` exists on the type `candle_core::Tensor`
+   [1m[94m--> [0m/Users/stephen/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/candle-core-0.11.0/src/tensor.rs:139:9
+    [1m[94m|[0m
+[1m[94m139[0m [1m[94m|[0m         pub fn $fn_name(&self, rhs: &Self) -> Result<Self> {
+    [1m[94m|[0m         [1m[92m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+[1m[94m...[0m
+[1m[94m621[0m [1m[94m|[0m     broadcast_binary_op!(broadcast_div, div);
+    [1m[94m|[0m     [1m[94m----------------------------------------[0m [1m[94min this macro invocation[0m
+    [1m[94m= [0m[1mnote[0m: the full name for the type has been written to '/Users/stephen/Desktop/rust-candle-course/target/debug/deps/rust_candle_course-705b54ebbbe0b42d.long-type-476471053591578444.txt'
+    [1m[94m= [0m[1mnote[0m: consider using `--verbose` to print the full type name to the console
+    [1m[94m= [0m[1mnote[0m: this error originates in the macro `broadcast_binary_op` (in Nightly builds, run with -Z macro-backtrace for more info)
+[1m[96mhelp[0m: use the `?` operator to extract the `candle_core::Tensor` value, propagating a `Result::Err` value to the caller
+    [1m[94m|[0m
+[1m[94m 30[0m [1m[94m| [0m        let norm = self.broadcast_sub(&average)[92m?[0m.broadcast_div(&standard_deviation)?;
+    [1m[94m|[0m                                                [92m+[0m
+
+[1mFor more information about this error, try `rustc --explain E0599`.[0m
+[1m[91merror[0m: could not compile `rust-candle-course` (bin "rust-candle-course") due to 1 previous error
+[1m[38;5;255m[48;5;240m rust-candle-course [0m[1m[38;5;235m[48;5;204m check [0m[1m[38;5;235m[48;5;9m  1 error  [0m
+[1m[92m    Checking[0m rust-candle-course v0.1.0 (/Users/stephen/Desktop/rust-candle-course)
+[1m[91merror[E0599][0m[1m: no method named `broadcast_div` found for enum `Result<T, E>` in the current scope[0m
+   [1m[94m--> [0msrc/main.rs:30:49
+    [1m[94m|[0m
+[1m[94m 30[0m [1m[94m|[0m [1m[94m...[0m = self.broadcast_sub(&average).broadcast_div(&s[1m[94m...[0m
+    [1m[94m|[0m       [1m[94m----[0m                         [1m[91m^^^^^^^^^^^^^[0m [1m[91mmethod not found in `Result<Tensor, Error>`[0m
+    [1m[94m|[0m       [1m[94m|[0m
+    [1m[94m|[0m       [1m[94mmethod `broadcast_div` is available on `&candle_core::Tensor`[0m
+    [1m[94m|[0m
+[1m[92mnote[0m: the method `broadcast_div` exists on the type `candle_core::Tensor`
+   [1m[94m--> [0m/Users/stephen/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/candle-core-0.11.0/src/tensor.rs:139:9
+    [1m[94m|[0m
+[1m[94m139[0m [1m[94m|[0m         pub fn $fn_name(&self, rhs: &Self) -> Result<Self> {
+    [1m[94m|[0m         [1m[92m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+[1m[94m...[0m
+[1m[94m621[0m [1m[94m|[0m     broadcast_binary_op!(broadcast_div, div);
+    [1m[94m|[0m     [1m[94m----------------------------------------[0m [1m[94min this macro invocation[0m
+    [1m[94m= [0m[1mnote[0m: the full name for the type has been written to '/Users/stephen/Desktop/rust-candle-course/target/debug/deps/rust_candle_course-705b54ebbbe0b42d.long-type-6654647060009908654.txt'
+    [1m[94m= [0m[1mnote[0m: consider using `--verbose` to print the full type name to the console
+    [1m[94m= [0m[1mnote[0m: this error originates in the macro `broadcast_binary_op` (in Nightly builds, run with -Z macro-backtrace for more info)
+[1m[96mhelp[0m: use the `?` operator to extract the `candle_core::Tensor` value, propagating a `Result::Err` value to the caller
+    [1m[94m|[0m
+[1m[94m 30[0m [1m[94m| [0m        let norm = self.broadcast_sub(&average)[92m?[0m.broadcast_div(&standard_deviation)?;
+    [1m[94m|[0m                                                [92m+[0m
+
+[1mFor more information about this error, try `rustc --explain E0599`.[0m
+[1m[91merror[0m: could not compile `rust-candle-course` (bin "rust-candle-course") due to 1 previous error
+[1m[38;5;255m[48;5;240m rust-candle-course [0m[1m[38;5;235m[48;5;204m check [0m[1m[38;5;235m[48;5;9m  1 error  [0m
+[1m[92m    Checking[0m rust-candle-course v0.1.0 (/Users/stephen/Desktop/rust-candle-course)
+[1m[92m    Finished[0m `dev` profile [unoptimized + debuginfo] target(s) in 0.12s
+[1m[38;5;255m[48;5;240m rust-candle-course [0m[1m[38;5;235m[48;5;204m check [0m
+[1m[92m    Checking[0m rust-candle-course v0.1.0 (/Users/stephen/Desktop/rust-candle-course)
+[1m[92m    Finished[0m `dev` profile [unoptimized + debuginfo] target(s) in 0.12s
+[1m[38;5;255m[48;5;240m rust-candle-course [0m[1m[38;5;235m[48;5;204m check [0m
+[1m[92m    Checking[0m rust-candle-course v0.1.0 (/Users/stephen/Desktop/rust-candle-course)
+[1m[92m    Finished[0m `dev` profile [unoptimized + debuginfo] target(s) in 0.78s
+[1m[38;5;255m[48;5;240m rust-candle-course [0m[1m[38;5;235m[48;5;204m check [0m
+[1m[92m    Checking[0m rust-candle-course v0.1.0 (/Users/stephen/Desktop/rust-candle-course)
+[1m[91merror[E0308][0m[1m: mismatched types[0m
+   [1m[94m--> [0msrc/main.rs:24:71
+    [1m[94m|[0m
+[1m[94m 24[0m [1m[94m|[0m         let diff = self.broadcast_sub(&average)?.sqr()?.broadcast_add(1.0)?;
+    [1m[94m|[0m                                                         [1m[94m-------------[0m [1m[91m^^^[0m [1m[91mexpected `&Tensor`, found floating-point number[0m
+    [1m[94m|[0m                                                         [1m[94m|[0m
+    [1m[94m|[0m                                                         [1m[94marguments to this method are incorrect[0m
+    [1m[94m|[0m
+[1m[92mnote[0m: method defined here
+   [1m[94m--> [0m/Users/stephen/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/candle-core-0.11.0/src/tensor.rs:618:26
+    [1m[94m|[0m
+[1m[94m618[0m [1m[94m|[0m     broadcast_binary_op!(broadcast_add, add);
+    [1m[94m|[0m                          [1m[92m^^^^^^^^^^^^^[0m
+
+[1mFor more information about this error, try `rustc --explain E0308`.[0m
+[1m[91merror[0m: could not compile `rust-candle-course` (bin "rust-candle-course") due to 1 previous error
+[1m[38;5;255m[48;5;240m rust-candle-course [0m[1m[38;5;235m[48;5;204m check [0m[1m[38;5;235m[48;5;9m  1 error  [0m
+[1m[92m    Checking[0m rust-candle-course v0.1.0 (/Users/stephen/Desktop/rust-candle-course)
+[1m[91merror[0m[1m: expected `;`, found `Tensor`[0m
+  [1m[94m--> [0msrc/main.rs:23:29
+   [1m[94m|[0m
+[1m[94m23[0m [1m[94m|[0m         let t  = Tensor::new
+   [1m[94m|[0m                             [1m[91m^[0m [1m[91mhelp: add `;` here[0m
+[1m[94m24[0m [1m[94m|[0m         Tensor::from_slice(&[1.0], (1,), self.device())?
+   [1m[94m|[0m         [1m[94m------[0m [1m[94munexpected token[0m
+
+[1m[91merror[0m[1m: expected `;`, found `println`[0m
+  [1m[94m--> [0msrc/main.rs:24:57
+   [1m[94m|[0m
+[1m[94m24[0m [1m[94m|[0m         Tensor::from_slice(&[1.0], (1,), self.device())?
+   [1m[94m|[0m                                                         [1m[91m^[0m [1m[91mhelp: add `;` here[0m
+[1m[94m25[0m [1m[94m|[0m         println!("average: {average}");
+   [1m[94m|[0m         [1m[94m-------[0m [1m[94munexpected token[0m
+
+[1m[91merror[E0308][0m[1m: mismatched types[0m
+   [1m[94m--> [0msrc/main.rs:26:71
+    [1m[94m|[0m
+[1m[94m 26[0m [1m[94m|[0m         let diff = self.broadcast_sub(&average)?.sqr()?.broadcast_add(1.0)?;
+    [1m[94m|[0m                                                         [1m[94m-------------[0m [1m[91m^^^[0m [1m[91mexpected `&Tensor`, found floating-point number[0m
+    [1m[94m|[0m                                                         [1m[94m|[0m
+    [1m[94m|[0m                                                         [1m[94marguments to this method are incorrect[0m
+    [1m[94m|[0m
+[1m[92mnote[0m: method defined here
+   [1m[94m--> [0m/Users/stephen/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/candle-core-0.11.0/src/tensor.rs:618:26
+    [1m[94m|[0m
+[1m[94m618[0m [1m[94m|[0m     broadcast_binary_op!(broadcast_add, add);
+    [1m[94m|[0m                          [1m[92m^^^^^^^^^^^^^[0m
+
+[1mFor more information about this error, try `rustc --explain E0308`.[0m
+[1m[91merror[0m: could not compile `rust-candle-course` (bin "rust-candle-course") due to 3 previous errors
+[1m[38;5;255m[48;5;240m rust-candle-course [0m[1m[38;5;235m[48;5;204m check [0m[1m[38;5;235m[48;5;9m  3 errors  [0m
+[1m[92m    Checking[0m rust-candle-course v0.1.0 (/Users/stephen/Desktop/rust-candle-course)
+[1m[91merror[0m[1m: expected `;`, found `Tensor`[0m
+  [1m[94m--> [0msrc/main.rs:23:29
+   [1m[94m|[0m
+[1m[94m23[0m [1m[94m|[0m         let t  = Tensor::new
+   [1m[94m|[0m                             [1m[91m^[0m [1m[91mhelp: add `;` here[0m
+[1m[94m24[0m [1m[94m|[0m         Tensor::from_slice(&[1.0], (1,), self.device())?
+   [1m[94m|[0m         [1m[94m------[0m [1m[94munexpected token[0m
+
+[1m[91merror[0m[1m: expected `;`, found `println`[0m
+  [1m[94m--> [0msrc/main.rs:24:57
+   [1m[94m|[0m
+[1m[94m24[0m [1m[94m|[0m         Tensor::from_slice(&[1.0], (1,), self.device())?
+   [1m[94m|[0m                                                         [1m[91m^[0m [1m[91mhelp: add `;` here[0m
+[1m[94m25[0m [1m[94m|[0m         println!("average: {average}");
+   [1m[94m|[0m         [1m[94m-------[0m [1m[94munexpected token[0m
+
+[1m[91merror[0m: could not compile `rust-candle-course` (bin "rust-candle-course") due to 2 previous errors
+[1m[38;5;255m[48;5;240m rust-candle-course [0m[1m[38;5;235m[48;5;204m check [0m[1m[38;5;235m[48;5;9m  2 errors  [0m
+[1m[92m    Checking[0m rust-candle-course v0.1.0 (/Users/stephen/Desktop/rust-candle-course)
+[1m[91merror[0m[1m: expected `;`, found `println`[0m
+  [1m[94m--> [0msrc/main.rs:23:29
+   [1m[94m|[0m
+[1m[94m23[0m [1m[94m|[0m         let t  = Tensor::new
+   [1m[94m|[0m                             [1m[91m^[0m [1m[91mhelp: add `;` here[0m
+[1m[94m24[0m [1m[94m|[0m         //Tensor::from_slice(&[1.0], (1,), self.device())?
+[1m[94m25[0m [1m[94m|[0m         println!("average: {average}");
+   [1m[94m|[0m         [1m[94m-------[0m [1m[94munexpected token[0m
+
+[1m[91merror[E0283][0m[1m: type annotations needed[0m
+   [1m[94m--> [0msrc/main.rs:23:18
+    [1m[94m|[0m
+[1m[94m 23[0m [1m[94m|[0m         let t  = Tensor::new
+    [1m[94m|[0m                  [1m[91m^^^^^^^^^^^[0m [1m[91mcannot infer type of the type parameter `A` declared on the associated function `new`[0m
+    [1m[94m|[0m
+    [1m[94m= [0m[1mnote[0m: the type must implement `NdArray`
+    [1m[94m= [0m[1mhelp[0m: the following types implement trait `NdArray`:
+              &[S; N]
+              &[S]
+              &[[S; N]; M]
+              &[[[S; N3]; N2]; N1]
+              &[[[[S; N4]; N3]; N2]; N1]
+              Vec<&[S]>
+              Vec<S>
+              Vec<Vec<S>>
+            and 2 others
+[1m[92mnote[0m: required by a bound in `candle_core::Tensor::new`
+   [1m[94m--> [0m/Users/stephen/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/candle-core-0.11.0/src/tensor.rs:425:19
+    [1m[94m|[0m
+[1m[94m425[0m [1m[94m|[0m     pub fn new<A: crate::device::NdArray>(array: A, device: &Device) -> Result<Self> {
+    [1m[94m|[0m                   [1m[92m^^^^^^^^^^^^^^^^^^^^^^[0m [1m[92mrequired by this bound in `Tensor::new`[0m
+[1m[96mhelp[0m: consider specifying a concrete type for the type parameter `A`
+    [1m[94m|[0m
+[1m[94m 23[0m [1m[94m| [0m        let t  = Tensor::new[92m::</* Type */>[0m
+    [1m[94m|[0m                             [92m++++++++++++++[0m
+
+[1mFor more information about this error, try `rustc --explain E0283`.[0m
+[1m[91merror[0m: could not compile `rust-candle-course` (bin "rust-candle-course") due to 2 previous errors
+[1m[38;5;255m[48;5;240m rust-candle-course [0m[1m[38;5;235m[48;5;204m check [0m[1m[38;5;235m[48;5;9m  2 errors  [0m
+[1m[92m    Checking[0m rust-candle-course v0.1.0 (/Users/stephen/Desktop/rust-candle-course)
+[1m[92m    Finished[0m `dev` profile [unoptimized + debuginfo] target(s) in 0.13s
+[1m[38;5;255m[48;5;240m rust-candle-course [0m[1m[38;5;235m[48;5;204m check [0m
+[1m[92m    Checking[0m rust-candle-course v0.1.0 (/Users/stephen/Desktop/rust-candle-course)
+[1m[91merror[0m[1m: expected `;`, found `println`[0m
+  [1m[94m--> [0msrc/main.rs:24:73
+   [1m[94m|[0m
+[1m[94m24[0m [1m[94m|[0m         let t: Tensor = Tensor::from_slice(&[1.0], (1,), self.device())?
+   [1m[94m|[0m                                                                         [1m[91m^[0m [1m[91mhelp: add `;` here[0m
+[1m[94m25[0m [1m[94m|[0m         println!("average: {average}");
+   [1m[94m|[0m         [1m[94m-------[0m [1m[94munexpected token[0m
+
+[1m[33mwarning[0m[1m: unused variable: `t`[0m
+  [1m[94m--> [0msrc/main.rs:24:13
+   [1m[94m|[0m
+[1m[94m24[0m [1m[94m|[0m         let t: Tensor = Tensor::from_slice(&[1.0], (1,), self.device())?
+   [1m[94m|[0m             [1m[33m^[0m [1m[33mhelp: if this is intentional, prefix it with an underscore: `_t`[0m
+   [1m[94m|[0m
+   [1m[94m= [0m[1mnote[0m: `#[warn(unused_variables)]` (part of `#[warn(unused)]`) on by default
+
+[1m[33mwarning[0m: `rust-candle-course` (bin "rust-candle-course") generated 1 warning
+[1m[91merror[0m: could not compile `rust-candle-course` (bin "rust-candle-course") due to 1 previous error; 1 warning emitted
+[1m[38;5;255m[48;5;240m rust-candle-course [0m[1m[38;5;235m[48;5;204m check [0m[1m[38;5;235m[48;5;9m  1 error  [0m[1m[38;5;235m[48;5;11m  1 warning  [0m
+[1m[92m    Checking[0m rust-candle-course v0.1.0 (/Users/stephen/Desktop/rust-candle-course)
+[1m[33mwarning[0m[1m: unused variable: `t`[0m
+  [1m[94m--> [0msrc/main.rs:24:13
+   [1m[94m|[0m
+[1m[94m24[0m [1m[94m|[0m         let t: Tensor = Tensor::from_slice(&[1.0], (1,), self.device())?;
+   [1m[94m|[0m             [1m[33m^[0m [1m[33mhelp: if this is intentional, prefix it with an underscore: `_t`[0m
+   [1m[94m|[0m
+   [1m[94m= [0m[1mnote[0m: `#[warn(unused_variables)]` (part of `#[warn(unused)]`) on by default
+
+[1m[33mwarning[0m: `rust-candle-course` (bin "rust-candle-course") generated 1 warning (run `cargo fix --bin "rust-candle-course" -p rust-candle-course` to apply 1 suggestion)
+[1m[92m    Finished[0m `dev` profile [unoptimized + debuginfo] target(s) in 0.13s
+[1m[38;5;255m[48;5;240m rust-candle-course [0m[1m[38;5;235m[48;5;204m check [0m[1m[38;5;235m[48;5;11m  1 warning  [0m
+[1m[92m    Checking[0m rust-candle-course v0.1.0 (/Users/stephen/Desktop/rust-candle-course)
+[1m[91merror[E0308][0m[1m: mismatched types[0m
+   [1m[94m--> [0msrc/main.rs:26:71
+    [1m[94m|[0m
+[1m[94m 26[0m [1m[94m|[0m         let diff = self.broadcast_sub(&average)?.sqr()?.broadcast_add(t)?;
+    [1m[94m|[0m                                                         [1m[94m-------------[0m [1m[91m^[0m [1m[91mexpected `&Tensor`, found `Tensor`[0m
+    [1m[94m|[0m                                                         [1m[94m|[0m
+    [1m[94m|[0m                                                         [1m[94marguments to this method are incorrect[0m
+    [1m[94m|[0m
+[1m[92mnote[0m: method defined here
+   [1m[94m--> [0m/Users/stephen/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/candle-core-0.11.0/src/tensor.rs:618:26
+    [1m[94m|[0m
+[1m[94m618[0m [1m[94m|[0m     broadcast_binary_op!(broadcast_add, add);
+    [1m[94m|[0m                          [1m[92m^^^^^^^^^^^^^[0m
+[1m[96mhelp[0m: consider borrowing here
+    [1m[94m|[0m
+[1m[94m 26[0m [1m[94m| [0m        let diff = self.broadcast_sub(&average)?.sqr()?.broadcast_add([92m&[0mt)?;
+    [1m[94m|[0m                                                                       [92m+[0m
+
+[1mFor more information about this error, try `rustc --explain E0308`.[0m
+[1m[91merror[0m: could not compile `rust-candle-course` (bin "rust-candle-course") due to 1 previous error
+[1m[38;5;255m[48;5;240m rust-candle-course [0m[1m[38;5;235m[48;5;204m check [0m[1m[38;5;235m[48;5;9m  1 error  [0m
+[1m[92m    Checking[0m rust-candle-course v0.1.0 (/Users/stephen/Desktop/rust-candle-course)
+[1m[92m    Finished[0m `dev` profile [unoptimized + debuginfo] target(s) in 0.13s
+[1m[38;5;255m[48;5;240m rust-candle-course [0m[1m[38;5;235m[48;5;204m check [0m
+[1m[92m    Checking[0m rust-candle-course v0.1.0 (/Users/stephen/Desktop/rust-candle-course)
+[1m[92m    Finished[0m `dev` profile [unoptimized + debuginfo] target(s) in 0.12s
+[1m[38;5;255m[48;5;240m rust-candle-course [0m[1m[38;5;235m[48;5;204m check [0m
+[1m[92m    Checking[0m rust-candle-course v0.1.0 (/Users/stephen/Desktop/rust-candle-course)
+[1m[92m    Finished[0m `dev` profile [unoptimized + debuginfo] target(s) in 0.11s
+[1m[38;5;255m[48;5;240m rust-candle-course [0m[1m[38;5;235m[48;5;204m check [0m
