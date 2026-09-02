@@ -1,761 +1,1164 @@
-[1m[33mwarning[0m[1m: unused variable: `device`[0m
-  [1m[94m--> [0msrc/main.rs:41:5
+[1m[33mwarning[0m[1m: unused variable: `feature`[0m
+  [1m[94m--> [0msrc/main.rs:11:12
    [1m[94m|[0m
-[1m[94m41[0m [1m[94m|[0m     device: &Device,
-   [1m[94m|[0m     [1m[33m^^^^^^[0m [1m[33mhelp: if this is intentional, prefix it with an underscore: `_device`[0m
+[1m[94m11[0m [1m[94m|[0m     fn new(feature: usize, device: Device) -> Result<Self> {
+   [1m[94m|[0m            [1m[33m^^^^^^^[0m [1m[33mhelp: if this is intentional, prefix it with an underscore: `_feature`[0m
    [1m[94m|[0m
    [1m[94m= [0m[1mnote[0m: `#[warn(unused_variables)]` (part of `#[warn(unused)]`) on by default
 
-[1m[33mwarning[0m[1m: variable does not need to be mutable[0m
-  [1m[94m--> [0msrc/main.rs:76:9
+[1m[33mwarning[0m[1m: unused variable: `model`[0m
+  [1m[94m--> [0msrc/main.rs:26:9
    [1m[94m|[0m
-[1m[94m76[0m [1m[94m|[0m     let mut anomalies = 0;
-   [1m[94m|[0m         [1m[94m----[0m[1m[33m^^^^^^^^^[0m
-   [1m[94m|[0m         [1m[94m|[0m
-   [1m[94m|[0m         [1m[94mhelp: remove this `mut`[0m
-   [1m[94m|[0m
-   [1m[94m= [0m[1mnote[0m: `#[warn(unused_mut)]` (part of `#[warn(unused)]`) on by default
+[1m[94m26[0m [1m[94m|[0m     let model: LinearRegression = LinearRegression::new(10, device)?;
+   [1m[94m|[0m         [1m[33m^^^^^[0m [1m[33mhelp: if this is intentional, prefix it with an underscore: `_model`[0m
 
-[1m[33mwarning[0m[1m: unused variable: `anomalies`[0m
-  [1m[94m--> [0msrc/main.rs:76:9
-   [1m[94m|[0m
-[1m[94m76[0m [1m[94m|[0m     let mut anomalies = 0;
-   [1m[94m|[0m         [1m[33m^^^^^^^^^^^^^[0m [1m[33mhelp: if this is intentional, prefix it with an underscore: `_anomalies`[0m
+[1m[33mwarning[0m[1m: fields `weights`, `bias`, and `device` are never read[0m
+ [1m[94m--> [0msrc/main.rs:5:5
+  [1m[94m|[0m
+[1m[94m4[0m [1m[94m|[0m struct LinearRegression {
+  [1m[94m|[0m        [1m[94m----------------[0m [1m[94mfields in this struct[0m
+[1m[94m5[0m [1m[94m|[0m     weights: Tensor,
+  [1m[94m|[0m     [1m[33m^^^^^^^[0m
+[1m[94m6[0m [1m[94m|[0m     bias: Tensor,
+  [1m[94m|[0m     [1m[33m^^^^[0m
+[1m[94m7[0m [1m[94m|[0m     device: Device,
+  [1m[94m|[0m     [1m[33m^^^^^^[0m
+  [1m[94m|[0m
+  [1m[94m= [0m[1mnote[0m: `#[warn(dead_code)]` (part of `#[warn(unused)]`) on by default
 
-[1m[33mwarning[0m: `rust-candle-course` (bin "rust-candle-course") generated 3 warnings (run `cargo fix --bin "rust-candle-course" -p rust-candle-course` to apply 3 suggestions)
-[1m[92m    Finished[0m `dev` profile [unoptimized + debuginfo] target(s) in 0.11s
+[1m[33mwarning[0m: `rust-candle-course` (bin "rust-candle-course") generated 3 warnings (run `cargo fix --bin "rust-candle-course" -p rust-candle-course` to apply 2 suggestions)
+[1m[92m    Finished[0m `dev` profile [unoptimized + debuginfo] target(s) in 0.12s
 [1m[38;5;255m[48;5;240m rust-candle-course [0m[1m[38;5;235m[48;5;204m check [0m[1m[38;5;235m[48;5;11m  3 warnings  [0m
 [1m[92m    Checking[0m rust-candle-course v0.1.0 (/Users/stephen/Desktop/rust-candle-course)
-[1m[91merror[E0277][0m[1m: `Vec<f32>` doesn't implement `std::fmt::Display`[0m
-  [1m[94m--> [0msrc/main.rs:94:23
+[1m[33mwarning[0m[1m: unused variable: `feature`[0m
+  [1m[94m--> [0msrc/main.rs:11:12
    [1m[94m|[0m
-[1m[94m94[0m [1m[94m|[0m         println!("px: {px}");
-   [1m[94m|[0m                       [1m[91m^^^^[0m [1m[91m`Vec<f32>` cannot be formatted with the default formatter[0m
-   [1m[94m|[0m
-   [1m[94m= [0m[1mhelp[0m: the trait `std::fmt::Display` is not implemented for `Vec<f32>`
-   [1m[94m= [0m[1mnote[0m: in format strings you may be able to use `{:?}` (or {:#?} for pretty-print) instead
-
-[1m[33mwarning[0m[1m: unused variable: `device`[0m
-  [1m[94m--> [0msrc/main.rs:41:5
-   [1m[94m|[0m
-[1m[94m41[0m [1m[94m|[0m     device: &Device,
-   [1m[94m|[0m     [1m[33m^^^^^^[0m [1m[33mhelp: if this is intentional, prefix it with an underscore: `_device`[0m
+[1m[94m11[0m [1m[94m|[0m     fn new(feature: usize, device: Device) -> Result<Self> {
+   [1m[94m|[0m            [1m[33m^^^^^^^[0m [1m[33mhelp: if this is intentional, prefix it with an underscore: `_feature`[0m
    [1m[94m|[0m
    [1m[94m= [0m[1mnote[0m: `#[warn(unused_variables)]` (part of `#[warn(unused)]`) on by default
 
-[1mFor more information about this error, try `rustc --explain E0277`.[0m
-[1m[33mwarning[0m: `rust-candle-course` (bin "rust-candle-course") generated 1 warning
-[1m[91merror[0m: could not compile `rust-candle-course` (bin "rust-candle-course") due to 1 previous error; 1 warning emitted
-[1m[38;5;255m[48;5;240m rust-candle-course [0m[1m[38;5;235m[48;5;204m check [0m[1m[38;5;235m[48;5;9m  1 error  [0m[1m[38;5;235m[48;5;11m  1 warning  [0m
-[1m[92m    Checking[0m rust-candle-course v0.1.0 (/Users/stephen/Desktop/rust-candle-course)
-[1m[91merror[E0277][0m[1m: `Vec<f32>` doesn't implement `std::fmt::Display`[0m
-  [1m[94m--> [0msrc/main.rs:94:23
+[1m[33mwarning[0m[1m: unused variable: `model`[0m
+  [1m[94m--> [0msrc/main.rs:26:9
    [1m[94m|[0m
-[1m[94m94[0m [1m[94m|[0m         println!("px: {px}");
-   [1m[94m|[0m                       [1m[91m^^^^[0m [1m[91m`Vec<f32>` cannot be formatted with the default formatter[0m
-   [1m[94m|[0m
-   [1m[94m= [0m[1mhelp[0m: the trait `std::fmt::Display` is not implemented for `Vec<f32>`
-   [1m[94m= [0m[1mnote[0m: in format strings you may be able to use `{:?}` (or {:#?} for pretty-print) instead
+[1m[94m26[0m [1m[94m|[0m     let model: LinearRegression = LinearRegression::new(10, device)?;
+   [1m[94m|[0m         [1m[33m^^^^^[0m [1m[33mhelp: if this is intentional, prefix it with an underscore: `_model`[0m
 
-[1m[33mwarning[0m[1m: unused variable: `device`[0m
-  [1m[94m--> [0msrc/main.rs:41:5
-   [1m[94m|[0m
-[1m[94m41[0m [1m[94m|[0m     device: &Device,
-   [1m[94m|[0m     [1m[33m^^^^^^[0m [1m[33mhelp: if this is intentional, prefix it with an underscore: `_device`[0m
-   [1m[94m|[0m
-   [1m[94m= [0m[1mnote[0m: `#[warn(unused_variables)]` (part of `#[warn(unused)]`) on by default
+[1m[33mwarning[0m[1m: fields `weights`, `bias`, and `device` are never read[0m
+ [1m[94m--> [0msrc/main.rs:5:5
+  [1m[94m|[0m
+[1m[94m4[0m [1m[94m|[0m struct LinearRegression {
+  [1m[94m|[0m        [1m[94m----------------[0m [1m[94mfields in this struct[0m
+[1m[94m5[0m [1m[94m|[0m     weights: Tensor,
+  [1m[94m|[0m     [1m[33m^^^^^^^[0m
+[1m[94m6[0m [1m[94m|[0m     bias: Tensor,
+  [1m[94m|[0m     [1m[33m^^^^[0m
+[1m[94m7[0m [1m[94m|[0m     device: Device,
+  [1m[94m|[0m     [1m[33m^^^^^^[0m
+  [1m[94m|[0m
+  [1m[94m= [0m[1mnote[0m: `#[warn(dead_code)]` (part of `#[warn(unused)]`) on by default
 
-[1mFor more information about this error, try `rustc --explain E0277`.[0m
-[1m[33mwarning[0m: `rust-candle-course` (bin "rust-candle-course") generated 1 warning
-[1m[91merror[0m: could not compile `rust-candle-course` (bin "rust-candle-course") due to 1 previous error; 1 warning emitted
-[1m[38;5;255m[48;5;240m rust-candle-course [0m[1m[38;5;235m[48;5;204m check [0m[1m[38;5;235m[48;5;9m  1 error  [0m[1m[38;5;235m[48;5;11m  1 warning  [0m
-[1m[92m    Checking[0m rust-candle-course v0.1.0 (/Users/stephen/Desktop/rust-candle-course)
-[1m[33mwarning[0m[1m: unused variable: `device`[0m
-  [1m[94m--> [0msrc/main.rs:41:5
-   [1m[94m|[0m
-[1m[94m41[0m [1m[94m|[0m     device: &Device,
-   [1m[94m|[0m     [1m[33m^^^^^^[0m [1m[33mhelp: if this is intentional, prefix it with an underscore: `_device`[0m
-   [1m[94m|[0m
-   [1m[94m= [0m[1mnote[0m: `#[warn(unused_variables)]` (part of `#[warn(unused)]`) on by default
-
-[1m[33mwarning[0m[1m: variable does not need to be mutable[0m
-  [1m[94m--> [0msrc/main.rs:79:9
-   [1m[94m|[0m
-[1m[94m79[0m [1m[94m|[0m     let mut anomalies = 0;
-   [1m[94m|[0m         [1m[94m----[0m[1m[33m^^^^^^^^^[0m
-   [1m[94m|[0m         [1m[94m|[0m
-   [1m[94m|[0m         [1m[94mhelp: remove this `mut`[0m
-   [1m[94m|[0m
-   [1m[94m= [0m[1mnote[0m: `#[warn(unused_mut)]` (part of `#[warn(unused)]`) on by default
-
-[1m[33mwarning[0m[1m: unused variable: `anomalies`[0m
-  [1m[94m--> [0msrc/main.rs:79:9
-   [1m[94m|[0m
-[1m[94m79[0m [1m[94m|[0m     let mut anomalies = 0;
-   [1m[94m|[0m         [1m[33m^^^^^^^^^^^^^[0m [1m[33mhelp: if this is intentional, prefix it with an underscore: `_anomalies`[0m
-
-[1m[33mwarning[0m: `rust-candle-course` (bin "rust-candle-course") generated 3 warnings (run `cargo fix --bin "rust-candle-course" -p rust-candle-course` to apply 3 suggestions)
-[1m[92m    Finished[0m `dev` profile [unoptimized + debuginfo] target(s) in 0.11s
+[1m[33mwarning[0m: `rust-candle-course` (bin "rust-candle-course") generated 3 warnings (run `cargo fix --bin "rust-candle-course" -p rust-candle-course` to apply 2 suggestions)
+[1m[92m    Finished[0m `dev` profile [unoptimized + debuginfo] target(s) in 2.26s
 [1m[38;5;255m[48;5;240m rust-candle-course [0m[1m[38;5;235m[48;5;204m check [0m[1m[38;5;235m[48;5;11m  3 warnings  [0m
 [1m[92m    Checking[0m rust-candle-course v0.1.0 (/Users/stephen/Desktop/rust-candle-course)
-[1m[91merror[E0425][0m[1m: cannot find value `p` in this scope[0m
-  [1m[94m--> [0msrc/main.rs:94:30
+[1m[91merror[E0308][0m[1m: mismatched types[0m
+  [1m[94m--> [0msrc/main.rs:23:41
    [1m[94m|[0m
-[1m[94m94[0m [1m[94m|[0m         println!("px: {:?}", p);
-   [1m[94m|[0m                              [1m[91m^[0m
+[1m[94m23[0m [1m[94m|[0m     fn hypothesis(&self, x: &Tensor) -> Result<Tensor> {
+   [1m[94m|[0m        [1m[94m----------[0m                       [1m[91m^^^^^^^^^^^^^^[0m [1m[91mexpected `Result<Tensor, Error>`, found `()`[0m
+   [1m[94m|[0m        [1m[94m|[0m
+   [1m[94m|[0m        [1m[94mimplicitly returns `()` as its body has no tail or `return` expression[0m
    [1m[94m|[0m
-[1m[96mhelp[0m: a local variable with a similar name exists
-   [1m[94m|[0m
-[1m[94m94[0m [1m[94m| [0m        println!("px: {:?}", p[92mx[0m);
-   [1m[94m|[0m                               [92m+[0m
+   [1m[94m= [0m[1mnote[0m:   expected enum `[1m[35mResult<candle_core::Tensor, anyhow::Error>[0m`
+           found unit type `[1m[35m()[0m`
 
-[1m[33mwarning[0m[1m: unused variable: `device`[0m
-  [1m[94m--> [0msrc/main.rs:41:5
+[1m[33mwarning[0m[1m: unused variable: `feature`[0m
+  [1m[94m--> [0msrc/main.rs:11:12
    [1m[94m|[0m
-[1m[94m41[0m [1m[94m|[0m     device: &Device,
-   [1m[94m|[0m     [1m[33m^^^^^^[0m [1m[33mhelp: if this is intentional, prefix it with an underscore: `_device`[0m
+[1m[94m11[0m [1m[94m|[0m     fn new(feature: usize, device: Device) -> Result<Self> {
+   [1m[94m|[0m            [1m[33m^^^^^^^[0m [1m[33mhelp: if this is intentional, prefix it with an underscore: `_feature`[0m
    [1m[94m|[0m
    [1m[94m= [0m[1mnote[0m: `#[warn(unused_variables)]` (part of `#[warn(unused)]`) on by default
+
+[1m[33mwarning[0m[1m: unused variable: `model`[0m
+  [1m[94m--> [0msrc/main.rs:31:9
+   [1m[94m|[0m
+[1m[94m31[0m [1m[94m|[0m     let model: LinearRegression = LinearRegression::new(10, device)?;
+   [1m[94m|[0m         [1m[33m^^^^^[0m [1m[33mhelp: if this is intentional, prefix it with an underscore: `_model`[0m
+
+[1mFor more information about this error, try `rustc --explain E0308`.[0m
+[1m[33mwarning[0m: `rust-candle-course` (bin "rust-candle-course") generated 2 warnings
+[1m[91merror[0m: could not compile `rust-candle-course` (bin "rust-candle-course") due to 1 previous error; 2 warnings emitted
+[1m[38;5;255m[48;5;240m rust-candle-course [0m[1m[38;5;235m[48;5;204m check [0m[1m[38;5;235m[48;5;9m  1 error  [0m[1m[38;5;235m[48;5;11m  2 warnings  [0m
+[1m[92m    Checking[0m rust-candle-course v0.1.0 (/Users/stephen/Desktop/rust-candle-course)
+[1m[91merror[0m[1m: mismatched closing delimiter: `}`[0m
+  [1m[94m--> [0msrc/main.rs:26:35
+   [1m[94m|[0m
+[1m[94m24[0m [1m[94m|[0m     fn hypothesis(&self, x: &Tensor) -> Result<Tensor> {
+   [1m[94m|[0m                                                        [1m[94m-[0m [1m[94mclosing delimiter possibly meant for this[0m
+[1m[94m25[0m [1m[94m|[0m
+[1m[94m26[0m [1m[94m|[0m         let out: Tensor = x.matmul(
+   [1m[94m|[0m                                   [1m[91m^[0m [1m[91munclosed delimiter[0m
+[1m[94m...[0m
+[1m[94m29[0m [1m[94m|[0m     }
+   [1m[94m|[0m     [1m[91m^[0m [1m[91mmismatched closing delimiter[0m
+
+[1m[91merror[0m: could not compile `rust-candle-course` (bin "rust-candle-course") due to 1 previous error
+[1m[38;5;255m[48;5;240m rust-candle-course [0m[1m[38;5;235m[48;5;204m check [0m[1m[38;5;235m[48;5;9m  1 error  [0m
+[1m[92m    Checking[0m rust-candle-course v0.1.0 (/Users/stephen/Desktop/rust-candle-course)
+[1m[91merror[0m[1m: mismatched closing delimiter: `}`[0m
+  [1m[94m--> [0msrc/main.rs:37:35
+   [1m[94m|[0m
+[1m[94m33[0m [1m[94m|[0m     fn hypothesis(&self, x: &Tensor) -> Result<Tensor> {
+   [1m[94m|[0m                                                        [1m[94m-[0m [1m[94mclosing delimiter possibly meant for this[0m
+[1m[94m...[0m
+[1m[94m37[0m [1m[94m|[0m         let out: Tensor = x.matmul(
+   [1m[94m|[0m                                   [1m[91m^[0m [1m[91munclosed delimiter[0m
+[1m[94m...[0m
+[1m[94m40[0m [1m[94m|[0m     }
+   [1m[94m|[0m     [1m[91m^[0m [1m[91mmismatched closing delimiter[0m
+
+[1m[91merror[0m: could not compile `rust-candle-course` (bin "rust-candle-course") due to 1 previous error
+[1m[38;5;255m[48;5;240m rust-candle-course [0m[1m[38;5;235m[48;5;204m check [0m[1m[38;5;235m[48;5;9m  1 error  [0m
+[1m[92m    Checking[0m rust-candle-course v0.1.0 (/Users/stephen/Desktop/rust-candle-course)
+[1m[91merror[E0308][0m[1m: mismatched types[0m
+  [1m[94m--> [0msrc/main.rs:37:12
+   [1m[94m|[0m
+[1m[94m37[0m [1m[94m|[0m         Ok(x)
+   [1m[94m|[0m         [1m[94m--[0m [1m[91m^[0m [1m[91mexpected `Tensor`, found `&Tensor`[0m
+   [1m[94m|[0m         [1m[94m|[0m
+   [1m[94m|[0m         [1m[94marguments to this enum variant are incorrect[0m
+   [1m[94m|[0m
+[1m[96mhelp[0m: the type constructed contains `&candle_core::Tensor` due to the type of the argument passed
+  [1m[94m--> [0msrc/main.rs:37:9
+   [1m[94m|[0m
+[1m[94m37[0m [1m[94m|[0m         Ok(x)
+   [1m[94m|[0m         [1m[96m^^^[0m[1m[94m-[0m[1m[96m^[0m
+   [1m[94m|[0m            [1m[94m|[0m
+   [1m[94m|[0m            [1m[94mthis argument influences the type of `Ok`[0m
+[1m[92mnote[0m: tuple variant defined here
+  [1m[94m--> [0m/rustc/65407954098ca3c19f0d46092cb374b5d3e9dc3c/library/core/src/result.rs:561:4
+[1m[96mhelp[0m: consider using clone here
+   [1m[94m|[0m
+[1m[94m37[0m [1m[94m| [0m        Ok(x[92m.clone()[0m)
+   [1m[94m|[0m             [92m++++++++[0m
+
+[1m[33mwarning[0m[1m: unused variable: `feature`[0m
+  [1m[94m--> [0msrc/main.rs:20:12
+   [1m[94m|[0m
+[1m[94m20[0m [1m[94m|[0m     fn new(feature: usize, device: Device) -> Result<Self> {
+   [1m[94m|[0m            [1m[33m^^^^^^^[0m [1m[33mhelp: if this is intentional, prefix it with an underscore: `_feature`[0m
+   [1m[94m|[0m
+   [1m[94m= [0m[1mnote[0m: `#[warn(unused_variables)]` (part of `#[warn(unused)]`) on by default
+
+[1m[33mwarning[0m[1m: unused variable: `model`[0m
+  [1m[94m--> [0msrc/main.rs:46:9
+   [1m[94m|[0m
+[1m[94m46[0m [1m[94m|[0m     let model: LinearRegression = LinearRegression::new(10, device)?;
+   [1m[94m|[0m         [1m[33m^^^^^[0m [1m[33mhelp: if this is intentional, prefix it with an underscore: `_model`[0m
+
+[1mFor more information about this error, try `rustc --explain E0308`.[0m
+[1m[33mwarning[0m: `rust-candle-course` (bin "rust-candle-course") generated 2 warnings
+[1m[91merror[0m: could not compile `rust-candle-course` (bin "rust-candle-course") due to 1 previous error; 2 warnings emitted
+[1m[38;5;255m[48;5;240m rust-candle-course [0m[1m[38;5;235m[48;5;204m check [0m[1m[38;5;235m[48;5;9m  1 error  [0m[1m[38;5;235m[48;5;11m  2 warnings  [0m
+[1m[92m    Checking[0m rust-candle-course v0.1.0 (/Users/stephen/Desktop/rust-candle-course)
+[1m[91merror[E0308][0m[1m: mismatched types[0m
+  [1m[94m--> [0msrc/main.rs:37:12
+   [1m[94m|[0m
+[1m[94m37[0m [1m[94m|[0m         Ok(x)
+   [1m[94m|[0m         [1m[94m--[0m [1m[91m^[0m [1m[91mexpected `Tensor`, found `&Tensor`[0m
+   [1m[94m|[0m         [1m[94m|[0m
+   [1m[94m|[0m         [1m[94marguments to this enum variant are incorrect[0m
+   [1m[94m|[0m
+[1m[96mhelp[0m: the type constructed contains `&candle_core::Tensor` due to the type of the argument passed
+  [1m[94m--> [0msrc/main.rs:37:9
+   [1m[94m|[0m
+[1m[94m37[0m [1m[94m|[0m         Ok(x)
+   [1m[94m|[0m         [1m[96m^^^[0m[1m[94m-[0m[1m[96m^[0m
+   [1m[94m|[0m            [1m[94m|[0m
+   [1m[94m|[0m            [1m[94mthis argument influences the type of `Ok`[0m
+[1m[92mnote[0m: tuple variant defined here
+  [1m[94m--> [0m/rustc/65407954098ca3c19f0d46092cb374b5d3e9dc3c/library/core/src/result.rs:561:4
+[1m[96mhelp[0m: consider using clone here
+   [1m[94m|[0m
+[1m[94m37[0m [1m[94m| [0m        Ok(x[92m.clone()[0m)
+   [1m[94m|[0m             [92m++++++++[0m
+
+[1m[33mwarning[0m[1m: unused variable: `feature`[0m
+  [1m[94m--> [0msrc/main.rs:20:12
+   [1m[94m|[0m
+[1m[94m20[0m [1m[94m|[0m     fn new(feature: usize, device: Device) -> Result<Self> {
+   [1m[94m|[0m            [1m[33m^^^^^^^[0m [1m[33mhelp: if this is intentional, prefix it with an underscore: `_feature`[0m
+   [1m[94m|[0m
+   [1m[94m= [0m[1mnote[0m: `#[warn(unused_variables)]` (part of `#[warn(unused)]`) on by default
+
+[1m[33mwarning[0m[1m: unused variable: `model`[0m
+  [1m[94m--> [0msrc/main.rs:45:9
+   [1m[94m|[0m
+[1m[94m45[0m [1m[94m|[0m     let model: LinearRegression = LinearRegression::new(10, device)?;
+   [1m[94m|[0m         [1m[33m^^^^^[0m [1m[33mhelp: if this is intentional, prefix it with an underscore: `_model`[0m
+
+[1mFor more information about this error, try `rustc --explain E0308`.[0m
+[1m[33mwarning[0m: `rust-candle-course` (bin "rust-candle-course") generated 2 warnings
+[1m[91merror[0m: could not compile `rust-candle-course` (bin "rust-candle-course") due to 1 previous error; 2 warnings emitted
+[1m[38;5;255m[48;5;240m rust-candle-course [0m[1m[38;5;235m[48;5;204m check [0m[1m[38;5;235m[48;5;9m  1 error  [0m[1m[38;5;235m[48;5;11m  2 warnings  [0m
+[1m[92m    Checking[0m rust-candle-course v0.1.0 (/Users/stephen/Desktop/rust-candle-course)
+[1m[91merror[E0308][0m[1m: mismatched types[0m
+  [1m[94m--> [0msrc/main.rs:36:12
+   [1m[94m|[0m
+[1m[94m36[0m [1m[94m|[0m         Ok(x)
+   [1m[94m|[0m         [1m[94m--[0m [1m[91m^[0m [1m[91mexpected `Tensor`, found `&Tensor`[0m
+   [1m[94m|[0m         [1m[94m|[0m
+   [1m[94m|[0m         [1m[94marguments to this enum variant are incorrect[0m
+   [1m[94m|[0m
+[1m[96mhelp[0m: the type constructed contains `&candle_core::Tensor` due to the type of the argument passed
+  [1m[94m--> [0msrc/main.rs:36:9
+   [1m[94m|[0m
+[1m[94m36[0m [1m[94m|[0m         Ok(x)
+   [1m[94m|[0m         [1m[96m^^^[0m[1m[94m-[0m[1m[96m^[0m
+   [1m[94m|[0m            [1m[94m|[0m
+   [1m[94m|[0m            [1m[94mthis argument influences the type of `Ok`[0m
+[1m[92mnote[0m: tuple variant defined here
+  [1m[94m--> [0m/rustc/65407954098ca3c19f0d46092cb374b5d3e9dc3c/library/core/src/result.rs:561:4
+[1m[96mhelp[0m: consider using clone here
+   [1m[94m|[0m
+[1m[94m36[0m [1m[94m| [0m        Ok(x[92m.clone()[0m)
+   [1m[94m|[0m             [92m++++++++[0m
+
+[1m[33mwarning[0m[1m: unused variable: `feature`[0m
+  [1m[94m--> [0msrc/main.rs:20:12
+   [1m[94m|[0m
+[1m[94m20[0m [1m[94m|[0m     fn new(feature: usize, device: Device) -> Result<Self> {
+   [1m[94m|[0m            [1m[33m^^^^^^^[0m [1m[33mhelp: if this is intentional, prefix it with an underscore: `_feature`[0m
+   [1m[94m|[0m
+   [1m[94m= [0m[1mnote[0m: `#[warn(unused_variables)]` (part of `#[warn(unused)]`) on by default
+
+[1m[33mwarning[0m[1m: unused variable: `model`[0m
+  [1m[94m--> [0msrc/main.rs:44:9
+   [1m[94m|[0m
+[1m[94m44[0m [1m[94m|[0m     let model: LinearRegression = LinearRegression::new(10, device)?;
+   [1m[94m|[0m         [1m[33m^^^^^[0m [1m[33mhelp: if this is intentional, prefix it with an underscore: `_model`[0m
+
+[1mFor more information about this error, try `rustc --explain E0308`.[0m
+[1m[33mwarning[0m: `rust-candle-course` (bin "rust-candle-course") generated 2 warnings
+[1m[91merror[0m: could not compile `rust-candle-course` (bin "rust-candle-course") due to 1 previous error; 2 warnings emitted
+[1m[38;5;255m[48;5;240m rust-candle-course [0m[1m[38;5;235m[48;5;204m check [0m[1m[38;5;235m[48;5;9m  1 error  [0m[1m[38;5;235m[48;5;11m  2 warnings  [0m
+[1m[92m    Checking[0m rust-candle-course v0.1.0 (/Users/stephen/Desktop/rust-candle-course)
+[1m[33mwarning[0m[1m: unused variable: `feature`[0m
+  [1m[94m--> [0msrc/main.rs:20:12
+   [1m[94m|[0m
+[1m[94m20[0m [1m[94m|[0m     fn new(feature: usize, device: Device) -> Result<Self> {
+   [1m[94m|[0m            [1m[33m^^^^^^^[0m [1m[33mhelp: if this is intentional, prefix it with an underscore: `_feature`[0m
+   [1m[94m|[0m
+   [1m[94m= [0m[1mnote[0m: `#[warn(unused_variables)]` (part of `#[warn(unused)]`) on by default
+
+[1m[91merror[E0507][0m[1m: cannot move out of `self.weights` which is behind a shared reference[0m
+  [1m[94m--> [0msrc/main.rs:36:12
+   [1m[94m|[0m
+[1m[94m36[0m [1m[94m|[0m         Ok(self.weights)
+   [1m[94m|[0m            [1m[91m^^^^^^^^^^^^[0m [1m[91mmove occurs because `self.weights` has type `candle_core::Tensor`, which does not implement the `Copy` trait[0m
+   [1m[94m|[0m
+[1m[96mhelp[0m: consider cloning the value if the performance cost is acceptable
+   [1m[94m|[0m
+[1m[94m36[0m [1m[94m| [0m        Ok(self.weights[92m.clone()[0m)
+   [1m[94m|[0m                        [92m++++++++[0m
+
+[1m[33mwarning[0m[1m: unused variable: `x`[0m
+  [1m[94m--> [0msrc/main.rs:32:26
+   [1m[94m|[0m
+[1m[94m32[0m [1m[94m|[0m     fn hypothesis(&self, x: &Tensor) -> Result<Tensor> {
+   [1m[94m|[0m                          [1m[33m^[0m [1m[33mhelp: if this is intentional, prefix it with an underscore: `_x`[0m
+
+[1m[33mwarning[0m[1m: unused variable: `model`[0m
+  [1m[94m--> [0msrc/main.rs:44:9
+   [1m[94m|[0m
+[1m[94m44[0m [1m[94m|[0m     let model: LinearRegression = LinearRegression::new(10, device)?;
+   [1m[94m|[0m         [1m[33m^^^^^[0m [1m[33mhelp: if this is intentional, prefix it with an underscore: `_model`[0m
+
+[1mFor more information about this error, try `rustc --explain E0507`.[0m
+[1m[33mwarning[0m: `rust-candle-course` (bin "rust-candle-course") generated 3 warnings
+[1m[91merror[0m: could not compile `rust-candle-course` (bin "rust-candle-course") due to 1 previous error; 3 warnings emitted
+[1m[38;5;255m[48;5;240m rust-candle-course [0m[1m[38;5;235m[48;5;204m check [0m[1m[38;5;235m[48;5;9m  1 error  [0m[1m[38;5;235m[48;5;11m  3 warnings  [0m
+[1m[92m    Checking[0m rust-candle-course v0.1.0 (/Users/stephen/Desktop/rust-candle-course)
+[1m[91merror[E0425][0m[1m: cannot find value `device` in this scope[0m
+  [1m[94m--> [0msrc/main.rs:36:46
+   [1m[94m|[0m
+[1m[94m36[0m [1m[94m|[0m         let out: Tensor = Tensor::new(0f32, &device)?;
+   [1m[94m|[0m                                              [1m[91m^^^^^^[0m
+   [1m[94m|[0m
+[1m[96mhelp[0m: you might have meant to use the available field
+   [1m[94m|[0m
+[1m[94m36[0m [1m[94m| [0m        let out: Tensor = Tensor::new(0f32, &[92mself.[0mdevice)?;
+   [1m[94m|[0m                                              [92m+++++[0m
+
+[1m[33mwarning[0m[1m: unused variable: `feature`[0m
+  [1m[94m--> [0msrc/main.rs:20:12
+   [1m[94m|[0m
+[1m[94m20[0m [1m[94m|[0m     fn new(feature: usize, device: Device) -> Result<Self> {
+   [1m[94m|[0m            [1m[33m^^^^^^^[0m [1m[33mhelp: if this is intentional, prefix it with an underscore: `_feature`[0m
+   [1m[94m|[0m
+   [1m[94m= [0m[1mnote[0m: `#[warn(unused_variables)]` (part of `#[warn(unused)]`) on by default
+
+[1m[33mwarning[0m[1m: unused variable: `model`[0m
+  [1m[94m--> [0msrc/main.rs:45:9
+   [1m[94m|[0m
+[1m[94m45[0m [1m[94m|[0m     let model: LinearRegression = LinearRegression::new(10, device)?;
+   [1m[94m|[0m         [1m[33m^^^^^[0m [1m[33mhelp: if this is intentional, prefix it with an underscore: `_model`[0m
 
 [1mFor more information about this error, try `rustc --explain E0425`.[0m
+[1m[33mwarning[0m: `rust-candle-course` (bin "rust-candle-course") generated 2 warnings
+[1m[91merror[0m: could not compile `rust-candle-course` (bin "rust-candle-course") due to 1 previous error; 2 warnings emitted
+[1m[38;5;255m[48;5;240m rust-candle-course [0m[1m[38;5;235m[48;5;204m check [0m[1m[38;5;235m[48;5;9m  1 error  [0m[1m[38;5;235m[48;5;11m  2 warnings  [0m
+[1m[92m    Checking[0m rust-candle-course v0.1.0 (/Users/stephen/Desktop/rust-candle-course)
+[1m[91merror[E0425][0m[1m: cannot find value `device` in this scope[0m
+  [1m[94m--> [0msrc/main.rs:36:46
+   [1m[94m|[0m
+[1m[94m36[0m [1m[94m|[0m         let out: Tensor = Tensor::new(0f32, &device)?;
+   [1m[94m|[0m                                              [1m[91m^^^^^^[0m
+   [1m[94m|[0m
+[1m[96mhelp[0m: you might have meant to use the available field
+   [1m[94m|[0m
+[1m[94m36[0m [1m[94m| [0m        let out: Tensor = Tensor::new(0f32, &[92mself.[0mdevice)?;
+   [1m[94m|[0m                                              [92m+++++[0m
+
+[1m[33mwarning[0m[1m: unused variable: `feature`[0m
+  [1m[94m--> [0msrc/main.rs:20:12
+   [1m[94m|[0m
+[1m[94m20[0m [1m[94m|[0m     fn new(feature: usize, device: Device) -> Result<Self> {
+   [1m[94m|[0m            [1m[33m^^^^^^^[0m [1m[33mhelp: if this is intentional, prefix it with an underscore: `_feature`[0m
+   [1m[94m|[0m
+   [1m[94m= [0m[1mnote[0m: `#[warn(unused_variables)]` (part of `#[warn(unused)]`) on by default
+
+[1m[33mwarning[0m[1m: unused variable: `model`[0m
+  [1m[94m--> [0msrc/main.rs:45:9
+   [1m[94m|[0m
+[1m[94m45[0m [1m[94m|[0m     let model: LinearRegression = LinearRegression::new(10, device)?;
+   [1m[94m|[0m         [1m[33m^^^^^[0m [1m[33mhelp: if this is intentional, prefix it with an underscore: `_model`[0m
+
+[1mFor more information about this error, try `rustc --explain E0425`.[0m
+[1m[33mwarning[0m: `rust-candle-course` (bin "rust-candle-course") generated 2 warnings
+[1m[91merror[0m: could not compile `rust-candle-course` (bin "rust-candle-course") due to 1 previous error; 2 warnings emitted
+[1m[38;5;255m[48;5;240m rust-candle-course [0m[1m[38;5;235m[48;5;204m check [0m[1m[38;5;235m[48;5;9m  1 error  [0m[1m[38;5;235m[48;5;11m  2 warnings  [0m
+[1m[92m    Checking[0m rust-candle-course v0.1.0 (/Users/stephen/Desktop/rust-candle-course)
+[1m[33mwarning[0m[1m: unused variable: `feature`[0m
+  [1m[94m--> [0msrc/main.rs:20:12
+   [1m[94m|[0m
+[1m[94m20[0m [1m[94m|[0m     fn new(feature: usize, device: Device) -> Result<Self> {
+   [1m[94m|[0m            [1m[33m^^^^^^^[0m [1m[33mhelp: if this is intentional, prefix it with an underscore: `_feature`[0m
+   [1m[94m|[0m
+   [1m[94m= [0m[1mnote[0m: `#[warn(unused_variables)]` (part of `#[warn(unused)]`) on by default
+
+[1m[33mwarning[0m[1m: unused variable: `x`[0m
+  [1m[94m--> [0msrc/main.rs:32:26
+   [1m[94m|[0m
+[1m[94m32[0m [1m[94m|[0m     fn hypothesis(&self, x: &Tensor) -> Result<Tensor> {
+   [1m[94m|[0m                          [1m[33m^[0m [1m[33mhelp: if this is intentional, prefix it with an underscore: `_x`[0m
+
+[1m[33mwarning[0m[1m: unused variable: `model`[0m
+  [1m[94m--> [0msrc/main.rs:45:9
+   [1m[94m|[0m
+[1m[94m45[0m [1m[94m|[0m     let model: LinearRegression = LinearRegression::new(10, device)?;
+   [1m[94m|[0m         [1m[33m^^^^^[0m [1m[33mhelp: if this is intentional, prefix it with an underscore: `_model`[0m
+
+[1m[33mwarning[0m[1m: fields `weights`, `bias`, and `device` are never read[0m
+ [1m[94m--> [0msrc/main.rs:5:5
+  [1m[94m|[0m
+[1m[94m4[0m [1m[94m|[0m struct LinearRegression {
+  [1m[94m|[0m        [1m[94m----------------[0m [1m[94mfields in this struct[0m
+[1m[94m5[0m [1m[94m|[0m     weights: Tensor,
+  [1m[94m|[0m     [1m[33m^^^^^^^[0m
+[1m[94m6[0m [1m[94m|[0m     bias: Tensor,
+  [1m[94m|[0m     [1m[33m^^^^[0m
+[1m[94m7[0m [1m[94m|[0m     device: Device,
+  [1m[94m|[0m     [1m[33m^^^^^^[0m
+  [1m[94m|[0m
+  [1m[94m= [0m[1mnote[0m: `#[warn(dead_code)]` (part of `#[warn(unused)]`) on by default
+
+[1m[33mwarning[0m[1m: method `hypothesis` is never used[0m
+  [1m[94m--> [0msrc/main.rs:32:8
+   [1m[94m|[0m
+[1m[94m19[0m [1m[94m|[0m impl LinearRegression {
+   [1m[94m|[0m [1m[94m---------------------[0m [1m[94mmethod in this implementation[0m
+[1m[94m...[0m
+[1m[94m32[0m [1m[94m|[0m     fn hypothesis(&self, x: &Tensor) -> Result<Tensor> {
+   [1m[94m|[0m        [1m[33m^^^^^^^^^^[0m
+
+[1m[33mwarning[0m: `rust-candle-course` (bin "rust-candle-course") generated 5 warnings (run `cargo fix --bin "rust-candle-course" -p rust-candle-course` to apply 3 suggestions)
+[1m[92m    Finished[0m `dev` profile [unoptimized + debuginfo] target(s) in 0.12s
+[1m[38;5;255m[48;5;240m rust-candle-course [0m[1m[38;5;235m[48;5;204m check [0m[1m[38;5;235m[48;5;11m  5 warnings  [0m
+[1m[92m    Checking[0m rust-candle-course v0.1.0 (/Users/stephen/Desktop/rust-candle-course)
+[1m[91merror[0m[1m: expected `;`, found `Ok`[0m
+  [1m[94m--> [0msrc/main.rs:46:23
+   [1m[94m|[0m
+[1m[94m46[0m [1m[94m|[0m     model.hypothesis()
+   [1m[94m|[0m                       [1m[91m^[0m [1m[91mhelp: add `;` here[0m
+[1m[94m47[0m [1m[94m|[0m     //println!("working");
+[1m[94m48[0m [1m[94m|[0m     Ok(())
+   [1m[94m|[0m     [1m[94m--[0m [1m[94munexpected token[0m
+
+[1m[33mwarning[0m[1m: unused variable: `feature`[0m
+  [1m[94m--> [0msrc/main.rs:20:12
+   [1m[94m|[0m
+[1m[94m20[0m [1m[94m|[0m     fn new(feature: usize, device: Device) -> Result<Self> {
+   [1m[94m|[0m            [1m[33m^^^^^^^[0m [1m[33mhelp: if this is intentional, prefix it with an underscore: `_feature`[0m
+   [1m[94m|[0m
+   [1m[94m= [0m[1mnote[0m: `#[warn(unused_variables)]` (part of `#[warn(unused)]`) on by default
+
 [1m[33mwarning[0m: `rust-candle-course` (bin "rust-candle-course") generated 1 warning
 [1m[91merror[0m: could not compile `rust-candle-course` (bin "rust-candle-course") due to 1 previous error; 1 warning emitted
 [1m[38;5;255m[48;5;240m rust-candle-course [0m[1m[38;5;235m[48;5;204m check [0m[1m[38;5;235m[48;5;9m  1 error  [0m[1m[38;5;235m[48;5;11m  1 warning  [0m
 [1m[92m    Checking[0m rust-candle-course v0.1.0 (/Users/stephen/Desktop/rust-candle-course)
-[1m[33mwarning[0m[1m: unused variable: `device`[0m
-  [1m[94m--> [0msrc/main.rs:41:5
+[1m[33mwarning[0m[1m: unused variable: `feature`[0m
+  [1m[94m--> [0msrc/main.rs:20:12
    [1m[94m|[0m
-[1m[94m41[0m [1m[94m|[0m     device: &Device,
-   [1m[94m|[0m     [1m[33m^^^^^^[0m [1m[33mhelp: if this is intentional, prefix it with an underscore: `_device`[0m
+[1m[94m20[0m [1m[94m|[0m     fn new(feature: usize, device: Device) -> Result<Self> {
+   [1m[94m|[0m            [1m[33m^^^^^^^[0m [1m[33mhelp: if this is intentional, prefix it with an underscore: `_feature`[0m
    [1m[94m|[0m
    [1m[94m= [0m[1mnote[0m: `#[warn(unused_variables)]` (part of `#[warn(unused)]`) on by default
 
-[1m[33mwarning[0m[1m: variable does not need to be mutable[0m
-  [1m[94m--> [0msrc/main.rs:79:9
-   [1m[94m|[0m
-[1m[94m79[0m [1m[94m|[0m     let mut anomalies = 0;
-   [1m[94m|[0m         [1m[94m----[0m[1m[33m^^^^^^^^^[0m
-   [1m[94m|[0m         [1m[94m|[0m
-   [1m[94m|[0m         [1m[94mhelp: remove this `mut`[0m
-   [1m[94m|[0m
-   [1m[94m= [0m[1mnote[0m: `#[warn(unused_mut)]` (part of `#[warn(unused)]`) on by default
+[1m[33mwarning[0m[1m: field `bias` is never read[0m
+ [1m[94m--> [0msrc/main.rs:6:5
+  [1m[94m|[0m
+[1m[94m4[0m [1m[94m|[0m struct LinearRegression {
+  [1m[94m|[0m        [1m[94m----------------[0m [1m[94mfield in this struct[0m
+[1m[94m5[0m [1m[94m|[0m     weights: Tensor,
+[1m[94m6[0m [1m[94m|[0m     bias: Tensor,
+  [1m[94m|[0m     [1m[33m^^^^[0m
+  [1m[94m|[0m
+  [1m[94m= [0m[1mnote[0m: `#[warn(dead_code)]` (part of `#[warn(unused)]`) on by default
 
-[1m[33mwarning[0m[1m: unused variable: `anomalies`[0m
-  [1m[94m--> [0msrc/main.rs:79:9
+[1m[33mwarning[0m[1m: unused `Result` that must be used[0m
+  [1m[94m--> [0msrc/main.rs:46:5
    [1m[94m|[0m
-[1m[94m79[0m [1m[94m|[0m     let mut anomalies = 0;
-   [1m[94m|[0m         [1m[33m^^^^^^^^^^^^^[0m [1m[33mhelp: if this is intentional, prefix it with an underscore: `_anomalies`[0m
+[1m[94m46[0m [1m[94m|[0m     model.hypothesis();
+   [1m[94m|[0m     [1m[33m^^^^^^^^^^^^^^^^^^[0m
+   [1m[94m|[0m
+   [1m[94m= [0m[1mnote[0m: this `Result` may be an `Err` variant, which should be handled
+   [1m[94m= [0m[1mnote[0m: `#[warn(unused_must_use)]` (part of `#[warn(unused)]`) on by default
+[1m[96mhelp[0m: use `let _ = ...` to ignore the resulting value
+   [1m[94m|[0m
+[1m[94m46[0m [1m[94m| [0m    [92mlet _ = [0mmodel.hypothesis();
+   [1m[94m|[0m     [92m+++++++[0m
 
-[1m[33mwarning[0m: `rust-candle-course` (bin "rust-candle-course") generated 3 warnings (run `cargo fix --bin "rust-candle-course" -p rust-candle-course` to apply 3 suggestions)
-[1m[92m    Finished[0m `dev` profile [unoptimized + debuginfo] target(s) in 0.10s
+[1m[33mwarning[0m: `rust-candle-course` (bin "rust-candle-course") generated 3 warnings (run `cargo fix --bin "rust-candle-course" -p rust-candle-course` to apply 1 suggestion)
+[1m[92m    Finished[0m `dev` profile [unoptimized + debuginfo] target(s) in 0.13s
 [1m[38;5;255m[48;5;240m rust-candle-course [0m[1m[38;5;235m[48;5;204m check [0m[1m[38;5;235m[48;5;11m  3 warnings  [0m
 [1m[92m    Checking[0m rust-candle-course v0.1.0 (/Users/stephen/Desktop/rust-candle-course)
-[1m[33mwarning[0m[1m: unused variable: `device`[0m
-  [1m[94m--> [0msrc/main.rs:41:5
+[1m[33mwarning[0m[1m: unused variable: `feature`[0m
+  [1m[94m--> [0msrc/main.rs:20:12
    [1m[94m|[0m
-[1m[94m41[0m [1m[94m|[0m     device: &Device,
-   [1m[94m|[0m     [1m[33m^^^^^^[0m [1m[33mhelp: if this is intentional, prefix it with an underscore: `_device`[0m
-   [1m[94m|[0m
-   [1m[94m= [0m[1mnote[0m: `#[warn(unused_variables)]` (part of `#[warn(unused)]`) on by default
-
-[1m[33mwarning[0m[1m: variable does not need to be mutable[0m
-  [1m[94m--> [0msrc/main.rs:81:9
-   [1m[94m|[0m
-[1m[94m81[0m [1m[94m|[0m     let mut anomalies = 0;
-   [1m[94m|[0m         [1m[94m----[0m[1m[33m^^^^^^^^^[0m
-   [1m[94m|[0m         [1m[94m|[0m
-   [1m[94m|[0m         [1m[94mhelp: remove this `mut`[0m
-   [1m[94m|[0m
-   [1m[94m= [0m[1mnote[0m: `#[warn(unused_mut)]` (part of `#[warn(unused)]`) on by default
-
-[1m[33mwarning[0m[1m: unused variable: `anomalies`[0m
-  [1m[94m--> [0msrc/main.rs:81:9
-   [1m[94m|[0m
-[1m[94m81[0m [1m[94m|[0m     let mut anomalies = 0;
-   [1m[94m|[0m         [1m[33m^^^^^^^^^^^^^[0m [1m[33mhelp: if this is intentional, prefix it with an underscore: `_anomalies`[0m
-
-[1m[33mwarning[0m[1m: constant `THRESHOLD` is never used[0m
-  [1m[94m--> [0msrc/main.rs:63:7
-   [1m[94m|[0m
-[1m[94m63[0m [1m[94m|[0m const THRESHOLD: f32 = 0.1;
-   [1m[94m|[0m       [1m[33m^^^^^^^^^[0m
-   [1m[94m|[0m
-   [1m[94m= [0m[1mnote[0m: `#[warn(dead_code)]` (part of `#[warn(unused)]`) on by default
-
-[1m[33mwarning[0m: `rust-candle-course` (bin "rust-candle-course") generated 4 warnings (run `cargo fix --bin "rust-candle-course" -p rust-candle-course` to apply 3 suggestions)
-[1m[92m    Finished[0m `dev` profile [unoptimized + debuginfo] target(s) in 0.11s
-[1m[38;5;255m[48;5;240m rust-candle-course [0m[1m[38;5;235m[48;5;204m check [0m[1m[38;5;235m[48;5;11m  4 warnings  [0m
-[1m[92m    Checking[0m rust-candle-course v0.1.0 (/Users/stephen/Desktop/rust-candle-course)
-[1m[33mwarning[0m[1m: unused variable: `device`[0m
-  [1m[94m--> [0msrc/main.rs:41:5
-   [1m[94m|[0m
-[1m[94m41[0m [1m[94m|[0m     device: &Device,
-   [1m[94m|[0m     [1m[33m^^^^^^[0m [1m[33mhelp: if this is intentional, prefix it with an underscore: `_device`[0m
+[1m[94m20[0m [1m[94m|[0m     fn new(feature: usize, device: Device) -> Result<Self> {
+   [1m[94m|[0m            [1m[33m^^^^^^^[0m [1m[33mhelp: if this is intentional, prefix it with an underscore: `_feature`[0m
    [1m[94m|[0m
    [1m[94m= [0m[1mnote[0m: `#[warn(unused_variables)]` (part of `#[warn(unused)]`) on by default
 
-[1m[33mwarning[0m[1m: variable does not need to be mutable[0m
-  [1m[94m--> [0msrc/main.rs:81:9
-   [1m[94m|[0m
-[1m[94m81[0m [1m[94m|[0m     let mut anomalies = 0;
-   [1m[94m|[0m         [1m[94m----[0m[1m[33m^^^^^^^^^[0m
-   [1m[94m|[0m         [1m[94m|[0m
-   [1m[94m|[0m         [1m[94mhelp: remove this `mut`[0m
-   [1m[94m|[0m
-   [1m[94m= [0m[1mnote[0m: `#[warn(unused_mut)]` (part of `#[warn(unused)]`) on by default
+[1m[33mwarning[0m[1m: field `bias` is never read[0m
+ [1m[94m--> [0msrc/main.rs:6:5
+  [1m[94m|[0m
+[1m[94m4[0m [1m[94m|[0m struct LinearRegression {
+  [1m[94m|[0m        [1m[94m----------------[0m [1m[94mfield in this struct[0m
+[1m[94m5[0m [1m[94m|[0m     weights: Tensor,
+[1m[94m6[0m [1m[94m|[0m     bias: Tensor,
+  [1m[94m|[0m     [1m[33m^^^^[0m
+  [1m[94m|[0m
+  [1m[94m= [0m[1mnote[0m: `#[warn(dead_code)]` (part of `#[warn(unused)]`) on by default
 
-[1m[33mwarning[0m[1m: unused variable: `anomalies`[0m
-  [1m[94m--> [0msrc/main.rs:81:9
-   [1m[94m|[0m
-[1m[94m81[0m [1m[94m|[0m     let mut anomalies = 0;
-   [1m[94m|[0m         [1m[33m^^^^^^^^^^^^^[0m [1m[33mhelp: if this is intentional, prefix it with an underscore: `_anomalies`[0m
-
-[1m[33mwarning[0m[1m: constant `THRESHOLD` is never used[0m
-  [1m[94m--> [0msrc/main.rs:63:7
-   [1m[94m|[0m
-[1m[94m63[0m [1m[94m|[0m const THRESHOLD: f32 = 0.1;
-   [1m[94m|[0m       [1m[33m^^^^^^^^^[0m
-   [1m[94m|[0m
-   [1m[94m= [0m[1mnote[0m: `#[warn(dead_code)]` (part of `#[warn(unused)]`) on by default
-
-[1m[33mwarning[0m: `rust-candle-course` (bin "rust-candle-course") generated 4 warnings (run `cargo fix --bin "rust-candle-course" -p rust-candle-course` to apply 3 suggestions)
-[1m[92m    Finished[0m `dev` profile [unoptimized + debuginfo] target(s) in 0.11s
-[1m[38;5;255m[48;5;240m rust-candle-course [0m[1m[38;5;235m[48;5;204m check [0m[1m[38;5;235m[48;5;11m  4 warnings  [0m
-[1m[92m    Checking[0m rust-candle-course v0.1.0 (/Users/stephen/Desktop/rust-candle-course)
-[1m[33mwarning[0m[1m: unused variable: `device`[0m
-  [1m[94m--> [0msrc/main.rs:41:5
-   [1m[94m|[0m
-[1m[94m41[0m [1m[94m|[0m     device: &Device,
-   [1m[94m|[0m     [1m[33m^^^^^^[0m [1m[33mhelp: if this is intentional, prefix it with an underscore: `_device`[0m
-   [1m[94m|[0m
-   [1m[94m= [0m[1mnote[0m: `#[warn(unused_variables)]` (part of `#[warn(unused)]`) on by default
-
-[1m[33mwarning[0m[1m: variable does not need to be mutable[0m
-  [1m[94m--> [0msrc/main.rs:81:9
-   [1m[94m|[0m
-[1m[94m81[0m [1m[94m|[0m     let mut anomalies = 0;
-   [1m[94m|[0m         [1m[94m----[0m[1m[33m^^^^^^^^^[0m
-   [1m[94m|[0m         [1m[94m|[0m
-   [1m[94m|[0m         [1m[94mhelp: remove this `mut`[0m
-   [1m[94m|[0m
-   [1m[94m= [0m[1mnote[0m: `#[warn(unused_mut)]` (part of `#[warn(unused)]`) on by default
-
-[1m[33mwarning[0m[1m: unused variable: `anomalies`[0m
-  [1m[94m--> [0msrc/main.rs:81:9
-   [1m[94m|[0m
-[1m[94m81[0m [1m[94m|[0m     let mut anomalies = 0;
-   [1m[94m|[0m         [1m[33m^^^^^^^^^^^^^[0m [1m[33mhelp: if this is intentional, prefix it with an underscore: `_anomalies`[0m
-
-[1m[33mwarning[0m[1m: constant `THRESHOLD` is never used[0m
-  [1m[94m--> [0msrc/main.rs:63:7
-   [1m[94m|[0m
-[1m[94m63[0m [1m[94m|[0m const THRESHOLD: f32 = 0.1;
-   [1m[94m|[0m       [1m[33m^^^^^^^^^[0m
-   [1m[94m|[0m
-   [1m[94m= [0m[1mnote[0m: `#[warn(dead_code)]` (part of `#[warn(unused)]`) on by default
-
-[1m[33mwarning[0m: `rust-candle-course` (bin "rust-candle-course") generated 4 warnings (run `cargo fix --bin "rust-candle-course" -p rust-candle-course` to apply 3 suggestions)
+[1m[33mwarning[0m: `rust-candle-course` (bin "rust-candle-course") generated 2 warnings (run `cargo fix --bin "rust-candle-course" -p rust-candle-course` to apply 1 suggestion)
 [1m[92m    Finished[0m `dev` profile [unoptimized + debuginfo] target(s) in 0.12s
-[1m[38;5;255m[48;5;240m rust-candle-course [0m[1m[38;5;235m[48;5;204m check [0m[1m[38;5;235m[48;5;11m  4 warnings  [0m
+[1m[38;5;255m[48;5;240m rust-candle-course [0m[1m[38;5;235m[48;5;204m check [0m[1m[38;5;235m[48;5;11m  2 warnings  [0m
 [1m[92m    Checking[0m rust-candle-course v0.1.0 (/Users/stephen/Desktop/rust-candle-course)
-[1m[33mwarning[0m[1m: unused variable: `device`[0m
-  [1m[94m--> [0msrc/main.rs:41:5
+[1m[33mwarning[0m[1m: unused variable: `feature`[0m
+  [1m[94m--> [0msrc/main.rs:20:12
    [1m[94m|[0m
-[1m[94m41[0m [1m[94m|[0m     device: &Device,
-   [1m[94m|[0m     [1m[33m^^^^^^[0m [1m[33mhelp: if this is intentional, prefix it with an underscore: `_device`[0m
+[1m[94m20[0m [1m[94m|[0m     fn new(feature: usize, device: Device) -> Result<Self> {
+   [1m[94m|[0m            [1m[33m^^^^^^^[0m [1m[33mhelp: if this is intentional, prefix it with an underscore: `_feature`[0m
    [1m[94m|[0m
    [1m[94m= [0m[1mnote[0m: `#[warn(unused_variables)]` (part of `#[warn(unused)]`) on by default
 
-[1m[33mwarning[0m[1m: variable does not need to be mutable[0m
-  [1m[94m--> [0msrc/main.rs:81:9
-   [1m[94m|[0m
-[1m[94m81[0m [1m[94m|[0m     let mut anomalies = 0;
-   [1m[94m|[0m         [1m[94m----[0m[1m[33m^^^^^^^^^[0m
-   [1m[94m|[0m         [1m[94m|[0m
-   [1m[94m|[0m         [1m[94mhelp: remove this `mut`[0m
-   [1m[94m|[0m
-   [1m[94m= [0m[1mnote[0m: `#[warn(unused_mut)]` (part of `#[warn(unused)]`) on by default
+[1m[33mwarning[0m[1m: field `weights` is never read[0m
+ [1m[94m--> [0msrc/main.rs:5:5
+  [1m[94m|[0m
+[1m[94m4[0m [1m[94m|[0m struct LinearRegression {
+  [1m[94m|[0m        [1m[94m----------------[0m [1m[94mfield in this struct[0m
+[1m[94m5[0m [1m[94m|[0m     weights: Tensor,
+  [1m[94m|[0m     [1m[33m^^^^^^^[0m
+  [1m[94m|[0m
+  [1m[94m= [0m[1mnote[0m: `#[warn(dead_code)]` (part of `#[warn(unused)]`) on by default
 
-[1m[33mwarning[0m[1m: unused variable: `anomalies`[0m
-  [1m[94m--> [0msrc/main.rs:81:9
+[1m[33mwarning[0m: `rust-candle-course` (bin "rust-candle-course") generated 2 warnings (run `cargo fix --bin "rust-candle-course" -p rust-candle-course` to apply 1 suggestion)
+[1m[92m    Finished[0m `dev` profile [unoptimized + debuginfo] target(s) in 0.12s
+[1m[38;5;255m[48;5;240m rust-candle-course [0m[1m[38;5;235m[48;5;204m check [0m[1m[38;5;235m[48;5;11m  2 warnings  [0m
+[1m[92m    Checking[0m rust-candle-course v0.1.0 (/Users/stephen/Desktop/rust-candle-course)
+[1m[33mwarning[0m[1m: unused variable: `feature`[0m
+  [1m[94m--> [0msrc/main.rs:20:12
    [1m[94m|[0m
-[1m[94m81[0m [1m[94m|[0m     let mut anomalies = 0;
-   [1m[94m|[0m         [1m[33m^^^^^^^^^^^^^[0m [1m[33mhelp: if this is intentional, prefix it with an underscore: `_anomalies`[0m
+[1m[94m20[0m [1m[94m|[0m     fn new(feature: usize, device: Device) -> Result<Self> {
+   [1m[94m|[0m            [1m[33m^^^^^^^[0m [1m[33mhelp: if this is intentional, prefix it with an underscore: `_feature`[0m
+   [1m[94m|[0m
+   [1m[94m= [0m[1mnote[0m: `#[warn(unused_variables)]` (part of `#[warn(unused)]`) on by default
 
-[1m[33mwarning[0m[1m: constant `THRESHOLD` is never used[0m
-  [1m[94m--> [0msrc/main.rs:63:7
-   [1m[94m|[0m
-[1m[94m63[0m [1m[94m|[0m const THRESHOLD: f32 = 0.1;
-   [1m[94m|[0m       [1m[33m^^^^^^^^^[0m
-   [1m[94m|[0m
-   [1m[94m= [0m[1mnote[0m: `#[warn(dead_code)]` (part of `#[warn(unused)]`) on by default
+[1m[33mwarning[0m[1m: field `weights` is never read[0m
+ [1m[94m--> [0msrc/main.rs:5:5
+  [1m[94m|[0m
+[1m[94m4[0m [1m[94m|[0m struct LinearRegression {
+  [1m[94m|[0m        [1m[94m----------------[0m [1m[94mfield in this struct[0m
+[1m[94m5[0m [1m[94m|[0m     weights: Tensor,
+  [1m[94m|[0m     [1m[33m^^^^^^^[0m
+  [1m[94m|[0m
+  [1m[94m= [0m[1mnote[0m: `#[warn(dead_code)]` (part of `#[warn(unused)]`) on by default
 
-[1m[33mwarning[0m: `rust-candle-course` (bin "rust-candle-course") generated 4 warnings (run `cargo fix --bin "rust-candle-course" -p rust-candle-course` to apply 3 suggestions)
+[1m[33mwarning[0m: `rust-candle-course` (bin "rust-candle-course") generated 2 warnings (run `cargo fix --bin "rust-candle-course" -p rust-candle-course` to apply 1 suggestion)
+[1m[92m    Finished[0m `dev` profile [unoptimized + debuginfo] target(s) in 0.14s
+[1m[38;5;255m[48;5;240m rust-candle-course [0m[1m[38;5;235m[48;5;204m check [0m[1m[38;5;235m[48;5;11m  2 warnings  [0m
+[1m[92m    Checking[0m rust-candle-course v0.1.0 (/Users/stephen/Desktop/rust-candle-course)
+[1m[33mwarning[0m[1m: unused variable: `feature`[0m
+  [1m[94m--> [0msrc/main.rs:20:12
+   [1m[94m|[0m
+[1m[94m20[0m [1m[94m|[0m     fn new(feature: usize, device: Device) -> Result<Self> {
+   [1m[94m|[0m            [1m[33m^^^^^^^[0m [1m[33mhelp: if this is intentional, prefix it with an underscore: `_feature`[0m
+   [1m[94m|[0m
+   [1m[94m= [0m[1mnote[0m: `#[warn(unused_variables)]` (part of `#[warn(unused)]`) on by default
+
+[1m[33mwarning[0m[1m: field `bias` is never read[0m
+ [1m[94m--> [0msrc/main.rs:6:5
+  [1m[94m|[0m
+[1m[94m4[0m [1m[94m|[0m struct LinearRegression {
+  [1m[94m|[0m        [1m[94m----------------[0m [1m[94mfield in this struct[0m
+[1m[94m5[0m [1m[94m|[0m     weights: Tensor,
+[1m[94m6[0m [1m[94m|[0m     bias: Tensor,
+  [1m[94m|[0m     [1m[33m^^^^[0m
+  [1m[94m|[0m
+  [1m[94m= [0m[1mnote[0m: `#[warn(dead_code)]` (part of `#[warn(unused)]`) on by default
+
+[1m[33mwarning[0m: `rust-candle-course` (bin "rust-candle-course") generated 2 warnings (run `cargo fix --bin "rust-candle-course" -p rust-candle-course` to apply 1 suggestion)
+[1m[92m    Finished[0m `dev` profile [unoptimized + debuginfo] target(s) in 0.12s
+[1m[38;5;255m[48;5;240m rust-candle-course [0m[1m[38;5;235m[48;5;204m check [0m[1m[38;5;235m[48;5;11m  2 warnings  [0m
+[1m[92m    Checking[0m rust-candle-course v0.1.0 (/Users/stephen/Desktop/rust-candle-course)
+[1m[33mwarning[0m[1m: unused variable: `feature`[0m
+  [1m[94m--> [0msrc/main.rs:20:12
+   [1m[94m|[0m
+[1m[94m20[0m [1m[94m|[0m     fn new(feature: usize, device: Device) -> Result<Self> {
+   [1m[94m|[0m            [1m[33m^^^^^^^[0m [1m[33mhelp: if this is intentional, prefix it with an underscore: `_feature`[0m
+   [1m[94m|[0m
+   [1m[94m= [0m[1mnote[0m: `#[warn(unused_variables)]` (part of `#[warn(unused)]`) on by default
+
+[1m[33mwarning[0m[1m: field `bias` is never read[0m
+ [1m[94m--> [0msrc/main.rs:6:5
+  [1m[94m|[0m
+[1m[94m4[0m [1m[94m|[0m struct LinearRegression {
+  [1m[94m|[0m        [1m[94m----------------[0m [1m[94mfield in this struct[0m
+[1m[94m5[0m [1m[94m|[0m     weights: Tensor,
+[1m[94m6[0m [1m[94m|[0m     bias: Tensor,
+  [1m[94m|[0m     [1m[33m^^^^[0m
+  [1m[94m|[0m
+  [1m[94m= [0m[1mnote[0m: `#[warn(dead_code)]` (part of `#[warn(unused)]`) on by default
+
+[1m[33mwarning[0m: `rust-candle-course` (bin "rust-candle-course") generated 2 warnings (run `cargo fix --bin "rust-candle-course" -p rust-candle-course` to apply 1 suggestion)
+[1m[92m    Finished[0m `dev` profile [unoptimized + debuginfo] target(s) in 0.13s
+[1m[38;5;255m[48;5;240m rust-candle-course [0m[1m[38;5;235m[48;5;204m check [0m[1m[38;5;235m[48;5;11m  2 warnings  [0m
+[1m[92m    Checking[0m rust-candle-course v0.1.0 (/Users/stephen/Desktop/rust-candle-course)
+[1m[33mwarning[0m[1m: unused variable: `feature`[0m
+  [1m[94m--> [0msrc/main.rs:20:12
+   [1m[94m|[0m
+[1m[94m20[0m [1m[94m|[0m     fn new(feature: usize, device: Device) -> Result<Self> {
+   [1m[94m|[0m            [1m[33m^^^^^^^[0m [1m[33mhelp: if this is intentional, prefix it with an underscore: `_feature`[0m
+   [1m[94m|[0m
+   [1m[94m= [0m[1mnote[0m: `#[warn(unused_variables)]` (part of `#[warn(unused)]`) on by default
+
+[1m[33mwarning[0m[1m: field `bias` is never read[0m
+ [1m[94m--> [0msrc/main.rs:6:5
+  [1m[94m|[0m
+[1m[94m4[0m [1m[94m|[0m struct LinearRegression {
+  [1m[94m|[0m        [1m[94m----------------[0m [1m[94mfield in this struct[0m
+[1m[94m5[0m [1m[94m|[0m     weights: Tensor,
+[1m[94m6[0m [1m[94m|[0m     bias: Tensor,
+  [1m[94m|[0m     [1m[33m^^^^[0m
+  [1m[94m|[0m
+  [1m[94m= [0m[1mnote[0m: `#[warn(dead_code)]` (part of `#[warn(unused)]`) on by default
+
+[1m[33mwarning[0m: `rust-candle-course` (bin "rust-candle-course") generated 2 warnings (run `cargo fix --bin "rust-candle-course" -p rust-candle-course` to apply 1 suggestion)
+[1m[92m    Finished[0m `dev` profile [unoptimized + debuginfo] target(s) in 0.83s
+[1m[38;5;255m[48;5;240m rust-candle-course [0m[1m[38;5;235m[48;5;204m check [0m[1m[38;5;235m[48;5;11m  2 warnings  [0m
+[1m[92m    Checking[0m rust-candle-course v0.1.0 (/Users/stephen/Desktop/rust-candle-course)
+[1m[33mwarning[0m[1m: unused variable: `feature`[0m
+  [1m[94m--> [0msrc/main.rs:20:12
+   [1m[94m|[0m
+[1m[94m20[0m [1m[94m|[0m     fn new(feature: usize, device: Device) -> Result<Self> {
+   [1m[94m|[0m            [1m[33m^^^^^^^[0m [1m[33mhelp: if this is intentional, prefix it with an underscore: `_feature`[0m
+   [1m[94m|[0m
+   [1m[94m= [0m[1mnote[0m: `#[warn(unused_variables)]` (part of `#[warn(unused)]`) on by default
+
+[1m[33mwarning[0m[1m: field `bias` is never read[0m
+ [1m[94m--> [0msrc/main.rs:6:5
+  [1m[94m|[0m
+[1m[94m4[0m [1m[94m|[0m struct LinearRegression {
+  [1m[94m|[0m        [1m[94m----------------[0m [1m[94mfield in this struct[0m
+[1m[94m5[0m [1m[94m|[0m     weights: Tensor,
+[1m[94m6[0m [1m[94m|[0m     bias: Tensor,
+  [1m[94m|[0m     [1m[33m^^^^[0m
+  [1m[94m|[0m
+  [1m[94m= [0m[1mnote[0m: `#[warn(dead_code)]` (part of `#[warn(unused)]`) on by default
+
+[1m[33mwarning[0m: `rust-candle-course` (bin "rust-candle-course") generated 2 warnings (run `cargo fix --bin "rust-candle-course" -p rust-candle-course` to apply 1 suggestion)
+[1m[92m    Finished[0m `dev` profile [unoptimized + debuginfo] target(s) in 0.73s
+[1m[38;5;255m[48;5;240m rust-candle-course [0m[1m[38;5;235m[48;5;204m check [0m[1m[38;5;235m[48;5;11m  2 warnings  [0m
+[1m[92m    Checking[0m rust-candle-course v0.1.0 (/Users/stephen/Desktop/rust-candle-course)
+[1m[33mwarning[0m[1m: unused variable: `feature`[0m
+  [1m[94m--> [0msrc/main.rs:20:12
+   [1m[94m|[0m
+[1m[94m20[0m [1m[94m|[0m     fn new(feature: usize, device: Device) -> Result<Self> {
+   [1m[94m|[0m            [1m[33m^^^^^^^[0m [1m[33mhelp: if this is intentional, prefix it with an underscore: `_feature`[0m
+   [1m[94m|[0m
+   [1m[94m= [0m[1mnote[0m: `#[warn(unused_variables)]` (part of `#[warn(unused)]`) on by default
+
+[1m[33mwarning[0m[1m: field `bias` is never read[0m
+ [1m[94m--> [0msrc/main.rs:6:5
+  [1m[94m|[0m
+[1m[94m4[0m [1m[94m|[0m struct LinearRegression {
+  [1m[94m|[0m        [1m[94m----------------[0m [1m[94mfield in this struct[0m
+[1m[94m5[0m [1m[94m|[0m     weights: Tensor,
+[1m[94m6[0m [1m[94m|[0m     bias: Tensor,
+  [1m[94m|[0m     [1m[33m^^^^[0m
+  [1m[94m|[0m
+  [1m[94m= [0m[1mnote[0m: `#[warn(dead_code)]` (part of `#[warn(unused)]`) on by default
+
+[1m[33mwarning[0m: `rust-candle-course` (bin "rust-candle-course") generated 2 warnings (run `cargo fix --bin "rust-candle-course" -p rust-candle-course` to apply 1 suggestion)
+[1m[92m    Finished[0m `dev` profile [unoptimized + debuginfo] target(s) in 0.77s
+[1m[38;5;255m[48;5;240m rust-candle-course [0m[1m[38;5;235m[48;5;204m check [0m[1m[38;5;235m[48;5;11m  2 warnings  [0m
+[1m[92m    Checking[0m rust-candle-course v0.1.0 (/Users/stephen/Desktop/rust-candle-course)
+[1m[33mwarning[0m[1m: unused variable: `feature`[0m
+  [1m[94m--> [0msrc/main.rs:20:12
+   [1m[94m|[0m
+[1m[94m20[0m [1m[94m|[0m     fn new(feature: usize, device: Device) -> Result<Self> {
+   [1m[94m|[0m            [1m[33m^^^^^^^[0m [1m[33mhelp: if this is intentional, prefix it with an underscore: `_feature`[0m
+   [1m[94m|[0m
+   [1m[94m= [0m[1mnote[0m: `#[warn(unused_variables)]` (part of `#[warn(unused)]`) on by default
+
+[1m[33mwarning[0m[1m: field `bias` is never read[0m
+ [1m[94m--> [0msrc/main.rs:6:5
+  [1m[94m|[0m
+[1m[94m4[0m [1m[94m|[0m struct LinearRegression {
+  [1m[94m|[0m        [1m[94m----------------[0m [1m[94mfield in this struct[0m
+[1m[94m5[0m [1m[94m|[0m     weights: Tensor,
+[1m[94m6[0m [1m[94m|[0m     bias: Tensor,
+  [1m[94m|[0m     [1m[33m^^^^[0m
+  [1m[94m|[0m
+  [1m[94m= [0m[1mnote[0m: `#[warn(dead_code)]` (part of `#[warn(unused)]`) on by default
+
+[1m[33mwarning[0m: `rust-candle-course` (bin "rust-candle-course") generated 2 warnings (run `cargo fix --bin "rust-candle-course" -p rust-candle-course` to apply 1 suggestion)
 [1m[92m    Finished[0m `dev` profile [unoptimized + debuginfo] target(s) in 0.11s
-[1m[38;5;255m[48;5;240m rust-candle-course [0m[1m[38;5;235m[48;5;204m check [0m[1m[38;5;235m[48;5;11m  4 warnings  [0m
+[1m[38;5;255m[48;5;240m rust-candle-course [0m[1m[38;5;235m[48;5;204m check [0m[1m[38;5;235m[48;5;11m  2 warnings  [0m
 [1m[92m    Checking[0m rust-candle-course v0.1.0 (/Users/stephen/Desktop/rust-candle-course)
-[1m[33mwarning[0m[1m: unused variable: `device`[0m
-  [1m[94m--> [0msrc/main.rs:41:5
+[1m[33mwarning[0m[1m: unused variable: `feature`[0m
+  [1m[94m--> [0msrc/main.rs:20:12
    [1m[94m|[0m
-[1m[94m41[0m [1m[94m|[0m     device: &Device,
-   [1m[94m|[0m     [1m[33m^^^^^^[0m [1m[33mhelp: if this is intentional, prefix it with an underscore: `_device`[0m
+[1m[94m20[0m [1m[94m|[0m     fn new(feature: usize, device: Device) -> Result<Self> {
+   [1m[94m|[0m            [1m[33m^^^^^^^[0m [1m[33mhelp: if this is intentional, prefix it with an underscore: `_feature`[0m
    [1m[94m|[0m
    [1m[94m= [0m[1mnote[0m: `#[warn(unused_variables)]` (part of `#[warn(unused)]`) on by default
 
-[1m[33mwarning[0m[1m: variable does not need to be mutable[0m
-  [1m[94m--> [0msrc/main.rs:81:9
-   [1m[94m|[0m
-[1m[94m81[0m [1m[94m|[0m     let mut anomalies = 0;
-   [1m[94m|[0m         [1m[94m----[0m[1m[33m^^^^^^^^^[0m
-   [1m[94m|[0m         [1m[94m|[0m
-   [1m[94m|[0m         [1m[94mhelp: remove this `mut`[0m
-   [1m[94m|[0m
-   [1m[94m= [0m[1mnote[0m: `#[warn(unused_mut)]` (part of `#[warn(unused)]`) on by default
+[1m[33mwarning[0m[1m: field `bias` is never read[0m
+ [1m[94m--> [0msrc/main.rs:6:5
+  [1m[94m|[0m
+[1m[94m4[0m [1m[94m|[0m struct LinearRegression {
+  [1m[94m|[0m        [1m[94m----------------[0m [1m[94mfield in this struct[0m
+[1m[94m5[0m [1m[94m|[0m     weights: Tensor,
+[1m[94m6[0m [1m[94m|[0m     bias: Tensor,
+  [1m[94m|[0m     [1m[33m^^^^[0m
+  [1m[94m|[0m
+  [1m[94m= [0m[1mnote[0m: `#[warn(dead_code)]` (part of `#[warn(unused)]`) on by default
 
-[1m[33mwarning[0m[1m: unused variable: `anomalies`[0m
-  [1m[94m--> [0msrc/main.rs:81:9
-   [1m[94m|[0m
-[1m[94m81[0m [1m[94m|[0m     let mut anomalies = 0;
-   [1m[94m|[0m         [1m[33m^^^^^^^^^^^^^[0m [1m[33mhelp: if this is intentional, prefix it with an underscore: `_anomalies`[0m
-
-[1m[33mwarning[0m[1m: constant `THRESHOLD` is never used[0m
-  [1m[94m--> [0msrc/main.rs:63:7
-   [1m[94m|[0m
-[1m[94m63[0m [1m[94m|[0m const THRESHOLD: f32 = 0.1;
-   [1m[94m|[0m       [1m[33m^^^^^^^^^[0m
-   [1m[94m|[0m
-   [1m[94m= [0m[1mnote[0m: `#[warn(dead_code)]` (part of `#[warn(unused)]`) on by default
-
-[1m[33mwarning[0m: `rust-candle-course` (bin "rust-candle-course") generated 4 warnings (run `cargo fix --bin "rust-candle-course" -p rust-candle-course` to apply 3 suggestions)
+[1m[33mwarning[0m: `rust-candle-course` (bin "rust-candle-course") generated 2 warnings (run `cargo fix --bin "rust-candle-course" -p rust-candle-course` to apply 1 suggestion)
 [1m[92m    Finished[0m `dev` profile [unoptimized + debuginfo] target(s) in 0.10s
-[1m[38;5;255m[48;5;240m rust-candle-course [0m[1m[38;5;235m[48;5;204m check [0m[1m[38;5;235m[48;5;11m  4 warnings  [0m
+[1m[38;5;255m[48;5;240m rust-candle-course [0m[1m[38;5;235m[48;5;204m check [0m[1m[38;5;235m[48;5;11m  2 warnings  [0m
 [1m[92m    Checking[0m rust-candle-course v0.1.0 (/Users/stephen/Desktop/rust-candle-course)
-[1m[33mwarning[0m[1m: unused variable: `device`[0m
-  [1m[94m--> [0msrc/main.rs:41:5
+[1m[33mwarning[0m[1m: unused variable: `feature`[0m
+  [1m[94m--> [0msrc/main.rs:20:12
    [1m[94m|[0m
-[1m[94m41[0m [1m[94m|[0m     device: &Device,
-   [1m[94m|[0m     [1m[33m^^^^^^[0m [1m[33mhelp: if this is intentional, prefix it with an underscore: `_device`[0m
+[1m[94m20[0m [1m[94m|[0m     fn new(feature: usize, device: Device) -> Result<Self> {
+   [1m[94m|[0m            [1m[33m^^^^^^^[0m [1m[33mhelp: if this is intentional, prefix it with an underscore: `_feature`[0m
    [1m[94m|[0m
    [1m[94m= [0m[1mnote[0m: `#[warn(unused_variables)]` (part of `#[warn(unused)]`) on by default
 
-[1m[33mwarning[0m[1m: variable does not need to be mutable[0m
-  [1m[94m--> [0msrc/main.rs:81:9
-   [1m[94m|[0m
-[1m[94m81[0m [1m[94m|[0m     let mut anomalies = 0;
-   [1m[94m|[0m         [1m[94m----[0m[1m[33m^^^^^^^^^[0m
-   [1m[94m|[0m         [1m[94m|[0m
-   [1m[94m|[0m         [1m[94mhelp: remove this `mut`[0m
-   [1m[94m|[0m
-   [1m[94m= [0m[1mnote[0m: `#[warn(unused_mut)]` (part of `#[warn(unused)]`) on by default
+[1m[33mwarning[0m[1m: field `bias` is never read[0m
+ [1m[94m--> [0msrc/main.rs:6:5
+  [1m[94m|[0m
+[1m[94m4[0m [1m[94m|[0m struct LinearRegression {
+  [1m[94m|[0m        [1m[94m----------------[0m [1m[94mfield in this struct[0m
+[1m[94m5[0m [1m[94m|[0m     weights: Tensor,
+[1m[94m6[0m [1m[94m|[0m     bias: Tensor,
+  [1m[94m|[0m     [1m[33m^^^^[0m
+  [1m[94m|[0m
+  [1m[94m= [0m[1mnote[0m: `#[warn(dead_code)]` (part of `#[warn(unused)]`) on by default
 
-[1m[33mwarning[0m[1m: unused variable: `anomalies`[0m
-  [1m[94m--> [0msrc/main.rs:81:9
-   [1m[94m|[0m
-[1m[94m81[0m [1m[94m|[0m     let mut anomalies = 0;
-   [1m[94m|[0m         [1m[33m^^^^^^^^^^^^^[0m [1m[33mhelp: if this is intentional, prefix it with an underscore: `_anomalies`[0m
-
-[1m[33mwarning[0m[1m: constant `THRESHOLD` is never used[0m
-  [1m[94m--> [0msrc/main.rs:63:7
-   [1m[94m|[0m
-[1m[94m63[0m [1m[94m|[0m const THRESHOLD: f32 = 0.1;
-   [1m[94m|[0m       [1m[33m^^^^^^^^^[0m
-   [1m[94m|[0m
-   [1m[94m= [0m[1mnote[0m: `#[warn(dead_code)]` (part of `#[warn(unused)]`) on by default
-
-[1m[33mwarning[0m: `rust-candle-course` (bin "rust-candle-course") generated 4 warnings (run `cargo fix --bin "rust-candle-course" -p rust-candle-course` to apply 3 suggestions)
-[1m[92m    Finished[0m `dev` profile [unoptimized + debuginfo] target(s) in 0.11s
-[1m[38;5;255m[48;5;240m rust-candle-course [0m[1m[38;5;235m[48;5;204m check [0m[1m[38;5;235m[48;5;11m  4 warnings  [0m
+[1m[33mwarning[0m: `rust-candle-course` (bin "rust-candle-course") generated 2 warnings (run `cargo fix --bin "rust-candle-course" -p rust-candle-course` to apply 1 suggestion)
+[1m[92m    Finished[0m `dev` profile [unoptimized + debuginfo] target(s) in 0.75s
+[1m[38;5;255m[48;5;240m rust-candle-course [0m[1m[38;5;235m[48;5;204m check [0m[1m[38;5;235m[48;5;11m  2 warnings  [0m
 [1m[92m    Checking[0m rust-candle-course v0.1.0 (/Users/stephen/Desktop/rust-candle-course)
-[1m[33mwarning[0m[1m: unused variable: `device`[0m
-  [1m[94m--> [0msrc/main.rs:41:5
+[1m[91merror[E0277][0m[1m: the trait bound `usize: std::ops::Neg` is not satisfied[0m
+  [1m[94m--> [0msrc/main.rs:35:54
    [1m[94m|[0m
-[1m[94m41[0m [1m[94m|[0m     device: &Device,
-   [1m[94m|[0m     [1m[33m^^^^^^[0m [1m[33mhelp: if this is intentional, prefix it with an underscore: `_device`[0m
+[1m[94m35[0m [1m[94m|[0m         println!("squeeze {}", &self.weights.squeeze(-1)?);
+   [1m[94m|[0m                                                      [1m[91m^^[0m [1m[91mthe trait `std::ops::Neg` is not implemented for `usize`[0m
+   [1m[94m|[0m
+[1m[96mhelp[0m: consider specifying an integer type that can be negative
+   [1m[94m|[0m
+[1m[94m35[0m [1m[94m| [0m        println!("squeeze {}", &self.weights.squeeze(-1[92misize[0m)?);
+   [1m[94m|[0m                                                        [92m+++++[0m
+
+[1m[33mwarning[0m[1m: unused variable: `feature`[0m
+  [1m[94m--> [0msrc/main.rs:20:12
+   [1m[94m|[0m
+[1m[94m20[0m [1m[94m|[0m     fn new(feature: usize, device: Device) -> Result<Self> {
+   [1m[94m|[0m            [1m[33m^^^^^^^[0m [1m[33mhelp: if this is intentional, prefix it with an underscore: `_feature`[0m
    [1m[94m|[0m
    [1m[94m= [0m[1mnote[0m: `#[warn(unused_variables)]` (part of `#[warn(unused)]`) on by default
 
-[1m[33mwarning[0m[1m: variable does not need to be mutable[0m
-  [1m[94m--> [0msrc/main.rs:81:9
-   [1m[94m|[0m
-[1m[94m81[0m [1m[94m|[0m     let mut anomalies = 0;
-   [1m[94m|[0m         [1m[94m----[0m[1m[33m^^^^^^^^^[0m
-   [1m[94m|[0m         [1m[94m|[0m
-   [1m[94m|[0m         [1m[94mhelp: remove this `mut`[0m
-   [1m[94m|[0m
-   [1m[94m= [0m[1mnote[0m: `#[warn(unused_mut)]` (part of `#[warn(unused)]`) on by default
-
-[1m[33mwarning[0m[1m: unused variable: `anomalies`[0m
-  [1m[94m--> [0msrc/main.rs:81:9
-   [1m[94m|[0m
-[1m[94m81[0m [1m[94m|[0m     let mut anomalies = 0;
-   [1m[94m|[0m         [1m[33m^^^^^^^^^^^^^[0m [1m[33mhelp: if this is intentional, prefix it with an underscore: `_anomalies`[0m
-
-[1m[33mwarning[0m[1m: constant `THRESHOLD` is never used[0m
-  [1m[94m--> [0msrc/main.rs:63:7
-   [1m[94m|[0m
-[1m[94m63[0m [1m[94m|[0m const THRESHOLD: f32 = 0.1;
-   [1m[94m|[0m       [1m[33m^^^^^^^^^[0m
-   [1m[94m|[0m
-   [1m[94m= [0m[1mnote[0m: `#[warn(dead_code)]` (part of `#[warn(unused)]`) on by default
-
-[1m[33mwarning[0m: `rust-candle-course` (bin "rust-candle-course") generated 4 warnings (run `cargo fix --bin "rust-candle-course" -p rust-candle-course` to apply 3 suggestions)
-[1m[92m    Finished[0m `dev` profile [unoptimized + debuginfo] target(s) in 0.10s
-[1m[38;5;255m[48;5;240m rust-candle-course [0m[1m[38;5;235m[48;5;204m check [0m[1m[38;5;235m[48;5;11m  4 warnings  [0m
-[1m[92m    Checking[0m rust-candle-course v0.1.0 (/Users/stephen/Desktop/rust-candle-course)
-[1m[33mwarning[0m[1m: unused variable: `device`[0m
-  [1m[94m--> [0msrc/main.rs:41:5
-   [1m[94m|[0m
-[1m[94m41[0m [1m[94m|[0m     device: &Device,
-   [1m[94m|[0m     [1m[33m^^^^^^[0m [1m[33mhelp: if this is intentional, prefix it with an underscore: `_device`[0m
-   [1m[94m|[0m
-   [1m[94m= [0m[1mnote[0m: `#[warn(unused_variables)]` (part of `#[warn(unused)]`) on by default
-
-[1m[33mwarning[0m[1m: variable does not need to be mutable[0m
-  [1m[94m--> [0msrc/main.rs:81:9
-   [1m[94m|[0m
-[1m[94m81[0m [1m[94m|[0m     let mut anomalies = 0;
-   [1m[94m|[0m         [1m[94m----[0m[1m[33m^^^^^^^^^[0m
-   [1m[94m|[0m         [1m[94m|[0m
-   [1m[94m|[0m         [1m[94mhelp: remove this `mut`[0m
-   [1m[94m|[0m
-   [1m[94m= [0m[1mnote[0m: `#[warn(unused_mut)]` (part of `#[warn(unused)]`) on by default
-
-[1m[33mwarning[0m[1m: unused variable: `anomalies`[0m
-  [1m[94m--> [0msrc/main.rs:81:9
-   [1m[94m|[0m
-[1m[94m81[0m [1m[94m|[0m     let mut anomalies = 0;
-   [1m[94m|[0m         [1m[33m^^^^^^^^^^^^^[0m [1m[33mhelp: if this is intentional, prefix it with an underscore: `_anomalies`[0m
-
-[1m[33mwarning[0m[1m: constant `THRESHOLD` is never used[0m
-  [1m[94m--> [0msrc/main.rs:63:7
-   [1m[94m|[0m
-[1m[94m63[0m [1m[94m|[0m const THRESHOLD: f32 = 0.1;
-   [1m[94m|[0m       [1m[33m^^^^^^^^^[0m
-   [1m[94m|[0m
-   [1m[94m= [0m[1mnote[0m: `#[warn(dead_code)]` (part of `#[warn(unused)]`) on by default
-
-[1m[33mwarning[0m: `rust-candle-course` (bin "rust-candle-course") generated 4 warnings (run `cargo fix --bin "rust-candle-course" -p rust-candle-course` to apply 3 suggestions)
-[1m[92m    Finished[0m `dev` profile [unoptimized + debuginfo] target(s) in 0.11s
-[1m[38;5;255m[48;5;240m rust-candle-course [0m[1m[38;5;235m[48;5;204m check [0m[1m[38;5;235m[48;5;11m  4 warnings  [0m
-[1m[92m    Checking[0m rust-candle-course v0.1.0 (/Users/stephen/Desktop/rust-candle-course)
-[1m[91merror[0m[1m: expected pattern, found `}`[0m
-   [1m[94m--> [0msrc/main.rs:102:5
-    [1m[94m|[0m
-[1m[94m102[0m [1m[94m|[0m     }
-    [1m[94m|[0m     [1m[91m^[0m [1m[91mexpected pattern[0m
-
-[1m[33mwarning[0m[1m: unused variable: `device`[0m
-  [1m[94m--> [0msrc/main.rs:41:5
-   [1m[94m|[0m
-[1m[94m41[0m [1m[94m|[0m     device: &Device,
-   [1m[94m|[0m     [1m[33m^^^^^^[0m [1m[33mhelp: if this is intentional, prefix it with an underscore: `_device`[0m
-   [1m[94m|[0m
-   [1m[94m= [0m[1mnote[0m: `#[warn(unused_variables)]` (part of `#[warn(unused)]`) on by default
-
+[1mFor more information about this error, try `rustc --explain E0277`.[0m
 [1m[33mwarning[0m: `rust-candle-course` (bin "rust-candle-course") generated 1 warning
 [1m[91merror[0m: could not compile `rust-candle-course` (bin "rust-candle-course") due to 1 previous error; 1 warning emitted
 [1m[38;5;255m[48;5;240m rust-candle-course [0m[1m[38;5;235m[48;5;204m check [0m[1m[38;5;235m[48;5;9m  1 error  [0m[1m[38;5;235m[48;5;11m  1 warning  [0m
 [1m[92m    Checking[0m rust-candle-course v0.1.0 (/Users/stephen/Desktop/rust-candle-course)
-[1m[33mwarning[0m[1m: unused variable: `device`[0m
-  [1m[94m--> [0msrc/main.rs:41:5
+[1m[91merror[E0061][0m[1m: this method takes 1 argument but 0 arguments were supplied[0m
+    [1m[94m--> [0msrc/main.rs:35:46
+     [1m[94m|[0m
+[1m[94m  35[0m [1m[94m|[0m         println!("squeeze {}", &self.weights.squeeze()?);
+     [1m[94m|[0m                                              [1m[91m^^^^^^^[0m[1m[94m--[0m [1m[94margument #1 is missing[0m
+     [1m[94m|[0m
+[1m[92mnote[0m: method defined here
+    [1m[94m--> [0m/Users/stephen/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/candle-core-0.11.0/src/tensor.rs:2566:12
+     [1m[94m|[0m
+[1m[94m2566[0m [1m[94m|[0m     pub fn squeeze<D: Dim>(&self, dim: D) -> Result<Self> {
+     [1m[94m|[0m            [1m[92m^^^^^^^[0m
+[1m[96mhelp[0m: provide the argument
+     [1m[94m|[0m
+[1m[94m  35[0m [1m[94m| [0m        println!("squeeze {}", &self.weights.squeeze([92m/* dim */[0m)?);
+     [1m[94m|[0m                                                      [92m+++++++++[0m
+
+[1m[33mwarning[0m[1m: unused variable: `feature`[0m
+  [1m[94m--> [0msrc/main.rs:20:12
    [1m[94m|[0m
-[1m[94m41[0m [1m[94m|[0m     device: &Device,
-   [1m[94m|[0m     [1m[33m^^^^^^[0m [1m[33mhelp: if this is intentional, prefix it with an underscore: `_device`[0m
+[1m[94m20[0m [1m[94m|[0m     fn new(feature: usize, device: Device) -> Result<Self> {
+   [1m[94m|[0m            [1m[33m^^^^^^^[0m [1m[33mhelp: if this is intentional, prefix it with an underscore: `_feature`[0m
    [1m[94m|[0m
    [1m[94m= [0m[1mnote[0m: `#[warn(unused_variables)]` (part of `#[warn(unused)]`) on by default
 
-[1m[33mwarning[0m[1m: variable does not need to be mutable[0m
-  [1m[94m--> [0msrc/main.rs:81:9
-   [1m[94m|[0m
-[1m[94m81[0m [1m[94m|[0m     let mut anomalies = 0;
-   [1m[94m|[0m         [1m[94m----[0m[1m[33m^^^^^^^^^[0m
-   [1m[94m|[0m         [1m[94m|[0m
-   [1m[94m|[0m         [1m[94mhelp: remove this `mut`[0m
-   [1m[94m|[0m
-   [1m[94m= [0m[1mnote[0m: `#[warn(unused_mut)]` (part of `#[warn(unused)]`) on by default
-
-[1m[33mwarning[0m[1m: unused variable: `anomalies`[0m
-  [1m[94m--> [0msrc/main.rs:81:9
-   [1m[94m|[0m
-[1m[94m81[0m [1m[94m|[0m     let mut anomalies = 0;
-   [1m[94m|[0m         [1m[33m^^^^^^^^^^^^^[0m [1m[33mhelp: if this is intentional, prefix it with an underscore: `_anomalies`[0m
-
-[1m[33mwarning[0m[1m: unused variable: `i`[0m
-  [1m[94m--> [0msrc/main.rs:97:14
-   [1m[94m|[0m
-[1m[94m97[0m [1m[94m|[0m         for (i, item) in px.iter().enumerate() {
-   [1m[94m|[0m              [1m[33m^[0m [1m[33mhelp: if this is intentional, prefix it with an underscore: `_i`[0m
-
-[1m[33mwarning[0m[1m: unused variable: `item`[0m
-  [1m[94m--> [0msrc/main.rs:97:17
-   [1m[94m|[0m
-[1m[94m97[0m [1m[94m|[0m         for (i, item) in px.iter().enumerate() {
-   [1m[94m|[0m                 [1m[33m^^^^[0m [1m[33mhelp: if this is intentional, prefix it with an underscore: `_item`[0m
-
-[1m[33mwarning[0m[1m: constant `THRESHOLD` is never used[0m
-  [1m[94m--> [0msrc/main.rs:63:7
-   [1m[94m|[0m
-[1m[94m63[0m [1m[94m|[0m const THRESHOLD: f32 = 0.1;
-   [1m[94m|[0m       [1m[33m^^^^^^^^^[0m
-   [1m[94m|[0m
-   [1m[94m= [0m[1mnote[0m: `#[warn(dead_code)]` (part of `#[warn(unused)]`) on by default
-
-[1m[33mwarning[0m: `rust-candle-course` (bin "rust-candle-course") generated 6 warnings (run `cargo fix --bin "rust-candle-course" -p rust-candle-course` to apply 5 suggestions)
-[1m[92m    Finished[0m `dev` profile [unoptimized + debuginfo] target(s) in 0.12s
-[1m[38;5;255m[48;5;240m rust-candle-course [0m[1m[38;5;235m[48;5;204m check [0m[1m[38;5;235m[48;5;11m  6 warnings  [0m
+[1mFor more information about this error, try `rustc --explain E0061`.[0m
+[1m[33mwarning[0m: `rust-candle-course` (bin "rust-candle-course") generated 1 warning
+[1m[91merror[0m: could not compile `rust-candle-course` (bin "rust-candle-course") due to 1 previous error; 1 warning emitted
+[1m[38;5;255m[48;5;240m rust-candle-course [0m[1m[38;5;235m[48;5;204m check [0m[1m[38;5;235m[48;5;9m  1 error  [0m[1m[38;5;235m[48;5;11m  1 warning  [0m
 [1m[92m    Checking[0m rust-candle-course v0.1.0 (/Users/stephen/Desktop/rust-candle-course)
-[1m[33mwarning[0m[1m: unnecessary parentheses around `if` condition[0m
-  [1m[94m--> [0msrc/main.rs:98:16
+[1m[33mwarning[0m[1m: unused variable: `feature`[0m
+  [1m[94m--> [0msrc/main.rs:20:12
    [1m[94m|[0m
-[1m[94m98[0m [1m[94m|[0m             if (item < THRESHOLD) {
-   [1m[94m|[0m                [1m[33m^[0m                [1m[33m^[0m
-   [1m[94m|[0m
-   [1m[94m= [0m[1mnote[0m: `#[warn(unused_parens)]` (part of `#[warn(unused)]`) on by default
-[1m[96mhelp[0m: remove these parentheses
-   [1m[94m|[0m
-[1m[94m98[0m [91m- [0m            if [91m([0mitem < THRESHOLD[91m)[0m {
-[1m[94m98[0m [92m+ [0m            if item < THRESHOLD[92m [0m {
-   [1m[94m|[0m
-
-[1m[91merror[E0308][0m[1m: mismatched types[0m
-  [1m[94m--> [0msrc/main.rs:98:24
-   [1m[94m|[0m
-[1m[94m98[0m [1m[94m|[0m             if (item < THRESHOLD) {
-   [1m[94m|[0m                        [1m[91m^^^^^^^^^[0m [1m[91mexpected `&f32`, found `f32`[0m
-   [1m[94m|[0m
-[1m[96mhelp[0m: consider dereferencing the borrow
-   [1m[94m|[0m
-[1m[94m98[0m [1m[94m| [0m            if ([92m*[0mitem < THRESHOLD) {
-   [1m[94m|[0m                 [92m+[0m
-
-[1m[33mwarning[0m[1m: unused variable: `device`[0m
-  [1m[94m--> [0msrc/main.rs:41:5
-   [1m[94m|[0m
-[1m[94m41[0m [1m[94m|[0m     device: &Device,
-   [1m[94m|[0m     [1m[33m^^^^^^[0m [1m[33mhelp: if this is intentional, prefix it with an underscore: `_device`[0m
+[1m[94m20[0m [1m[94m|[0m     fn new(feature: usize, device: Device) -> Result<Self> {
+   [1m[94m|[0m            [1m[33m^^^^^^^[0m [1m[33mhelp: if this is intentional, prefix it with an underscore: `_feature`[0m
    [1m[94m|[0m
    [1m[94m= [0m[1mnote[0m: `#[warn(unused_variables)]` (part of `#[warn(unused)]`) on by default
 
-[1mFor more information about this error, try `rustc --explain E0308`.[0m
-[1m[33mwarning[0m: `rust-candle-course` (bin "rust-candle-course") generated 2 warnings
-[1m[91merror[0m: could not compile `rust-candle-course` (bin "rust-candle-course") due to 1 previous error; 2 warnings emitted
-[1m[38;5;255m[48;5;240m rust-candle-course [0m[1m[38;5;235m[48;5;204m check [0m[1m[38;5;235m[48;5;9m  1 error  [0m[1m[38;5;235m[48;5;11m  2 warnings  [0m
+[1m[33mwarning[0m[1m: field `bias` is never read[0m
+ [1m[94m--> [0msrc/main.rs:6:5
+  [1m[94m|[0m
+[1m[94m4[0m [1m[94m|[0m struct LinearRegression {
+  [1m[94m|[0m        [1m[94m----------------[0m [1m[94mfield in this struct[0m
+[1m[94m5[0m [1m[94m|[0m     weights: Tensor,
+[1m[94m6[0m [1m[94m|[0m     bias: Tensor,
+  [1m[94m|[0m     [1m[33m^^^^[0m
+  [1m[94m|[0m
+  [1m[94m= [0m[1mnote[0m: `#[warn(dead_code)]` (part of `#[warn(unused)]`) on by default
+
+[1m[33mwarning[0m: `rust-candle-course` (bin "rust-candle-course") generated 2 warnings (run `cargo fix --bin "rust-candle-course" -p rust-candle-course` to apply 1 suggestion)
+[1m[92m    Finished[0m `dev` profile [unoptimized + debuginfo] target(s) in 0.13s
+[1m[38;5;255m[48;5;240m rust-candle-course [0m[1m[38;5;235m[48;5;204m check [0m[1m[38;5;235m[48;5;11m  2 warnings  [0m
 [1m[92m    Checking[0m rust-candle-course v0.1.0 (/Users/stephen/Desktop/rust-candle-course)
-[1m[91merror[0m[1m: `<` is interpreted as a start of generic arguments for `f32`, not a comparison[0m
-  [1m[94m--> [0msrc/main.rs:98:29
+[1m[33mwarning[0m[1m: unused variable: `feature`[0m
+  [1m[94m--> [0msrc/main.rs:20:12
    [1m[94m|[0m
-[1m[94m98[0m [1m[94m|[0m             if (item as f32 < THRESHOLD) {
-   [1m[94m|[0m                             [1m[91m^[0m [1m[94m----------[0m [1m[94minterpreted as generic arguments[0m
-   [1m[94m|[0m                             [1m[91m|[0m
-   [1m[94m|[0m                             [1m[91mnot interpreted as comparison[0m
-   [1m[94m|[0m
-[1m[96mhelp[0m: try comparing the cast value
-   [1m[94m|[0m
-[1m[94m98[0m [1m[94m| [0m            if ([92m([0mitem as f32[92m)[0m < THRESHOLD) {
-   [1m[94m|[0m                 [92m+[0m           [92m+[0m
-
-[1m[33mwarning[0m[1m: unnecessary parentheses around `if` condition[0m
-  [1m[94m--> [0msrc/main.rs:98:16
-   [1m[94m|[0m
-[1m[94m98[0m [1m[94m|[0m             if (item as f32 < THRESHOLD) {
-   [1m[94m|[0m                [1m[33m^[0m                       [1m[33m^[0m
-   [1m[94m|[0m
-   [1m[94m= [0m[1mnote[0m: `#[warn(unused_parens)]` (part of `#[warn(unused)]`) on by default
-[1m[96mhelp[0m: remove these parentheses
-   [1m[94m|[0m
-[1m[94m98[0m [91m- [0m            if [91m([0mitem as f32 < THRESHOLD[91m)[0m {
-[1m[94m98[0m [92m+ [0m            if item as f32 < THRESHOLD[92m [0m {
-   [1m[94m|[0m
-
-[1m[91merror[E0606][0m[1m: casting `&f32` as `f32` is invalid[0m
-  [1m[94m--> [0msrc/main.rs:98:17
-   [1m[94m|[0m
-[1m[94m98[0m [1m[94m|[0m             if (item as f32 < THRESHOLD) {
-   [1m[94m|[0m                 [1m[91m^^^^^^^^^^^[0m
-   [1m[94m|[0m
-[1m[96mhelp[0m: dereference the expression
-   [1m[94m|[0m
-[1m[94m98[0m [1m[94m| [0m            if ([92m*[0mitem as f32 < THRESHOLD) {
-   [1m[94m|[0m                 [92m+[0m
-
-[1m[33mwarning[0m[1m: unused variable: `device`[0m
-  [1m[94m--> [0msrc/main.rs:41:5
-   [1m[94m|[0m
-[1m[94m41[0m [1m[94m|[0m     device: &Device,
-   [1m[94m|[0m     [1m[33m^^^^^^[0m [1m[33mhelp: if this is intentional, prefix it with an underscore: `_device`[0m
+[1m[94m20[0m [1m[94m|[0m     fn new(feature: usize, device: Device) -> Result<Self> {
+   [1m[94m|[0m            [1m[33m^^^^^^^[0m [1m[33mhelp: if this is intentional, prefix it with an underscore: `_feature`[0m
    [1m[94m|[0m
    [1m[94m= [0m[1mnote[0m: `#[warn(unused_variables)]` (part of `#[warn(unused)]`) on by default
 
-[1mFor more information about this error, try `rustc --explain E0606`.[0m
-[1m[33mwarning[0m: `rust-candle-course` (bin "rust-candle-course") generated 2 warnings
-[1m[91merror[0m: could not compile `rust-candle-course` (bin "rust-candle-course") due to 2 previous errors; 2 warnings emitted
-[1m[38;5;255m[48;5;240m rust-candle-course [0m[1m[38;5;235m[48;5;204m check [0m[1m[38;5;235m[48;5;9m  2 errors  [0m[1m[38;5;235m[48;5;11m  2 warnings  [0m
-[1m[92m    Checking[0m rust-candle-course v0.1.0 (/Users/stephen/Desktop/rust-candle-course)
-[1m[33mwarning[0m[1m: unnecessary parentheses around `if` condition[0m
-  [1m[94m--> [0msrc/main.rs:98:16
-   [1m[94m|[0m
-[1m[94m98[0m [1m[94m|[0m             if (item < THRESHOLD) {
-   [1m[94m|[0m                [1m[33m^[0m                [1m[33m^[0m
-   [1m[94m|[0m
-   [1m[94m= [0m[1mnote[0m: `#[warn(unused_parens)]` (part of `#[warn(unused)]`) on by default
-[1m[96mhelp[0m: remove these parentheses
-   [1m[94m|[0m
-[1m[94m98[0m [91m- [0m            if [91m([0mitem < THRESHOLD[91m)[0m {
-[1m[94m98[0m [92m+ [0m            if item < THRESHOLD[92m [0m {
-   [1m[94m|[0m
+[1m[33mwarning[0m[1m: field `bias` is never read[0m
+ [1m[94m--> [0msrc/main.rs:6:5
+  [1m[94m|[0m
+[1m[94m4[0m [1m[94m|[0m struct LinearRegression {
+  [1m[94m|[0m        [1m[94m----------------[0m [1m[94mfield in this struct[0m
+[1m[94m5[0m [1m[94m|[0m     weights: Tensor,
+[1m[94m6[0m [1m[94m|[0m     bias: Tensor,
+  [1m[94m|[0m     [1m[33m^^^^[0m
+  [1m[94m|[0m
+  [1m[94m= [0m[1mnote[0m: `#[warn(dead_code)]` (part of `#[warn(unused)]`) on by default
 
-[1m[91merror[E0308][0m[1m: mismatched types[0m
-  [1m[94m--> [0msrc/main.rs:98:24
-   [1m[94m|[0m
-[1m[94m98[0m [1m[94m|[0m             if (item < THRESHOLD) {
-   [1m[94m|[0m                        [1m[91m^^^^^^^^^[0m [1m[91mexpected `&f32`, found `f32`[0m
-   [1m[94m|[0m
-[1m[96mhelp[0m: consider dereferencing the borrow
-   [1m[94m|[0m
-[1m[94m98[0m [1m[94m| [0m            if ([92m*[0mitem < THRESHOLD) {
-   [1m[94m|[0m                 [92m+[0m
-
-[1m[33mwarning[0m[1m: unused variable: `device`[0m
-  [1m[94m--> [0msrc/main.rs:41:5
-   [1m[94m|[0m
-[1m[94m41[0m [1m[94m|[0m     device: &Device,
-   [1m[94m|[0m     [1m[33m^^^^^^[0m [1m[33mhelp: if this is intentional, prefix it with an underscore: `_device`[0m
-   [1m[94m|[0m
-   [1m[94m= [0m[1mnote[0m: `#[warn(unused_variables)]` (part of `#[warn(unused)]`) on by default
-
-[1mFor more information about this error, try `rustc --explain E0308`.[0m
-[1m[33mwarning[0m: `rust-candle-course` (bin "rust-candle-course") generated 2 warnings
-[1m[91merror[0m: could not compile `rust-candle-course` (bin "rust-candle-course") due to 1 previous error; 2 warnings emitted
-[1m[38;5;255m[48;5;240m rust-candle-course [0m[1m[38;5;235m[48;5;204m check [0m[1m[38;5;235m[48;5;9m  1 error  [0m[1m[38;5;235m[48;5;11m  2 warnings  [0m
-[1m[92m    Checking[0m rust-candle-course v0.1.0 (/Users/stephen/Desktop/rust-candle-course)
-[1m[33mwarning[0m[1m: unnecessary parentheses around `if` condition[0m
-  [1m[94m--> [0msrc/main.rs:99:16
-   [1m[94m|[0m
-[1m[94m99[0m [1m[94m|[0m             if (item < THRESHOLD) {
-   [1m[94m|[0m                [1m[33m^[0m                [1m[33m^[0m
-   [1m[94m|[0m
-   [1m[94m= [0m[1mnote[0m: `#[warn(unused_parens)]` (part of `#[warn(unused)]`) on by default
-[1m[96mhelp[0m: remove these parentheses
-   [1m[94m|[0m
-[1m[94m99[0m [91m- [0m            if [91m([0mitem < THRESHOLD[91m)[0m {
-[1m[94m99[0m [92m+ [0m            if item < THRESHOLD[92m [0m {
-   [1m[94m|[0m
-
-[1m[91merror[E0308][0m[1m: mismatched types[0m
-  [1m[94m--> [0msrc/main.rs:99:24
-   [1m[94m|[0m
-[1m[94m99[0m [1m[94m|[0m             if (item < THRESHOLD) {
-   [1m[94m|[0m                        [1m[91m^^^^^^^^^[0m [1m[91mexpected `&f32`, found `f32`[0m
-   [1m[94m|[0m
-[1m[96mhelp[0m: consider dereferencing the borrow
-   [1m[94m|[0m
-[1m[94m99[0m [1m[94m| [0m            if ([92m*[0mitem < THRESHOLD) {
-   [1m[94m|[0m                 [92m+[0m
-
-[1m[33mwarning[0m[1m: unused variable: `device`[0m
-  [1m[94m--> [0msrc/main.rs:41:5
-   [1m[94m|[0m
-[1m[94m41[0m [1m[94m|[0m     device: &Device,
-   [1m[94m|[0m     [1m[33m^^^^^^[0m [1m[33mhelp: if this is intentional, prefix it with an underscore: `_device`[0m
-   [1m[94m|[0m
-   [1m[94m= [0m[1mnote[0m: `#[warn(unused_variables)]` (part of `#[warn(unused)]`) on by default
-
-[1mFor more information about this error, try `rustc --explain E0308`.[0m
-[1m[33mwarning[0m: `rust-candle-course` (bin "rust-candle-course") generated 2 warnings
-[1m[91merror[0m: could not compile `rust-candle-course` (bin "rust-candle-course") due to 1 previous error; 2 warnings emitted
-[1m[38;5;255m[48;5;240m rust-candle-course [0m[1m[38;5;235m[48;5;204m check [0m[1m[38;5;235m[48;5;9m  1 error  [0m[1m[38;5;235m[48;5;11m  2 warnings  [0m
-[1m[92m    Checking[0m rust-candle-course v0.1.0 (/Users/stephen/Desktop/rust-candle-course)
-[1m[33mwarning[0m[1m: unused variable: `device`[0m
-  [1m[94m--> [0msrc/main.rs:41:5
-   [1m[94m|[0m
-[1m[94m41[0m [1m[94m|[0m     device: &Device,
-   [1m[94m|[0m     [1m[33m^^^^^^[0m [1m[33mhelp: if this is intentional, prefix it with an underscore: `_device`[0m
-   [1m[94m|[0m
-   [1m[94m= [0m[1mnote[0m: `#[warn(unused_variables)]` (part of `#[warn(unused)]`) on by default
-
-[1m[33mwarning[0m[1m: variable does not need to be mutable[0m
-  [1m[94m--> [0msrc/main.rs:81:9
-   [1m[94m|[0m
-[1m[94m81[0m [1m[94m|[0m     let mut anomalies = 0;
-   [1m[94m|[0m         [1m[94m----[0m[1m[33m^^^^^^^^^[0m
-   [1m[94m|[0m         [1m[94m|[0m
-   [1m[94m|[0m         [1m[94mhelp: remove this `mut`[0m
-   [1m[94m|[0m
-   [1m[94m= [0m[1mnote[0m: `#[warn(unused_mut)]` (part of `#[warn(unused)]`) on by default
-
-[1m[33mwarning[0m[1m: unused variable: `col`[0m
-  [1m[94m--> [0msrc/main.rs:97:14
-   [1m[94m|[0m
-[1m[94m97[0m [1m[94m|[0m         for (col, item) in px.iter().enumerate() {
-   [1m[94m|[0m              [1m[33m^^^[0m [1m[33mhelp: if this is intentional, prefix it with an underscore: `_col`[0m
-
-[1m[33mwarning[0m[1m: constant `THRESHOLD` is never used[0m
-  [1m[94m--> [0msrc/main.rs:63:7
-   [1m[94m|[0m
-[1m[94m63[0m [1m[94m|[0m const THRESHOLD: f32 = 0.1;
-   [1m[94m|[0m       [1m[33m^^^^^^^^^[0m
-   [1m[94m|[0m
-   [1m[94m= [0m[1mnote[0m: `#[warn(dead_code)]` (part of `#[warn(unused)]`) on by default
-
-[1m[33mwarning[0m: `rust-candle-course` (bin "rust-candle-course") generated 4 warnings (run `cargo fix --bin "rust-candle-course" -p rust-candle-course` to apply 3 suggestions)
+[1m[33mwarning[0m: `rust-candle-course` (bin "rust-candle-course") generated 2 warnings (run `cargo fix --bin "rust-candle-course" -p rust-candle-course` to apply 1 suggestion)
 [1m[92m    Finished[0m `dev` profile [unoptimized + debuginfo] target(s) in 0.11s
-[1m[38;5;255m[48;5;240m rust-candle-course [0m[1m[38;5;235m[48;5;204m check [0m[1m[38;5;235m[48;5;11m  4 warnings  [0m
+[1m[38;5;255m[48;5;240m rust-candle-course [0m[1m[38;5;235m[48;5;204m check [0m[1m[38;5;235m[48;5;11m  2 warnings  [0m
 [1m[92m    Checking[0m rust-candle-course v0.1.0 (/Users/stephen/Desktop/rust-candle-course)
-[1m[33mwarning[0m[1m: unnecessary parentheses around `if` condition[0m
-   [1m[94m--> [0msrc/main.rs:102:16
-    [1m[94m|[0m
-[1m[94m102[0m [1m[94m|[0m             if (item < THRESHOLD) {
-    [1m[94m|[0m                [1m[33m^[0m                [1m[33m^[0m
-    [1m[94m|[0m
-    [1m[94m= [0m[1mnote[0m: `#[warn(unused_parens)]` (part of `#[warn(unused)]`) on by default
-[1m[96mhelp[0m: remove these parentheses
-    [1m[94m|[0m
-[1m[94m102[0m [91m- [0m            if [91m([0mitem < THRESHOLD[91m)[0m {
-[1m[94m102[0m [92m+ [0m            if item < THRESHOLD[92m [0m {
-    [1m[94m|[0m
-
-[1m[91merror[E0599][0m[1m: no method named `is_nan` found for struct `Vec<f32>` in the current scope[0m
-  [1m[94m--> [0msrc/main.rs:99:19
+[1m[33mwarning[0m[1m: unused variable: `feature`[0m
+  [1m[94m--> [0msrc/main.rs:20:12
    [1m[94m|[0m
-[1m[94m99[0m [1m[94m|[0m             if px.is_nan() {
-   [1m[94m|[0m                   [1m[91m^^^^^^[0m [1m[91mmethod not found in `Vec<f32>`[0m
-
-[1m[91merror[E0308][0m[1m: mismatched types[0m
-   [1m[94m--> [0msrc/main.rs:102:24
-    [1m[94m|[0m
-[1m[94m102[0m [1m[94m|[0m             if (item < THRESHOLD) {
-    [1m[94m|[0m                        [1m[91m^^^^^^^^^[0m [1m[91mexpected `&f32`, found `f32`[0m
-    [1m[94m|[0m
-[1m[96mhelp[0m: consider dereferencing the borrow
-    [1m[94m|[0m
-[1m[94m102[0m [1m[94m| [0m            if ([92m*[0mitem < THRESHOLD) {
-    [1m[94m|[0m                 [92m+[0m
-
-[1m[33mwarning[0m[1m: unused variable: `device`[0m
-  [1m[94m--> [0msrc/main.rs:41:5
-   [1m[94m|[0m
-[1m[94m41[0m [1m[94m|[0m     device: &Device,
-   [1m[94m|[0m     [1m[33m^^^^^^[0m [1m[33mhelp: if this is intentional, prefix it with an underscore: `_device`[0m
+[1m[94m20[0m [1m[94m|[0m     fn new(feature: usize, device: Device) -> Result<Self> {
+   [1m[94m|[0m            [1m[33m^^^^^^^[0m [1m[33mhelp: if this is intentional, prefix it with an underscore: `_feature`[0m
    [1m[94m|[0m
    [1m[94m= [0m[1mnote[0m: `#[warn(unused_variables)]` (part of `#[warn(unused)]`) on by default
 
-[1mSome errors have detailed explanations: E0308, E0599.[0m
-[1mFor more information about an error, try `rustc --explain E0308`.[0m
-[1m[33mwarning[0m: `rust-candle-course` (bin "rust-candle-course") generated 2 warnings
-[1m[91merror[0m: could not compile `rust-candle-course` (bin "rust-candle-course") due to 2 previous errors; 2 warnings emitted
-[1m[38;5;255m[48;5;240m rust-candle-course [0m[1m[38;5;235m[48;5;204m check [0m[1m[38;5;235m[48;5;9m  2 errors  [0m[1m[38;5;235m[48;5;11m  2 warnings  [0m
-[1m[92m    Checking[0m rust-candle-course v0.1.0 (/Users/stephen/Desktop/rust-candle-course)
-[1m[91merror[E0599][0m[1m: no method named `is_nan` found for struct `Vec<f32>` in the current scope[0m
-  [1m[94m--> [0msrc/main.rs:99:19
-   [1m[94m|[0m
-[1m[94m99[0m [1m[94m|[0m             if px.is_nan() {
-   [1m[94m|[0m                   [1m[91m^^^^^^[0m [1m[91mmethod not found in `Vec<f32>`[0m
+[1m[33mwarning[0m[1m: field `bias` is never read[0m
+ [1m[94m--> [0msrc/main.rs:6:5
+  [1m[94m|[0m
+[1m[94m4[0m [1m[94m|[0m struct LinearRegression {
+  [1m[94m|[0m        [1m[94m----------------[0m [1m[94mfield in this struct[0m
+[1m[94m5[0m [1m[94m|[0m     weights: Tensor,
+[1m[94m6[0m [1m[94m|[0m     bias: Tensor,
+  [1m[94m|[0m     [1m[33m^^^^[0m
+  [1m[94m|[0m
+  [1m[94m= [0m[1mnote[0m: `#[warn(dead_code)]` (part of `#[warn(unused)]`) on by default
 
-[1m[33mwarning[0m[1m: unused variable: `device`[0m
-  [1m[94m--> [0msrc/main.rs:41:5
+[1m[33mwarning[0m: `rust-candle-course` (bin "rust-candle-course") generated 2 warnings (run `cargo fix --bin "rust-candle-course" -p rust-candle-course` to apply 1 suggestion)
+[1m[92m    Finished[0m `dev` profile [unoptimized + debuginfo] target(s) in 0.87s
+[1m[38;5;255m[48;5;240m rust-candle-course [0m[1m[38;5;235m[48;5;204m check [0m[1m[38;5;235m[48;5;11m  2 warnings  [0m
+[1m[92m    Checking[0m rust-candle-course v0.1.0 (/Users/stephen/Desktop/rust-candle-course)
+[1m[33mwarning[0m[1m: unused variable: `feature`[0m
+  [1m[94m--> [0msrc/main.rs:20:12
    [1m[94m|[0m
-[1m[94m41[0m [1m[94m|[0m     device: &Device,
-   [1m[94m|[0m     [1m[33m^^^^^^[0m [1m[33mhelp: if this is intentional, prefix it with an underscore: `_device`[0m
+[1m[94m20[0m [1m[94m|[0m     fn new(feature: usize, device: Device) -> Result<Self> {
+   [1m[94m|[0m            [1m[33m^^^^^^^[0m [1m[33mhelp: if this is intentional, prefix it with an underscore: `_feature`[0m
+   [1m[94m|[0m
+   [1m[94m= [0m[1mnote[0m: `#[warn(unused_variables)]` (part of `#[warn(unused)]`) on by default
+
+[1m[33mwarning[0m[1m: field `bias` is never read[0m
+ [1m[94m--> [0msrc/main.rs:6:5
+  [1m[94m|[0m
+[1m[94m4[0m [1m[94m|[0m struct LinearRegression {
+  [1m[94m|[0m        [1m[94m----------------[0m [1m[94mfield in this struct[0m
+[1m[94m5[0m [1m[94m|[0m     weights: Tensor,
+[1m[94m6[0m [1m[94m|[0m     bias: Tensor,
+  [1m[94m|[0m     [1m[33m^^^^[0m
+  [1m[94m|[0m
+  [1m[94m= [0m[1mnote[0m: `#[warn(dead_code)]` (part of `#[warn(unused)]`) on by default
+
+[1m[33mwarning[0m: `rust-candle-course` (bin "rust-candle-course") generated 2 warnings (run `cargo fix --bin "rust-candle-course" -p rust-candle-course` to apply 1 suggestion)
+[1m[92m    Finished[0m `dev` profile [unoptimized + debuginfo] target(s) in 0.12s
+[1m[38;5;255m[48;5;240m rust-candle-course [0m[1m[38;5;235m[48;5;204m check [0m[1m[38;5;235m[48;5;11m  2 warnings  [0m
+[1m[92m    Checking[0m rust-candle-course v0.1.0 (/Users/stephen/Desktop/rust-candle-course)
+[1m[33mwarning[0m[1m: unused variable: `feature`[0m
+  [1m[94m--> [0msrc/main.rs:20:12
+   [1m[94m|[0m
+[1m[94m20[0m [1m[94m|[0m     fn new(feature: usize, device: Device) -> Result<Self> {
+   [1m[94m|[0m            [1m[33m^^^^^^^[0m [1m[33mhelp: if this is intentional, prefix it with an underscore: `_feature`[0m
+   [1m[94m|[0m
+   [1m[94m= [0m[1mnote[0m: `#[warn(unused_variables)]` (part of `#[warn(unused)]`) on by default
+
+[1m[33mwarning[0m[1m: field `bias` is never read[0m
+ [1m[94m--> [0msrc/main.rs:6:5
+  [1m[94m|[0m
+[1m[94m4[0m [1m[94m|[0m struct LinearRegression {
+  [1m[94m|[0m        [1m[94m----------------[0m [1m[94mfield in this struct[0m
+[1m[94m5[0m [1m[94m|[0m     weights: Tensor,
+[1m[94m6[0m [1m[94m|[0m     bias: Tensor,
+  [1m[94m|[0m     [1m[33m^^^^[0m
+  [1m[94m|[0m
+  [1m[94m= [0m[1mnote[0m: `#[warn(dead_code)]` (part of `#[warn(unused)]`) on by default
+
+[1m[33mwarning[0m: `rust-candle-course` (bin "rust-candle-course") generated 2 warnings (run `cargo fix --bin "rust-candle-course" -p rust-candle-course` to apply 1 suggestion)
+[1m[92m    Finished[0m `dev` profile [unoptimized + debuginfo] target(s) in 0.71s
+[1m[38;5;255m[48;5;240m rust-candle-course [0m[1m[38;5;235m[48;5;204m check [0m[1m[38;5;235m[48;5;11m  2 warnings  [0m
+[1m[92m    Checking[0m rust-candle-course v0.1.0 (/Users/stephen/Desktop/rust-candle-course)
+[1m[33mwarning[0m[1m: unused variable: `feature`[0m
+  [1m[94m--> [0msrc/main.rs:20:12
+   [1m[94m|[0m
+[1m[94m20[0m [1m[94m|[0m     fn new(feature: usize, device: Device) -> Result<Self> {
+   [1m[94m|[0m            [1m[33m^^^^^^^[0m [1m[33mhelp: if this is intentional, prefix it with an underscore: `_feature`[0m
+   [1m[94m|[0m
+   [1m[94m= [0m[1mnote[0m: `#[warn(unused_variables)]` (part of `#[warn(unused)]`) on by default
+
+[1m[33mwarning[0m[1m: field `bias` is never read[0m
+ [1m[94m--> [0msrc/main.rs:6:5
+  [1m[94m|[0m
+[1m[94m4[0m [1m[94m|[0m struct LinearRegression {
+  [1m[94m|[0m        [1m[94m----------------[0m [1m[94mfield in this struct[0m
+[1m[94m5[0m [1m[94m|[0m     weights: Tensor,
+[1m[94m6[0m [1m[94m|[0m     bias: Tensor,
+  [1m[94m|[0m     [1m[33m^^^^[0m
+  [1m[94m|[0m
+  [1m[94m= [0m[1mnote[0m: `#[warn(dead_code)]` (part of `#[warn(unused)]`) on by default
+
+[1m[33mwarning[0m: `rust-candle-course` (bin "rust-candle-course") generated 2 warnings (run `cargo fix --bin "rust-candle-course" -p rust-candle-course` to apply 1 suggestion)
+[1m[92m    Finished[0m `dev` profile [unoptimized + debuginfo] target(s) in 0.13s
+[1m[38;5;255m[48;5;240m rust-candle-course [0m[1m[38;5;235m[48;5;204m check [0m[1m[38;5;235m[48;5;11m  2 warnings  [0m
+[1m[92m    Checking[0m rust-candle-course v0.1.0 (/Users/stephen/Desktop/rust-candle-course)
+[1m[33mwarning[0m[1m: unused variable: `feature`[0m
+  [1m[94m--> [0msrc/main.rs:20:12
+   [1m[94m|[0m
+[1m[94m20[0m [1m[94m|[0m     fn new(feature: usize, device: Device) -> Result<Self> {
+   [1m[94m|[0m            [1m[33m^^^^^^^[0m [1m[33mhelp: if this is intentional, prefix it with an underscore: `_feature`[0m
+   [1m[94m|[0m
+   [1m[94m= [0m[1mnote[0m: `#[warn(unused_variables)]` (part of `#[warn(unused)]`) on by default
+
+[1m[33mwarning[0m[1m: field `bias` is never read[0m
+ [1m[94m--> [0msrc/main.rs:6:5
+  [1m[94m|[0m
+[1m[94m4[0m [1m[94m|[0m struct LinearRegression {
+  [1m[94m|[0m        [1m[94m----------------[0m [1m[94mfield in this struct[0m
+[1m[94m5[0m [1m[94m|[0m     weights: Tensor,
+[1m[94m6[0m [1m[94m|[0m     bias: Tensor,
+  [1m[94m|[0m     [1m[33m^^^^[0m
+  [1m[94m|[0m
+  [1m[94m= [0m[1mnote[0m: `#[warn(dead_code)]` (part of `#[warn(unused)]`) on by default
+
+[1m[33mwarning[0m: `rust-candle-course` (bin "rust-candle-course") generated 2 warnings (run `cargo fix --bin "rust-candle-course" -p rust-candle-course` to apply 1 suggestion)
+[1m[92m    Finished[0m `dev` profile [unoptimized + debuginfo] target(s) in 0.42s
+[1m[38;5;255m[48;5;240m rust-candle-course [0m[1m[38;5;235m[48;5;204m check [0m[1m[38;5;235m[48;5;11m  2 warnings  [0m
+[1m[92m    Checking[0m rust-candle-course v0.1.0 (/Users/stephen/Desktop/rust-candle-course)
+[1m[33mwarning[0m[1m: unused variable: `feature`[0m
+  [1m[94m--> [0msrc/main.rs:20:12
+   [1m[94m|[0m
+[1m[94m20[0m [1m[94m|[0m     fn new(feature: usize, device: Device) -> Result<Self> {
+   [1m[94m|[0m            [1m[33m^^^^^^^[0m [1m[33mhelp: if this is intentional, prefix it with an underscore: `_feature`[0m
+   [1m[94m|[0m
+   [1m[94m= [0m[1mnote[0m: `#[warn(unused_variables)]` (part of `#[warn(unused)]`) on by default
+
+[1m[33mwarning[0m[1m: field `bias` is never read[0m
+ [1m[94m--> [0msrc/main.rs:6:5
+  [1m[94m|[0m
+[1m[94m4[0m [1m[94m|[0m struct LinearRegression {
+  [1m[94m|[0m        [1m[94m----------------[0m [1m[94mfield in this struct[0m
+[1m[94m5[0m [1m[94m|[0m     weights: Tensor,
+[1m[94m6[0m [1m[94m|[0m     bias: Tensor,
+  [1m[94m|[0m     [1m[33m^^^^[0m
+  [1m[94m|[0m
+  [1m[94m= [0m[1mnote[0m: `#[warn(dead_code)]` (part of `#[warn(unused)]`) on by default
+
+[1m[33mwarning[0m: `rust-candle-course` (bin "rust-candle-course") generated 2 warnings (run `cargo fix --bin "rust-candle-course" -p rust-candle-course` to apply 1 suggestion)
+[1m[92m    Finished[0m `dev` profile [unoptimized + debuginfo] target(s) in 0.12s
+[1m[38;5;255m[48;5;240m rust-candle-course [0m[1m[38;5;235m[48;5;204m check [0m[1m[38;5;235m[48;5;11m  2 warnings  [0m
+[1m[92m    Checking[0m rust-candle-course v0.1.0 (/Users/stephen/Desktop/rust-candle-course)
+[1m[91merror[E0061][0m[1m: this method takes 1 argument but 0 arguments were supplied[0m
+    [1m[94m--> [0msrc/main.rs:35:46
+     [1m[94m|[0m
+[1m[94m  35[0m [1m[94m|[0m         println!("squeeze {}", &self.weights.squeeze()?);
+     [1m[94m|[0m                                              [1m[91m^^^^^^^[0m[1m[94m--[0m [1m[94margument #1 is missing[0m
+     [1m[94m|[0m
+[1m[92mnote[0m: method defined here
+    [1m[94m--> [0m/Users/stephen/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/candle-core-0.11.0/src/tensor.rs:2566:12
+     [1m[94m|[0m
+[1m[94m2566[0m [1m[94m|[0m     pub fn squeeze<D: Dim>(&self, dim: D) -> Result<Self> {
+     [1m[94m|[0m            [1m[92m^^^^^^^[0m
+[1m[96mhelp[0m: provide the argument
+     [1m[94m|[0m
+[1m[94m  35[0m [1m[94m| [0m        println!("squeeze {}", &self.weights.squeeze([92m/* dim */[0m)?);
+     [1m[94m|[0m                                                      [92m+++++++++[0m
+
+[1m[33mwarning[0m[1m: unused variable: `feature`[0m
+  [1m[94m--> [0msrc/main.rs:20:12
+   [1m[94m|[0m
+[1m[94m20[0m [1m[94m|[0m     fn new(feature: usize, device: Device) -> Result<Self> {
+   [1m[94m|[0m            [1m[33m^^^^^^^[0m [1m[33mhelp: if this is intentional, prefix it with an underscore: `_feature`[0m
+   [1m[94m|[0m
+   [1m[94m= [0m[1mnote[0m: `#[warn(unused_variables)]` (part of `#[warn(unused)]`) on by default
+
+[1mFor more information about this error, try `rustc --explain E0061`.[0m
+[1m[33mwarning[0m: `rust-candle-course` (bin "rust-candle-course") generated 1 warning
+[1m[91merror[0m: could not compile `rust-candle-course` (bin "rust-candle-course") due to 1 previous error; 1 warning emitted
+[1m[38;5;255m[48;5;240m rust-candle-course [0m[1m[38;5;235m[48;5;204m check [0m[1m[38;5;235m[48;5;9m  1 error  [0m[1m[38;5;235m[48;5;11m  1 warning  [0m
+[1m[92m    Checking[0m rust-candle-course v0.1.0 (/Users/stephen/Desktop/rust-candle-course)
+[1m[33mwarning[0m[1m: unused variable: `feature`[0m
+  [1m[94m--> [0msrc/main.rs:20:12
+   [1m[94m|[0m
+[1m[94m20[0m [1m[94m|[0m     fn new(feature: usize, device: Device) -> Result<Self> {
+   [1m[94m|[0m            [1m[33m^^^^^^^[0m [1m[33mhelp: if this is intentional, prefix it with an underscore: `_feature`[0m
+   [1m[94m|[0m
+   [1m[94m= [0m[1mnote[0m: `#[warn(unused_variables)]` (part of `#[warn(unused)]`) on by default
+
+[1m[33mwarning[0m[1m: field `bias` is never read[0m
+ [1m[94m--> [0msrc/main.rs:6:5
+  [1m[94m|[0m
+[1m[94m4[0m [1m[94m|[0m struct LinearRegression {
+  [1m[94m|[0m        [1m[94m----------------[0m [1m[94mfield in this struct[0m
+[1m[94m5[0m [1m[94m|[0m     weights: Tensor,
+[1m[94m6[0m [1m[94m|[0m     bias: Tensor,
+  [1m[94m|[0m     [1m[33m^^^^[0m
+  [1m[94m|[0m
+  [1m[94m= [0m[1mnote[0m: `#[warn(dead_code)]` (part of `#[warn(unused)]`) on by default
+
+[1m[33mwarning[0m: `rust-candle-course` (bin "rust-candle-course") generated 2 warnings (run `cargo fix --bin "rust-candle-course" -p rust-candle-course` to apply 1 suggestion)
+[1m[92m    Finished[0m `dev` profile [unoptimized + debuginfo] target(s) in 0.62s
+[1m[38;5;255m[48;5;240m rust-candle-course [0m[1m[38;5;235m[48;5;204m check [0m[1m[38;5;235m[48;5;11m  2 warnings  [0m
+[1m[92m    Checking[0m rust-candle-course v0.1.0 (/Users/stephen/Desktop/rust-candle-course)
+[1m[33mwarning[0m[1m: unused variable: `feature`[0m
+  [1m[94m--> [0msrc/main.rs:20:12
+   [1m[94m|[0m
+[1m[94m20[0m [1m[94m|[0m     fn new(feature: usize, device: Device) -> Result<Self> {
+   [1m[94m|[0m            [1m[33m^^^^^^^[0m [1m[33mhelp: if this is intentional, prefix it with an underscore: `_feature`[0m
+   [1m[94m|[0m
+   [1m[94m= [0m[1mnote[0m: `#[warn(unused_variables)]` (part of `#[warn(unused)]`) on by default
+
+[1m[33mwarning[0m[1m: field `bias` is never read[0m
+ [1m[94m--> [0msrc/main.rs:6:5
+  [1m[94m|[0m
+[1m[94m4[0m [1m[94m|[0m struct LinearRegression {
+  [1m[94m|[0m        [1m[94m----------------[0m [1m[94mfield in this struct[0m
+[1m[94m5[0m [1m[94m|[0m     weights: Tensor,
+[1m[94m6[0m [1m[94m|[0m     bias: Tensor,
+  [1m[94m|[0m     [1m[33m^^^^[0m
+  [1m[94m|[0m
+  [1m[94m= [0m[1mnote[0m: `#[warn(dead_code)]` (part of `#[warn(unused)]`) on by default
+
+[1m[33mwarning[0m: `rust-candle-course` (bin "rust-candle-course") generated 2 warnings (run `cargo fix --bin "rust-candle-course" -p rust-candle-course` to apply 1 suggestion)
+[1m[92m    Finished[0m `dev` profile [unoptimized + debuginfo] target(s) in 0.83s
+[1m[38;5;255m[48;5;240m rust-candle-course [0m[1m[38;5;235m[48;5;204m check [0m[1m[38;5;235m[48;5;11m  2 warnings  [0m
+[1m[92m    Checking[0m rust-candle-course v0.1.0 (/Users/stephen/Desktop/rust-candle-course)
+[1m[33mwarning[0m[1m: unused variable: `feature`[0m
+  [1m[94m--> [0msrc/main.rs:20:12
+   [1m[94m|[0m
+[1m[94m20[0m [1m[94m|[0m     fn new(feature: usize, device: Device) -> Result<Self> {
+   [1m[94m|[0m            [1m[33m^^^^^^^[0m [1m[33mhelp: if this is intentional, prefix it with an underscore: `_feature`[0m
+   [1m[94m|[0m
+   [1m[94m= [0m[1mnote[0m: `#[warn(unused_variables)]` (part of `#[warn(unused)]`) on by default
+
+[1m[33mwarning[0m[1m: field `bias` is never read[0m
+ [1m[94m--> [0msrc/main.rs:6:5
+  [1m[94m|[0m
+[1m[94m4[0m [1m[94m|[0m struct LinearRegression {
+  [1m[94m|[0m        [1m[94m----------------[0m [1m[94mfield in this struct[0m
+[1m[94m5[0m [1m[94m|[0m     weights: Tensor,
+[1m[94m6[0m [1m[94m|[0m     bias: Tensor,
+  [1m[94m|[0m     [1m[33m^^^^[0m
+  [1m[94m|[0m
+  [1m[94m= [0m[1mnote[0m: `#[warn(dead_code)]` (part of `#[warn(unused)]`) on by default
+
+[1m[33mwarning[0m: `rust-candle-course` (bin "rust-candle-course") generated 2 warnings (run `cargo fix --bin "rust-candle-course" -p rust-candle-course` to apply 1 suggestion)
+[1m[92m    Finished[0m `dev` profile [unoptimized + debuginfo] target(s) in 0.12s
+[1m[38;5;255m[48;5;240m rust-candle-course [0m[1m[38;5;235m[48;5;204m check [0m[1m[38;5;235m[48;5;11m  2 warnings  [0m
+[1m[92m    Checking[0m rust-candle-course v0.1.0 (/Users/stephen/Desktop/rust-candle-course)
+[1m[33mwarning[0m[1m: unused variable: `feature`[0m
+  [1m[94m--> [0msrc/main.rs:20:12
+   [1m[94m|[0m
+[1m[94m20[0m [1m[94m|[0m     fn new(feature: usize, device: Device) -> Result<Self> {
+   [1m[94m|[0m            [1m[33m^^^^^^^[0m [1m[33mhelp: if this is intentional, prefix it with an underscore: `_feature`[0m
+   [1m[94m|[0m
+   [1m[94m= [0m[1mnote[0m: `#[warn(unused_variables)]` (part of `#[warn(unused)]`) on by default
+
+[1m[33mwarning[0m[1m: fields `weights` and `bias` are never read[0m
+ [1m[94m--> [0msrc/main.rs:5:5
+  [1m[94m|[0m
+[1m[94m4[0m [1m[94m|[0m struct LinearRegression {
+  [1m[94m|[0m        [1m[94m----------------[0m [1m[94mfields in this struct[0m
+[1m[94m5[0m [1m[94m|[0m     weights: Tensor,
+  [1m[94m|[0m     [1m[33m^^^^^^^[0m
+[1m[94m6[0m [1m[94m|[0m     bias: Tensor,
+  [1m[94m|[0m     [1m[33m^^^^[0m
+  [1m[94m|[0m
+  [1m[94m= [0m[1mnote[0m: `#[warn(dead_code)]` (part of `#[warn(unused)]`) on by default
+
+[1m[33mwarning[0m: `rust-candle-course` (bin "rust-candle-course") generated 2 warnings (run `cargo fix --bin "rust-candle-course" -p rust-candle-course` to apply 1 suggestion)
+[1m[92m    Finished[0m `dev` profile [unoptimized + debuginfo] target(s) in 0.87s
+[1m[38;5;255m[48;5;240m rust-candle-course [0m[1m[38;5;235m[48;5;204m check [0m[1m[38;5;235m[48;5;11m  2 warnings  [0m
+[1m[92m    Checking[0m rust-candle-course v0.1.0 (/Users/stephen/Desktop/rust-candle-course)
+[1m[33mwarning[0m[1m: unused variable: `feature`[0m
+  [1m[94m--> [0msrc/main.rs:20:12
+   [1m[94m|[0m
+[1m[94m20[0m [1m[94m|[0m     fn new(feature: usize, device: Device) -> Result<Self> {
+   [1m[94m|[0m            [1m[33m^^^^^^^[0m [1m[33mhelp: if this is intentional, prefix it with an underscore: `_feature`[0m
+   [1m[94m|[0m
+   [1m[94m= [0m[1mnote[0m: `#[warn(unused_variables)]` (part of `#[warn(unused)]`) on by default
+
+[1m[33mwarning[0m[1m: fields `weights` and `bias` are never read[0m
+ [1m[94m--> [0msrc/main.rs:5:5
+  [1m[94m|[0m
+[1m[94m4[0m [1m[94m|[0m struct LinearRegression {
+  [1m[94m|[0m        [1m[94m----------------[0m [1m[94mfields in this struct[0m
+[1m[94m5[0m [1m[94m|[0m     weights: Tensor,
+  [1m[94m|[0m     [1m[33m^^^^^^^[0m
+[1m[94m6[0m [1m[94m|[0m     bias: Tensor,
+  [1m[94m|[0m     [1m[33m^^^^[0m
+  [1m[94m|[0m
+  [1m[94m= [0m[1mnote[0m: `#[warn(dead_code)]` (part of `#[warn(unused)]`) on by default
+
+[1m[33mwarning[0m: `rust-candle-course` (bin "rust-candle-course") generated 2 warnings (run `cargo fix --bin "rust-candle-course" -p rust-candle-course` to apply 1 suggestion)
+[1m[92m    Finished[0m `dev` profile [unoptimized + debuginfo] target(s) in 0.12s
+[1m[38;5;255m[48;5;240m rust-candle-course [0m[1m[38;5;235m[48;5;204m check [0m[1m[38;5;235m[48;5;11m  2 warnings  [0m
+[1m[92m    Checking[0m rust-candle-course v0.1.0 (/Users/stephen/Desktop/rust-candle-course)
+[1m[91merror[E0599][0m[1m: no method named `unsqeeze` found for struct `candle_core::Tensor` in the current scope[0m
+  [1m[94m--> [0msrc/main.rs:34:42
+   [1m[94m|[0m
+[1m[94m34[0m [1m[94m|[0m         let out = x.matmul(&self.weights.unsqeeze(0)?)?;
+   [1m[94m|[0m                                          [1m[91m^^^^^^^^[0m
+   [1m[94m|[0m
+[1m[96mhelp[0m: there is a method `unsqueeze` with a similar name
+   [1m[94m|[0m
+[1m[94m34[0m [1m[94m| [0m        let out = x.matmul(&self.weights.unsq[92mu[0meeze(0)?)?;
+   [1m[94m|[0m                                              [92m+[0m
+
+[1m[91merror[E0599][0m[1m: no method named `hypothesis` found for struct `LinearRegression` in the current scope[0m
+  [1m[94m--> [0msrc/main.rs:45:11
+   [1m[94m|[0m
+[1m[94m 4[0m [1m[94m|[0m struct LinearRegression {
+   [1m[94m|[0m [1m[94m-----------------------[0m [1m[94mmethod `hypothesis` not found for this struct[0m
+[1m[94m...[0m
+[1m[94m45[0m [1m[94m|[0m     model.hypothesis()?;
+   [1m[94m|[0m           [1m[91m^^^^^^^^^^[0m [1m[91mmethod not found in `LinearRegression`[0m
+
+[1m[33mwarning[0m[1m: unused variable: `feature`[0m
+  [1m[94m--> [0msrc/main.rs:20:12
+   [1m[94m|[0m
+[1m[94m20[0m [1m[94m|[0m     fn new(feature: usize, device: Device) -> Result<Self> {
+   [1m[94m|[0m            [1m[33m^^^^^^^[0m [1m[33mhelp: if this is intentional, prefix it with an underscore: `_feature`[0m
+   [1m[94m|[0m
+   [1m[94m= [0m[1mnote[0m: `#[warn(unused_variables)]` (part of `#[warn(unused)]`) on by default
+
+[1mFor more information about this error, try `rustc --explain E0599`.[0m
+[1m[33mwarning[0m: `rust-candle-course` (bin "rust-candle-course") generated 1 warning
+[1m[91merror[0m: could not compile `rust-candle-course` (bin "rust-candle-course") due to 2 previous errors; 1 warning emitted
+[1m[38;5;255m[48;5;240m rust-candle-course [0m[1m[38;5;235m[48;5;204m check [0m[1m[38;5;235m[48;5;9m  2 errors  [0m[1m[38;5;235m[48;5;11m  1 warning  [0m
+[1m[92m    Checking[0m rust-candle-course v0.1.0 (/Users/stephen/Desktop/rust-candle-course)
+[1m[91merror[E0599][0m[1m: no method named `unsqeeze` found for struct `candle_core::Tensor` in the current scope[0m
+  [1m[94m--> [0msrc/main.rs:33:42
+   [1m[94m|[0m
+[1m[94m33[0m [1m[94m|[0m         let out = x.matmul(&self.weights.unsqeeze(0)?)?;
+   [1m[94m|[0m                                          [1m[91m^^^^^^^^[0m
+   [1m[94m|[0m
+[1m[96mhelp[0m: there is a method `unsqueeze` with a similar name
+   [1m[94m|[0m
+[1m[94m33[0m [1m[94m| [0m        let out = x.matmul(&self.weights.unsq[92mu[0meeze(0)?)?;
+   [1m[94m|[0m                                              [92m+[0m
+
+[1m[91merror[E0599][0m[1m: no method named `hypothesis` found for struct `LinearRegression` in the current scope[0m
+  [1m[94m--> [0msrc/main.rs:44:11
+   [1m[94m|[0m
+[1m[94m 4[0m [1m[94m|[0m struct LinearRegression {
+   [1m[94m|[0m [1m[94m-----------------------[0m [1m[94mmethod `hypothesis` not found for this struct[0m
+[1m[94m...[0m
+[1m[94m44[0m [1m[94m|[0m     model.hypothesis()?;
+   [1m[94m|[0m           [1m[91m^^^^^^^^^^[0m [1m[91mmethod not found in `LinearRegression`[0m
+
+[1m[33mwarning[0m[1m: unused variable: `feature`[0m
+  [1m[94m--> [0msrc/main.rs:20:12
+   [1m[94m|[0m
+[1m[94m20[0m [1m[94m|[0m     fn new(feature: usize, device: Device) -> Result<Self> {
+   [1m[94m|[0m            [1m[33m^^^^^^^[0m [1m[33mhelp: if this is intentional, prefix it with an underscore: `_feature`[0m
+   [1m[94m|[0m
+   [1m[94m= [0m[1mnote[0m: `#[warn(unused_variables)]` (part of `#[warn(unused)]`) on by default
+
+[1mFor more information about this error, try `rustc --explain E0599`.[0m
+[1m[33mwarning[0m: `rust-candle-course` (bin "rust-candle-course") generated 1 warning
+[1m[91merror[0m: could not compile `rust-candle-course` (bin "rust-candle-course") due to 2 previous errors; 1 warning emitted
+[1m[38;5;255m[48;5;240m rust-candle-course [0m[1m[38;5;235m[48;5;204m check [0m[1m[38;5;235m[48;5;9m  2 errors  [0m[1m[38;5;235m[48;5;11m  1 warning  [0m
+[1m[92m    Checking[0m rust-candle-course v0.1.0 (/Users/stephen/Desktop/rust-candle-course)
+[1m[91merror[E0599][0m[1m: no method named `hypothesis` found for struct `LinearRegression` in the current scope[0m
+  [1m[94m--> [0msrc/main.rs:44:11
+   [1m[94m|[0m
+[1m[94m 4[0m [1m[94m|[0m struct LinearRegression {
+   [1m[94m|[0m [1m[94m-----------------------[0m [1m[94mmethod `hypothesis` not found for this struct[0m
+[1m[94m...[0m
+[1m[94m44[0m [1m[94m|[0m     model.hypothesis()?;
+   [1m[94m|[0m           [1m[91m^^^^^^^^^^[0m [1m[91mmethod not found in `LinearRegression`[0m
+
+[1m[33mwarning[0m[1m: unused variable: `feature`[0m
+  [1m[94m--> [0msrc/main.rs:20:12
+   [1m[94m|[0m
+[1m[94m20[0m [1m[94m|[0m     fn new(feature: usize, device: Device) -> Result<Self> {
+   [1m[94m|[0m            [1m[33m^^^^^^^[0m [1m[33mhelp: if this is intentional, prefix it with an underscore: `_feature`[0m
    [1m[94m|[0m
    [1m[94m= [0m[1mnote[0m: `#[warn(unused_variables)]` (part of `#[warn(unused)]`) on by default
 
@@ -764,210 +1167,444 @@
 [1m[91merror[0m: could not compile `rust-candle-course` (bin "rust-candle-course") due to 1 previous error; 1 warning emitted
 [1m[38;5;255m[48;5;240m rust-candle-course [0m[1m[38;5;235m[48;5;204m check [0m[1m[38;5;235m[48;5;9m  1 error  [0m[1m[38;5;235m[48;5;11m  1 warning  [0m
 [1m[92m    Checking[0m rust-candle-course v0.1.0 (/Users/stephen/Desktop/rust-candle-course)
-[1m[33mwarning[0m[1m: unused variable: `device`[0m
-  [1m[94m--> [0msrc/main.rs:41:5
+[1m[91merror[E0599][0m[1m: no method named `hypothesis` found for struct `LinearRegression` in the current scope[0m
+  [1m[94m--> [0msrc/main.rs:44:11
    [1m[94m|[0m
-[1m[94m41[0m [1m[94m|[0m     device: &Device,
-   [1m[94m|[0m     [1m[33m^^^^^^[0m [1m[33mhelp: if this is intentional, prefix it with an underscore: `_device`[0m
+[1m[94m 4[0m [1m[94m|[0m struct LinearRegression {
+   [1m[94m|[0m [1m[94m-----------------------[0m [1m[94mmethod `hypothesis` not found for this struct[0m
+[1m[94m...[0m
+[1m[94m44[0m [1m[94m|[0m     model.hypothesis()?;
+   [1m[94m|[0m           [1m[91m^^^^^^^^^^[0m [1m[91mmethod not found in `LinearRegression`[0m
+
+[1m[33mwarning[0m[1m: unused variable: `feature`[0m
+  [1m[94m--> [0msrc/main.rs:20:12
+   [1m[94m|[0m
+[1m[94m20[0m [1m[94m|[0m     fn new(feature: usize, device: Device) -> Result<Self> {
+   [1m[94m|[0m            [1m[33m^^^^^^^[0m [1m[33mhelp: if this is intentional, prefix it with an underscore: `_feature`[0m
    [1m[94m|[0m
    [1m[94m= [0m[1mnote[0m: `#[warn(unused_variables)]` (part of `#[warn(unused)]`) on by default
 
-[1m[33mwarning[0m[1m: variable does not need to be mutable[0m
-  [1m[94m--> [0msrc/main.rs:81:9
-   [1m[94m|[0m
-[1m[94m81[0m [1m[94m|[0m     let mut anomalies = 0;
-   [1m[94m|[0m         [1m[94m----[0m[1m[33m^^^^^^^^^[0m
-   [1m[94m|[0m         [1m[94m|[0m
-   [1m[94m|[0m         [1m[94mhelp: remove this `mut`[0m
-   [1m[94m|[0m
-   [1m[94m= [0m[1mnote[0m: `#[warn(unused_mut)]` (part of `#[warn(unused)]`) on by default
-
-[1m[33mwarning[0m[1m: unused variable: `col`[0m
-  [1m[94m--> [0msrc/main.rs:97:14
-   [1m[94m|[0m
-[1m[94m97[0m [1m[94m|[0m         for (col, item) in px.iter().enumerate() {
-   [1m[94m|[0m              [1m[33m^^^[0m [1m[33mhelp: if this is intentional, prefix it with an underscore: `_col`[0m
-
-[1m[33mwarning[0m[1m: constant `THRESHOLD` is never used[0m
-  [1m[94m--> [0msrc/main.rs:63:7
-   [1m[94m|[0m
-[1m[94m63[0m [1m[94m|[0m const THRESHOLD: f32 = 0.1;
-   [1m[94m|[0m       [1m[33m^^^^^^^^^[0m
-   [1m[94m|[0m
-   [1m[94m= [0m[1mnote[0m: `#[warn(dead_code)]` (part of `#[warn(unused)]`) on by default
-
-[1m[33mwarning[0m: `rust-candle-course` (bin "rust-candle-course") generated 4 warnings (run `cargo fix --bin "rust-candle-course" -p rust-candle-course` to apply 3 suggestions)
-[1m[92m    Finished[0m `dev` profile [unoptimized + debuginfo] target(s) in 0.11s
-[1m[38;5;255m[48;5;240m rust-candle-course [0m[1m[38;5;235m[48;5;204m check [0m[1m[38;5;235m[48;5;11m  4 warnings  [0m
+[1mFor more information about this error, try `rustc --explain E0599`.[0m
+[1m[33mwarning[0m: `rust-candle-course` (bin "rust-candle-course") generated 1 warning
+[1m[91merror[0m: could not compile `rust-candle-course` (bin "rust-candle-course") due to 1 previous error; 1 warning emitted
+[1m[38;5;255m[48;5;240m rust-candle-course [0m[1m[38;5;235m[48;5;204m check [0m[1m[38;5;235m[48;5;9m  1 error  [0m[1m[38;5;235m[48;5;11m  1 warning  [0m
 [1m[92m    Checking[0m rust-candle-course v0.1.0 (/Users/stephen/Desktop/rust-candle-course)
-[1m[33mwarning[0m[1m: unused variable: `device`[0m
-  [1m[94m--> [0msrc/main.rs:41:5
+[1m[91merror[E0061][0m[1m: this function takes 2 arguments but 4 arguments were supplied[0m
+   [1m[94m--> [0msrc/main.rs:44:21
+    [1m[94m|[0m
+[1m[94m 44[0m [1m[94m|[0m     let x: Tensor = Tensor::new(0f32, 1f32, (10, 1), &device)?;
+    [1m[94m|[0m                     [1m[91m^^^^^^^^^^^[0m       [1m[94m----[0m  [1m[94m-------[0m [1m[94munexpected argument #3 of type `({integer}, {integer})`[0m
+    [1m[94m|[0m                                       [1m[94m|[0m
+    [1m[94m|[0m                                       [1m[94munexpected argument #2 of type `f32`[0m
+    [1m[94m|[0m
+[1m[92mnote[0m: associated function defined here
+   [1m[94m--> [0m/Users/stephen/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/candle-core-0.11.0/src/tensor.rs:425:12
+    [1m[94m|[0m
+[1m[94m425[0m [1m[94m|[0m     pub fn new<A: crate::device::NdArray>(array: A, device: &Device) -> Result<Self> {
+    [1m[94m|[0m            [1m[92m^^^[0m
+[1m[96mhelp[0m: remove the extra arguments
+    [1m[94m|[0m
+[1m[94m 44[0m [91m- [0m    let x: Tensor = Tensor::new(0f32[91m, 1f32, (10, 1)[0m, &device)?;
+[1m[94m 44[0m [92m+ [0m    let x: Tensor = Tensor::new(0f32, &device)?;
+    [1m[94m|[0m
+
+[1m[91merror[E0061][0m[1m: this method takes 1 argument but 0 arguments were supplied[0m
+  [1m[94m--> [0msrc/main.rs:45:11
    [1m[94m|[0m
-[1m[94m41[0m [1m[94m|[0m     device: &Device,
-   [1m[94m|[0m     [1m[33m^^^^^^[0m [1m[33mhelp: if this is intentional, prefix it with an underscore: `_device`[0m
+[1m[94m45[0m [1m[94m|[0m     model.forward()?;
+   [1m[94m|[0m           [1m[91m^^^^^^^[0m[1m[94m--[0m [1m[94margument #1 of type `&candle_core::Tensor` is missing[0m
+   [1m[94m|[0m
+[1m[92mnote[0m: method defined here
+  [1m[94m--> [0msrc/main.rs:32:8
+   [1m[94m|[0m
+[1m[94m32[0m [1m[94m|[0m     fn forward(&self, x: &Tensor) -> Result<Tensor> {
+   [1m[94m|[0m        [1m[92m^^^^^^^[0m        [1m[94m----------[0m
+[1m[96mhelp[0m: provide the argument
+   [1m[94m|[0m
+[1m[94m45[0m [1m[94m| [0m    model.forward([92m/* &candle_core::Tensor */[0m)?;
+   [1m[94m|[0m                   [92m++++++++++++++++++++++++++[0m
+
+[1m[33mwarning[0m[1m: unused variable: `feature`[0m
+  [1m[94m--> [0msrc/main.rs:20:12
+   [1m[94m|[0m
+[1m[94m20[0m [1m[94m|[0m     fn new(feature: usize, device: Device) -> Result<Self> {
+   [1m[94m|[0m            [1m[33m^^^^^^^[0m [1m[33mhelp: if this is intentional, prefix it with an underscore: `_feature`[0m
    [1m[94m|[0m
    [1m[94m= [0m[1mnote[0m: `#[warn(unused_variables)]` (part of `#[warn(unused)]`) on by default
 
-[1m[33mwarning[0m[1m: variable does not need to be mutable[0m
-  [1m[94m--> [0msrc/main.rs:81:9
-   [1m[94m|[0m
-[1m[94m81[0m [1m[94m|[0m     let mut anomalies = 0;
-   [1m[94m|[0m         [1m[94m----[0m[1m[33m^^^^^^^^^[0m
-   [1m[94m|[0m         [1m[94m|[0m
-   [1m[94m|[0m         [1m[94mhelp: remove this `mut`[0m
-   [1m[94m|[0m
-   [1m[94m= [0m[1mnote[0m: `#[warn(unused_mut)]` (part of `#[warn(unused)]`) on by default
-
-[1m[33mwarning[0m[1m: unused variable: `col`[0m
-  [1m[94m--> [0msrc/main.rs:97:14
-   [1m[94m|[0m
-[1m[94m97[0m [1m[94m|[0m         for (col, item) in px.iter().enumerate() {
-   [1m[94m|[0m              [1m[33m^^^[0m [1m[33mhelp: if this is intentional, prefix it with an underscore: `_col`[0m
-
-[1m[33mwarning[0m[1m: constant `THRESHOLD` is never used[0m
-  [1m[94m--> [0msrc/main.rs:63:7
-   [1m[94m|[0m
-[1m[94m63[0m [1m[94m|[0m const THRESHOLD: f32 = 0.1;
-   [1m[94m|[0m       [1m[33m^^^^^^^^^[0m
-   [1m[94m|[0m
-   [1m[94m= [0m[1mnote[0m: `#[warn(dead_code)]` (part of `#[warn(unused)]`) on by default
-
-[1m[33mwarning[0m: `rust-candle-course` (bin "rust-candle-course") generated 4 warnings (run `cargo fix --bin "rust-candle-course" -p rust-candle-course` to apply 3 suggestions)
-[1m[92m    Finished[0m `dev` profile [unoptimized + debuginfo] target(s) in 0.11s
-[1m[38;5;255m[48;5;240m rust-candle-course [0m[1m[38;5;235m[48;5;204m check [0m[1m[38;5;235m[48;5;11m  4 warnings  [0m
+[1mFor more information about this error, try `rustc --explain E0061`.[0m
+[1m[33mwarning[0m: `rust-candle-course` (bin "rust-candle-course") generated 1 warning
+[1m[91merror[0m: could not compile `rust-candle-course` (bin "rust-candle-course") due to 2 previous errors; 1 warning emitted
+[1m[38;5;255m[48;5;240m rust-candle-course [0m[1m[38;5;235m[48;5;204m check [0m[1m[38;5;235m[48;5;9m  2 errors  [0m[1m[38;5;235m[48;5;11m  1 warning  [0m
 [1m[92m    Checking[0m rust-candle-course v0.1.0 (/Users/stephen/Desktop/rust-candle-course)
-[1m[33mwarning[0m[1m: unnecessary parentheses around `if` condition[0m
-   [1m[94m--> [0msrc/main.rs:102:16
+[1m[91merror[E0061][0m[1m: this function takes 2 arguments but 4 arguments were supplied[0m
+   [1m[94m--> [0msrc/main.rs:44:21
     [1m[94m|[0m
-[1m[94m102[0m [1m[94m|[0m             if (item < THRESHOLD) {
-    [1m[94m|[0m                [1m[33m^[0m                [1m[33m^[0m
+[1m[94m 44[0m [1m[94m|[0m     let x: Tensor = Tensor::new(0f32, 1f32, (10, 1), &device)?;
+    [1m[94m|[0m                     [1m[91m^^^^^^^^^^^[0m       [1m[94m----[0m  [1m[94m-------[0m [1m[94munexpected argument #3 of type `({integer}, {integer})`[0m
+    [1m[94m|[0m                                       [1m[94m|[0m
+    [1m[94m|[0m                                       [1m[94munexpected argument #2 of type `f32`[0m
     [1m[94m|[0m
-    [1m[94m= [0m[1mnote[0m: `#[warn(unused_parens)]` (part of `#[warn(unused)]`) on by default
-[1m[96mhelp[0m: remove these parentheses
+[1m[92mnote[0m: associated function defined here
+   [1m[94m--> [0m/Users/stephen/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/candle-core-0.11.0/src/tensor.rs:425:12
     [1m[94m|[0m
-[1m[94m102[0m [91m- [0m            if [91m([0mitem < THRESHOLD[91m)[0m {
-[1m[94m102[0m [92m+ [0m            if item < THRESHOLD[92m [0m {
+[1m[94m425[0m [1m[94m|[0m     pub fn new<A: crate::device::NdArray>(array: A, device: &Device) -> Result<Self> {
+    [1m[94m|[0m            [1m[92m^^^[0m
+[1m[96mhelp[0m: remove the extra arguments
+    [1m[94m|[0m
+[1m[94m 44[0m [91m- [0m    let x: Tensor = Tensor::new(0f32[91m, 1f32, (10, 1)[0m, &device)?;
+[1m[94m 44[0m [92m+ [0m    let x: Tensor = Tensor::new(0f32, &device)?;
     [1m[94m|[0m
 
 [1m[91merror[E0308][0m[1m: mismatched types[0m
-   [1m[94m--> [0msrc/main.rs:102:24
-    [1m[94m|[0m
-[1m[94m102[0m [1m[94m|[0m             if (item < THRESHOLD) {
-    [1m[94m|[0m                        [1m[91m^^^^^^^^^[0m [1m[91mexpected `&f32`, found `f32`[0m
-    [1m[94m|[0m
-[1m[96mhelp[0m: consider dereferencing the borrow
-    [1m[94m|[0m
-[1m[94m102[0m [1m[94m| [0m            if ([92m*[0mitem < THRESHOLD) {
-    [1m[94m|[0m                 [92m+[0m
-
-[1m[33mwarning[0m[1m: unused variable: `device`[0m
-  [1m[94m--> [0msrc/main.rs:41:5
+  [1m[94m--> [0msrc/main.rs:45:19
    [1m[94m|[0m
-[1m[94m41[0m [1m[94m|[0m     device: &Device,
-   [1m[94m|[0m     [1m[33m^^^^^^[0m [1m[33mhelp: if this is intentional, prefix it with an underscore: `_device`[0m
+[1m[94m45[0m [1m[94m|[0m     model.forward(x)?;
+   [1m[94m|[0m           [1m[94m-------[0m [1m[91m^[0m [1m[91mexpected `&Tensor`, found `Tensor`[0m
+   [1m[94m|[0m           [1m[94m|[0m
+   [1m[94m|[0m           [1m[94marguments to this method are incorrect[0m
+   [1m[94m|[0m
+[1m[92mnote[0m: method defined here
+  [1m[94m--> [0msrc/main.rs:32:8
+   [1m[94m|[0m
+[1m[94m32[0m [1m[94m|[0m     fn forward(&self, x: &Tensor) -> Result<Tensor> {
+   [1m[94m|[0m        [1m[92m^^^^^^^[0m        [1m[94m----------[0m
+[1m[96mhelp[0m: consider borrowing here
+   [1m[94m|[0m
+[1m[94m45[0m [1m[94m| [0m    model.forward([92m&[0mx)?;
+   [1m[94m|[0m                   [92m+[0m
+
+[1m[33mwarning[0m[1m: unused variable: `feature`[0m
+  [1m[94m--> [0msrc/main.rs:20:12
+   [1m[94m|[0m
+[1m[94m20[0m [1m[94m|[0m     fn new(feature: usize, device: Device) -> Result<Self> {
+   [1m[94m|[0m            [1m[33m^^^^^^^[0m [1m[33mhelp: if this is intentional, prefix it with an underscore: `_feature`[0m
    [1m[94m|[0m
    [1m[94m= [0m[1mnote[0m: `#[warn(unused_variables)]` (part of `#[warn(unused)]`) on by default
 
-[1mFor more information about this error, try `rustc --explain E0308`.[0m
-[1m[33mwarning[0m: `rust-candle-course` (bin "rust-candle-course") generated 2 warnings
-[1m[91merror[0m: could not compile `rust-candle-course` (bin "rust-candle-course") due to 1 previous error; 2 warnings emitted
-[1m[38;5;255m[48;5;240m rust-candle-course [0m[1m[38;5;235m[48;5;204m check [0m[1m[38;5;235m[48;5;9m  1 error  [0m[1m[38;5;235m[48;5;11m  2 warnings  [0m
+[1mSome errors have detailed explanations: E0061, E0308.[0m
+[1mFor more information about an error, try `rustc --explain E0061`.[0m
+[1m[33mwarning[0m: `rust-candle-course` (bin "rust-candle-course") generated 1 warning
+[1m[91merror[0m: could not compile `rust-candle-course` (bin "rust-candle-course") due to 2 previous errors; 1 warning emitted
+[1m[38;5;255m[48;5;240m rust-candle-course [0m[1m[38;5;235m[48;5;204m check [0m[1m[38;5;235m[48;5;9m  2 errors  [0m[1m[38;5;235m[48;5;11m  1 warning  [0m
 [1m[92m    Checking[0m rust-candle-course v0.1.0 (/Users/stephen/Desktop/rust-candle-course)
-[1m[33mwarning[0m[1m: unnecessary parentheses around `if` condition[0m
-   [1m[94m--> [0msrc/main.rs:102:16
+[1m[91merror[E0061][0m[1m: this function takes 2 arguments but 4 arguments were supplied[0m
+   [1m[94m--> [0msrc/main.rs:44:21
     [1m[94m|[0m
-[1m[94m102[0m [1m[94m|[0m             if (item < THRESHOLD) {
-    [1m[94m|[0m                [1m[33m^[0m                [1m[33m^[0m
+[1m[94m 44[0m [1m[94m|[0m     let x: Tensor = Tensor::new(0f32, 1f32, (10, 1), &device)?;
+    [1m[94m|[0m                     [1m[91m^^^^^^^^^^^[0m       [1m[94m----[0m  [1m[94m-------[0m [1m[94munexpected argument #3 of type `({integer}, {integer})`[0m
+    [1m[94m|[0m                                       [1m[94m|[0m
+    [1m[94m|[0m                                       [1m[94munexpected argument #2 of type `f32`[0m
     [1m[94m|[0m
-    [1m[94m= [0m[1mnote[0m: `#[warn(unused_parens)]` (part of `#[warn(unused)]`) on by default
-[1m[96mhelp[0m: remove these parentheses
+[1m[92mnote[0m: associated function defined here
+   [1m[94m--> [0m/Users/stephen/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/candle-core-0.11.0/src/tensor.rs:425:12
     [1m[94m|[0m
-[1m[94m102[0m [91m- [0m            if [91m([0mitem < THRESHOLD[91m)[0m {
-[1m[94m102[0m [92m+ [0m            if item < THRESHOLD[92m [0m {
+[1m[94m425[0m [1m[94m|[0m     pub fn new<A: crate::device::NdArray>(array: A, device: &Device) -> Result<Self> {
+    [1m[94m|[0m            [1m[92m^^^[0m
+[1m[96mhelp[0m: remove the extra arguments
+    [1m[94m|[0m
+[1m[94m 44[0m [91m- [0m    let x: Tensor = Tensor::new(0f32[91m, 1f32, (10, 1)[0m, &device)?;
+[1m[94m 44[0m [92m+ [0m    let x: Tensor = Tensor::new(0f32, &device)?;
     [1m[94m|[0m
 
-[1m[91merror[E0308][0m[1m: mismatched types[0m
-   [1m[94m--> [0msrc/main.rs:102:24
-    [1m[94m|[0m
-[1m[94m102[0m [1m[94m|[0m             if (item < THRESHOLD) {
-    [1m[94m|[0m                        [1m[91m^^^^^^^^^[0m [1m[91mexpected `&f32`, found `f32`[0m
-    [1m[94m|[0m
-[1m[96mhelp[0m: consider dereferencing the borrow
-    [1m[94m|[0m
-[1m[94m102[0m [1m[94m| [0m            if ([92m*[0mitem < THRESHOLD) {
-    [1m[94m|[0m                 [92m+[0m
-
-[1m[33mwarning[0m[1m: unused variable: `device`[0m
-  [1m[94m--> [0msrc/main.rs:41:5
+[1m[33mwarning[0m[1m: unused variable: `feature`[0m
+  [1m[94m--> [0msrc/main.rs:20:12
    [1m[94m|[0m
-[1m[94m41[0m [1m[94m|[0m     device: &Device,
-   [1m[94m|[0m     [1m[33m^^^^^^[0m [1m[33mhelp: if this is intentional, prefix it with an underscore: `_device`[0m
+[1m[94m20[0m [1m[94m|[0m     fn new(feature: usize, device: Device) -> Result<Self> {
+   [1m[94m|[0m            [1m[33m^^^^^^^[0m [1m[33mhelp: if this is intentional, prefix it with an underscore: `_feature`[0m
    [1m[94m|[0m
    [1m[94m= [0m[1mnote[0m: `#[warn(unused_variables)]` (part of `#[warn(unused)]`) on by default
 
-[1mFor more information about this error, try `rustc --explain E0308`.[0m
-[1m[33mwarning[0m: `rust-candle-course` (bin "rust-candle-course") generated 2 warnings
-[1m[91merror[0m: could not compile `rust-candle-course` (bin "rust-candle-course") due to 1 previous error; 2 warnings emitted
-[1m[38;5;255m[48;5;240m rust-candle-course [0m[1m[38;5;235m[48;5;204m check [0m[1m[38;5;235m[48;5;9m  1 error  [0m[1m[38;5;235m[48;5;11m  2 warnings  [0m
+[1mFor more information about this error, try `rustc --explain E0061`.[0m
+[1m[33mwarning[0m: `rust-candle-course` (bin "rust-candle-course") generated 1 warning
+[1m[91merror[0m: could not compile `rust-candle-course` (bin "rust-candle-course") due to 1 previous error; 1 warning emitted
+[1m[38;5;255m[48;5;240m rust-candle-course [0m[1m[38;5;235m[48;5;204m check [0m[1m[38;5;235m[48;5;9m  1 error  [0m[1m[38;5;235m[48;5;11m  1 warning  [0m
 [1m[92m    Checking[0m rust-candle-course v0.1.0 (/Users/stephen/Desktop/rust-candle-course)
-[1m[33mwarning[0m[1m: unnecessary parentheses around `if` condition[0m
-   [1m[94m--> [0msrc/main.rs:102:16
+[1m[91merror[E0061][0m[1m: this function takes 2 arguments but 4 arguments were supplied[0m
+   [1m[94m--> [0msrc/main.rs:44:21
     [1m[94m|[0m
-[1m[94m102[0m [1m[94m|[0m             if (item < &THRESHOLD) {
-    [1m[94m|[0m                [1m[33m^[0m                 [1m[33m^[0m
+[1m[94m 44[0m [1m[94m|[0m     let x: Tensor = Tensor::new(0f32, 1f32, (10, 1), &device)?;
+    [1m[94m|[0m                     [1m[91m^^^^^^^^^^^[0m       [1m[94m----[0m  [1m[94m-------[0m [1m[94munexpected argument #3 of type `({integer}, {integer})`[0m
+    [1m[94m|[0m                                       [1m[94m|[0m
+    [1m[94m|[0m                                       [1m[94munexpected argument #2 of type `f32`[0m
     [1m[94m|[0m
-    [1m[94m= [0m[1mnote[0m: `#[warn(unused_parens)]` (part of `#[warn(unused)]`) on by default
-[1m[96mhelp[0m: remove these parentheses
+[1m[92mnote[0m: associated function defined here
+   [1m[94m--> [0m/Users/stephen/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/candle-core-0.11.0/src/tensor.rs:425:12
     [1m[94m|[0m
-[1m[94m102[0m [91m- [0m            if [91m([0mitem < &THRESHOLD[91m)[0m {
-[1m[94m102[0m [92m+ [0m            if item < &THRESHOLD[92m [0m {
+[1m[94m425[0m [1m[94m|[0m     pub fn new<A: crate::device::NdArray>(array: A, device: &Device) -> Result<Self> {
+    [1m[94m|[0m            [1m[92m^^^[0m
+[1m[96mhelp[0m: remove the extra arguments
+    [1m[94m|[0m
+[1m[94m 44[0m [91m- [0m    let x: Tensor = Tensor::new(0f32[91m, 1f32, (10, 1)[0m, &device)?;
+[1m[94m 44[0m [92m+ [0m    let x: Tensor = Tensor::new(0f32, &device)?;
     [1m[94m|[0m
 
-[1m[33mwarning[0m[1m: unused variable: `device`[0m
-  [1m[94m--> [0msrc/main.rs:41:5
+[1m[33mwarning[0m[1m: unused variable: `feature`[0m
+  [1m[94m--> [0msrc/main.rs:20:12
    [1m[94m|[0m
-[1m[94m41[0m [1m[94m|[0m     device: &Device,
-   [1m[94m|[0m     [1m[33m^^^^^^[0m [1m[33mhelp: if this is intentional, prefix it with an underscore: `_device`[0m
+[1m[94m20[0m [1m[94m|[0m     fn new(feature: usize, device: Device) -> Result<Self> {
+   [1m[94m|[0m            [1m[33m^^^^^^^[0m [1m[33mhelp: if this is intentional, prefix it with an underscore: `_feature`[0m
    [1m[94m|[0m
    [1m[94m= [0m[1mnote[0m: `#[warn(unused_variables)]` (part of `#[warn(unused)]`) on by default
 
-[1m[33mwarning[0m[1m: unused variable: `col`[0m
-  [1m[94m--> [0msrc/main.rs:97:14
-   [1m[94m|[0m
-[1m[94m97[0m [1m[94m|[0m         for (col, item) in px.iter().enumerate() {
-   [1m[94m|[0m              [1m[33m^^^[0m [1m[33mhelp: if this is intentional, prefix it with an underscore: `_col`[0m
-
-[1m[33mwarning[0m: `rust-candle-course` (bin "rust-candle-course") generated 3 warnings (run `cargo fix --bin "rust-candle-course" -p rust-candle-course` to apply 3 suggestions)
-[1m[92m    Finished[0m `dev` profile [unoptimized + debuginfo] target(s) in 0.12s
-[1m[38;5;255m[48;5;240m rust-candle-course [0m[1m[38;5;235m[48;5;204m check [0m[1m[38;5;235m[48;5;11m  3 warnings  [0m
+[1mFor more information about this error, try `rustc --explain E0061`.[0m
+[1m[33mwarning[0m: `rust-candle-course` (bin "rust-candle-course") generated 1 warning
+[1m[91merror[0m: could not compile `rust-candle-course` (bin "rust-candle-course") due to 1 previous error; 1 warning emitted
+[1m[38;5;255m[48;5;240m rust-candle-course [0m[1m[38;5;235m[48;5;204m check [0m[1m[38;5;235m[48;5;9m  1 error  [0m[1m[38;5;235m[48;5;11m  1 warning  [0m
 [1m[92m    Checking[0m rust-candle-course v0.1.0 (/Users/stephen/Desktop/rust-candle-course)
-[1m[33mwarning[0m[1m: unnecessary parentheses around `if` condition[0m
-   [1m[94m--> [0msrc/main.rs:103:16
-    [1m[94m|[0m
-[1m[94m103[0m [1m[94m|[0m             if (item < &THRESHOLD) {
-    [1m[94m|[0m                [1m[33m^[0m                 [1m[33m^[0m
-    [1m[94m|[0m
-    [1m[94m= [0m[1mnote[0m: `#[warn(unused_parens)]` (part of `#[warn(unused)]`) on by default
-[1m[96mhelp[0m: remove these parentheses
-    [1m[94m|[0m
-[1m[94m103[0m [91m- [0m            if [91m([0mitem < &THRESHOLD[91m)[0m {
-[1m[94m103[0m [92m+ [0m            if item < &THRESHOLD[92m [0m {
-    [1m[94m|[0m
-
-[1m[33mwarning[0m[1m: unused variable: `device`[0m
-  [1m[94m--> [0msrc/main.rs:41:5
+[1m[33mwarning[0m[1m: unused variable: `feature`[0m
+  [1m[94m--> [0msrc/main.rs:20:12
    [1m[94m|[0m
-[1m[94m41[0m [1m[94m|[0m     device: &Device,
-   [1m[94m|[0m     [1m[33m^^^^^^[0m [1m[33mhelp: if this is intentional, prefix it with an underscore: `_device`[0m
+[1m[94m20[0m [1m[94m|[0m     fn new(feature: usize, device: Device) -> Result<Self> {
+   [1m[94m|[0m            [1m[33m^^^^^^^[0m [1m[33mhelp: if this is intentional, prefix it with an underscore: `_feature`[0m
    [1m[94m|[0m
    [1m[94m= [0m[1mnote[0m: `#[warn(unused_variables)]` (part of `#[warn(unused)]`) on by default
 
-[1m[33mwarning[0m[1m: unused variable: `col`[0m
-  [1m[94m--> [0msrc/main.rs:97:14
+[1m[33mwarning[0m[1m: unused variable: `model`[0m
+  [1m[94m--> [0msrc/main.rs:43:9
    [1m[94m|[0m
-[1m[94m97[0m [1m[94m|[0m         for (col, item) in px.iter().enumerate() {
-   [1m[94m|[0m              [1m[33m^^^[0m [1m[33mhelp: if this is intentional, prefix it with an underscore: `_col`[0m
+[1m[94m43[0m [1m[94m|[0m     let model: LinearRegression = LinearRegression::new(10, device)?;
+   [1m[94m|[0m         [1m[33m^^^^^[0m [1m[33mhelp: if this is intentional, prefix it with an underscore: `_model`[0m
 
-[1m[33mwarning[0m: `rust-candle-course` (bin "rust-candle-course") generated 3 warnings (run `cargo fix --bin "rust-candle-course" -p rust-candle-course` to apply 3 suggestions)
-[1m[92m    Finished[0m `dev` profile [unoptimized + debuginfo] target(s) in 0.11s
-[1m[38;5;255m[48;5;240m rust-candle-course [0m[1m[38;5;235m[48;5;204m check [0m[1m[38;5;235m[48;5;11m  3 warnings  [0m
+[1m[33mwarning[0m[1m: fields `weights`, `bias`, and `device` are never read[0m
+ [1m[94m--> [0msrc/main.rs:5:5
+  [1m[94m|[0m
+[1m[94m4[0m [1m[94m|[0m struct LinearRegression {
+  [1m[94m|[0m        [1m[94m----------------[0m [1m[94mfields in this struct[0m
+[1m[94m5[0m [1m[94m|[0m     weights: Tensor,
+  [1m[94m|[0m     [1m[33m^^^^^^^[0m
+[1m[94m6[0m [1m[94m|[0m     bias: Tensor,
+  [1m[94m|[0m     [1m[33m^^^^[0m
+[1m[94m7[0m [1m[94m|[0m     device: Device,
+  [1m[94m|[0m     [1m[33m^^^^^^[0m
+  [1m[94m|[0m
+  [1m[94m= [0m[1mnote[0m: `#[warn(dead_code)]` (part of `#[warn(unused)]`) on by default
+
+[1m[33mwarning[0m[1m: method `forward` is never used[0m
+  [1m[94m--> [0msrc/main.rs:32:8
+   [1m[94m|[0m
+[1m[94m19[0m [1m[94m|[0m impl LinearRegression {
+   [1m[94m|[0m [1m[94m---------------------[0m [1m[94mmethod in this implementation[0m
+[1m[94m...[0m
+[1m[94m32[0m [1m[94m|[0m     fn forward(&self, x: &Tensor) -> Result<Tensor> {
+   [1m[94m|[0m        [1m[33m^^^^^^^[0m
+
+[1m[33mwarning[0m: `rust-candle-course` (bin "rust-candle-course") generated 4 warnings (run `cargo fix --bin "rust-candle-course" -p rust-candle-course` to apply 2 suggestions)
+[1m[92m    Finished[0m `dev` profile [unoptimized + debuginfo] target(s) in 0.14s
+[1m[38;5;255m[48;5;240m rust-candle-course [0m[1m[38;5;235m[48;5;204m check [0m[1m[38;5;235m[48;5;11m  4 warnings  [0m
+[1m[92m    Checking[0m rust-candle-course v0.1.0 (/Users/stephen/Desktop/rust-candle-course)
+[1m[91merror[E0061][0m[1m: this function takes 2 arguments but 4 arguments were supplied[0m
+   [1m[94m--> [0msrc/main.rs:44:21
+    [1m[94m|[0m
+[1m[94m 44[0m [1m[94m|[0m     let x: Tensor = Tensor::new(0f32, 1f32, (10, 1), &device)?;
+    [1m[94m|[0m                     [1m[91m^^^^^^^^^^^[0m       [1m[94m----[0m  [1m[94m-------[0m [1m[94munexpected argument #3 of type `({integer}, {integer})`[0m
+    [1m[94m|[0m                                       [1m[94m|[0m
+    [1m[94m|[0m                                       [1m[94munexpected argument #2 of type `f32`[0m
+    [1m[94m|[0m
+[1m[92mnote[0m: associated function defined here
+   [1m[94m--> [0m/Users/stephen/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/candle-core-0.11.0/src/tensor.rs:425:12
+    [1m[94m|[0m
+[1m[94m425[0m [1m[94m|[0m     pub fn new<A: crate::device::NdArray>(array: A, device: &Device) -> Result<Self> {
+    [1m[94m|[0m            [1m[92m^^^[0m
+[1m[96mhelp[0m: remove the extra arguments
+    [1m[94m|[0m
+[1m[94m 44[0m [91m- [0m    let x: Tensor = Tensor::new(0f32[91m, 1f32, (10, 1)[0m, &device)?;
+[1m[94m 44[0m [92m+ [0m    let x: Tensor = Tensor::new(0f32, &device)?;
+    [1m[94m|[0m
+
+[1m[33mwarning[0m[1m: unused variable: `feature`[0m
+  [1m[94m--> [0msrc/main.rs:20:12
+   [1m[94m|[0m
+[1m[94m20[0m [1m[94m|[0m     fn new(feature: usize, device: Device) -> Result<Self> {
+   [1m[94m|[0m            [1m[33m^^^^^^^[0m [1m[33mhelp: if this is intentional, prefix it with an underscore: `_feature`[0m
+   [1m[94m|[0m
+   [1m[94m= [0m[1mnote[0m: `#[warn(unused_variables)]` (part of `#[warn(unused)]`) on by default
+
+[1mFor more information about this error, try `rustc --explain E0061`.[0m
+[1m[33mwarning[0m: `rust-candle-course` (bin "rust-candle-course") generated 1 warning
+[1m[91merror[0m: could not compile `rust-candle-course` (bin "rust-candle-course") due to 1 previous error; 1 warning emitted
+[1m[38;5;255m[48;5;240m rust-candle-course [0m[1m[38;5;235m[48;5;204m check [0m[1m[38;5;235m[48;5;9m  1 error  [0m[1m[38;5;235m[48;5;11m  1 warning  [0m
+[1m[92m    Checking[0m rust-candle-course v0.1.0 (/Users/stephen/Desktop/rust-candle-course)
+[1m[33mwarning[0m[1m: unused variable: `feature`[0m
+  [1m[94m--> [0msrc/main.rs:20:12
+   [1m[94m|[0m
+[1m[94m20[0m [1m[94m|[0m     fn new(feature: usize, device: Device) -> Result<Self> {
+   [1m[94m|[0m            [1m[33m^^^^^^^[0m [1m[33mhelp: if this is intentional, prefix it with an underscore: `_feature`[0m
+   [1m[94m|[0m
+   [1m[94m= [0m[1mnote[0m: `#[warn(unused_variables)]` (part of `#[warn(unused)]`) on by default
+
+[1m[91merror[E0382][0m[1m: borrow of moved value: `device`[0m
+  [1m[94m--> [0msrc/main.rs:44:56
+   [1m[94m|[0m
+[1m[94m42[0m [1m[94m|[0m     let device: Device = Device::metal_if_available(0)?;
+   [1m[94m|[0m         [1m[94m------[0m [1m[94mmove occurs because `device` has type `Device`, which does not implement the `Copy` trait[0m
+[1m[94m43[0m [1m[94m|[0m     let model: LinearRegression = LinearRegression::new(10, device)?;
+   [1m[94m|[0m                                                             [1m[94m------[0m [1m[94mvalue moved here[0m
+[1m[94m44[0m [1m[94m|[0m     let x: Tensor = Tensor::randn(0f32, 1f32, (10, 1), &device)?;
+   [1m[94m|[0m                                                        [1m[91m^^^^^^^[0m [1m[91mvalue borrowed here after move[0m
+   [1m[94m|[0m
+[1m[92mnote[0m: consider changing this parameter type in method `new` to borrow instead if owning the value isn't necessary
+  [1m[94m--> [0msrc/main.rs:20:36
+   [1m[94m|[0m
+[1m[94m20[0m [1m[94m|[0m     fn new(feature: usize, device: Device) -> Result<Self> {
+   [1m[94m|[0m        [1m[94m---[0m [1m[94min this method[0m          [1m[92m^^^^^^[0m [1m[92mthis parameter takes ownership of the value[0m
+[1m[96mhelp[0m: consider cloning the value if the performance cost is acceptable
+   [1m[94m|[0m
+[1m[94m43[0m [1m[94m| [0m    let model: LinearRegression = LinearRegression::new(10, device[92m.clone()[0m)?;
+   [1m[94m|[0m                                                                   [92m++++++++[0m
+
+[1m[33mwarning[0m[1m: unused variable: `model`[0m
+  [1m[94m--> [0msrc/main.rs:43:9
+   [1m[94m|[0m
+[1m[94m43[0m [1m[94m|[0m     let model: LinearRegression = LinearRegression::new(10, device)?;
+   [1m[94m|[0m         [1m[33m^^^^^[0m [1m[33mhelp: if this is intentional, prefix it with an underscore: `_model`[0m
+
+[1m[33mwarning[0m[1m: unused variable: `x`[0m
+  [1m[94m--> [0msrc/main.rs:44:9
+   [1m[94m|[0m
+[1m[94m44[0m [1m[94m|[0m     let x: Tensor = Tensor::randn(0f32, 1f32, (10, 1), &device)?;
+   [1m[94m|[0m         [1m[33m^[0m [1m[33mhelp: if this is intentional, prefix it with an underscore: `_x`[0m
+
+[1mFor more information about this error, try `rustc --explain E0382`.[0m
+[1m[33mwarning[0m: `rust-candle-course` (bin "rust-candle-course") generated 3 warnings
+[1m[91merror[0m: could not compile `rust-candle-course` (bin "rust-candle-course") due to 1 previous error; 3 warnings emitted
+[1m[38;5;255m[48;5;240m rust-candle-course [0m[1m[38;5;235m[48;5;204m check [0m[1m[38;5;235m[48;5;9m  1 error  [0m[1m[38;5;235m[48;5;11m  3 warnings  [0m
+[1m[92m    Checking[0m rust-candle-course v0.1.0 (/Users/stephen/Desktop/rust-candle-course)
+[1m[33mwarning[0m[1m: unused variable: `feature`[0m
+  [1m[94m--> [0msrc/main.rs:20:12
+   [1m[94m|[0m
+[1m[94m20[0m [1m[94m|[0m     fn new(feature: usize, device: Device) -> Result<Self> {
+   [1m[94m|[0m            [1m[33m^^^^^^^[0m [1m[33mhelp: if this is intentional, prefix it with an underscore: `_feature`[0m
+   [1m[94m|[0m
+   [1m[94m= [0m[1mnote[0m: `#[warn(unused_variables)]` (part of `#[warn(unused)]`) on by default
+
+[1m[91merror[E0382][0m[1m: borrow of moved value: `device`[0m
+  [1m[94m--> [0msrc/main.rs:44:56
+   [1m[94m|[0m
+[1m[94m42[0m [1m[94m|[0m     let device: Device = Device::metal_if_available(0)?;
+   [1m[94m|[0m         [1m[94m------[0m [1m[94mmove occurs because `device` has type `Device`, which does not implement the `Copy` trait[0m
+[1m[94m43[0m [1m[94m|[0m     let model: LinearRegression = LinearRegression::new(10, device)?;
+   [1m[94m|[0m                                                             [1m[94m------[0m [1m[94mvalue moved here[0m
+[1m[94m44[0m [1m[94m|[0m     let x: Tensor = Tensor::randn(0f32, 1f32, (10, 1), &device)?;
+   [1m[94m|[0m                                                        [1m[91m^^^^^^^[0m [1m[91mvalue borrowed here after move[0m
+   [1m[94m|[0m
+[1m[92mnote[0m: consider changing this parameter type in method `new` to borrow instead if owning the value isn't necessary
+  [1m[94m--> [0msrc/main.rs:20:36
+   [1m[94m|[0m
+[1m[94m20[0m [1m[94m|[0m     fn new(feature: usize, device: Device) -> Result<Self> {
+   [1m[94m|[0m        [1m[94m---[0m [1m[94min this method[0m          [1m[92m^^^^^^[0m [1m[92mthis parameter takes ownership of the value[0m
+[1m[96mhelp[0m: consider cloning the value if the performance cost is acceptable
+   [1m[94m|[0m
+[1m[94m43[0m [1m[94m| [0m    let model: LinearRegression = LinearRegression::new(10, device[92m.clone()[0m)?;
+   [1m[94m|[0m                                                                   [92m++++++++[0m
+
+[1m[33mwarning[0m[1m: unused variable: `model`[0m
+  [1m[94m--> [0msrc/main.rs:43:9
+   [1m[94m|[0m
+[1m[94m43[0m [1m[94m|[0m     let model: LinearRegression = LinearRegression::new(10, device)?;
+   [1m[94m|[0m         [1m[33m^^^^^[0m [1m[33mhelp: if this is intentional, prefix it with an underscore: `_model`[0m
+
+[1m[33mwarning[0m[1m: unused variable: `x`[0m
+  [1m[94m--> [0msrc/main.rs:44:9
+   [1m[94m|[0m
+[1m[94m44[0m [1m[94m|[0m     let x: Tensor = Tensor::randn(0f32, 1f32, (10, 1), &device)?;
+   [1m[94m|[0m         [1m[33m^[0m [1m[33mhelp: if this is intentional, prefix it with an underscore: `_x`[0m
+
+[1mFor more information about this error, try `rustc --explain E0382`.[0m
+[1m[33mwarning[0m: `rust-candle-course` (bin "rust-candle-course") generated 3 warnings
+[1m[91merror[0m: could not compile `rust-candle-course` (bin "rust-candle-course") due to 1 previous error; 3 warnings emitted
+[1m[38;5;255m[48;5;240m rust-candle-course [0m[1m[38;5;235m[48;5;204m check [0m[1m[38;5;235m[48;5;9m  1 error  [0m[1m[38;5;235m[48;5;11m  3 warnings  [0m
+[1m[92m    Checking[0m rust-candle-course v0.1.0 (/Users/stephen/Desktop/rust-candle-course)
+[1m[33mwarning[0m[1m: unused variable: `feature`[0m
+  [1m[94m--> [0msrc/main.rs:20:12
+   [1m[94m|[0m
+[1m[94m20[0m [1m[94m|[0m     fn new(feature: usize, device: Device) -> Result<Self> {
+   [1m[94m|[0m            [1m[33m^^^^^^^[0m [1m[33mhelp: if this is intentional, prefix it with an underscore: `_feature`[0m
+   [1m[94m|[0m
+   [1m[94m= [0m[1mnote[0m: `#[warn(unused_variables)]` (part of `#[warn(unused)]`) on by default
+
+[1m[33mwarning[0m[1m: unused variable: `model`[0m
+  [1m[94m--> [0msrc/main.rs:43:9
+   [1m[94m|[0m
+[1m[94m43[0m [1m[94m|[0m     let model: LinearRegression = LinearRegression::new(10, device.clone())?;
+   [1m[94m|[0m         [1m[33m^^^^^[0m [1m[33mhelp: if this is intentional, prefix it with an underscore: `_model`[0m
+
+[1m[33mwarning[0m[1m: unused variable: `x`[0m
+  [1m[94m--> [0msrc/main.rs:44:9
+   [1m[94m|[0m
+[1m[94m44[0m [1m[94m|[0m     let x: Tensor = Tensor::randn(0f32, 1f32, (10, 1), &device)?;
+   [1m[94m|[0m         [1m[33m^[0m [1m[33mhelp: if this is intentional, prefix it with an underscore: `_x`[0m
+
+[1m[33mwarning[0m[1m: fields `weights`, `bias`, and `device` are never read[0m
+ [1m[94m--> [0msrc/main.rs:5:5
+  [1m[94m|[0m
+[1m[94m4[0m [1m[94m|[0m struct LinearRegression {
+  [1m[94m|[0m        [1m[94m----------------[0m [1m[94mfields in this struct[0m
+[1m[94m5[0m [1m[94m|[0m     weights: Tensor,
+  [1m[94m|[0m     [1m[33m^^^^^^^[0m
+[1m[94m6[0m [1m[94m|[0m     bias: Tensor,
+  [1m[94m|[0m     [1m[33m^^^^[0m
+[1m[94m7[0m [1m[94m|[0m     device: Device,
+  [1m[94m|[0m     [1m[33m^^^^^^[0m
+  [1m[94m|[0m
+  [1m[94m= [0m[1mnote[0m: `#[warn(dead_code)]` (part of `#[warn(unused)]`) on by default
+
+[1m[33mwarning[0m[1m: method `forward` is never used[0m
+  [1m[94m--> [0msrc/main.rs:32:8
+   [1m[94m|[0m
+[1m[94m19[0m [1m[94m|[0m impl LinearRegression {
+   [1m[94m|[0m [1m[94m---------------------[0m [1m[94mmethod in this implementation[0m
+[1m[94m...[0m
+[1m[94m32[0m [1m[94m|[0m     fn forward(&self, x: &Tensor) -> Result<Tensor> {
+   [1m[94m|[0m        [1m[33m^^^^^^^[0m
+
+[1m[33mwarning[0m: `rust-candle-course` (bin "rust-candle-course") generated 5 warnings (run `cargo fix --bin "rust-candle-course" -p rust-candle-course` to apply 3 suggestions)
+[1m[92m    Finished[0m `dev` profile [unoptimized + debuginfo] target(s) in 0.13s
+[1m[38;5;255m[48;5;240m rust-candle-course [0m[1m[38;5;235m[48;5;204m check [0m[1m[38;5;235m[48;5;11m  5 warnings  [0m
+[1m[92m    Checking[0m rust-candle-course v0.1.0 (/Users/stephen/Desktop/rust-candle-course)
+[1m[33mwarning[0m[1m: unused variable: `feature`[0m
+  [1m[94m--> [0msrc/main.rs:20:12
+   [1m[94m|[0m
+[1m[94m20[0m [1m[94m|[0m     fn new(feature: usize, device: Device) -> Result<Self> {
+   [1m[94m|[0m            [1m[33m^^^^^^^[0m [1m[33mhelp: if this is intentional, prefix it with an underscore: `_feature`[0m
+   [1m[94m|[0m
+   [1m[94m= [0m[1mnote[0m: `#[warn(unused_variables)]` (part of `#[warn(unused)]`) on by default
+
+[1m[33mwarning[0m[1m: unused variable: `model`[0m
+  [1m[94m--> [0msrc/main.rs:43:9
+   [1m[94m|[0m
+[1m[94m43[0m [1m[94m|[0m     let model: LinearRegression = LinearRegression::new(10, device.clone())?;
+   [1m[94m|[0m         [1m[33m^^^^^[0m [1m[33mhelp: if this is intentional, prefix it with an underscore: `_model`[0m
+
+[1m[33mwarning[0m[1m: unused variable: `x`[0m
+  [1m[94m--> [0msrc/main.rs:44:9
+   [1m[94m|[0m
+[1m[94m44[0m [1m[94m|[0m     let x: Tensor = Tensor::randn(0f32, 1f32, (10, 1), &device)?;
+   [1m[94m|[0m         [1m[33m^[0m [1m[33mhelp: if this is intentional, prefix it with an underscore: `_x`[0m
+
+[1m[33mwarning[0m[1m: fields `weights`, `bias`, and `device` are never read[0m
+ [1m[94m--> [0msrc/main.rs:5:5
+  [1m[94m|[0m
+[1m[94m4[0m [1m[94m|[0m struct LinearRegression {
+  [1m[94m|[0m        [1m[94m----------------[0m [1m[94mfields in this struct[0m
+[1m[94m5[0m [1m[94m|[0m     weights: Tensor,
+  [1m[94m|[0m     [1m[33m^^^^^^^[0m
+[1m[94m6[0m [1m[94m|[0m     bias: Tensor,
+  [1m[94m|[0m     [1m[33m^^^^[0m
+[1m[94m7[0m [1m[94m|[0m     device: Device,
+  [1m[94m|[0m     [1m[33m^^^^^^[0m
+  [1m[94m|[0m
+  [1m[94m= [0m[1mnote[0m: `#[warn(dead_code)]` (part of `#[warn(unused)]`) on by default
+
+[1m[33mwarning[0m[1m: method `forward` is never used[0m
+  [1m[94m--> [0msrc/main.rs:32:8
+   [1m[94m|[0m
+[1m[94m19[0m [1m[94m|[0m impl LinearRegression {
+   [1m[94m|[0m [1m[94m---------------------[0m [1m[94mmethod in this implementation[0m
+[1m[94m...[0m
+[1m[94m32[0m [1m[94m|[0m     fn forward(&self, x: &Tensor) -> Result<Tensor> {
+   [1m[94m|[0m        [1m[33m^^^^^^^[0m
+
+[1m[33mwarning[0m: `rust-candle-course` (bin "rust-candle-course") generated 5 warnings (run `cargo fix --bin "rust-candle-course" -p rust-candle-course` to apply 3 suggestions)
+[1m[92m    Finished[0m `dev` profile [unoptimized + debuginfo] target(s) in 0.15s
+[1m[38;5;255m[48;5;240m rust-candle-course [0m[1m[38;5;235m[48;5;204m check [0m[1m[38;5;235m[48;5;11m  5 warnings  [0m
