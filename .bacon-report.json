@@ -55,7 +55,7 @@
             },
             {
               "csi": "",
-              "raw": "src/main.rs:13:57"
+              "raw": "src/main.rs:14:54"
             }
           ]
         }
@@ -87,7 +87,7 @@
           "strings": [
             {
               "csi": "\u001b[1m\u001b[94m",
-              "raw": "13"
+              "raw": "14"
             },
             {
               "csi": "",
@@ -99,7 +99,7 @@
             },
             {
               "csi": "",
-              "raw": "         let weights: Tensor = Tensor::randn(0f32, 1f32, (10), &device)?;"
+              "raw": "         let bias: Tensor = Tensor::randn(0f32, 1f32, (1), &device)?;"
             }
           ]
         }
@@ -121,7 +121,7 @@
             },
             {
               "csi": "",
-              "raw": "                                                         "
+              "raw": "                                                      "
             },
             {
               "csi": "\u001b[1m\u001b[33m",
@@ -129,7 +129,7 @@
             },
             {
               "csi": "",
-              "raw": "  "
+              "raw": " "
             },
             {
               "csi": "\u001b[1m\u001b[33m",
@@ -227,7 +227,7 @@
           "strings": [
             {
               "csi": "\u001b[1m\u001b[94m",
-              "raw": "13"
+              "raw": "14"
             },
             {
               "csi": "",
@@ -239,7 +239,7 @@
             },
             {
               "csi": "",
-              "raw": "        let weights: Tensor = Tensor::randn(0f32, 1f32, "
+              "raw": "        let bias: Tensor = Tensor::randn(0f32, 1f32, "
             },
             {
               "csi": "\u001b[91m",
@@ -247,7 +247,7 @@
             },
             {
               "csi": "",
-              "raw": "10"
+              "raw": "1"
             },
             {
               "csi": "\u001b[91m",
@@ -269,7 +269,7 @@
           "strings": [
             {
               "csi": "\u001b[1m\u001b[94m",
-              "raw": "13"
+              "raw": "14"
             },
             {
               "csi": "",
@@ -281,282 +281,7 @@
             },
             {
               "csi": "",
-              "raw": "        let weights: Tensor = Tensor::randn(0f32, 1f32, 10"
-            },
-            {
-              "csi": "\u001b[92m",
-              "raw": " "
-            },
-            {
-              "csi": "",
-              "raw": ", &device)?;"
-            }
-          ]
-        }
-      },
-      {
-        "item_idx": 0,
-        "line_type": {
-          "Raw": "StdErr"
-        },
-        "content": {
-          "strings": [
-            {
-              "csi": "",
-              "raw": "   "
-            },
-            {
-              "csi": "\u001b[1m\u001b[94m",
-              "raw": "|"
-            }
-          ]
-        }
-      },
-      {
-        "item_idx": 0,
-        "line_type": {
-          "Raw": "StdErr"
-        },
-        "content": {
-          "strings": []
-        }
-      },
-      {
-        "item_idx": 0,
-        "line_type": {
-          "Raw": "StdErr"
-        },
-        "content": {
-          "strings": [
-            {
-              "csi": "\u001b[1m\u001b[33m",
-              "raw": "warning"
-            },
-            {
-              "csi": "\u001b[1m",
-              "raw": ": unnecessary parentheses around function argument"
-            }
-          ]
-        }
-      },
-      {
-        "item_idx": 0,
-        "line_type": {
-          "Raw": "StdErr"
-        },
-        "content": {
-          "strings": [
-            {
-              "csi": "",
-              "raw": "  "
-            },
-            {
-              "csi": "\u001b[1m\u001b[94m",
-              "raw": "--> "
-            },
-            {
-              "csi": "",
-              "raw": "src/main.rs:46:47"
-            }
-          ]
-        }
-      },
-      {
-        "item_idx": 0,
-        "line_type": {
-          "Raw": "StdErr"
-        },
-        "content": {
-          "strings": [
-            {
-              "csi": "",
-              "raw": "   "
-            },
-            {
-              "csi": "\u001b[1m\u001b[94m",
-              "raw": "|"
-            }
-          ]
-        }
-      },
-      {
-        "item_idx": 0,
-        "line_type": {
-          "Raw": "StdErr"
-        },
-        "content": {
-          "strings": [
-            {
-              "csi": "\u001b[1m\u001b[94m",
-              "raw": "46"
-            },
-            {
-              "csi": "",
-              "raw": " "
-            },
-            {
-              "csi": "\u001b[1m\u001b[94m",
-              "raw": "|"
-            },
-            {
-              "csi": "",
-              "raw": "     let x: Tensor = Tensor::randn(0f32, 1f32, (10), &device)?;"
-            }
-          ]
-        }
-      },
-      {
-        "item_idx": 0,
-        "line_type": {
-          "Raw": "StdErr"
-        },
-        "content": {
-          "strings": [
-            {
-              "csi": "",
-              "raw": "   "
-            },
-            {
-              "csi": "\u001b[1m\u001b[94m",
-              "raw": "|"
-            },
-            {
-              "csi": "",
-              "raw": "                                               "
-            },
-            {
-              "csi": "\u001b[1m\u001b[33m",
-              "raw": "^"
-            },
-            {
-              "csi": "",
-              "raw": "  "
-            },
-            {
-              "csi": "\u001b[1m\u001b[33m",
-              "raw": "^"
-            }
-          ]
-        }
-      },
-      {
-        "item_idx": 0,
-        "line_type": {
-          "Raw": "StdErr"
-        },
-        "content": {
-          "strings": [
-            {
-              "csi": "",
-              "raw": "   "
-            },
-            {
-              "csi": "\u001b[1m\u001b[94m",
-              "raw": "|"
-            }
-          ]
-        }
-      },
-      {
-        "item_idx": 0,
-        "line_type": {
-          "Raw": "StdErr"
-        },
-        "content": {
-          "strings": [
-            {
-              "csi": "\u001b[1m\u001b[96m",
-              "raw": "help"
-            },
-            {
-              "csi": "",
-              "raw": ": remove these parentheses"
-            }
-          ]
-        }
-      },
-      {
-        "item_idx": 0,
-        "line_type": {
-          "Raw": "StdErr"
-        },
-        "content": {
-          "strings": [
-            {
-              "csi": "",
-              "raw": "   "
-            },
-            {
-              "csi": "\u001b[1m\u001b[94m",
-              "raw": "|"
-            }
-          ]
-        }
-      },
-      {
-        "item_idx": 0,
-        "line_type": {
-          "Raw": "StdErr"
-        },
-        "content": {
-          "strings": [
-            {
-              "csi": "\u001b[1m\u001b[94m",
-              "raw": "46"
-            },
-            {
-              "csi": "",
-              "raw": " "
-            },
-            {
-              "csi": "\u001b[91m",
-              "raw": "- "
-            },
-            {
-              "csi": "",
-              "raw": "    let x: Tensor = Tensor::randn(0f32, 1f32, "
-            },
-            {
-              "csi": "\u001b[91m",
-              "raw": "("
-            },
-            {
-              "csi": "",
-              "raw": "10"
-            },
-            {
-              "csi": "\u001b[91m",
-              "raw": ")"
-            },
-            {
-              "csi": "",
-              "raw": ", &device)?;"
-            }
-          ]
-        }
-      },
-      {
-        "item_idx": 0,
-        "line_type": {
-          "Raw": "StdErr"
-        },
-        "content": {
-          "strings": [
-            {
-              "csi": "\u001b[1m\u001b[94m",
-              "raw": "46"
-            },
-            {
-              "csi": "",
-              "raw": " "
-            },
-            {
-              "csi": "\u001b[92m",
-              "raw": "+ "
-            },
-            {
-              "csi": "",
-              "raw": "    let x: Tensor = Tensor::randn(0f32, 1f32, 10"
+              "raw": "        let bias: Tensor = Tensor::randn(0f32, 1f32, 1"
             },
             {
               "csi": "\u001b[92m",
@@ -780,134 +505,7 @@
             },
             {
               "csi": "\u001b[1m",
-              "raw": ": unused variable: `predictions`"
-            }
-          ]
-        }
-      },
-      {
-        "item_idx": 0,
-        "line_type": {
-          "Raw": "StdErr"
-        },
-        "content": {
-          "strings": [
-            {
-              "csi": "",
-              "raw": "  "
-            },
-            {
-              "csi": "\u001b[1m\u001b[94m",
-              "raw": "--> "
-            },
-            {
-              "csi": "",
-              "raw": "src/main.rs:47:9"
-            }
-          ]
-        }
-      },
-      {
-        "item_idx": 0,
-        "line_type": {
-          "Raw": "StdErr"
-        },
-        "content": {
-          "strings": [
-            {
-              "csi": "",
-              "raw": "   "
-            },
-            {
-              "csi": "\u001b[1m\u001b[94m",
-              "raw": "|"
-            }
-          ]
-        }
-      },
-      {
-        "item_idx": 0,
-        "line_type": {
-          "Raw": "StdErr"
-        },
-        "content": {
-          "strings": [
-            {
-              "csi": "\u001b[1m\u001b[94m",
-              "raw": "47"
-            },
-            {
-              "csi": "",
-              "raw": " "
-            },
-            {
-              "csi": "\u001b[1m\u001b[94m",
-              "raw": "|"
-            },
-            {
-              "csi": "",
-              "raw": "     let predictions = model.forward(&x)?;"
-            }
-          ]
-        }
-      },
-      {
-        "item_idx": 0,
-        "line_type": {
-          "Raw": "StdErr"
-        },
-        "content": {
-          "strings": [
-            {
-              "csi": "",
-              "raw": "   "
-            },
-            {
-              "csi": "\u001b[1m\u001b[94m",
-              "raw": "|"
-            },
-            {
-              "csi": "",
-              "raw": "         "
-            },
-            {
-              "csi": "\u001b[1m\u001b[33m",
-              "raw": "^^^^^^^^^^^"
-            },
-            {
-              "csi": "",
-              "raw": " "
-            },
-            {
-              "csi": "\u001b[1m\u001b[33m",
-              "raw": "help: if this is intentional, prefix it with an underscore: `_predictions`"
-            }
-          ]
-        }
-      },
-      {
-        "item_idx": 0,
-        "line_type": {
-          "Raw": "StdErr"
-        },
-        "content": {
-          "strings": []
-        }
-      },
-      {
-        "item_idx": 0,
-        "line_type": {
-          "Raw": "StdErr"
-        },
-        "content": {
-          "strings": [
-            {
-              "csi": "\u001b[1m\u001b[33m",
-              "raw": "warning"
-            },
-            {
-              "csi": "\u001b[1m",
-              "raw": ": fields `bias` and `device` are never read"
+              "raw": ": field `device` is never read"
             }
           ]
         }
@@ -929,7 +527,7 @@
             },
             {
               "csi": "",
-              "raw": "src/main.rs:6:5"
+              "raw": "src/main.rs:7:5"
             }
           ]
         }
@@ -1007,7 +605,7 @@
             },
             {
               "csi": "\u001b[1m\u001b[94m",
-              "raw": "fields in this struct"
+              "raw": "field in this struct"
             }
           ]
         }
@@ -1021,71 +619,7 @@
           "strings": [
             {
               "csi": "\u001b[1m\u001b[94m",
-              "raw": "5"
-            },
-            {
-              "csi": "",
-              "raw": " "
-            },
-            {
-              "csi": "\u001b[1m\u001b[94m",
-              "raw": "|"
-            },
-            {
-              "csi": "",
-              "raw": "     weights: Tensor,"
-            }
-          ]
-        }
-      },
-      {
-        "item_idx": 0,
-        "line_type": {
-          "Raw": "StdErr"
-        },
-        "content": {
-          "strings": [
-            {
-              "csi": "\u001b[1m\u001b[94m",
-              "raw": "6"
-            },
-            {
-              "csi": "",
-              "raw": " "
-            },
-            {
-              "csi": "\u001b[1m\u001b[94m",
-              "raw": "|"
-            },
-            {
-              "csi": "",
-              "raw": "     bias: Tensor,"
-            }
-          ]
-        }
-      },
-      {
-        "item_idx": 0,
-        "line_type": {
-          "Raw": "StdErr"
-        },
-        "content": {
-          "strings": [
-            {
-              "csi": "",
-              "raw": "  "
-            },
-            {
-              "csi": "\u001b[1m\u001b[94m",
-              "raw": "|"
-            },
-            {
-              "csi": "",
-              "raw": "     "
-            },
-            {
-              "csi": "\u001b[1m\u001b[33m",
-              "raw": "^^^^"
+              "raw": "..."
             }
           ]
         }
@@ -1230,7 +764,7 @@
             },
             {
               "csi": "",
-              "raw": "src/main.rs:35:8"
+              "raw": "src/main.rs:29:8"
             }
           ]
         }
@@ -1336,7 +870,7 @@
           "strings": [
             {
               "csi": "\u001b[1m\u001b[94m",
-              "raw": "35"
+              "raw": "29"
             },
             {
               "csi": "",
@@ -1401,7 +935,7 @@
             },
             {
               "csi": "",
-              "raw": ": `rust-candle-course` (bin \"rust-candle-course\") generated 6 warnings (run `cargo fix --bin \"rust-candle-course\" -p rust-candle-course` to apply 4 suggestions)"
+              "raw": ": `rust-candle-course` (bin \"rust-candle-course\") generated 4 warnings (run `cargo fix --bin \"rust-candle-course\" -p rust-candle-course` to apply 2 suggestions)"
             }
           ]
         }
@@ -1419,7 +953,7 @@
             },
             {
               "csi": "",
-              "raw": " `dev` profile [unoptimized + debuginfo] target(s) in 0.11s"
+              "raw": " `dev` profile [unoptimized + debuginfo] target(s) in 0.64s"
             }
           ]
         }
@@ -1460,7 +994,7 @@
           },
           {
             "csi": "",
-            "raw": "src/main.rs:13:57"
+            "raw": "src/main.rs:14:54"
           }
         ]
       }
@@ -1488,7 +1022,7 @@
         "strings": [
           {
             "csi": "\u001b[1m\u001b[94m",
-            "raw": "13"
+            "raw": "14"
           },
           {
             "csi": "",
@@ -1500,7 +1034,7 @@
           },
           {
             "csi": "",
-            "raw": "         let weights: Tensor = Tensor::randn(0f32, 1f32, (10), &device)?;"
+            "raw": "         let bias: Tensor = Tensor::randn(0f32, 1f32, (1), &device)?;"
           }
         ]
       }
@@ -1520,7 +1054,7 @@
           },
           {
             "csi": "",
-            "raw": "                                                         "
+            "raw": "                                                      "
           },
           {
             "csi": "\u001b[1m\u001b[33m",
@@ -1528,7 +1062,7 @@
           },
           {
             "csi": "",
-            "raw": "  "
+            "raw": " "
           },
           {
             "csi": "\u001b[1m\u001b[33m",
@@ -1616,7 +1150,7 @@
         "strings": [
           {
             "csi": "\u001b[1m\u001b[94m",
-            "raw": "13"
+            "raw": "14"
           },
           {
             "csi": "",
@@ -1628,7 +1162,7 @@
           },
           {
             "csi": "",
-            "raw": "        let weights: Tensor = Tensor::randn(0f32, 1f32, "
+            "raw": "        let bias: Tensor = Tensor::randn(0f32, 1f32, "
           },
           {
             "csi": "\u001b[91m",
@@ -1636,7 +1170,7 @@
           },
           {
             "csi": "",
-            "raw": "10"
+            "raw": "1"
           },
           {
             "csi": "\u001b[91m",
@@ -1656,7 +1190,7 @@
         "strings": [
           {
             "csi": "\u001b[1m\u001b[94m",
-            "raw": "13"
+            "raw": "14"
           },
           {
             "csi": "",
@@ -1668,7 +1202,7 @@
           },
           {
             "csi": "",
-            "raw": "        let weights: Tensor = Tensor::randn(0f32, 1f32, 10"
+            "raw": "        let bias: Tensor = Tensor::randn(0f32, 1f32, 1"
           },
           {
             "csi": "\u001b[92m",
@@ -1706,259 +1240,6 @@
     },
     {
       "item_idx": 2,
-      "line_type": {
-        "Title": "Warning"
-      },
-      "content": {
-        "strings": [
-          {
-            "csi": "\u001b[1m\u001b[33m",
-            "raw": "warning"
-          },
-          {
-            "csi": "\u001b[1m",
-            "raw": ": unnecessary parentheses around function argument"
-          }
-        ]
-      }
-    },
-    {
-      "item_idx": 2,
-      "line_type": "Location",
-      "content": {
-        "strings": [
-          {
-            "csi": "",
-            "raw": "  "
-          },
-          {
-            "csi": "\u001b[1m\u001b[94m",
-            "raw": "--> "
-          },
-          {
-            "csi": "",
-            "raw": "src/main.rs:46:47"
-          }
-        ]
-      }
-    },
-    {
-      "item_idx": 2,
-      "line_type": "Normal",
-      "content": {
-        "strings": [
-          {
-            "csi": "",
-            "raw": "   "
-          },
-          {
-            "csi": "\u001b[1m\u001b[94m",
-            "raw": "|"
-          }
-        ]
-      }
-    },
-    {
-      "item_idx": 2,
-      "line_type": "Normal",
-      "content": {
-        "strings": [
-          {
-            "csi": "\u001b[1m\u001b[94m",
-            "raw": "46"
-          },
-          {
-            "csi": "",
-            "raw": " "
-          },
-          {
-            "csi": "\u001b[1m\u001b[94m",
-            "raw": "|"
-          },
-          {
-            "csi": "",
-            "raw": "     let x: Tensor = Tensor::randn(0f32, 1f32, (10), &device)?;"
-          }
-        ]
-      }
-    },
-    {
-      "item_idx": 2,
-      "line_type": "Normal",
-      "content": {
-        "strings": [
-          {
-            "csi": "",
-            "raw": "   "
-          },
-          {
-            "csi": "\u001b[1m\u001b[94m",
-            "raw": "|"
-          },
-          {
-            "csi": "",
-            "raw": "                                               "
-          },
-          {
-            "csi": "\u001b[1m\u001b[33m",
-            "raw": "^"
-          },
-          {
-            "csi": "",
-            "raw": "  "
-          },
-          {
-            "csi": "\u001b[1m\u001b[33m",
-            "raw": "^"
-          }
-        ]
-      }
-    },
-    {
-      "item_idx": 2,
-      "line_type": "Normal",
-      "content": {
-        "strings": [
-          {
-            "csi": "",
-            "raw": "   "
-          },
-          {
-            "csi": "\u001b[1m\u001b[94m",
-            "raw": "|"
-          }
-        ]
-      }
-    },
-    {
-      "item_idx": 2,
-      "line_type": "Normal",
-      "content": {
-        "strings": [
-          {
-            "csi": "\u001b[1m\u001b[96m",
-            "raw": "help"
-          },
-          {
-            "csi": "",
-            "raw": ": remove these parentheses"
-          }
-        ]
-      }
-    },
-    {
-      "item_idx": 2,
-      "line_type": "Normal",
-      "content": {
-        "strings": [
-          {
-            "csi": "",
-            "raw": "   "
-          },
-          {
-            "csi": "\u001b[1m\u001b[94m",
-            "raw": "|"
-          }
-        ]
-      }
-    },
-    {
-      "item_idx": 2,
-      "line_type": "Normal",
-      "content": {
-        "strings": [
-          {
-            "csi": "\u001b[1m\u001b[94m",
-            "raw": "46"
-          },
-          {
-            "csi": "",
-            "raw": " "
-          },
-          {
-            "csi": "\u001b[91m",
-            "raw": "- "
-          },
-          {
-            "csi": "",
-            "raw": "    let x: Tensor = Tensor::randn(0f32, 1f32, "
-          },
-          {
-            "csi": "\u001b[91m",
-            "raw": "("
-          },
-          {
-            "csi": "",
-            "raw": "10"
-          },
-          {
-            "csi": "\u001b[91m",
-            "raw": ")"
-          },
-          {
-            "csi": "",
-            "raw": ", &device)?;"
-          }
-        ]
-      }
-    },
-    {
-      "item_idx": 2,
-      "line_type": "Normal",
-      "content": {
-        "strings": [
-          {
-            "csi": "\u001b[1m\u001b[94m",
-            "raw": "46"
-          },
-          {
-            "csi": "",
-            "raw": " "
-          },
-          {
-            "csi": "\u001b[92m",
-            "raw": "+ "
-          },
-          {
-            "csi": "",
-            "raw": "    let x: Tensor = Tensor::randn(0f32, 1f32, 10"
-          },
-          {
-            "csi": "\u001b[92m",
-            "raw": " "
-          },
-          {
-            "csi": "",
-            "raw": ", &device)?;"
-          }
-        ]
-      }
-    },
-    {
-      "item_idx": 2,
-      "line_type": "Normal",
-      "content": {
-        "strings": [
-          {
-            "csi": "",
-            "raw": "   "
-          },
-          {
-            "csi": "\u001b[1m\u001b[94m",
-            "raw": "|"
-          }
-        ]
-      }
-    },
-    {
-      "item_idx": 2,
-      "line_type": "Normal",
-      "content": {
-        "strings": []
-      }
-    },
-    {
-      "item_idx": 3,
       "line_type": {
         "Title": "Warning"
       },
@@ -1976,7 +1257,7 @@
       }
     },
     {
-      "item_idx": 3,
+      "item_idx": 2,
       "line_type": "Location",
       "content": {
         "strings": [
@@ -1996,7 +1277,7 @@
       }
     },
     {
-      "item_idx": 3,
+      "item_idx": 2,
       "line_type": "Normal",
       "content": {
         "strings": [
@@ -2012,7 +1293,7 @@
       }
     },
     {
-      "item_idx": 3,
+      "item_idx": 2,
       "line_type": "Normal",
       "content": {
         "strings": [
@@ -2036,7 +1317,7 @@
       }
     },
     {
-      "item_idx": 3,
+      "item_idx": 2,
       "line_type": "Normal",
       "content": {
         "strings": [
@@ -2068,7 +1349,7 @@
       }
     },
     {
-      "item_idx": 3,
+      "item_idx": 2,
       "line_type": "Normal",
       "content": {
         "strings": [
@@ -2084,7 +1365,7 @@
       }
     },
     {
-      "item_idx": 3,
+      "item_idx": 2,
       "line_type": "Normal",
       "content": {
         "strings": [
@@ -2108,171 +1389,54 @@
       }
     },
     {
+      "item_idx": 2,
+      "line_type": "Normal",
+      "content": {
+        "strings": []
+      }
+    },
+    {
+      "item_idx": 3,
+      "line_type": {
+        "Title": "Warning"
+      },
+      "content": {
+        "strings": [
+          {
+            "csi": "\u001b[1m\u001b[33m",
+            "raw": "warning"
+          },
+          {
+            "csi": "\u001b[1m",
+            "raw": ": field `device` is never read"
+          }
+        ]
+      }
+    },
+    {
+      "item_idx": 3,
+      "line_type": "Location",
+      "content": {
+        "strings": [
+          {
+            "csi": "",
+            "raw": " "
+          },
+          {
+            "csi": "\u001b[1m\u001b[94m",
+            "raw": "--> "
+          },
+          {
+            "csi": "",
+            "raw": "src/main.rs:7:5"
+          }
+        ]
+      }
+    },
+    {
       "item_idx": 3,
       "line_type": "Normal",
       "content": {
-        "strings": []
-      }
-    },
-    {
-      "item_idx": 4,
-      "line_type": {
-        "Title": "Warning"
-      },
-      "content": {
-        "strings": [
-          {
-            "csi": "\u001b[1m\u001b[33m",
-            "raw": "warning"
-          },
-          {
-            "csi": "\u001b[1m",
-            "raw": ": unused variable: `predictions`"
-          }
-        ]
-      }
-    },
-    {
-      "item_idx": 4,
-      "line_type": "Location",
-      "content": {
-        "strings": [
-          {
-            "csi": "",
-            "raw": "  "
-          },
-          {
-            "csi": "\u001b[1m\u001b[94m",
-            "raw": "--> "
-          },
-          {
-            "csi": "",
-            "raw": "src/main.rs:47:9"
-          }
-        ]
-      }
-    },
-    {
-      "item_idx": 4,
-      "line_type": "Normal",
-      "content": {
-        "strings": [
-          {
-            "csi": "",
-            "raw": "   "
-          },
-          {
-            "csi": "\u001b[1m\u001b[94m",
-            "raw": "|"
-          }
-        ]
-      }
-    },
-    {
-      "item_idx": 4,
-      "line_type": "Normal",
-      "content": {
-        "strings": [
-          {
-            "csi": "\u001b[1m\u001b[94m",
-            "raw": "47"
-          },
-          {
-            "csi": "",
-            "raw": " "
-          },
-          {
-            "csi": "\u001b[1m\u001b[94m",
-            "raw": "|"
-          },
-          {
-            "csi": "",
-            "raw": "     let predictions = model.forward(&x)?;"
-          }
-        ]
-      }
-    },
-    {
-      "item_idx": 4,
-      "line_type": "Normal",
-      "content": {
-        "strings": [
-          {
-            "csi": "",
-            "raw": "   "
-          },
-          {
-            "csi": "\u001b[1m\u001b[94m",
-            "raw": "|"
-          },
-          {
-            "csi": "",
-            "raw": "         "
-          },
-          {
-            "csi": "\u001b[1m\u001b[33m",
-            "raw": "^^^^^^^^^^^"
-          },
-          {
-            "csi": "",
-            "raw": " "
-          },
-          {
-            "csi": "\u001b[1m\u001b[33m",
-            "raw": "help: if this is intentional, prefix it with an underscore: `_predictions`"
-          }
-        ]
-      }
-    },
-    {
-      "item_idx": 4,
-      "line_type": "Normal",
-      "content": {
-        "strings": []
-      }
-    },
-    {
-      "item_idx": 5,
-      "line_type": {
-        "Title": "Warning"
-      },
-      "content": {
-        "strings": [
-          {
-            "csi": "\u001b[1m\u001b[33m",
-            "raw": "warning"
-          },
-          {
-            "csi": "\u001b[1m",
-            "raw": ": fields `bias` and `device` are never read"
-          }
-        ]
-      }
-    },
-    {
-      "item_idx": 5,
-      "line_type": "Location",
-      "content": {
-        "strings": [
-          {
-            "csi": "",
-            "raw": " "
-          },
-          {
-            "csi": "\u001b[1m\u001b[94m",
-            "raw": "--> "
-          },
-          {
-            "csi": "",
-            "raw": "src/main.rs:6:5"
-          }
-        ]
-      }
-    },
-    {
-      "item_idx": 5,
-      "line_type": "Normal",
-      "content": {
         "strings": [
           {
             "csi": "",
@@ -2286,7 +1450,7 @@
       }
     },
     {
-      "item_idx": 5,
+      "item_idx": 3,
       "line_type": "Normal",
       "content": {
         "strings": [
@@ -2310,7 +1474,7 @@
       }
     },
     {
-      "item_idx": 5,
+      "item_idx": 3,
       "line_type": "Normal",
       "content": {
         "strings": [
@@ -2336,85 +1500,25 @@
           },
           {
             "csi": "\u001b[1m\u001b[94m",
-            "raw": "fields in this struct"
+            "raw": "field in this struct"
           }
         ]
       }
     },
     {
-      "item_idx": 5,
+      "item_idx": 3,
       "line_type": "Normal",
       "content": {
         "strings": [
           {
             "csi": "\u001b[1m\u001b[94m",
-            "raw": "5"
-          },
-          {
-            "csi": "",
-            "raw": " "
-          },
-          {
-            "csi": "\u001b[1m\u001b[94m",
-            "raw": "|"
-          },
-          {
-            "csi": "",
-            "raw": "     weights: Tensor,"
+            "raw": "..."
           }
         ]
       }
     },
     {
-      "item_idx": 5,
-      "line_type": "Normal",
-      "content": {
-        "strings": [
-          {
-            "csi": "\u001b[1m\u001b[94m",
-            "raw": "6"
-          },
-          {
-            "csi": "",
-            "raw": " "
-          },
-          {
-            "csi": "\u001b[1m\u001b[94m",
-            "raw": "|"
-          },
-          {
-            "csi": "",
-            "raw": "     bias: Tensor,"
-          }
-        ]
-      }
-    },
-    {
-      "item_idx": 5,
-      "line_type": "Normal",
-      "content": {
-        "strings": [
-          {
-            "csi": "",
-            "raw": "  "
-          },
-          {
-            "csi": "\u001b[1m\u001b[94m",
-            "raw": "|"
-          },
-          {
-            "csi": "",
-            "raw": "     "
-          },
-          {
-            "csi": "\u001b[1m\u001b[33m",
-            "raw": "^^^^"
-          }
-        ]
-      }
-    },
-    {
-      "item_idx": 5,
+      "item_idx": 3,
       "line_type": "Normal",
       "content": {
         "strings": [
@@ -2438,7 +1542,7 @@
       }
     },
     {
-      "item_idx": 5,
+      "item_idx": 3,
       "line_type": "Normal",
       "content": {
         "strings": [
@@ -2462,7 +1566,7 @@
       }
     },
     {
-      "item_idx": 5,
+      "item_idx": 3,
       "line_type": "Normal",
       "content": {
         "strings": [
@@ -2478,7 +1582,7 @@
       }
     },
     {
-      "item_idx": 5,
+      "item_idx": 3,
       "line_type": "Normal",
       "content": {
         "strings": [
@@ -2502,14 +1606,14 @@
       }
     },
     {
-      "item_idx": 5,
+      "item_idx": 3,
       "line_type": "Normal",
       "content": {
         "strings": []
       }
     },
     {
-      "item_idx": 6,
+      "item_idx": 4,
       "line_type": {
         "Title": "Warning"
       },
@@ -2527,7 +1631,7 @@
       }
     },
     {
-      "item_idx": 6,
+      "item_idx": 4,
       "line_type": "Location",
       "content": {
         "strings": [
@@ -2541,13 +1645,13 @@
           },
           {
             "csi": "",
-            "raw": "src/main.rs:35:8"
+            "raw": "src/main.rs:29:8"
           }
         ]
       }
     },
     {
-      "item_idx": 6,
+      "item_idx": 4,
       "line_type": "Normal",
       "content": {
         "strings": [
@@ -2563,7 +1667,7 @@
       }
     },
     {
-      "item_idx": 6,
+      "item_idx": 4,
       "line_type": "Normal",
       "content": {
         "strings": [
@@ -2587,7 +1691,7 @@
       }
     },
     {
-      "item_idx": 6,
+      "item_idx": 4,
       "line_type": "Normal",
       "content": {
         "strings": [
@@ -2619,7 +1723,7 @@
       }
     },
     {
-      "item_idx": 6,
+      "item_idx": 4,
       "line_type": "Normal",
       "content": {
         "strings": [
@@ -2631,13 +1735,13 @@
       }
     },
     {
-      "item_idx": 6,
+      "item_idx": 4,
       "line_type": "Normal",
       "content": {
         "strings": [
           {
             "csi": "\u001b[1m\u001b[94m",
-            "raw": "35"
+            "raw": "29"
           },
           {
             "csi": "",
@@ -2655,7 +1759,7 @@
       }
     },
     {
-      "item_idx": 6,
+      "item_idx": 4,
       "line_type": "Normal",
       "content": {
         "strings": [
@@ -2680,11 +1784,11 @@
     }
   ],
   "stats": {
-    "warnings": 6,
+    "warnings": 4,
     "errors": 0,
     "test_fails": 0,
-    "location_lines": 6,
-    "normal_lines": 48
+    "location_lines": 4,
+    "normal_lines": 32
   },
   "suggest_backtrace": false,
   "failure_keys": [],

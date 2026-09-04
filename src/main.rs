@@ -10,8 +10,8 @@ struct LinearRegression {
 impl LinearRegression {
     fn new(feature: usize, device: Device) -> Result<Self> {
         // TODO fix input weights matrix input dim
-        let weights: Tensor = Tensor::randn(0f32, 1f32, (10), &device)?;
-        let bias: Tensor = Tensor::new(0f32, &device)?;
+        let weights: Tensor = Tensor::randn(0f32, 1f32, (10, 1), &device)?;
+        let bias: Tensor = Tensor::randn(0f32, 1f32, (1), &device)?;
 
         Ok(LinearRegression {
             weights,
@@ -21,14 +21,8 @@ impl LinearRegression {
     }
 
     fn forward(&self, x: &Tensor) -> Result<Tensor> {
-        let x = x.unsqueeze(0)?;
-        println!("x: {x}");
-        println!("weights: {}",self.weights);
-        let uns = self.weights.unsqueeze(1)?;
-        println!("uns: {uns}");
-        let out = x.matmul(&uns)?;
-        //let out = out.squeeze(1)?;
-        //let out = out.broadcast_add(&self.bias)?;
+        let out = x.matmul(&self.weights)?;
+        let out = out.broadcast_add(&self.bias)?;
         Ok(out)
     }
 
@@ -43,9 +37,9 @@ impl LinearRegression {
 fn main() -> Result<()> {
     let device: Device = Device::metal_if_available(0)?;
     let model: LinearRegression = LinearRegression::new(10, device.clone())?;
-    let x: Tensor = Tensor::randn(0f32, 1f32, (10), &device)?;
+    let x: Tensor = Tensor::randn(0f32, 1f32, (1, 10), &device)?;
     let predictions = model.forward(&x)?;
-    //println!("{predictions}");
+    println!("predictions: {predictions}");
     Ok(())
 }
 
