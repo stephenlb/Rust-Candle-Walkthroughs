@@ -125,9 +125,14 @@ impl LinearRegression {
         //W = np.linalg.inv(X.transpose() @ X).inverse() @ X @ Y
         //biass = ym-W@xmdef
         let W = X.matmul(&X.t()?)?;
-        let W = invert_tensor(&W)?;
-        let W = X.matmul(&W)?;
-        let W = Y.matmul(&W)?;
+        //let W = invert_tensor(&W)?;
+        println!("W: {:?}", W);
+        //let W = W.matmul(&X)?;
+
+        //let W = W.matmul(&Y.unsqueeze(0)?)?;
+        //println!("W: {:?}", W);
+        //println!("Y: {}", Y.unsqueeze(1)?);
+
         //let W = kkkjkjkk
         //self.weights = W;
 
