@@ -115,47 +115,48 @@ impl LinearRegression {
         features: &Tensor,
         labels: &Tensor,
     ) -> Result<f32> {
-        let xm = features.mean_all()?;
-        let ym = labels.mean_all()?;
-        let X = features.broadcast_sub(&xm)?;
-        let Y = labels.broadcast_sub(&ym)?;
+        let labels = if labels.rank() == 1 {
+            labels.unsqueeze(D::Minus1)?
+        } else {
+            labels.clone()
+        };
 
-        //println!("xm: {xm}");
-        //println!("ym: {ym}");
-        //W = np.linalg.inv(X.transpose() @ X).inverse() @ X @ Y
-        //biass = ym-W@xmdef
-        let W = X.matmul(&X.t()?)?;
-        //let W = invert_tensor(&W)?;
-        println!("W: {:?}", W);
-        //let W = W.matmul(&X)?;
+        // Center each column on its own mean, not one global mean.
+        let xm = features.mean(0)?; // (features,)
+        let ym = labels.mean(0)?;   // (1,)
+        let x = features.broadcast_sub(&xm)?; // (samples, features)
+        let y = labels.broadcast_sub(&ym)?;  // (samples, 1)
 
-        //let W = W.matmul(&Y.unsqueeze(0)?)?;
-        //println!("W: {:?}", W);
-        //println!("Y: {}", Y.unsqueeze(1)?);
+        // W = inv(X.t X) X.t Y
+        let xt = x.t()?.contiguous()?;
+        let xtx = xt.matmul(&x)?;
+        let xtx_inv = invert_tensor(&xtx)?;
+        let weights = xtx_inv.matmul(&xt.matmul(&y)?)?; // (features, 1)
 
-        //let W = kkkjkjkk
-        //self.weights = W;
+        // bias = ym - xm · W
+        let bias = ym.sub(&xm.unsqueeze(0)?.matmul(&weights)?.squeeze(0)?)?;
 
-        //println!("X: {X}");
-        //println!("Y: {Y}");
+        self.weights = weights;
+        self.bias = bias;
 
-        Ok(1f32)
+        let predictions = self.forward(features)?;
+        self.loss(&predictions, &labels)
     }
-
 }
 
 fn main() -> Result<()> {
     let device: Device = Device::metal_if_available(0)?;
     let mut model: LinearRegression = LinearRegression::new(10, device.clone())?;
-    let features: Tensor = Tensor::randn(0f32, 1f32, (5, 10), &device)?;
-    let labels: Tensor = Tensor::randn(0f32, 1f32, (5,), &device)?;
+    let features: Tensor = Tensor::randn(0f32, 1f32, (200, 10), &device)?;
+    let labels: Tensor = Tensor::randn(0f32, 1f32, (10, 1), &device)?;
+    let labels: Tensor = features.matmul(&labels)?.affine(1.0, 5.0)?;
     //println!("{features}");
-    //let predictions = model.forward(&features)?;
-    //println!("predictions: {predictions}");
+    //println!("{labels}");
 
     //model.train(&features, &labels)?;
-    model.fit(&features, &labels)?;
-    //println!("{out}");
+    let loss = model.fit(&features, &labels)?;
+    println!("Loss: {loss}");
+
     Ok(())
 }
 

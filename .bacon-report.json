@@ -33,169 +33,6 @@
             },
             {
               "csi": "\u001b[1m",
-              "raw": ": unused import: `D`"
-            }
-          ]
-        }
-      },
-      {
-        "item_idx": 0,
-        "line_type": {
-          "Raw": "StdErr"
-        },
-        "content": {
-          "strings": [
-            {
-              "csi": "",
-              "raw": " "
-            },
-            {
-              "csi": "\u001b[1m\u001b[94m",
-              "raw": "--> "
-            },
-            {
-              "csi": "",
-              "raw": "src/main.rs:2:35"
-            }
-          ]
-        }
-      },
-      {
-        "item_idx": 0,
-        "line_type": {
-          "Raw": "StdErr"
-        },
-        "content": {
-          "strings": [
-            {
-              "csi": "",
-              "raw": "  "
-            },
-            {
-              "csi": "\u001b[1m\u001b[94m",
-              "raw": "|"
-            }
-          ]
-        }
-      },
-      {
-        "item_idx": 0,
-        "line_type": {
-          "Raw": "StdErr"
-        },
-        "content": {
-          "strings": [
-            {
-              "csi": "\u001b[1m\u001b[94m",
-              "raw": "2"
-            },
-            {
-              "csi": "",
-              "raw": " "
-            },
-            {
-              "csi": "\u001b[1m\u001b[94m",
-              "raw": "|"
-            },
-            {
-              "csi": "",
-              "raw": " use candle_core::{Device, Tensor, D};"
-            }
-          ]
-        }
-      },
-      {
-        "item_idx": 0,
-        "line_type": {
-          "Raw": "StdErr"
-        },
-        "content": {
-          "strings": [
-            {
-              "csi": "",
-              "raw": "  "
-            },
-            {
-              "csi": "\u001b[1m\u001b[94m",
-              "raw": "|"
-            },
-            {
-              "csi": "",
-              "raw": "                                   "
-            },
-            {
-              "csi": "\u001b[1m\u001b[33m",
-              "raw": "^"
-            }
-          ]
-        }
-      },
-      {
-        "item_idx": 0,
-        "line_type": {
-          "Raw": "StdErr"
-        },
-        "content": {
-          "strings": [
-            {
-              "csi": "",
-              "raw": "  "
-            },
-            {
-              "csi": "\u001b[1m\u001b[94m",
-              "raw": "|"
-            }
-          ]
-        }
-      },
-      {
-        "item_idx": 0,
-        "line_type": {
-          "Raw": "StdErr"
-        },
-        "content": {
-          "strings": [
-            {
-              "csi": "",
-              "raw": "  "
-            },
-            {
-              "csi": "\u001b[1m\u001b[94m",
-              "raw": "= "
-            },
-            {
-              "csi": "\u001b[1m",
-              "raw": "note"
-            },
-            {
-              "csi": "",
-              "raw": ": `#[warn(unused_imports)]` (part of `#[warn(unused)]`) on by default"
-            }
-          ]
-        }
-      },
-      {
-        "item_idx": 0,
-        "line_type": {
-          "Raw": "StdErr"
-        },
-        "content": {
-          "strings": []
-        }
-      },
-      {
-        "item_idx": 0,
-        "line_type": {
-          "Raw": "StdErr"
-        },
-        "content": {
-          "strings": [
-            {
-              "csi": "\u001b[1m\u001b[33m",
-              "raw": "warning"
-            },
-            {
-              "csi": "\u001b[1m",
               "raw": ": unnecessary parentheses around function argument"
             }
           ]
@@ -922,297 +759,7 @@
             },
             {
               "csi": "\u001b[1m",
-              "raw": ": unused variable: `Y`"
-            }
-          ]
-        }
-      },
-      {
-        "item_idx": 0,
-        "line_type": {
-          "Raw": "StdErr"
-        },
-        "content": {
-          "strings": [
-            {
-              "csi": "",
-              "raw": "   "
-            },
-            {
-              "csi": "\u001b[1m\u001b[94m",
-              "raw": "--> "
-            },
-            {
-              "csi": "",
-              "raw": "src/main.rs:121:13"
-            }
-          ]
-        }
-      },
-      {
-        "item_idx": 0,
-        "line_type": {
-          "Raw": "StdErr"
-        },
-        "content": {
-          "strings": [
-            {
-              "csi": "",
-              "raw": "    "
-            },
-            {
-              "csi": "\u001b[1m\u001b[94m",
-              "raw": "|"
-            }
-          ]
-        }
-      },
-      {
-        "item_idx": 0,
-        "line_type": {
-          "Raw": "StdErr"
-        },
-        "content": {
-          "strings": [
-            {
-              "csi": "\u001b[1m\u001b[94m",
-              "raw": "121"
-            },
-            {
-              "csi": "",
-              "raw": " "
-            },
-            {
-              "csi": "\u001b[1m\u001b[94m",
-              "raw": "|"
-            },
-            {
-              "csi": "",
-              "raw": "         let Y = labels.broadcast_sub(&ym)?;"
-            }
-          ]
-        }
-      },
-      {
-        "item_idx": 0,
-        "line_type": {
-          "Raw": "StdErr"
-        },
-        "content": {
-          "strings": [
-            {
-              "csi": "",
-              "raw": "    "
-            },
-            {
-              "csi": "\u001b[1m\u001b[94m",
-              "raw": "|"
-            },
-            {
-              "csi": "",
-              "raw": "             "
-            },
-            {
-              "csi": "\u001b[1m\u001b[33m",
-              "raw": "^"
-            },
-            {
-              "csi": "",
-              "raw": " "
-            },
-            {
-              "csi": "\u001b[1m\u001b[33m",
-              "raw": "help: if this is intentional, prefix it with an underscore: `_Y`"
-            }
-          ]
-        }
-      },
-      {
-        "item_idx": 0,
-        "line_type": {
-          "Raw": "StdErr"
-        },
-        "content": {
-          "strings": []
-        }
-      },
-      {
-        "item_idx": 0,
-        "line_type": {
-          "Raw": "StdErr"
-        },
-        "content": {
-          "strings": [
-            {
-              "csi": "\u001b[1m\u001b[33m",
-              "raw": "warning"
-            },
-            {
-              "csi": "\u001b[1m",
-              "raw": ": function `invert_tensor` is never used"
-            }
-          ]
-        }
-      },
-      {
-        "item_idx": 0,
-        "line_type": {
-          "Raw": "StdErr"
-        },
-        "content": {
-          "strings": [
-            {
-              "csi": "",
-              "raw": " "
-            },
-            {
-              "csi": "\u001b[1m\u001b[94m",
-              "raw": "--> "
-            },
-            {
-              "csi": "",
-              "raw": "src/main.rs:5:4"
-            }
-          ]
-        }
-      },
-      {
-        "item_idx": 0,
-        "line_type": {
-          "Raw": "StdErr"
-        },
-        "content": {
-          "strings": [
-            {
-              "csi": "",
-              "raw": "  "
-            },
-            {
-              "csi": "\u001b[1m\u001b[94m",
-              "raw": "|"
-            }
-          ]
-        }
-      },
-      {
-        "item_idx": 0,
-        "line_type": {
-          "Raw": "StdErr"
-        },
-        "content": {
-          "strings": [
-            {
-              "csi": "\u001b[1m\u001b[94m",
-              "raw": "5"
-            },
-            {
-              "csi": "",
-              "raw": " "
-            },
-            {
-              "csi": "\u001b[1m\u001b[94m",
-              "raw": "|"
-            },
-            {
-              "csi": "",
-              "raw": " fn invert_tensor(tensor: &Tensor) -> Result<Tensor> {"
-            }
-          ]
-        }
-      },
-      {
-        "item_idx": 0,
-        "line_type": {
-          "Raw": "StdErr"
-        },
-        "content": {
-          "strings": [
-            {
-              "csi": "",
-              "raw": "  "
-            },
-            {
-              "csi": "\u001b[1m\u001b[94m",
-              "raw": "|"
-            },
-            {
-              "csi": "",
-              "raw": "    "
-            },
-            {
-              "csi": "\u001b[1m\u001b[33m",
-              "raw": "^^^^^^^^^^^^^"
-            }
-          ]
-        }
-      },
-      {
-        "item_idx": 0,
-        "line_type": {
-          "Raw": "StdErr"
-        },
-        "content": {
-          "strings": [
-            {
-              "csi": "",
-              "raw": "  "
-            },
-            {
-              "csi": "\u001b[1m\u001b[94m",
-              "raw": "|"
-            }
-          ]
-        }
-      },
-      {
-        "item_idx": 0,
-        "line_type": {
-          "Raw": "StdErr"
-        },
-        "content": {
-          "strings": [
-            {
-              "csi": "",
-              "raw": "  "
-            },
-            {
-              "csi": "\u001b[1m\u001b[94m",
-              "raw": "= "
-            },
-            {
-              "csi": "\u001b[1m",
-              "raw": "note"
-            },
-            {
-              "csi": "",
-              "raw": ": `#[warn(dead_code)]` (part of `#[warn(unused)]`) on by default"
-            }
-          ]
-        }
-      },
-      {
-        "item_idx": 0,
-        "line_type": {
-          "Raw": "StdErr"
-        },
-        "content": {
-          "strings": []
-        }
-      },
-      {
-        "item_idx": 0,
-        "line_type": {
-          "Raw": "StdErr"
-        },
-        "content": {
-          "strings": [
-            {
-              "csi": "\u001b[1m\u001b[33m",
-              "raw": "warning"
-            },
-            {
-              "csi": "\u001b[1m",
-              "raw": ": fields `weights`, `bias`, `device`, `lr`, and `regularization` are never read"
+              "raw": ": fields `device`, `lr`, and `regularization` are never read"
             }
           ]
         }
@@ -1234,7 +781,7 @@
             },
             {
               "csi": "",
-              "raw": "src/main.rs:19:5"
+              "raw": "src/main.rs:21:5"
             }
           ]
         }
@@ -1326,97 +873,7 @@
           "strings": [
             {
               "csi": "\u001b[1m\u001b[94m",
-              "raw": "19"
-            },
-            {
-              "csi": "",
-              "raw": " "
-            },
-            {
-              "csi": "\u001b[1m\u001b[94m",
-              "raw": "|"
-            },
-            {
-              "csi": "",
-              "raw": "     weights: Tensor,"
-            }
-          ]
-        }
-      },
-      {
-        "item_idx": 0,
-        "line_type": {
-          "Raw": "StdErr"
-        },
-        "content": {
-          "strings": [
-            {
-              "csi": "",
-              "raw": "   "
-            },
-            {
-              "csi": "\u001b[1m\u001b[94m",
-              "raw": "|"
-            },
-            {
-              "csi": "",
-              "raw": "     "
-            },
-            {
-              "csi": "\u001b[1m\u001b[33m",
-              "raw": "^^^^^^^"
-            }
-          ]
-        }
-      },
-      {
-        "item_idx": 0,
-        "line_type": {
-          "Raw": "StdErr"
-        },
-        "content": {
-          "strings": [
-            {
-              "csi": "\u001b[1m\u001b[94m",
-              "raw": "20"
-            },
-            {
-              "csi": "",
-              "raw": " "
-            },
-            {
-              "csi": "\u001b[1m\u001b[94m",
-              "raw": "|"
-            },
-            {
-              "csi": "",
-              "raw": "     bias: Tensor,"
-            }
-          ]
-        }
-      },
-      {
-        "item_idx": 0,
-        "line_type": {
-          "Raw": "StdErr"
-        },
-        "content": {
-          "strings": [
-            {
-              "csi": "",
-              "raw": "   "
-            },
-            {
-              "csi": "\u001b[1m\u001b[94m",
-              "raw": "|"
-            },
-            {
-              "csi": "",
-              "raw": "     "
-            },
-            {
-              "csi": "\u001b[1m\u001b[33m",
-              "raw": "^^^^"
+              "raw": "..."
             }
           ]
         }
@@ -1583,6 +1040,50 @@
           "Raw": "StdErr"
         },
         "content": {
+          "strings": [
+            {
+              "csi": "",
+              "raw": "   "
+            },
+            {
+              "csi": "\u001b[1m\u001b[94m",
+              "raw": "|"
+            }
+          ]
+        }
+      },
+      {
+        "item_idx": 0,
+        "line_type": {
+          "Raw": "StdErr"
+        },
+        "content": {
+          "strings": [
+            {
+              "csi": "",
+              "raw": "   "
+            },
+            {
+              "csi": "\u001b[1m\u001b[94m",
+              "raw": "= "
+            },
+            {
+              "csi": "\u001b[1m",
+              "raw": "note"
+            },
+            {
+              "csi": "",
+              "raw": ": `#[warn(dead_code)]` (part of `#[warn(unused)]`) on by default"
+            }
+          ]
+        }
+      },
+      {
+        "item_idx": 0,
+        "line_type": {
+          "Raw": "StdErr"
+        },
+        "content": {
           "strings": []
         }
       },
@@ -1599,7 +1100,7 @@
             },
             {
               "csi": "\u001b[1m",
-              "raw": ": methods `forward`, `loss`, and `train` are never used"
+              "raw": ": method `train` is never used"
             }
           ]
         }
@@ -1621,7 +1122,7 @@
             },
             {
               "csi": "",
-              "raw": "src/main.rs:43:8"
+              "raw": "src/main.rs:56:8"
             }
           ]
         }
@@ -1699,139 +1200,7 @@
             },
             {
               "csi": "\u001b[1m\u001b[94m",
-              "raw": "methods in this implementation"
-            }
-          ]
-        }
-      },
-      {
-        "item_idx": 0,
-        "line_type": {
-          "Raw": "StdErr"
-        },
-        "content": {
-          "strings": [
-            {
-              "csi": "\u001b[1m\u001b[94m",
-              "raw": "..."
-            }
-          ]
-        }
-      },
-      {
-        "item_idx": 0,
-        "line_type": {
-          "Raw": "StdErr"
-        },
-        "content": {
-          "strings": [
-            {
-              "csi": "\u001b[1m\u001b[94m",
-              "raw": "43"
-            },
-            {
-              "csi": "",
-              "raw": " "
-            },
-            {
-              "csi": "\u001b[1m\u001b[94m",
-              "raw": "|"
-            },
-            {
-              "csi": "",
-              "raw": "     fn forward(&self, x: &Tensor) -> Result<Tensor> {"
-            }
-          ]
-        }
-      },
-      {
-        "item_idx": 0,
-        "line_type": {
-          "Raw": "StdErr"
-        },
-        "content": {
-          "strings": [
-            {
-              "csi": "",
-              "raw": "   "
-            },
-            {
-              "csi": "\u001b[1m\u001b[94m",
-              "raw": "|"
-            },
-            {
-              "csi": "",
-              "raw": "        "
-            },
-            {
-              "csi": "\u001b[1m\u001b[33m",
-              "raw": "^^^^^^^"
-            }
-          ]
-        }
-      },
-      {
-        "item_idx": 0,
-        "line_type": {
-          "Raw": "StdErr"
-        },
-        "content": {
-          "strings": [
-            {
-              "csi": "\u001b[1m\u001b[94m",
-              "raw": "..."
-            }
-          ]
-        }
-      },
-      {
-        "item_idx": 0,
-        "line_type": {
-          "Raw": "StdErr"
-        },
-        "content": {
-          "strings": [
-            {
-              "csi": "\u001b[1m\u001b[94m",
-              "raw": "49"
-            },
-            {
-              "csi": "",
-              "raw": " "
-            },
-            {
-              "csi": "\u001b[1m\u001b[94m",
-              "raw": "|"
-            },
-            {
-              "csi": "",
-              "raw": "     fn loss(&self, predictions: &Tensor, targets: &Tensor) -> Result<f32> {"
-            }
-          ]
-        }
-      },
-      {
-        "item_idx": 0,
-        "line_type": {
-          "Raw": "StdErr"
-        },
-        "content": {
-          "strings": [
-            {
-              "csi": "",
-              "raw": "   "
-            },
-            {
-              "csi": "\u001b[1m\u001b[94m",
-              "raw": "|"
-            },
-            {
-              "csi": "",
-              "raw": "        "
-            },
-            {
-              "csi": "\u001b[1m\u001b[33m",
-              "raw": "^^^^"
+              "raw": "method in this implementation"
             }
           ]
         }
@@ -1923,433 +1292,8 @@
               "raw": "warning"
             },
             {
-              "csi": "\u001b[1m",
-              "raw": ": variable `X` should have a snake case name"
-            }
-          ]
-        }
-      },
-      {
-        "item_idx": 0,
-        "line_type": {
-          "Raw": "StdErr"
-        },
-        "content": {
-          "strings": [
-            {
               "csi": "",
-              "raw": "   "
-            },
-            {
-              "csi": "\u001b[1m\u001b[94m",
-              "raw": "--> "
-            },
-            {
-              "csi": "",
-              "raw": "src/main.rs:120:13"
-            }
-          ]
-        }
-      },
-      {
-        "item_idx": 0,
-        "line_type": {
-          "Raw": "StdErr"
-        },
-        "content": {
-          "strings": [
-            {
-              "csi": "",
-              "raw": "    "
-            },
-            {
-              "csi": "\u001b[1m\u001b[94m",
-              "raw": "|"
-            }
-          ]
-        }
-      },
-      {
-        "item_idx": 0,
-        "line_type": {
-          "Raw": "StdErr"
-        },
-        "content": {
-          "strings": [
-            {
-              "csi": "\u001b[1m\u001b[94m",
-              "raw": "120"
-            },
-            {
-              "csi": "",
-              "raw": " "
-            },
-            {
-              "csi": "\u001b[1m\u001b[94m",
-              "raw": "|"
-            },
-            {
-              "csi": "",
-              "raw": "         let X = features.broadcast_sub(&xm)?;"
-            }
-          ]
-        }
-      },
-      {
-        "item_idx": 0,
-        "line_type": {
-          "Raw": "StdErr"
-        },
-        "content": {
-          "strings": [
-            {
-              "csi": "",
-              "raw": "    "
-            },
-            {
-              "csi": "\u001b[1m\u001b[94m",
-              "raw": "|"
-            },
-            {
-              "csi": "",
-              "raw": "             "
-            },
-            {
-              "csi": "\u001b[1m\u001b[33m",
-              "raw": "^"
-            },
-            {
-              "csi": "",
-              "raw": " "
-            },
-            {
-              "csi": "\u001b[1m\u001b[33m",
-              "raw": "help: convert the identifier to snake case (notice the capitalization): `x`"
-            }
-          ]
-        }
-      },
-      {
-        "item_idx": 0,
-        "line_type": {
-          "Raw": "StdErr"
-        },
-        "content": {
-          "strings": [
-            {
-              "csi": "",
-              "raw": "    "
-            },
-            {
-              "csi": "\u001b[1m\u001b[94m",
-              "raw": "|"
-            }
-          ]
-        }
-      },
-      {
-        "item_idx": 0,
-        "line_type": {
-          "Raw": "StdErr"
-        },
-        "content": {
-          "strings": [
-            {
-              "csi": "",
-              "raw": "    "
-            },
-            {
-              "csi": "\u001b[1m\u001b[94m",
-              "raw": "= "
-            },
-            {
-              "csi": "\u001b[1m",
-              "raw": "note"
-            },
-            {
-              "csi": "",
-              "raw": ": `#[warn(non_snake_case)]` (part of `#[warn(nonstandard_style)]`) on by default"
-            }
-          ]
-        }
-      },
-      {
-        "item_idx": 0,
-        "line_type": {
-          "Raw": "StdErr"
-        },
-        "content": {
-          "strings": []
-        }
-      },
-      {
-        "item_idx": 0,
-        "line_type": {
-          "Raw": "StdErr"
-        },
-        "content": {
-          "strings": [
-            {
-              "csi": "\u001b[1m\u001b[33m",
-              "raw": "warning"
-            },
-            {
-              "csi": "\u001b[1m",
-              "raw": ": variable `Y` should have a snake case name"
-            }
-          ]
-        }
-      },
-      {
-        "item_idx": 0,
-        "line_type": {
-          "Raw": "StdErr"
-        },
-        "content": {
-          "strings": [
-            {
-              "csi": "",
-              "raw": "   "
-            },
-            {
-              "csi": "\u001b[1m\u001b[94m",
-              "raw": "--> "
-            },
-            {
-              "csi": "",
-              "raw": "src/main.rs:121:13"
-            }
-          ]
-        }
-      },
-      {
-        "item_idx": 0,
-        "line_type": {
-          "Raw": "StdErr"
-        },
-        "content": {
-          "strings": [
-            {
-              "csi": "",
-              "raw": "    "
-            },
-            {
-              "csi": "\u001b[1m\u001b[94m",
-              "raw": "|"
-            }
-          ]
-        }
-      },
-      {
-        "item_idx": 0,
-        "line_type": {
-          "Raw": "StdErr"
-        },
-        "content": {
-          "strings": [
-            {
-              "csi": "\u001b[1m\u001b[94m",
-              "raw": "121"
-            },
-            {
-              "csi": "",
-              "raw": " "
-            },
-            {
-              "csi": "\u001b[1m\u001b[94m",
-              "raw": "|"
-            },
-            {
-              "csi": "",
-              "raw": "         let Y = labels.broadcast_sub(&ym)?;"
-            }
-          ]
-        }
-      },
-      {
-        "item_idx": 0,
-        "line_type": {
-          "Raw": "StdErr"
-        },
-        "content": {
-          "strings": [
-            {
-              "csi": "",
-              "raw": "    "
-            },
-            {
-              "csi": "\u001b[1m\u001b[94m",
-              "raw": "|"
-            },
-            {
-              "csi": "",
-              "raw": "             "
-            },
-            {
-              "csi": "\u001b[1m\u001b[33m",
-              "raw": "^"
-            },
-            {
-              "csi": "",
-              "raw": " "
-            },
-            {
-              "csi": "\u001b[1m\u001b[33m",
-              "raw": "help: convert the identifier to snake case (notice the capitalization): `y`"
-            }
-          ]
-        }
-      },
-      {
-        "item_idx": 0,
-        "line_type": {
-          "Raw": "StdErr"
-        },
-        "content": {
-          "strings": []
-        }
-      },
-      {
-        "item_idx": 0,
-        "line_type": {
-          "Raw": "StdErr"
-        },
-        "content": {
-          "strings": [
-            {
-              "csi": "\u001b[1m\u001b[33m",
-              "raw": "warning"
-            },
-            {
-              "csi": "\u001b[1m",
-              "raw": ": variable `W` should have a snake case name"
-            }
-          ]
-        }
-      },
-      {
-        "item_idx": 0,
-        "line_type": {
-          "Raw": "StdErr"
-        },
-        "content": {
-          "strings": [
-            {
-              "csi": "",
-              "raw": "   "
-            },
-            {
-              "csi": "\u001b[1m\u001b[94m",
-              "raw": "--> "
-            },
-            {
-              "csi": "",
-              "raw": "src/main.rs:127:13"
-            }
-          ]
-        }
-      },
-      {
-        "item_idx": 0,
-        "line_type": {
-          "Raw": "StdErr"
-        },
-        "content": {
-          "strings": [
-            {
-              "csi": "",
-              "raw": "    "
-            },
-            {
-              "csi": "\u001b[1m\u001b[94m",
-              "raw": "|"
-            }
-          ]
-        }
-      },
-      {
-        "item_idx": 0,
-        "line_type": {
-          "Raw": "StdErr"
-        },
-        "content": {
-          "strings": [
-            {
-              "csi": "\u001b[1m\u001b[94m",
-              "raw": "127"
-            },
-            {
-              "csi": "",
-              "raw": " "
-            },
-            {
-              "csi": "\u001b[1m\u001b[94m",
-              "raw": "|"
-            },
-            {
-              "csi": "",
-              "raw": "         let W = X.matmul(&X.t()?)?;"
-            }
-          ]
-        }
-      },
-      {
-        "item_idx": 0,
-        "line_type": {
-          "Raw": "StdErr"
-        },
-        "content": {
-          "strings": [
-            {
-              "csi": "",
-              "raw": "    "
-            },
-            {
-              "csi": "\u001b[1m\u001b[94m",
-              "raw": "|"
-            },
-            {
-              "csi": "",
-              "raw": "             "
-            },
-            {
-              "csi": "\u001b[1m\u001b[33m",
-              "raw": "^"
-            },
-            {
-              "csi": "",
-              "raw": " "
-            },
-            {
-              "csi": "\u001b[1m\u001b[33m",
-              "raw": "help: convert the identifier to snake case (notice the capitalization): `w`"
-            }
-          ]
-        }
-      },
-      {
-        "item_idx": 0,
-        "line_type": {
-          "Raw": "StdErr"
-        },
-        "content": {
-          "strings": []
-        }
-      },
-      {
-        "item_idx": 0,
-        "line_type": {
-          "Raw": "StdErr"
-        },
-        "content": {
-          "strings": [
-            {
-              "csi": "\u001b[1m\u001b[33m",
-              "raw": "warning"
-            },
-            {
-              "csi": "",
-              "raw": ": `rust-candle-course` (bin \"rust-candle-course\") generated 12 warnings (run `cargo fix --bin \"rust-candle-course\" -p rust-candle-course` to apply 6 suggestions)"
+              "raw": ": `rust-candle-course` (bin \"rust-candle-course\") generated 6 warnings (run `cargo fix --bin \"rust-candle-course\" -p rust-candle-course` to apply 4 suggestions)"
             }
           ]
         }
@@ -2388,162 +1332,13 @@
           },
           {
             "csi": "\u001b[1m",
-            "raw": ": unused import: `D`"
-          }
-        ]
-      }
-    },
-    {
-      "item_idx": 1,
-      "line_type": "Location",
-      "content": {
-        "strings": [
-          {
-            "csi": "",
-            "raw": " "
-          },
-          {
-            "csi": "\u001b[1m\u001b[94m",
-            "raw": "--> "
-          },
-          {
-            "csi": "",
-            "raw": "src/main.rs:2:35"
-          }
-        ]
-      }
-    },
-    {
-      "item_idx": 1,
-      "line_type": "Normal",
-      "content": {
-        "strings": [
-          {
-            "csi": "",
-            "raw": "  "
-          },
-          {
-            "csi": "\u001b[1m\u001b[94m",
-            "raw": "|"
-          }
-        ]
-      }
-    },
-    {
-      "item_idx": 1,
-      "line_type": "Normal",
-      "content": {
-        "strings": [
-          {
-            "csi": "\u001b[1m\u001b[94m",
-            "raw": "2"
-          },
-          {
-            "csi": "",
-            "raw": " "
-          },
-          {
-            "csi": "\u001b[1m\u001b[94m",
-            "raw": "|"
-          },
-          {
-            "csi": "",
-            "raw": " use candle_core::{Device, Tensor, D};"
-          }
-        ]
-      }
-    },
-    {
-      "item_idx": 1,
-      "line_type": "Normal",
-      "content": {
-        "strings": [
-          {
-            "csi": "",
-            "raw": "  "
-          },
-          {
-            "csi": "\u001b[1m\u001b[94m",
-            "raw": "|"
-          },
-          {
-            "csi": "",
-            "raw": "                                   "
-          },
-          {
-            "csi": "\u001b[1m\u001b[33m",
-            "raw": "^"
-          }
-        ]
-      }
-    },
-    {
-      "item_idx": 1,
-      "line_type": "Normal",
-      "content": {
-        "strings": [
-          {
-            "csi": "",
-            "raw": "  "
-          },
-          {
-            "csi": "\u001b[1m\u001b[94m",
-            "raw": "|"
-          }
-        ]
-      }
-    },
-    {
-      "item_idx": 1,
-      "line_type": "Normal",
-      "content": {
-        "strings": [
-          {
-            "csi": "",
-            "raw": "  "
-          },
-          {
-            "csi": "\u001b[1m\u001b[94m",
-            "raw": "= "
-          },
-          {
-            "csi": "\u001b[1m",
-            "raw": "note"
-          },
-          {
-            "csi": "",
-            "raw": ": `#[warn(unused_imports)]` (part of `#[warn(unused)]`) on by default"
-          }
-        ]
-      }
-    },
-    {
-      "item_idx": 1,
-      "line_type": "Normal",
-      "content": {
-        "strings": []
-      }
-    },
-    {
-      "item_idx": 2,
-      "line_type": {
-        "Title": "Warning"
-      },
-      "content": {
-        "strings": [
-          {
-            "csi": "\u001b[1m\u001b[33m",
-            "raw": "warning"
-          },
-          {
-            "csi": "\u001b[1m",
             "raw": ": unnecessary parentheses around function argument"
           }
         ]
       }
     },
     {
-      "item_idx": 2,
+      "item_idx": 1,
       "line_type": "Location",
       "content": {
         "strings": [
@@ -2563,7 +1358,7 @@
       }
     },
     {
-      "item_idx": 2,
+      "item_idx": 1,
       "line_type": "Normal",
       "content": {
         "strings": [
@@ -2579,7 +1374,7 @@
       }
     },
     {
-      "item_idx": 2,
+      "item_idx": 1,
       "line_type": "Normal",
       "content": {
         "strings": [
@@ -2603,7 +1398,7 @@
       }
     },
     {
-      "item_idx": 2,
+      "item_idx": 1,
       "line_type": "Normal",
       "content": {
         "strings": [
@@ -2635,7 +1430,7 @@
       }
     },
     {
-      "item_idx": 2,
+      "item_idx": 1,
       "line_type": "Normal",
       "content": {
         "strings": [
@@ -2651,7 +1446,7 @@
       }
     },
     {
-      "item_idx": 2,
+      "item_idx": 1,
       "line_type": "Normal",
       "content": {
         "strings": [
@@ -2675,7 +1470,7 @@
       }
     },
     {
-      "item_idx": 2,
+      "item_idx": 1,
       "line_type": "Normal",
       "content": {
         "strings": [
@@ -2691,7 +1486,7 @@
       }
     },
     {
-      "item_idx": 2,
+      "item_idx": 1,
       "line_type": "Normal",
       "content": {
         "strings": [
@@ -2707,7 +1502,7 @@
       }
     },
     {
-      "item_idx": 2,
+      "item_idx": 1,
       "line_type": "Normal",
       "content": {
         "strings": [
@@ -2747,7 +1542,7 @@
       }
     },
     {
-      "item_idx": 2,
+      "item_idx": 1,
       "line_type": "Normal",
       "content": {
         "strings": [
@@ -2779,7 +1574,7 @@
       }
     },
     {
-      "item_idx": 2,
+      "item_idx": 1,
       "line_type": "Normal",
       "content": {
         "strings": [
@@ -2795,14 +1590,14 @@
       }
     },
     {
-      "item_idx": 2,
+      "item_idx": 1,
       "line_type": "Normal",
       "content": {
         "strings": []
       }
     },
     {
-      "item_idx": 3,
+      "item_idx": 2,
       "line_type": {
         "Title": "Warning"
       },
@@ -2820,7 +1615,7 @@
       }
     },
     {
-      "item_idx": 3,
+      "item_idx": 2,
       "line_type": "Location",
       "content": {
         "strings": [
@@ -2840,7 +1635,7 @@
       }
     },
     {
-      "item_idx": 3,
+      "item_idx": 2,
       "line_type": "Normal",
       "content": {
         "strings": [
@@ -2856,7 +1651,7 @@
       }
     },
     {
-      "item_idx": 3,
+      "item_idx": 2,
       "line_type": "Normal",
       "content": {
         "strings": [
@@ -2880,7 +1675,7 @@
       }
     },
     {
-      "item_idx": 3,
+      "item_idx": 2,
       "line_type": "Normal",
       "content": {
         "strings": [
@@ -2912,7 +1707,7 @@
       }
     },
     {
-      "item_idx": 3,
+      "item_idx": 2,
       "line_type": "Normal",
       "content": {
         "strings": [
@@ -2928,7 +1723,7 @@
       }
     },
     {
-      "item_idx": 3,
+      "item_idx": 2,
       "line_type": "Normal",
       "content": {
         "strings": [
@@ -2952,14 +1747,14 @@
       }
     },
     {
-      "item_idx": 3,
+      "item_idx": 2,
       "line_type": "Normal",
       "content": {
         "strings": []
       }
     },
     {
-      "item_idx": 4,
+      "item_idx": 3,
       "line_type": {
         "Title": "Warning"
       },
@@ -2977,7 +1772,7 @@
       }
     },
     {
-      "item_idx": 4,
+      "item_idx": 3,
       "line_type": "Location",
       "content": {
         "strings": [
@@ -2997,7 +1792,7 @@
       }
     },
     {
-      "item_idx": 4,
+      "item_idx": 3,
       "line_type": "Normal",
       "content": {
         "strings": [
@@ -3013,7 +1808,7 @@
       }
     },
     {
-      "item_idx": 4,
+      "item_idx": 3,
       "line_type": "Normal",
       "content": {
         "strings": [
@@ -3037,7 +1832,7 @@
       }
     },
     {
-      "item_idx": 4,
+      "item_idx": 3,
       "line_type": "Normal",
       "content": {
         "strings": [
@@ -3069,14 +1864,14 @@
       }
     },
     {
-      "item_idx": 4,
+      "item_idx": 3,
       "line_type": "Normal",
       "content": {
         "strings": []
       }
     },
     {
-      "item_idx": 5,
+      "item_idx": 4,
       "line_type": {
         "Title": "Warning"
       },
@@ -3094,7 +1889,7 @@
       }
     },
     {
-      "item_idx": 5,
+      "item_idx": 4,
       "line_type": "Location",
       "content": {
         "strings": [
@@ -3114,7 +1909,7 @@
       }
     },
     {
-      "item_idx": 5,
+      "item_idx": 4,
       "line_type": "Normal",
       "content": {
         "strings": [
@@ -3130,7 +1925,7 @@
       }
     },
     {
-      "item_idx": 5,
+      "item_idx": 4,
       "line_type": "Normal",
       "content": {
         "strings": [
@@ -3154,7 +1949,7 @@
       }
     },
     {
-      "item_idx": 5,
+      "item_idx": 4,
       "line_type": "Normal",
       "content": {
         "strings": [
@@ -3186,320 +1981,54 @@
       }
     },
     {
+      "item_idx": 4,
+      "line_type": "Normal",
+      "content": {
+        "strings": []
+      }
+    },
+    {
+      "item_idx": 5,
+      "line_type": {
+        "Title": "Warning"
+      },
+      "content": {
+        "strings": [
+          {
+            "csi": "\u001b[1m\u001b[33m",
+            "raw": "warning"
+          },
+          {
+            "csi": "\u001b[1m",
+            "raw": ": fields `device`, `lr`, and `regularization` are never read"
+          }
+        ]
+      }
+    },
+    {
+      "item_idx": 5,
+      "line_type": "Location",
+      "content": {
+        "strings": [
+          {
+            "csi": "",
+            "raw": "  "
+          },
+          {
+            "csi": "\u001b[1m\u001b[94m",
+            "raw": "--> "
+          },
+          {
+            "csi": "",
+            "raw": "src/main.rs:21:5"
+          }
+        ]
+      }
+    },
+    {
       "item_idx": 5,
       "line_type": "Normal",
       "content": {
-        "strings": []
-      }
-    },
-    {
-      "item_idx": 6,
-      "line_type": {
-        "Title": "Warning"
-      },
-      "content": {
-        "strings": [
-          {
-            "csi": "\u001b[1m\u001b[33m",
-            "raw": "warning"
-          },
-          {
-            "csi": "\u001b[1m",
-            "raw": ": unused variable: `Y`"
-          }
-        ]
-      }
-    },
-    {
-      "item_idx": 6,
-      "line_type": "Location",
-      "content": {
-        "strings": [
-          {
-            "csi": "",
-            "raw": "   "
-          },
-          {
-            "csi": "\u001b[1m\u001b[94m",
-            "raw": "--> "
-          },
-          {
-            "csi": "",
-            "raw": "src/main.rs:121:13"
-          }
-        ]
-      }
-    },
-    {
-      "item_idx": 6,
-      "line_type": "Normal",
-      "content": {
-        "strings": [
-          {
-            "csi": "",
-            "raw": "    "
-          },
-          {
-            "csi": "\u001b[1m\u001b[94m",
-            "raw": "|"
-          }
-        ]
-      }
-    },
-    {
-      "item_idx": 6,
-      "line_type": "Normal",
-      "content": {
-        "strings": [
-          {
-            "csi": "\u001b[1m\u001b[94m",
-            "raw": "121"
-          },
-          {
-            "csi": "",
-            "raw": " "
-          },
-          {
-            "csi": "\u001b[1m\u001b[94m",
-            "raw": "|"
-          },
-          {
-            "csi": "",
-            "raw": "         let Y = labels.broadcast_sub(&ym)?;"
-          }
-        ]
-      }
-    },
-    {
-      "item_idx": 6,
-      "line_type": "Normal",
-      "content": {
-        "strings": [
-          {
-            "csi": "",
-            "raw": "    "
-          },
-          {
-            "csi": "\u001b[1m\u001b[94m",
-            "raw": "|"
-          },
-          {
-            "csi": "",
-            "raw": "             "
-          },
-          {
-            "csi": "\u001b[1m\u001b[33m",
-            "raw": "^"
-          },
-          {
-            "csi": "",
-            "raw": " "
-          },
-          {
-            "csi": "\u001b[1m\u001b[33m",
-            "raw": "help: if this is intentional, prefix it with an underscore: `_Y`"
-          }
-        ]
-      }
-    },
-    {
-      "item_idx": 6,
-      "line_type": "Normal",
-      "content": {
-        "strings": []
-      }
-    },
-    {
-      "item_idx": 7,
-      "line_type": {
-        "Title": "Warning"
-      },
-      "content": {
-        "strings": [
-          {
-            "csi": "\u001b[1m\u001b[33m",
-            "raw": "warning"
-          },
-          {
-            "csi": "\u001b[1m",
-            "raw": ": function `invert_tensor` is never used"
-          }
-        ]
-      }
-    },
-    {
-      "item_idx": 7,
-      "line_type": "Location",
-      "content": {
-        "strings": [
-          {
-            "csi": "",
-            "raw": " "
-          },
-          {
-            "csi": "\u001b[1m\u001b[94m",
-            "raw": "--> "
-          },
-          {
-            "csi": "",
-            "raw": "src/main.rs:5:4"
-          }
-        ]
-      }
-    },
-    {
-      "item_idx": 7,
-      "line_type": "Normal",
-      "content": {
-        "strings": [
-          {
-            "csi": "",
-            "raw": "  "
-          },
-          {
-            "csi": "\u001b[1m\u001b[94m",
-            "raw": "|"
-          }
-        ]
-      }
-    },
-    {
-      "item_idx": 7,
-      "line_type": "Normal",
-      "content": {
-        "strings": [
-          {
-            "csi": "\u001b[1m\u001b[94m",
-            "raw": "5"
-          },
-          {
-            "csi": "",
-            "raw": " "
-          },
-          {
-            "csi": "\u001b[1m\u001b[94m",
-            "raw": "|"
-          },
-          {
-            "csi": "",
-            "raw": " fn invert_tensor(tensor: &Tensor) -> Result<Tensor> {"
-          }
-        ]
-      }
-    },
-    {
-      "item_idx": 7,
-      "line_type": "Normal",
-      "content": {
-        "strings": [
-          {
-            "csi": "",
-            "raw": "  "
-          },
-          {
-            "csi": "\u001b[1m\u001b[94m",
-            "raw": "|"
-          },
-          {
-            "csi": "",
-            "raw": "    "
-          },
-          {
-            "csi": "\u001b[1m\u001b[33m",
-            "raw": "^^^^^^^^^^^^^"
-          }
-        ]
-      }
-    },
-    {
-      "item_idx": 7,
-      "line_type": "Normal",
-      "content": {
-        "strings": [
-          {
-            "csi": "",
-            "raw": "  "
-          },
-          {
-            "csi": "\u001b[1m\u001b[94m",
-            "raw": "|"
-          }
-        ]
-      }
-    },
-    {
-      "item_idx": 7,
-      "line_type": "Normal",
-      "content": {
-        "strings": [
-          {
-            "csi": "",
-            "raw": "  "
-          },
-          {
-            "csi": "\u001b[1m\u001b[94m",
-            "raw": "= "
-          },
-          {
-            "csi": "\u001b[1m",
-            "raw": "note"
-          },
-          {
-            "csi": "",
-            "raw": ": `#[warn(dead_code)]` (part of `#[warn(unused)]`) on by default"
-          }
-        ]
-      }
-    },
-    {
-      "item_idx": 7,
-      "line_type": "Normal",
-      "content": {
-        "strings": []
-      }
-    },
-    {
-      "item_idx": 8,
-      "line_type": {
-        "Title": "Warning"
-      },
-      "content": {
-        "strings": [
-          {
-            "csi": "\u001b[1m\u001b[33m",
-            "raw": "warning"
-          },
-          {
-            "csi": "\u001b[1m",
-            "raw": ": fields `weights`, `bias`, `device`, `lr`, and `regularization` are never read"
-          }
-        ]
-      }
-    },
-    {
-      "item_idx": 8,
-      "line_type": "Location",
-      "content": {
-        "strings": [
-          {
-            "csi": "",
-            "raw": "  "
-          },
-          {
-            "csi": "\u001b[1m\u001b[94m",
-            "raw": "--> "
-          },
-          {
-            "csi": "",
-            "raw": "src/main.rs:19:5"
-          }
-        ]
-      }
-    },
-    {
-      "item_idx": 8,
-      "line_type": "Normal",
-      "content": {
         "strings": [
           {
             "csi": "",
@@ -3513,7 +2042,7 @@
       }
     },
     {
-      "item_idx": 8,
+      "item_idx": 5,
       "line_type": "Normal",
       "content": {
         "strings": [
@@ -3537,7 +2066,7 @@
       }
     },
     {
-      "item_idx": 8,
+      "item_idx": 5,
       "line_type": "Normal",
       "content": {
         "strings": [
@@ -3569,103 +2098,19 @@
       }
     },
     {
-      "item_idx": 8,
+      "item_idx": 5,
       "line_type": "Normal",
       "content": {
         "strings": [
           {
             "csi": "\u001b[1m\u001b[94m",
-            "raw": "19"
-          },
-          {
-            "csi": "",
-            "raw": " "
-          },
-          {
-            "csi": "\u001b[1m\u001b[94m",
-            "raw": "|"
-          },
-          {
-            "csi": "",
-            "raw": "     weights: Tensor,"
+            "raw": "..."
           }
         ]
       }
     },
     {
-      "item_idx": 8,
-      "line_type": "Normal",
-      "content": {
-        "strings": [
-          {
-            "csi": "",
-            "raw": "   "
-          },
-          {
-            "csi": "\u001b[1m\u001b[94m",
-            "raw": "|"
-          },
-          {
-            "csi": "",
-            "raw": "     "
-          },
-          {
-            "csi": "\u001b[1m\u001b[33m",
-            "raw": "^^^^^^^"
-          }
-        ]
-      }
-    },
-    {
-      "item_idx": 8,
-      "line_type": "Normal",
-      "content": {
-        "strings": [
-          {
-            "csi": "\u001b[1m\u001b[94m",
-            "raw": "20"
-          },
-          {
-            "csi": "",
-            "raw": " "
-          },
-          {
-            "csi": "\u001b[1m\u001b[94m",
-            "raw": "|"
-          },
-          {
-            "csi": "",
-            "raw": "     bias: Tensor,"
-          }
-        ]
-      }
-    },
-    {
-      "item_idx": 8,
-      "line_type": "Normal",
-      "content": {
-        "strings": [
-          {
-            "csi": "",
-            "raw": "   "
-          },
-          {
-            "csi": "\u001b[1m\u001b[94m",
-            "raw": "|"
-          },
-          {
-            "csi": "",
-            "raw": "     "
-          },
-          {
-            "csi": "\u001b[1m\u001b[33m",
-            "raw": "^^^^"
-          }
-        ]
-      }
-    },
-    {
-      "item_idx": 8,
+      "item_idx": 5,
       "line_type": "Normal",
       "content": {
         "strings": [
@@ -3689,7 +2134,7 @@
       }
     },
     {
-      "item_idx": 8,
+      "item_idx": 5,
       "line_type": "Normal",
       "content": {
         "strings": [
@@ -3713,7 +2158,7 @@
       }
     },
     {
-      "item_idx": 8,
+      "item_idx": 5,
       "line_type": "Normal",
       "content": {
         "strings": [
@@ -3737,7 +2182,7 @@
       }
     },
     {
-      "item_idx": 8,
+      "item_idx": 5,
       "line_type": "Normal",
       "content": {
         "strings": [
@@ -3761,7 +2206,7 @@
       }
     },
     {
-      "item_idx": 8,
+      "item_idx": 5,
       "line_type": "Normal",
       "content": {
         "strings": [
@@ -3785,7 +2230,7 @@
       }
     },
     {
-      "item_idx": 8,
+      "item_idx": 5,
       "line_type": "Normal",
       "content": {
         "strings": [
@@ -3809,52 +2254,7 @@
       }
     },
     {
-      "item_idx": 8,
-      "line_type": "Normal",
-      "content": {
-        "strings": []
-      }
-    },
-    {
-      "item_idx": 9,
-      "line_type": {
-        "Title": "Warning"
-      },
-      "content": {
-        "strings": [
-          {
-            "csi": "\u001b[1m\u001b[33m",
-            "raw": "warning"
-          },
-          {
-            "csi": "\u001b[1m",
-            "raw": ": methods `forward`, `loss`, and `train` are never used"
-          }
-        ]
-      }
-    },
-    {
-      "item_idx": 9,
-      "line_type": "Location",
-      "content": {
-        "strings": [
-          {
-            "csi": "",
-            "raw": "  "
-          },
-          {
-            "csi": "\u001b[1m\u001b[94m",
-            "raw": "--> "
-          },
-          {
-            "csi": "",
-            "raw": "src/main.rs:43:8"
-          }
-        ]
-      }
-    },
-    {
-      "item_idx": 9,
+      "item_idx": 5,
       "line_type": "Normal",
       "content": {
         "strings": [
@@ -3870,7 +2270,92 @@
       }
     },
     {
-      "item_idx": 9,
+      "item_idx": 5,
+      "line_type": "Normal",
+      "content": {
+        "strings": [
+          {
+            "csi": "",
+            "raw": "   "
+          },
+          {
+            "csi": "\u001b[1m\u001b[94m",
+            "raw": "= "
+          },
+          {
+            "csi": "\u001b[1m",
+            "raw": "note"
+          },
+          {
+            "csi": "",
+            "raw": ": `#[warn(dead_code)]` (part of `#[warn(unused)]`) on by default"
+          }
+        ]
+      }
+    },
+    {
+      "item_idx": 5,
+      "line_type": "Normal",
+      "content": {
+        "strings": []
+      }
+    },
+    {
+      "item_idx": 6,
+      "line_type": {
+        "Title": "Warning"
+      },
+      "content": {
+        "strings": [
+          {
+            "csi": "\u001b[1m\u001b[33m",
+            "raw": "warning"
+          },
+          {
+            "csi": "\u001b[1m",
+            "raw": ": method `train` is never used"
+          }
+        ]
+      }
+    },
+    {
+      "item_idx": 6,
+      "line_type": "Location",
+      "content": {
+        "strings": [
+          {
+            "csi": "",
+            "raw": "  "
+          },
+          {
+            "csi": "\u001b[1m\u001b[94m",
+            "raw": "--> "
+          },
+          {
+            "csi": "",
+            "raw": "src/main.rs:56:8"
+          }
+        ]
+      }
+    },
+    {
+      "item_idx": 6,
+      "line_type": "Normal",
+      "content": {
+        "strings": [
+          {
+            "csi": "",
+            "raw": "   "
+          },
+          {
+            "csi": "\u001b[1m\u001b[94m",
+            "raw": "|"
+          }
+        ]
+      }
+    },
+    {
+      "item_idx": 6,
       "line_type": "Normal",
       "content": {
         "strings": [
@@ -3894,7 +2379,7 @@
       }
     },
     {
-      "item_idx": 9,
+      "item_idx": 6,
       "line_type": "Normal",
       "content": {
         "strings": [
@@ -3920,13 +2405,13 @@
           },
           {
             "csi": "\u001b[1m\u001b[94m",
-            "raw": "methods in this implementation"
+            "raw": "method in this implementation"
           }
         ]
       }
     },
     {
-      "item_idx": 9,
+      "item_idx": 6,
       "line_type": "Normal",
       "content": {
         "strings": [
@@ -3938,127 +2423,7 @@
       }
     },
     {
-      "item_idx": 9,
-      "line_type": "Normal",
-      "content": {
-        "strings": [
-          {
-            "csi": "\u001b[1m\u001b[94m",
-            "raw": "43"
-          },
-          {
-            "csi": "",
-            "raw": " "
-          },
-          {
-            "csi": "\u001b[1m\u001b[94m",
-            "raw": "|"
-          },
-          {
-            "csi": "",
-            "raw": "     fn forward(&self, x: &Tensor) -> Result<Tensor> {"
-          }
-        ]
-      }
-    },
-    {
-      "item_idx": 9,
-      "line_type": "Normal",
-      "content": {
-        "strings": [
-          {
-            "csi": "",
-            "raw": "   "
-          },
-          {
-            "csi": "\u001b[1m\u001b[94m",
-            "raw": "|"
-          },
-          {
-            "csi": "",
-            "raw": "        "
-          },
-          {
-            "csi": "\u001b[1m\u001b[33m",
-            "raw": "^^^^^^^"
-          }
-        ]
-      }
-    },
-    {
-      "item_idx": 9,
-      "line_type": "Normal",
-      "content": {
-        "strings": [
-          {
-            "csi": "\u001b[1m\u001b[94m",
-            "raw": "..."
-          }
-        ]
-      }
-    },
-    {
-      "item_idx": 9,
-      "line_type": "Normal",
-      "content": {
-        "strings": [
-          {
-            "csi": "\u001b[1m\u001b[94m",
-            "raw": "49"
-          },
-          {
-            "csi": "",
-            "raw": " "
-          },
-          {
-            "csi": "\u001b[1m\u001b[94m",
-            "raw": "|"
-          },
-          {
-            "csi": "",
-            "raw": "     fn loss(&self, predictions: &Tensor, targets: &Tensor) -> Result<f32> {"
-          }
-        ]
-      }
-    },
-    {
-      "item_idx": 9,
-      "line_type": "Normal",
-      "content": {
-        "strings": [
-          {
-            "csi": "",
-            "raw": "   "
-          },
-          {
-            "csi": "\u001b[1m\u001b[94m",
-            "raw": "|"
-          },
-          {
-            "csi": "",
-            "raw": "        "
-          },
-          {
-            "csi": "\u001b[1m\u001b[33m",
-            "raw": "^^^^"
-          }
-        ]
-      }
-    },
-    {
-      "item_idx": 9,
-      "line_type": "Normal",
-      "content": {
-        "strings": [
-          {
-            "csi": "\u001b[1m\u001b[94m",
-            "raw": "..."
-          }
-        ]
-      }
-    },
-    {
-      "item_idx": 9,
+      "item_idx": 6,
       "line_type": "Normal",
       "content": {
         "strings": [
@@ -4082,7 +2447,7 @@
       }
     },
     {
-      "item_idx": 9,
+      "item_idx": 6,
       "line_type": "Normal",
       "content": {
         "strings": [
@@ -4104,405 +2469,14 @@
           }
         ]
       }
-    },
-    {
-      "item_idx": 9,
-      "line_type": "Normal",
-      "content": {
-        "strings": []
-      }
-    },
-    {
-      "item_idx": 10,
-      "line_type": {
-        "Title": "Warning"
-      },
-      "content": {
-        "strings": [
-          {
-            "csi": "\u001b[1m\u001b[33m",
-            "raw": "warning"
-          },
-          {
-            "csi": "\u001b[1m",
-            "raw": ": variable `X` should have a snake case name"
-          }
-        ]
-      }
-    },
-    {
-      "item_idx": 10,
-      "line_type": "Location",
-      "content": {
-        "strings": [
-          {
-            "csi": "",
-            "raw": "   "
-          },
-          {
-            "csi": "\u001b[1m\u001b[94m",
-            "raw": "--> "
-          },
-          {
-            "csi": "",
-            "raw": "src/main.rs:120:13"
-          }
-        ]
-      }
-    },
-    {
-      "item_idx": 10,
-      "line_type": "Normal",
-      "content": {
-        "strings": [
-          {
-            "csi": "",
-            "raw": "    "
-          },
-          {
-            "csi": "\u001b[1m\u001b[94m",
-            "raw": "|"
-          }
-        ]
-      }
-    },
-    {
-      "item_idx": 10,
-      "line_type": "Normal",
-      "content": {
-        "strings": [
-          {
-            "csi": "\u001b[1m\u001b[94m",
-            "raw": "120"
-          },
-          {
-            "csi": "",
-            "raw": " "
-          },
-          {
-            "csi": "\u001b[1m\u001b[94m",
-            "raw": "|"
-          },
-          {
-            "csi": "",
-            "raw": "         let X = features.broadcast_sub(&xm)?;"
-          }
-        ]
-      }
-    },
-    {
-      "item_idx": 10,
-      "line_type": "Normal",
-      "content": {
-        "strings": [
-          {
-            "csi": "",
-            "raw": "    "
-          },
-          {
-            "csi": "\u001b[1m\u001b[94m",
-            "raw": "|"
-          },
-          {
-            "csi": "",
-            "raw": "             "
-          },
-          {
-            "csi": "\u001b[1m\u001b[33m",
-            "raw": "^"
-          },
-          {
-            "csi": "",
-            "raw": " "
-          },
-          {
-            "csi": "\u001b[1m\u001b[33m",
-            "raw": "help: convert the identifier to snake case (notice the capitalization): `x`"
-          }
-        ]
-      }
-    },
-    {
-      "item_idx": 10,
-      "line_type": "Normal",
-      "content": {
-        "strings": [
-          {
-            "csi": "",
-            "raw": "    "
-          },
-          {
-            "csi": "\u001b[1m\u001b[94m",
-            "raw": "|"
-          }
-        ]
-      }
-    },
-    {
-      "item_idx": 10,
-      "line_type": "Normal",
-      "content": {
-        "strings": [
-          {
-            "csi": "",
-            "raw": "    "
-          },
-          {
-            "csi": "\u001b[1m\u001b[94m",
-            "raw": "= "
-          },
-          {
-            "csi": "\u001b[1m",
-            "raw": "note"
-          },
-          {
-            "csi": "",
-            "raw": ": `#[warn(non_snake_case)]` (part of `#[warn(nonstandard_style)]`) on by default"
-          }
-        ]
-      }
-    },
-    {
-      "item_idx": 10,
-      "line_type": "Normal",
-      "content": {
-        "strings": []
-      }
-    },
-    {
-      "item_idx": 11,
-      "line_type": {
-        "Title": "Warning"
-      },
-      "content": {
-        "strings": [
-          {
-            "csi": "\u001b[1m\u001b[33m",
-            "raw": "warning"
-          },
-          {
-            "csi": "\u001b[1m",
-            "raw": ": variable `Y` should have a snake case name"
-          }
-        ]
-      }
-    },
-    {
-      "item_idx": 11,
-      "line_type": "Location",
-      "content": {
-        "strings": [
-          {
-            "csi": "",
-            "raw": "   "
-          },
-          {
-            "csi": "\u001b[1m\u001b[94m",
-            "raw": "--> "
-          },
-          {
-            "csi": "",
-            "raw": "src/main.rs:121:13"
-          }
-        ]
-      }
-    },
-    {
-      "item_idx": 11,
-      "line_type": "Normal",
-      "content": {
-        "strings": [
-          {
-            "csi": "",
-            "raw": "    "
-          },
-          {
-            "csi": "\u001b[1m\u001b[94m",
-            "raw": "|"
-          }
-        ]
-      }
-    },
-    {
-      "item_idx": 11,
-      "line_type": "Normal",
-      "content": {
-        "strings": [
-          {
-            "csi": "\u001b[1m\u001b[94m",
-            "raw": "121"
-          },
-          {
-            "csi": "",
-            "raw": " "
-          },
-          {
-            "csi": "\u001b[1m\u001b[94m",
-            "raw": "|"
-          },
-          {
-            "csi": "",
-            "raw": "         let Y = labels.broadcast_sub(&ym)?;"
-          }
-        ]
-      }
-    },
-    {
-      "item_idx": 11,
-      "line_type": "Normal",
-      "content": {
-        "strings": [
-          {
-            "csi": "",
-            "raw": "    "
-          },
-          {
-            "csi": "\u001b[1m\u001b[94m",
-            "raw": "|"
-          },
-          {
-            "csi": "",
-            "raw": "             "
-          },
-          {
-            "csi": "\u001b[1m\u001b[33m",
-            "raw": "^"
-          },
-          {
-            "csi": "",
-            "raw": " "
-          },
-          {
-            "csi": "\u001b[1m\u001b[33m",
-            "raw": "help: convert the identifier to snake case (notice the capitalization): `y`"
-          }
-        ]
-      }
-    },
-    {
-      "item_idx": 11,
-      "line_type": "Normal",
-      "content": {
-        "strings": []
-      }
-    },
-    {
-      "item_idx": 12,
-      "line_type": {
-        "Title": "Warning"
-      },
-      "content": {
-        "strings": [
-          {
-            "csi": "\u001b[1m\u001b[33m",
-            "raw": "warning"
-          },
-          {
-            "csi": "\u001b[1m",
-            "raw": ": variable `W` should have a snake case name"
-          }
-        ]
-      }
-    },
-    {
-      "item_idx": 12,
-      "line_type": "Location",
-      "content": {
-        "strings": [
-          {
-            "csi": "",
-            "raw": "   "
-          },
-          {
-            "csi": "\u001b[1m\u001b[94m",
-            "raw": "--> "
-          },
-          {
-            "csi": "",
-            "raw": "src/main.rs:127:13"
-          }
-        ]
-      }
-    },
-    {
-      "item_idx": 12,
-      "line_type": "Normal",
-      "content": {
-        "strings": [
-          {
-            "csi": "",
-            "raw": "    "
-          },
-          {
-            "csi": "\u001b[1m\u001b[94m",
-            "raw": "|"
-          }
-        ]
-      }
-    },
-    {
-      "item_idx": 12,
-      "line_type": "Normal",
-      "content": {
-        "strings": [
-          {
-            "csi": "\u001b[1m\u001b[94m",
-            "raw": "127"
-          },
-          {
-            "csi": "",
-            "raw": " "
-          },
-          {
-            "csi": "\u001b[1m\u001b[94m",
-            "raw": "|"
-          },
-          {
-            "csi": "",
-            "raw": "         let W = X.matmul(&X.t()?)?;"
-          }
-        ]
-      }
-    },
-    {
-      "item_idx": 12,
-      "line_type": "Normal",
-      "content": {
-        "strings": [
-          {
-            "csi": "",
-            "raw": "    "
-          },
-          {
-            "csi": "\u001b[1m\u001b[94m",
-            "raw": "|"
-          },
-          {
-            "csi": "",
-            "raw": "             "
-          },
-          {
-            "csi": "\u001b[1m\u001b[33m",
-            "raw": "^"
-          },
-          {
-            "csi": "",
-            "raw": " "
-          },
-          {
-            "csi": "\u001b[1m\u001b[33m",
-            "raw": "help: convert the identifier to snake case (notice the capitalization): `w`"
-          }
-        ]
-      }
     }
   ],
   "stats": {
-    "warnings": 12,
+    "warnings": 6,
     "errors": 0,
     "test_fails": 0,
-    "location_lines": 12,
-    "normal_lines": 81
+    "location_lines": 6,
+    "normal_lines": 44
   },
   "suggest_backtrace": false,
   "failure_keys": [],
