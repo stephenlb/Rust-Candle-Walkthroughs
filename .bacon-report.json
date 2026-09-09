@@ -33,170 +33,7 @@
             },
             {
               "csi": "\u001b[1m",
-              "raw": ": unused import: `csv`"
-            }
-          ]
-        }
-      },
-      {
-        "item_idx": 0,
-        "line_type": {
-          "Raw": "StdErr"
-        },
-        "content": {
-          "strings": [
-            {
-              "csi": "",
-              "raw": " "
-            },
-            {
-              "csi": "\u001b[1m\u001b[94m",
-              "raw": "--> "
-            },
-            {
-              "csi": "",
-              "raw": "src/main.rs:1:5"
-            }
-          ]
-        }
-      },
-      {
-        "item_idx": 0,
-        "line_type": {
-          "Raw": "StdErr"
-        },
-        "content": {
-          "strings": [
-            {
-              "csi": "",
-              "raw": "  "
-            },
-            {
-              "csi": "\u001b[1m\u001b[94m",
-              "raw": "|"
-            }
-          ]
-        }
-      },
-      {
-        "item_idx": 0,
-        "line_type": {
-          "Raw": "StdErr"
-        },
-        "content": {
-          "strings": [
-            {
-              "csi": "\u001b[1m\u001b[94m",
-              "raw": "1"
-            },
-            {
-              "csi": "",
-              "raw": " "
-            },
-            {
-              "csi": "\u001b[1m\u001b[94m",
-              "raw": "|"
-            },
-            {
-              "csi": "",
-              "raw": " use csv;"
-            }
-          ]
-        }
-      },
-      {
-        "item_idx": 0,
-        "line_type": {
-          "Raw": "StdErr"
-        },
-        "content": {
-          "strings": [
-            {
-              "csi": "",
-              "raw": "  "
-            },
-            {
-              "csi": "\u001b[1m\u001b[94m",
-              "raw": "|"
-            },
-            {
-              "csi": "",
-              "raw": "     "
-            },
-            {
-              "csi": "\u001b[1m\u001b[33m",
-              "raw": "^^^"
-            }
-          ]
-        }
-      },
-      {
-        "item_idx": 0,
-        "line_type": {
-          "Raw": "StdErr"
-        },
-        "content": {
-          "strings": [
-            {
-              "csi": "",
-              "raw": "  "
-            },
-            {
-              "csi": "\u001b[1m\u001b[94m",
-              "raw": "|"
-            }
-          ]
-        }
-      },
-      {
-        "item_idx": 0,
-        "line_type": {
-          "Raw": "StdErr"
-        },
-        "content": {
-          "strings": [
-            {
-              "csi": "",
-              "raw": "  "
-            },
-            {
-              "csi": "\u001b[1m\u001b[94m",
-              "raw": "= "
-            },
-            {
-              "csi": "\u001b[1m",
-              "raw": "note"
-            },
-            {
-              "csi": "",
-              "raw": ": `#[warn(unused_imports)]` (part of `#[warn(unused)]`) on by default"
-            }
-          ]
-        }
-      },
-      {
-        "item_idx": 0,
-        "line_type": {
-          "Raw": "StdErr"
-        },
-        "content": {
-          "strings": []
-        }
-      },
-      {
-        "item_idx": 0,
-        "line_type": {
-          "Raw": "StdErr"
-        },
-        "content": {
-          "strings": [
-            {
-              "csi": "\u001b[1m\u001b[33m",
-              "raw": "warning"
-            },
-            {
-              "csi": "\u001b[1m",
-              "raw": ": unused imports: `DType` and `Device`"
+              "raw": ": unused import: `DType`"
             }
           ]
         }
@@ -289,14 +126,50 @@
             {
               "csi": "\u001b[1m\u001b[33m",
               "raw": "^^^^^"
-            },
+            }
+          ]
+        }
+      },
+      {
+        "item_idx": 0,
+        "line_type": {
+          "Raw": "StdErr"
+        },
+        "content": {
+          "strings": [
             {
               "csi": "",
               "raw": "  "
             },
             {
-              "csi": "\u001b[1m\u001b[33m",
-              "raw": "^^^^^^"
+              "csi": "\u001b[1m\u001b[94m",
+              "raw": "|"
+            }
+          ]
+        }
+      },
+      {
+        "item_idx": 0,
+        "line_type": {
+          "Raw": "StdErr"
+        },
+        "content": {
+          "strings": [
+            {
+              "csi": "",
+              "raw": "  "
+            },
+            {
+              "csi": "\u001b[1m\u001b[94m",
+              "raw": "= "
+            },
+            {
+              "csi": "\u001b[1m",
+              "raw": "note"
+            },
+            {
+              "csi": "",
+              "raw": ": `#[warn(unused_imports)]` (part of `#[warn(unused)]`) on by default"
             }
           ]
         }
@@ -345,7 +218,7 @@
             },
             {
               "csi": "",
-              "raw": "src/main.rs:5:4"
+              "raw": "src/main.rs:9:4"
             }
           ]
         }
@@ -377,7 +250,7 @@
           "strings": [
             {
               "csi": "\u001b[1m\u001b[94m",
-              "raw": "5"
+              "raw": "9"
             },
             {
               "csi": "",
@@ -485,8 +358,127 @@
               "raw": "warning"
             },
             {
+              "csi": "\u001b[1m",
+              "raw": ": function `load_dataset` is never used"
+            }
+          ]
+        }
+      },
+      {
+        "item_idx": 0,
+        "line_type": {
+          "Raw": "StdErr"
+        },
+        "content": {
+          "strings": [
+            {
               "csi": "",
-              "raw": ": `rust-candle-course` (bin \"rust-candle-course\") generated 3 warnings (run `cargo fix --bin \"rust-candle-course\" -p rust-candle-course` to apply 2 suggestions)"
+              "raw": "  "
+            },
+            {
+              "csi": "\u001b[1m\u001b[94m",
+              "raw": "--> "
+            },
+            {
+              "csi": "",
+              "raw": "src/main.rs:22:4"
+            }
+          ]
+        }
+      },
+      {
+        "item_idx": 0,
+        "line_type": {
+          "Raw": "StdErr"
+        },
+        "content": {
+          "strings": [
+            {
+              "csi": "",
+              "raw": "   "
+            },
+            {
+              "csi": "\u001b[1m\u001b[94m",
+              "raw": "|"
+            }
+          ]
+        }
+      },
+      {
+        "item_idx": 0,
+        "line_type": {
+          "Raw": "StdErr"
+        },
+        "content": {
+          "strings": [
+            {
+              "csi": "\u001b[1m\u001b[94m",
+              "raw": "22"
+            },
+            {
+              "csi": "",
+              "raw": " "
+            },
+            {
+              "csi": "\u001b[1m\u001b[94m",
+              "raw": "|"
+            },
+            {
+              "csi": "",
+              "raw": " fn load_dataset(file: &str, device: &Device) -> Result<Tensor> {"
+            }
+          ]
+        }
+      },
+      {
+        "item_idx": 0,
+        "line_type": {
+          "Raw": "StdErr"
+        },
+        "content": {
+          "strings": [
+            {
+              "csi": "",
+              "raw": "   "
+            },
+            {
+              "csi": "\u001b[1m\u001b[94m",
+              "raw": "|"
+            },
+            {
+              "csi": "",
+              "raw": "    "
+            },
+            {
+              "csi": "\u001b[1m\u001b[33m",
+              "raw": "^^^^^^^^^^^^"
+            }
+          ]
+        }
+      },
+      {
+        "item_idx": 0,
+        "line_type": {
+          "Raw": "StdErr"
+        },
+        "content": {
+          "strings": []
+        }
+      },
+      {
+        "item_idx": 0,
+        "line_type": {
+          "Raw": "StdErr"
+        },
+        "content": {
+          "strings": [
+            {
+              "csi": "\u001b[1m\u001b[33m",
+              "raw": "warning"
+            },
+            {
+              "csi": "",
+              "raw": ": `rust-candle-course` (bin \"rust-candle-course\") generated 3 warnings (run `cargo fix --bin \"rust-candle-course\" -p rust-candle-course` to apply 1 suggestion)"
             }
           ]
         }
@@ -504,7 +496,7 @@
             },
             {
               "csi": "",
-              "raw": " `dev` profile [unoptimized + debuginfo] target(s) in 0.12s"
+              "raw": " `dev` profile [unoptimized + debuginfo] target(s) in 0.13s"
             }
           ]
         }
@@ -525,7 +517,7 @@
           },
           {
             "csi": "\u001b[1m",
-            "raw": ": unused import: `csv`"
+            "raw": ": unused import: `DType`"
           }
         ]
       }
@@ -545,7 +537,7 @@
           },
           {
             "csi": "",
-            "raw": "src/main.rs:1:5"
+            "raw": "src/main.rs:3:19"
           }
         ]
       }
@@ -573,7 +565,7 @@
         "strings": [
           {
             "csi": "\u001b[1m\u001b[94m",
-            "raw": "1"
+            "raw": "3"
           },
           {
             "csi": "",
@@ -585,7 +577,7 @@
           },
           {
             "csi": "",
-            "raw": " use csv;"
+            "raw": " use candle_core::{DType, Device, Tensor, D};"
           }
         ]
       }
@@ -605,11 +597,11 @@
           },
           {
             "csi": "",
-            "raw": "     "
+            "raw": "                   "
           },
           {
             "csi": "\u001b[1m\u001b[33m",
-            "raw": "^^^"
+            "raw": "^^^^^"
           }
         ]
       }
@@ -674,7 +666,7 @@
           },
           {
             "csi": "\u001b[1m",
-            "raw": ": unused imports: `DType` and `Device`"
+            "raw": ": function `cdist` is never used"
           }
         ]
       }
@@ -694,7 +686,7 @@
           },
           {
             "csi": "",
-            "raw": "src/main.rs:3:19"
+            "raw": "src/main.rs:9:4"
           }
         ]
       }
@@ -722,7 +714,7 @@
         "strings": [
           {
             "csi": "\u001b[1m\u001b[94m",
-            "raw": "3"
+            "raw": "9"
           },
           {
             "csi": "",
@@ -734,7 +726,7 @@
           },
           {
             "csi": "",
-            "raw": " use candle_core::{DType, Device, Tensor, D};"
+            "raw": " fn cdist(x1: &Tensor, x2: &Tensor) -> Result<Tensor> {"
           }
         ]
       }
@@ -754,19 +746,51 @@
           },
           {
             "csi": "",
-            "raw": "                   "
+            "raw": "    "
           },
           {
             "csi": "\u001b[1m\u001b[33m",
             "raw": "^^^^^"
-          },
+          }
+        ]
+      }
+    },
+    {
+      "item_idx": 2,
+      "line_type": "Normal",
+      "content": {
+        "strings": [
           {
             "csi": "",
             "raw": "  "
           },
           {
-            "csi": "\u001b[1m\u001b[33m",
-            "raw": "^^^^^^"
+            "csi": "\u001b[1m\u001b[94m",
+            "raw": "|"
+          }
+        ]
+      }
+    },
+    {
+      "item_idx": 2,
+      "line_type": "Normal",
+      "content": {
+        "strings": [
+          {
+            "csi": "",
+            "raw": "  "
+          },
+          {
+            "csi": "\u001b[1m\u001b[94m",
+            "raw": "= "
+          },
+          {
+            "csi": "\u001b[1m",
+            "raw": "note"
+          },
+          {
+            "csi": "",
+            "raw": ": `#[warn(dead_code)]` (part of `#[warn(unused)]`) on by default"
           }
         ]
       }
@@ -791,7 +815,7 @@
           },
           {
             "csi": "\u001b[1m",
-            "raw": ": function `cdist` is never used"
+            "raw": ": function `load_dataset` is never used"
           }
         ]
       }
@@ -803,7 +827,7 @@
         "strings": [
           {
             "csi": "",
-            "raw": " "
+            "raw": "  "
           },
           {
             "csi": "\u001b[1m\u001b[94m",
@@ -811,7 +835,7 @@
           },
           {
             "csi": "",
-            "raw": "src/main.rs:5:4"
+            "raw": "src/main.rs:22:4"
           }
         ]
       }
@@ -823,7 +847,7 @@
         "strings": [
           {
             "csi": "",
-            "raw": "  "
+            "raw": "   "
           },
           {
             "csi": "\u001b[1m\u001b[94m",
@@ -839,7 +863,7 @@
         "strings": [
           {
             "csi": "\u001b[1m\u001b[94m",
-            "raw": "5"
+            "raw": "22"
           },
           {
             "csi": "",
@@ -851,7 +875,7 @@
           },
           {
             "csi": "",
-            "raw": " fn cdist(x1: &Tensor, x2: &Tensor) -> Result<Tensor> {"
+            "raw": " fn load_dataset(file: &str, device: &Device) -> Result<Tensor> {"
           }
         ]
       }
@@ -863,7 +887,7 @@
         "strings": [
           {
             "csi": "",
-            "raw": "  "
+            "raw": "   "
           },
           {
             "csi": "\u001b[1m\u001b[94m",
@@ -875,47 +899,7 @@
           },
           {
             "csi": "\u001b[1m\u001b[33m",
-            "raw": "^^^^^"
-          }
-        ]
-      }
-    },
-    {
-      "item_idx": 3,
-      "line_type": "Normal",
-      "content": {
-        "strings": [
-          {
-            "csi": "",
-            "raw": "  "
-          },
-          {
-            "csi": "\u001b[1m\u001b[94m",
-            "raw": "|"
-          }
-        ]
-      }
-    },
-    {
-      "item_idx": 3,
-      "line_type": "Normal",
-      "content": {
-        "strings": [
-          {
-            "csi": "",
-            "raw": "  "
-          },
-          {
-            "csi": "\u001b[1m\u001b[94m",
-            "raw": "= "
-          },
-          {
-            "csi": "\u001b[1m",
-            "raw": "note"
-          },
-          {
-            "csi": "",
-            "raw": ": `#[warn(dead_code)]` (part of `#[warn(unused)]`) on by default"
+            "raw": "^^^^^^^^^^^^"
           }
         ]
       }

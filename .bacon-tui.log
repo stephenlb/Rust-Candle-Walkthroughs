@@ -481,3 +481,2040 @@
 [1m[33mwarning[0m: `rust-candle-course` (bin "rust-candle-course") generated 3 warnings (run `cargo fix --bin "rust-candle-course" -p rust-candle-course` to apply 2 suggestions)
 [1m[92m    Finished[0m `dev` profile [unoptimized + debuginfo] target(s) in 0.12s
 [1m[38;5;255m[48;5;240m rust-candle-course [0m[1m[38;5;235m[48;5;204m check [0m[1m[38;5;235m[48;5;11m  3 warnings  [0m
+[1m[92m    Checking[0m rust-candle-course v0.1.0 (/Users/stephen/Desktop/rust-candle-course)
+[1m[33mwarning[0m[1m: unused import: `csv`[0m
+ [1m[94m--> [0msrc/main.rs:1:5
+  [1m[94m|[0m
+[1m[94m1[0m [1m[94m|[0m use csv;
+  [1m[94m|[0m     [1m[33m^^^[0m
+  [1m[94m|[0m
+  [1m[94m= [0m[1mnote[0m: `#[warn(unused_imports)]` (part of `#[warn(unused)]`) on by default
+
+[1m[33mwarning[0m[1m: unused import: `DType`[0m
+ [1m[94m--> [0msrc/main.rs:3:19
+  [1m[94m|[0m
+[1m[94m3[0m [1m[94m|[0m use candle_core::{DType, Device, Tensor, D};
+  [1m[94m|[0m                   [1m[33m^^^^^[0m
+
+[1m[91merror[E0308][0m[1m: mismatched types[0m
+  [1m[94m--> [0msrc/main.rs:18:49
+   [1m[94m|[0m
+[1m[94m18[0m [1m[94m|[0m fn load_dataset(file: &str, device: &Device) -> Result<Tensor> {
+   [1m[94m|[0m    [1m[94m------------[0m                                 [1m[91m^^^^^^^^^^^^^^[0m [1m[91mexpected `Result<Tensor, Error>`, found `()`[0m
+   [1m[94m|[0m    [1m[94m|[0m
+   [1m[94m|[0m    [1m[94mimplicitly returns `()` as its body has no tail or `return` expression[0m
+   [1m[94m|[0m
+   [1m[94m= [0m[1mnote[0m:   expected enum `[1m[35mResult<candle_core::Tensor, anyhow::Error>[0m`
+           found unit type `[1m[35m()[0m`
+
+[1mFor more information about this error, try `rustc --explain E0308`.[0m
+[1m[33mwarning[0m: `rust-candle-course` (bin "rust-candle-course") generated 2 warnings
+[1m[91merror[0m: could not compile `rust-candle-course` (bin "rust-candle-course") due to 1 previous error; 2 warnings emitted
+[1m[38;5;255m[48;5;240m rust-candle-course [0m[1m[38;5;235m[48;5;204m check [0m[1m[38;5;235m[48;5;9m  1 error  [0m[1m[38;5;235m[48;5;11m  2 warnings  [0m
+[1m[92m    Checking[0m rust-candle-course v0.1.0 (/Users/stephen/Desktop/rust-candle-course)
+[1m[91merror[E0425][0m[1m: cannot find value `j` in this scope[0m
+  [1m[94m--> [0msrc/main.rs:19:5
+   [1m[94m|[0m
+[1m[94m19[0m [1m[94m|[0m     j
+   [1m[94m|[0m     [1m[91m^[0m [1m[91mnot found in this scope[0m
+
+[1m[33mwarning[0m[1m: unused import: `csv`[0m
+ [1m[94m--> [0msrc/main.rs:1:5
+  [1m[94m|[0m
+[1m[94m1[0m [1m[94m|[0m use csv;
+  [1m[94m|[0m     [1m[33m^^^[0m
+  [1m[94m|[0m
+  [1m[94m= [0m[1mnote[0m: `#[warn(unused_imports)]` (part of `#[warn(unused)]`) on by default
+
+[1m[33mwarning[0m[1m: unused import: `DType`[0m
+ [1m[94m--> [0msrc/main.rs:3:19
+  [1m[94m|[0m
+[1m[94m3[0m [1m[94m|[0m use candle_core::{DType, Device, Tensor, D};
+  [1m[94m|[0m                   [1m[33m^^^^^[0m
+
+[1mFor more information about this error, try `rustc --explain E0425`.[0m
+[1m[33mwarning[0m: `rust-candle-course` (bin "rust-candle-course") generated 2 warnings
+[1m[91merror[0m: could not compile `rust-candle-course` (bin "rust-candle-course") due to 1 previous error; 2 warnings emitted
+[1m[38;5;255m[48;5;240m rust-candle-course [0m[1m[38;5;235m[48;5;204m check [0m[1m[38;5;235m[48;5;9m  1 error  [0m[1m[38;5;235m[48;5;11m  2 warnings  [0m
+[1m[92m    Checking[0m rust-candle-course v0.1.0 (/Users/stephen/Desktop/rust-candle-course)
+[1m[33mwarning[0m[1m: unused import: `DType`[0m
+ [1m[94m--> [0msrc/main.rs:3:19
+  [1m[94m|[0m
+[1m[94m3[0m [1m[94m|[0m use candle_core::{DType, Device, Tensor, D};
+  [1m[94m|[0m                   [1m[33m^^^^^[0m
+  [1m[94m|[0m
+  [1m[94m= [0m[1mnote[0m: `#[warn(unused_imports)]` (part of `#[warn(unused)]`) on by default
+
+[1m[91merror[E0308][0m[1m: mismatched types[0m
+  [1m[94m--> [0msrc/main.rs:18:49
+   [1m[94m|[0m
+[1m[94m18[0m [1m[94m|[0m fn load_dataset(file: &str, device: &Device) -> Result<Tensor> {
+   [1m[94m|[0m    [1m[94m------------[0m                                 [1m[91m^^^^^^^^^^^^^^[0m [1m[91mexpected `Result<Tensor, Error>`, found `()`[0m
+   [1m[94m|[0m    [1m[94m|[0m
+   [1m[94m|[0m    [1m[94mimplicitly returns `()` as its body has no tail or `return` expression[0m
+   [1m[94m|[0m
+   [1m[94m= [0m[1mnote[0m:   expected enum `[1m[35mResult<candle_core::Tensor, anyhow::Error>[0m`
+           found unit type `[1m[35m()[0m`
+
+[1mFor more information about this error, try `rustc --explain E0308`.[0m
+[1m[33mwarning[0m: `rust-candle-course` (bin "rust-candle-course") generated 1 warning
+[1m[91merror[0m: could not compile `rust-candle-course` (bin "rust-candle-course") due to 1 previous error; 1 warning emitted
+[1m[38;5;255m[48;5;240m rust-candle-course [0m[1m[38;5;235m[48;5;204m check [0m[1m[38;5;235m[48;5;9m  1 error  [0m[1m[38;5;235m[48;5;11m  1 warning  [0m
+[1m[92m    Checking[0m rust-candle-course v0.1.0 (/Users/stephen/Desktop/rust-candle-course)
+[1m[33mwarning[0m[1m: unused import: `DType`[0m
+ [1m[94m--> [0msrc/main.rs:3:19
+  [1m[94m|[0m
+[1m[94m3[0m [1m[94m|[0m use candle_core::{DType, Device, Tensor, D};
+  [1m[94m|[0m                   [1m[33m^^^^^[0m
+  [1m[94m|[0m
+  [1m[94m= [0m[1mnote[0m: `#[warn(unused_imports)]` (part of `#[warn(unused)]`) on by default
+
+[1m[91merror[E0282][0m[1m: type annotations needed for `Vec<_>`[0m
+  [1m[94m--> [0msrc/main.rs:20:9
+   [1m[94m|[0m
+[1m[94m20[0m [1m[94m|[0m     let mut data = Vec::new();
+   [1m[94m|[0m         [1m[91m^^^^^^^^[0m   [1m[94m----------[0m [1m[94mtype must be known at this point[0m
+   [1m[94m|[0m
+[1m[96mhelp[0m: consider giving `data` an explicit type, where the type for type parameter `T` is specified
+   [1m[94m|[0m
+[1m[94m20[0m [1m[94m| [0m    let mut data[92m: Vec<T>[0m = Vec::new();
+   [1m[94m|[0m                 [92m++++++++[0m
+
+[1mFor more information about this error, try `rustc --explain E0282`.[0m
+[1m[33mwarning[0m: `rust-candle-course` (bin "rust-candle-course") generated 1 warning
+[1m[91merror[0m: could not compile `rust-candle-course` (bin "rust-candle-course") due to 1 previous error; 1 warning emitted
+[1m[38;5;255m[48;5;240m rust-candle-course [0m[1m[38;5;235m[48;5;204m check [0m[1m[38;5;235m[48;5;9m  1 error  [0m[1m[38;5;235m[48;5;11m  1 warning  [0m
+[1m[92m    Checking[0m rust-candle-course v0.1.0 (/Users/stephen/Desktop/rust-candle-course)
+[1m[33mwarning[0m[1m: unused import: `DType`[0m
+ [1m[94m--> [0msrc/main.rs:3:19
+  [1m[94m|[0m
+[1m[94m3[0m [1m[94m|[0m use candle_core::{DType, Device, Tensor, D};
+  [1m[94m|[0m                   [1m[33m^^^^^[0m
+  [1m[94m|[0m
+  [1m[94m= [0m[1mnote[0m: `#[warn(unused_imports)]` (part of `#[warn(unused)]`) on by default
+
+[1m[91merror[E0282][0m[1m: type annotations needed for `Vec<_>`[0m
+  [1m[94m--> [0msrc/main.rs:20:9
+   [1m[94m|[0m
+[1m[94m20[0m [1m[94m|[0m     let mut data = Vec::new();
+   [1m[94m|[0m         [1m[91m^^^^^^^^[0m   [1m[94m----------[0m [1m[94mtype must be known at this point[0m
+   [1m[94m|[0m
+[1m[96mhelp[0m: consider giving `data` an explicit type, where the type for type parameter `T` is specified
+   [1m[94m|[0m
+[1m[94m20[0m [1m[94m| [0m    let mut data[92m: Vec<T>[0m = Vec::new();
+   [1m[94m|[0m                 [92m++++++++[0m
+
+[1mFor more information about this error, try `rustc --explain E0282`.[0m
+[1m[33mwarning[0m: `rust-candle-course` (bin "rust-candle-course") generated 1 warning
+[1m[91merror[0m: could not compile `rust-candle-course` (bin "rust-candle-course") due to 1 previous error; 1 warning emitted
+[1m[38;5;255m[48;5;240m rust-candle-course [0m[1m[38;5;235m[48;5;204m check [0m[1m[38;5;235m[48;5;9m  1 error  [0m[1m[38;5;235m[48;5;11m  1 warning  [0m
+[1m[92m    Checking[0m rust-candle-course v0.1.0 (/Users/stephen/Desktop/rust-candle-course)
+[1m[33mwarning[0m[1m: unused import: `DType`[0m
+ [1m[94m--> [0msrc/main.rs:3:19
+  [1m[94m|[0m
+[1m[94m3[0m [1m[94m|[0m use candle_core::{DType, Device, Tensor, D};
+  [1m[94m|[0m                   [1m[33m^^^^^[0m
+  [1m[94m|[0m
+  [1m[94m= [0m[1mnote[0m: `#[warn(unused_imports)]` (part of `#[warn(unused)]`) on by default
+
+[1m[91merror[E0282][0m[1m: type annotations needed for `Vec<_>`[0m
+  [1m[94m--> [0msrc/main.rs:20:9
+   [1m[94m|[0m
+[1m[94m20[0m [1m[94m|[0m     let mut data = Vec::new();
+   [1m[94m|[0m         [1m[91m^^^^^^^^[0m   [1m[94m----------[0m [1m[94mtype must be known at this point[0m
+   [1m[94m|[0m
+[1m[96mhelp[0m: consider giving `data` an explicit type, where the type for type parameter `T` is specified
+   [1m[94m|[0m
+[1m[94m20[0m [1m[94m| [0m    let mut data[92m: Vec<T>[0m = Vec::new();
+   [1m[94m|[0m                 [92m++++++++[0m
+
+[1mFor more information about this error, try `rustc --explain E0282`.[0m
+[1m[33mwarning[0m: `rust-candle-course` (bin "rust-candle-course") generated 1 warning
+[1m[91merror[0m: could not compile `rust-candle-course` (bin "rust-candle-course") due to 1 previous error; 1 warning emitted
+[1m[38;5;255m[48;5;240m rust-candle-course [0m[1m[38;5;235m[48;5;204m check [0m[1m[38;5;235m[48;5;9m  1 error  [0m[1m[38;5;235m[48;5;11m  1 warning  [0m
+[1m[92m    Checking[0m rust-candle-course v0.1.0 (/Users/stephen/Desktop/rust-candle-course)
+[1m[33mwarning[0m[1m: unused import: `DType`[0m
+ [1m[94m--> [0msrc/main.rs:3:19
+  [1m[94m|[0m
+[1m[94m3[0m [1m[94m|[0m use candle_core::{DType, Device, Tensor, D};
+  [1m[94m|[0m                   [1m[33m^^^^^[0m
+  [1m[94m|[0m
+  [1m[94m= [0m[1mnote[0m: `#[warn(unused_imports)]` (part of `#[warn(unused)]`) on by default
+
+[1m[33mwarning[0m[1m: variable does not need to be mutable[0m
+  [1m[94m--> [0msrc/main.rs:20:9
+   [1m[94m|[0m
+[1m[94m20[0m [1m[94m|[0m     let mut data: Vec<f64> = Vec::new();
+   [1m[94m|[0m         [1m[94m----[0m[1m[33m^^^^[0m
+   [1m[94m|[0m         [1m[94m|[0m
+   [1m[94m|[0m         [1m[94mhelp: remove this `mut`[0m
+   [1m[94m|[0m
+   [1m[94m= [0m[1mnote[0m: `#[warn(unused_mut)]` (part of `#[warn(unused)]`) on by default
+
+[1m[33mwarning[0m[1m: unused variable: `result`[0m
+  [1m[94m--> [0msrc/main.rs:23:9
+   [1m[94m|[0m
+[1m[94m23[0m [1m[94m|[0m     for result in reader.records() {
+   [1m[94m|[0m         [1m[33m^^^^^^[0m [1m[33mhelp: if this is intentional, prefix it with an underscore: `_result`[0m
+   [1m[94m|[0m
+   [1m[94m= [0m[1mnote[0m: `#[warn(unused_variables)]` (part of `#[warn(unused)]`) on by default
+
+[1m[33mwarning[0m[1m: function `cdist` is never used[0m
+ [1m[94m--> [0msrc/main.rs:5:4
+  [1m[94m|[0m
+[1m[94m5[0m [1m[94m|[0m fn cdist(x1: &Tensor, x2: &Tensor) -> Result<Tensor> {
+  [1m[94m|[0m    [1m[33m^^^^^[0m
+  [1m[94m|[0m
+  [1m[94m= [0m[1mnote[0m: `#[warn(dead_code)]` (part of `#[warn(unused)]`) on by default
+
+[1m[33mwarning[0m[1m: function `load_dataset` is never used[0m
+  [1m[94m--> [0msrc/main.rs:18:4
+   [1m[94m|[0m
+[1m[94m18[0m [1m[94m|[0m fn load_dataset(file: &str, device: &Device) -> Result<Tensor> {
+   [1m[94m|[0m    [1m[33m^^^^^^^^^^^^[0m
+
+[1m[33mwarning[0m: `rust-candle-course` (bin "rust-candle-course") generated 5 warnings (run `cargo fix --bin "rust-candle-course" -p rust-candle-course` to apply 3 suggestions)
+[1m[92m    Finished[0m `dev` profile [unoptimized + debuginfo] target(s) in 0.17s
+[1m[38;5;255m[48;5;240m rust-candle-course [0m[1m[38;5;235m[48;5;204m check [0m[1m[38;5;235m[48;5;11m  5 warnings  [0m
+[1m[92m    Checking[0m rust-candle-course v0.1.0 (/Users/stephen/Desktop/rust-candle-course)
+[1m[33mwarning[0m[1m: unused import: `DType`[0m
+ [1m[94m--> [0msrc/main.rs:3:19
+  [1m[94m|[0m
+[1m[94m3[0m [1m[94m|[0m use candle_core::{DType, Device, Tensor, D};
+  [1m[94m|[0m                   [1m[33m^^^^^[0m
+  [1m[94m|[0m
+  [1m[94m= [0m[1mnote[0m: `#[warn(unused_imports)]` (part of `#[warn(unused)]`) on by default
+
+[1m[33mwarning[0m[1m: variable does not need to be mutable[0m
+  [1m[94m--> [0msrc/main.rs:20:9
+   [1m[94m|[0m
+[1m[94m20[0m [1m[94m|[0m     let mut data: Vec<f64> = Vec::new();
+   [1m[94m|[0m         [1m[94m----[0m[1m[33m^^^^[0m
+   [1m[94m|[0m         [1m[94m|[0m
+   [1m[94m|[0m         [1m[94mhelp: remove this `mut`[0m
+   [1m[94m|[0m
+   [1m[94m= [0m[1mnote[0m: `#[warn(unused_mut)]` (part of `#[warn(unused)]`) on by default
+
+[1m[33mwarning[0m[1m: unused variable: `result`[0m
+  [1m[94m--> [0msrc/main.rs:23:9
+   [1m[94m|[0m
+[1m[94m23[0m [1m[94m|[0m     for result in reader.records() {
+   [1m[94m|[0m         [1m[33m^^^^^^[0m [1m[33mhelp: if this is intentional, prefix it with an underscore: `_result`[0m
+   [1m[94m|[0m
+   [1m[94m= [0m[1mnote[0m: `#[warn(unused_variables)]` (part of `#[warn(unused)]`) on by default
+
+[1m[33mwarning[0m[1m: function `cdist` is never used[0m
+ [1m[94m--> [0msrc/main.rs:5:4
+  [1m[94m|[0m
+[1m[94m5[0m [1m[94m|[0m fn cdist(x1: &Tensor, x2: &Tensor) -> Result<Tensor> {
+  [1m[94m|[0m    [1m[33m^^^^^[0m
+  [1m[94m|[0m
+  [1m[94m= [0m[1mnote[0m: `#[warn(dead_code)]` (part of `#[warn(unused)]`) on by default
+
+[1m[33mwarning[0m[1m: function `load_dataset` is never used[0m
+  [1m[94m--> [0msrc/main.rs:18:4
+   [1m[94m|[0m
+[1m[94m18[0m [1m[94m|[0m fn load_dataset(file: &str, device: &Device) -> Result<Tensor> {
+   [1m[94m|[0m    [1m[33m^^^^^^^^^^^^[0m
+
+[1m[33mwarning[0m: `rust-candle-course` (bin "rust-candle-course") generated 5 warnings (run `cargo fix --bin "rust-candle-course" -p rust-candle-course` to apply 3 suggestions)
+[1m[92m    Finished[0m `dev` profile [unoptimized + debuginfo] target(s) in 0.12s
+[1m[38;5;255m[48;5;240m rust-candle-course [0m[1m[38;5;235m[48;5;204m check [0m[1m[38;5;235m[48;5;11m  5 warnings  [0m
+[1m[92m    Checking[0m rust-candle-course v0.1.0 (/Users/stephen/Desktop/rust-candle-course)
+[1m[33mwarning[0m[1m: unused import: `DType`[0m
+ [1m[94m--> [0msrc/main.rs:3:19
+  [1m[94m|[0m
+[1m[94m3[0m [1m[94m|[0m use candle_core::{DType, Device, Tensor, D};
+  [1m[94m|[0m                   [1m[33m^^^^^[0m
+  [1m[94m|[0m
+  [1m[94m= [0m[1mnote[0m: `#[warn(unused_imports)]` (part of `#[warn(unused)]`) on by default
+
+[1m[91merror[E0282][0m[1m: type annotations needed for `Vec<_>`[0m
+  [1m[94m--> [0msrc/main.rs:25:13
+   [1m[94m|[0m
+[1m[94m25[0m [1m[94m|[0m         let mut row = vec![];
+   [1m[94m|[0m             [1m[91m^^^^^^^[0m   [1m[94m------[0m [1m[94mtype must be known at this point[0m
+   [1m[94m|[0m
+[1m[96mhelp[0m: consider giving `row` an explicit type, where the placeholder `_` is specified
+   [1m[94m|[0m
+[1m[94m25[0m [1m[94m| [0m        let mut row[92m: Vec<_>[0m = vec![];
+   [1m[94m|[0m                    [92m++++++++[0m
+
+[1mFor more information about this error, try `rustc --explain E0282`.[0m
+[1m[33mwarning[0m: `rust-candle-course` (bin "rust-candle-course") generated 1 warning
+[1m[91merror[0m: could not compile `rust-candle-course` (bin "rust-candle-course") due to 1 previous error; 1 warning emitted
+[1m[38;5;255m[48;5;240m rust-candle-course [0m[1m[38;5;235m[48;5;204m check [0m[1m[38;5;235m[48;5;9m  1 error  [0m[1m[38;5;235m[48;5;11m  1 warning  [0m
+[1m[92m    Checking[0m rust-candle-course v0.1.0 (/Users/stephen/Desktop/rust-candle-course)
+[1m[33mwarning[0m[1m: unused import: `DType`[0m
+ [1m[94m--> [0msrc/main.rs:3:19
+  [1m[94m|[0m
+[1m[94m3[0m [1m[94m|[0m use candle_core::{DType, Device, Tensor, D};
+  [1m[94m|[0m                   [1m[33m^^^^^[0m
+  [1m[94m|[0m
+  [1m[94m= [0m[1mnote[0m: `#[warn(unused_imports)]` (part of `#[warn(unused)]`) on by default
+
+[1m[33mwarning[0m[1m: variable does not need to be mutable[0m
+  [1m[94m--> [0msrc/main.rs:20:9
+   [1m[94m|[0m
+[1m[94m20[0m [1m[94m|[0m     let mut data: Vec<f64> = vec![];
+   [1m[94m|[0m         [1m[94m----[0m[1m[33m^^^^[0m
+   [1m[94m|[0m         [1m[94m|[0m
+   [1m[94m|[0m         [1m[94mhelp: remove this `mut`[0m
+   [1m[94m|[0m
+   [1m[94m= [0m[1mnote[0m: `#[warn(unused_mut)]` (part of `#[warn(unused)]`) on by default
+
+[1m[33mwarning[0m[1m: unused variable: `result`[0m
+  [1m[94m--> [0msrc/main.rs:23:9
+   [1m[94m|[0m
+[1m[94m23[0m [1m[94m|[0m     for result in reader.records() {
+   [1m[94m|[0m         [1m[33m^^^^^^[0m [1m[33mhelp: if this is intentional, prefix it with an underscore: `_result`[0m
+   [1m[94m|[0m
+   [1m[94m= [0m[1mnote[0m: `#[warn(unused_variables)]` (part of `#[warn(unused)]`) on by default
+
+[1m[33mwarning[0m[1m: function `cdist` is never used[0m
+ [1m[94m--> [0msrc/main.rs:5:4
+  [1m[94m|[0m
+[1m[94m5[0m [1m[94m|[0m fn cdist(x1: &Tensor, x2: &Tensor) -> Result<Tensor> {
+  [1m[94m|[0m    [1m[33m^^^^^[0m
+  [1m[94m|[0m
+  [1m[94m= [0m[1mnote[0m: `#[warn(dead_code)]` (part of `#[warn(unused)]`) on by default
+
+[1m[33mwarning[0m[1m: function `load_dataset` is never used[0m
+  [1m[94m--> [0msrc/main.rs:18:4
+   [1m[94m|[0m
+[1m[94m18[0m [1m[94m|[0m fn load_dataset(file: &str, device: &Device) -> Result<Tensor> {
+   [1m[94m|[0m    [1m[33m^^^^^^^^^^^^[0m
+
+[1m[33mwarning[0m: `rust-candle-course` (bin "rust-candle-course") generated 5 warnings (run `cargo fix --bin "rust-candle-course" -p rust-candle-course` to apply 3 suggestions)
+[1m[92m    Finished[0m `dev` profile [unoptimized + debuginfo] target(s) in 0.12s
+[1m[38;5;255m[48;5;240m rust-candle-course [0m[1m[38;5;235m[48;5;204m check [0m[1m[38;5;235m[48;5;11m  5 warnings  [0m
+[1m[92m    Checking[0m rust-candle-course v0.1.0 (/Users/stephen/Desktop/rust-candle-course)
+[1m[33mwarning[0m[1m: unused import: `DType`[0m
+ [1m[94m--> [0msrc/main.rs:3:19
+  [1m[94m|[0m
+[1m[94m3[0m [1m[94m|[0m use candle_core::{DType, Device, Tensor, D};
+  [1m[94m|[0m                   [1m[33m^^^^^[0m
+  [1m[94m|[0m
+  [1m[94m= [0m[1mnote[0m: `#[warn(unused_imports)]` (part of `#[warn(unused)]`) on by default
+
+[1m[33mwarning[0m[1m: variable does not need to be mutable[0m
+  [1m[94m--> [0msrc/main.rs:20:9
+   [1m[94m|[0m
+[1m[94m20[0m [1m[94m|[0m     let mut data: Vec<f64> = vec![];
+   [1m[94m|[0m         [1m[94m----[0m[1m[33m^^^^[0m
+   [1m[94m|[0m         [1m[94m|[0m
+   [1m[94m|[0m         [1m[94mhelp: remove this `mut`[0m
+   [1m[94m|[0m
+   [1m[94m= [0m[1mnote[0m: `#[warn(unused_mut)]` (part of `#[warn(unused)]`) on by default
+
+[1m[33mwarning[0m[1m: unused variable: `record`[0m
+  [1m[94m--> [0msrc/main.rs:24:13
+   [1m[94m|[0m
+[1m[94m24[0m [1m[94m|[0m         let record = result?;
+   [1m[94m|[0m             [1m[33m^^^^^^[0m [1m[33mhelp: if this is intentional, prefix it with an underscore: `_record`[0m
+   [1m[94m|[0m
+   [1m[94m= [0m[1mnote[0m: `#[warn(unused_variables)]` (part of `#[warn(unused)]`) on by default
+
+[1m[33mwarning[0m[1m: function `cdist` is never used[0m
+ [1m[94m--> [0msrc/main.rs:5:4
+  [1m[94m|[0m
+[1m[94m5[0m [1m[94m|[0m fn cdist(x1: &Tensor, x2: &Tensor) -> Result<Tensor> {
+  [1m[94m|[0m    [1m[33m^^^^^[0m
+  [1m[94m|[0m
+  [1m[94m= [0m[1mnote[0m: `#[warn(dead_code)]` (part of `#[warn(unused)]`) on by default
+
+[1m[33mwarning[0m[1m: function `load_dataset` is never used[0m
+  [1m[94m--> [0msrc/main.rs:18:4
+   [1m[94m|[0m
+[1m[94m18[0m [1m[94m|[0m fn load_dataset(file: &str, device: &Device) -> Result<Tensor> {
+   [1m[94m|[0m    [1m[33m^^^^^^^^^^^^[0m
+
+[1m[33mwarning[0m: `rust-candle-course` (bin "rust-candle-course") generated 5 warnings (run `cargo fix --bin "rust-candle-course" -p rust-candle-course` to apply 3 suggestions)
+[1m[92m    Finished[0m `dev` profile [unoptimized + debuginfo] target(s) in 0.13s
+[1m[38;5;255m[48;5;240m rust-candle-course [0m[1m[38;5;235m[48;5;204m check [0m[1m[38;5;235m[48;5;11m  5 warnings  [0m
+[1m[92m    Checking[0m rust-candle-course v0.1.0 (/Users/stephen/Desktop/rust-candle-course)
+[1m[33mwarning[0m[1m: unused import: `DType`[0m
+ [1m[94m--> [0msrc/main.rs:3:19
+  [1m[94m|[0m
+[1m[94m3[0m [1m[94m|[0m use candle_core::{DType, Device, Tensor, D};
+  [1m[94m|[0m                   [1m[33m^^^^^[0m
+  [1m[94m|[0m
+  [1m[94m= [0m[1mnote[0m: `#[warn(unused_imports)]` (part of `#[warn(unused)]`) on by default
+
+[1m[33mwarning[0m[1m: variable does not need to be mutable[0m
+  [1m[94m--> [0msrc/main.rs:20:9
+   [1m[94m|[0m
+[1m[94m20[0m [1m[94m|[0m     let mut data: Vec<f64> = vec![];
+   [1m[94m|[0m         [1m[94m----[0m[1m[33m^^^^[0m
+   [1m[94m|[0m         [1m[94m|[0m
+   [1m[94m|[0m         [1m[94mhelp: remove this `mut`[0m
+   [1m[94m|[0m
+   [1m[94m= [0m[1mnote[0m: `#[warn(unused_mut)]` (part of `#[warn(unused)]`) on by default
+
+[1m[33mwarning[0m[1m: variable does not need to be mutable[0m
+  [1m[94m--> [0msrc/main.rs:25:13
+   [1m[94m|[0m
+[1m[94m25[0m [1m[94m|[0m         let mut row: Vec<f64> = vec![];
+   [1m[94m|[0m             [1m[94m----[0m[1m[33m^^^[0m
+   [1m[94m|[0m             [1m[94m|[0m
+   [1m[94m|[0m             [1m[94mhelp: remove this `mut`[0m
+
+[1m[33mwarning[0m[1m: unused variable: `record`[0m
+  [1m[94m--> [0msrc/main.rs:24:13
+   [1m[94m|[0m
+[1m[94m24[0m [1m[94m|[0m         let record = result?;
+   [1m[94m|[0m             [1m[33m^^^^^^[0m [1m[33mhelp: if this is intentional, prefix it with an underscore: `_record`[0m
+   [1m[94m|[0m
+   [1m[94m= [0m[1mnote[0m: `#[warn(unused_variables)]` (part of `#[warn(unused)]`) on by default
+
+[1m[33mwarning[0m[1m: unused variable: `row`[0m
+  [1m[94m--> [0msrc/main.rs:25:13
+   [1m[94m|[0m
+[1m[94m25[0m [1m[94m|[0m         let mut row: Vec<f64> = vec![];
+   [1m[94m|[0m             [1m[33m^^^^^^^[0m [1m[33mhelp: if this is intentional, prefix it with an underscore: `_row`[0m
+
+[1m[33mwarning[0m[1m: function `cdist` is never used[0m
+ [1m[94m--> [0msrc/main.rs:5:4
+  [1m[94m|[0m
+[1m[94m5[0m [1m[94m|[0m fn cdist(x1: &Tensor, x2: &Tensor) -> Result<Tensor> {
+  [1m[94m|[0m    [1m[33m^^^^^[0m
+  [1m[94m|[0m
+  [1m[94m= [0m[1mnote[0m: `#[warn(dead_code)]` (part of `#[warn(unused)]`) on by default
+
+[1m[33mwarning[0m[1m: function `load_dataset` is never used[0m
+  [1m[94m--> [0msrc/main.rs:18:4
+   [1m[94m|[0m
+[1m[94m18[0m [1m[94m|[0m fn load_dataset(file: &str, device: &Device) -> Result<Tensor> {
+   [1m[94m|[0m    [1m[33m^^^^^^^^^^^^[0m
+
+[1m[33mwarning[0m: `rust-candle-course` (bin "rust-candle-course") generated 7 warnings (run `cargo fix --bin "rust-candle-course" -p rust-candle-course` to apply 5 suggestions)
+[1m[92m    Finished[0m `dev` profile [unoptimized + debuginfo] target(s) in 0.13s
+[1m[38;5;255m[48;5;240m rust-candle-course [0m[1m[38;5;235m[48;5;204m check [0m[1m[38;5;235m[48;5;11m  7 warnings  [0m
+[1m[92m    Checking[0m rust-candle-course v0.1.0 (/Users/stephen/Desktop/rust-candle-course)
+[1m[33mwarning[0m[1m: unused import: `DType`[0m
+ [1m[94m--> [0msrc/main.rs:3:19
+  [1m[94m|[0m
+[1m[94m3[0m [1m[94m|[0m use candle_core::{DType, Device, Tensor, D};
+  [1m[94m|[0m                   [1m[33m^^^^^[0m
+  [1m[94m|[0m
+  [1m[94m= [0m[1mnote[0m: `#[warn(unused_imports)]` (part of `#[warn(unused)]`) on by default
+
+[1m[33mwarning[0m[1m: variable does not need to be mutable[0m
+  [1m[94m--> [0msrc/main.rs:20:9
+   [1m[94m|[0m
+[1m[94m20[0m [1m[94m|[0m     let mut data: Vec<f64> = vec![];
+   [1m[94m|[0m         [1m[94m----[0m[1m[33m^^^^[0m
+   [1m[94m|[0m         [1m[94m|[0m
+   [1m[94m|[0m         [1m[94mhelp: remove this `mut`[0m
+   [1m[94m|[0m
+   [1m[94m= [0m[1mnote[0m: `#[warn(unused_mut)]` (part of `#[warn(unused)]`) on by default
+
+[1m[33mwarning[0m[1m: variable does not need to be mutable[0m
+  [1m[94m--> [0msrc/main.rs:25:13
+   [1m[94m|[0m
+[1m[94m25[0m [1m[94m|[0m         let mut row: Vec<f64> = vec![];
+   [1m[94m|[0m             [1m[94m----[0m[1m[33m^^^[0m
+   [1m[94m|[0m             [1m[94m|[0m
+   [1m[94m|[0m             [1m[94mhelp: remove this `mut`[0m
+
+[1m[33mwarning[0m[1m: unused variable: `record`[0m
+  [1m[94m--> [0msrc/main.rs:24:13
+   [1m[94m|[0m
+[1m[94m24[0m [1m[94m|[0m         let record = result?;
+   [1m[94m|[0m             [1m[33m^^^^^^[0m [1m[33mhelp: if this is intentional, prefix it with an underscore: `_record`[0m
+   [1m[94m|[0m
+   [1m[94m= [0m[1mnote[0m: `#[warn(unused_variables)]` (part of `#[warn(unused)]`) on by default
+
+[1m[33mwarning[0m[1m: unused variable: `row`[0m
+  [1m[94m--> [0msrc/main.rs:25:13
+   [1m[94m|[0m
+[1m[94m25[0m [1m[94m|[0m         let mut row: Vec<f64> = vec![];
+   [1m[94m|[0m             [1m[33m^^^^^^^[0m [1m[33mhelp: if this is intentional, prefix it with an underscore: `_row`[0m
+
+[1m[33mwarning[0m[1m: function `cdist` is never used[0m
+ [1m[94m--> [0msrc/main.rs:5:4
+  [1m[94m|[0m
+[1m[94m5[0m [1m[94m|[0m fn cdist(x1: &Tensor, x2: &Tensor) -> Result<Tensor> {
+  [1m[94m|[0m    [1m[33m^^^^^[0m
+  [1m[94m|[0m
+  [1m[94m= [0m[1mnote[0m: `#[warn(dead_code)]` (part of `#[warn(unused)]`) on by default
+
+[1m[33mwarning[0m[1m: function `load_dataset` is never used[0m
+  [1m[94m--> [0msrc/main.rs:18:4
+   [1m[94m|[0m
+[1m[94m18[0m [1m[94m|[0m fn load_dataset(file: &str, device: &Device) -> Result<Tensor> {
+   [1m[94m|[0m    [1m[33m^^^^^^^^^^^^[0m
+
+[1m[33mwarning[0m: `rust-candle-course` (bin "rust-candle-course") generated 7 warnings (run `cargo fix --bin "rust-candle-course" -p rust-candle-course` to apply 5 suggestions)
+[1m[92m    Finished[0m `dev` profile [unoptimized + debuginfo] target(s) in 0.12s
+[1m[38;5;255m[48;5;240m rust-candle-course [0m[1m[38;5;235m[48;5;204m check [0m[1m[38;5;235m[48;5;11m  7 warnings  [0m
+[1m[92m    Checking[0m rust-candle-course v0.1.0 (/Users/stephen/Desktop/rust-candle-course)
+[1m[33mwarning[0m[1m: unused import: `DType`[0m
+ [1m[94m--> [0msrc/main.rs:3:19
+  [1m[94m|[0m
+[1m[94m3[0m [1m[94m|[0m use candle_core::{DType, Device, Tensor, D};
+  [1m[94m|[0m                   [1m[33m^^^^^[0m
+  [1m[94m|[0m
+  [1m[94m= [0m[1mnote[0m: `#[warn(unused_imports)]` (part of `#[warn(unused)]`) on by default
+
+[1m[33mwarning[0m[1m: variable does not need to be mutable[0m
+  [1m[94m--> [0msrc/main.rs:20:9
+   [1m[94m|[0m
+[1m[94m20[0m [1m[94m|[0m     let mut data: Vec<f64> = vec![];
+   [1m[94m|[0m         [1m[94m----[0m[1m[33m^^^^[0m
+   [1m[94m|[0m         [1m[94m|[0m
+   [1m[94m|[0m         [1m[94mhelp: remove this `mut`[0m
+   [1m[94m|[0m
+   [1m[94m= [0m[1mnote[0m: `#[warn(unused_mut)]` (part of `#[warn(unused)]`) on by default
+
+[1m[33mwarning[0m[1m: variable does not need to be mutable[0m
+  [1m[94m--> [0msrc/main.rs:25:13
+   [1m[94m|[0m
+[1m[94m25[0m [1m[94m|[0m         let mut row: Vec<f64> = vec![];
+   [1m[94m|[0m             [1m[94m----[0m[1m[33m^^^[0m
+   [1m[94m|[0m             [1m[94m|[0m
+   [1m[94m|[0m             [1m[94mhelp: remove this `mut`[0m
+
+[1m[33mwarning[0m[1m: unused variable: `record`[0m
+  [1m[94m--> [0msrc/main.rs:24:13
+   [1m[94m|[0m
+[1m[94m24[0m [1m[94m|[0m         let record = result?;
+   [1m[94m|[0m             [1m[33m^^^^^^[0m [1m[33mhelp: if this is intentional, prefix it with an underscore: `_record`[0m
+   [1m[94m|[0m
+   [1m[94m= [0m[1mnote[0m: `#[warn(unused_variables)]` (part of `#[warn(unused)]`) on by default
+
+[1m[33mwarning[0m[1m: unused variable: `row`[0m
+  [1m[94m--> [0msrc/main.rs:25:13
+   [1m[94m|[0m
+[1m[94m25[0m [1m[94m|[0m         let mut row: Vec<f64> = vec![];
+   [1m[94m|[0m             [1m[33m^^^^^^^[0m [1m[33mhelp: if this is intentional, prefix it with an underscore: `_row`[0m
+
+[1m[33mwarning[0m[1m: unused variable: `i`[0m
+  [1m[94m--> [0msrc/main.rs:26:13
+   [1m[94m|[0m
+[1m[94m26[0m [1m[94m|[0m         for i in 1..5 {
+   [1m[94m|[0m             [1m[33m^[0m [1m[33mhelp: if this is intentional, prefix it with an underscore: `_i`[0m
+
+[1m[33mwarning[0m[1m: function `cdist` is never used[0m
+ [1m[94m--> [0msrc/main.rs:5:4
+  [1m[94m|[0m
+[1m[94m5[0m [1m[94m|[0m fn cdist(x1: &Tensor, x2: &Tensor) -> Result<Tensor> {
+  [1m[94m|[0m    [1m[33m^^^^^[0m
+  [1m[94m|[0m
+  [1m[94m= [0m[1mnote[0m: `#[warn(dead_code)]` (part of `#[warn(unused)]`) on by default
+
+[1m[33mwarning[0m[1m: function `load_dataset` is never used[0m
+  [1m[94m--> [0msrc/main.rs:18:4
+   [1m[94m|[0m
+[1m[94m18[0m [1m[94m|[0m fn load_dataset(file: &str, device: &Device) -> Result<Tensor> {
+   [1m[94m|[0m    [1m[33m^^^^^^^^^^^^[0m
+
+[1m[33mwarning[0m: `rust-candle-course` (bin "rust-candle-course") generated 8 warnings (run `cargo fix --bin "rust-candle-course" -p rust-candle-course` to apply 6 suggestions)
+[1m[92m    Finished[0m `dev` profile [unoptimized + debuginfo] target(s) in 0.14s
+[1m[38;5;255m[48;5;240m rust-candle-course [0m[1m[38;5;235m[48;5;204m check [0m[1m[38;5;235m[48;5;11m  8 warnings  [0m
+[1m[92m    Checking[0m rust-candle-course v0.1.0 (/Users/stephen/Desktop/rust-candle-course)
+[1m[91merror[0m[1m: this file contains an unclosed delimiter[0m
+  [1m[94m--> [0msrc/main.rs:35:3
+   [1m[94m|[0m
+[1m[94m18[0m [1m[94m|[0m fn load_dataset(file: &str, device: &Device) -> Result<Tensor> {
+   [1m[94m|[0m                                                                [1m[94m-[0m [1m[94munclosed delimiter[0m
+[1m[94m...[0m
+[1m[94m26[0m [1m[94m|[0m         for i in 1..5 {
+   [1m[94m|[0m                       [1m[94m-[0m [1m[94mthis delimiter might not be properly closed...[0m
+[1m[94m27[0m [1m[94m|[0m         
+[1m[94m28[0m [1m[94m|[0m     }
+   [1m[94m|[0m     [1m[94m-[0m [1m[94m...as it matches this but it has different indentation[0m
+[1m[94m...[0m
+[1m[94m35[0m [1m[94m|[0m }
+   [1m[94m|[0m  [1m[91m^[0m
+
+[1m[91merror[0m: could not compile `rust-candle-course` (bin "rust-candle-course") due to 1 previous error
+[1m[38;5;255m[48;5;240m rust-candle-course [0m[1m[38;5;235m[48;5;204m check [0m[1m[38;5;235m[48;5;9m  1 error  [0m
+[1m[92m    Checking[0m rust-candle-course v0.1.0 (/Users/stephen/Desktop/rust-candle-course)
+[1m[91merror[0m[1m: this file contains an unclosed delimiter[0m
+  [1m[94m--> [0msrc/main.rs:35:3
+   [1m[94m|[0m
+[1m[94m18[0m [1m[94m|[0m fn load_dataset(file: &str, device: &Device) -> Result<Tensor> {
+   [1m[94m|[0m                                                                [1m[94m-[0m [1m[94munclosed delimiter[0m
+[1m[94m...[0m
+[1m[94m26[0m [1m[94m|[0m         for i in 1..5 {
+   [1m[94m|[0m                       [1m[94m-[0m [1m[94mthis delimiter might not be properly closed...[0m
+[1m[94m27[0m [1m[94m|[0m         
+[1m[94m28[0m [1m[94m|[0m     }
+   [1m[94m|[0m     [1m[94m-[0m [1m[94m...as it matches this but it has different indentation[0m
+[1m[94m...[0m
+[1m[94m35[0m [1m[94m|[0m }
+   [1m[94m|[0m  [1m[91m^[0m
+
+[1m[91merror[0m: could not compile `rust-candle-course` (bin "rust-candle-course") due to 1 previous error
+[1m[38;5;255m[48;5;240m rust-candle-course [0m[1m[38;5;235m[48;5;204m check [0m[1m[38;5;235m[48;5;9m  1 error  [0m
+[1m[92m    Checking[0m rust-candle-course v0.1.0 (/Users/stephen/Desktop/rust-candle-course)
+[1m[33mwarning[0m[1m: unused import: `DType`[0m
+ [1m[94m--> [0msrc/main.rs:3:19
+  [1m[94m|[0m
+[1m[94m3[0m [1m[94m|[0m use candle_core::{DType, Device, Tensor, D};
+  [1m[94m|[0m                   [1m[33m^^^^^[0m
+  [1m[94m|[0m
+  [1m[94m= [0m[1mnote[0m: `#[warn(unused_imports)]` (part of `#[warn(unused)]`) on by default
+
+[1m[33mwarning[0m[1m: variable does not need to be mutable[0m
+  [1m[94m--> [0msrc/main.rs:20:9
+   [1m[94m|[0m
+[1m[94m20[0m [1m[94m|[0m     let mut data: Vec<f64> = vec![];
+   [1m[94m|[0m         [1m[94m----[0m[1m[33m^^^^[0m
+   [1m[94m|[0m         [1m[94m|[0m
+   [1m[94m|[0m         [1m[94mhelp: remove this `mut`[0m
+   [1m[94m|[0m
+   [1m[94m= [0m[1mnote[0m: `#[warn(unused_mut)]` (part of `#[warn(unused)]`) on by default
+
+[1m[33mwarning[0m[1m: variable does not need to be mutable[0m
+  [1m[94m--> [0msrc/main.rs:25:13
+   [1m[94m|[0m
+[1m[94m25[0m [1m[94m|[0m         let mut row: Vec<f64> = vec![];
+   [1m[94m|[0m             [1m[94m----[0m[1m[33m^^^[0m
+   [1m[94m|[0m             [1m[94m|[0m
+   [1m[94m|[0m             [1m[94mhelp: remove this `mut`[0m
+
+[1m[33mwarning[0m[1m: unused variable: `record`[0m
+  [1m[94m--> [0msrc/main.rs:24:13
+   [1m[94m|[0m
+[1m[94m24[0m [1m[94m|[0m         let record = result?;
+   [1m[94m|[0m             [1m[33m^^^^^^[0m [1m[33mhelp: if this is intentional, prefix it with an underscore: `_record`[0m
+   [1m[94m|[0m
+   [1m[94m= [0m[1mnote[0m: `#[warn(unused_variables)]` (part of `#[warn(unused)]`) on by default
+
+[1m[33mwarning[0m[1m: unused variable: `row`[0m
+  [1m[94m--> [0msrc/main.rs:25:13
+   [1m[94m|[0m
+[1m[94m25[0m [1m[94m|[0m         let mut row: Vec<f64> = vec![];
+   [1m[94m|[0m             [1m[33m^^^^^^^[0m [1m[33mhelp: if this is intentional, prefix it with an underscore: `_row`[0m
+
+[1m[33mwarning[0m[1m: unused variable: `i`[0m
+  [1m[94m--> [0msrc/main.rs:26:13
+   [1m[94m|[0m
+[1m[94m26[0m [1m[94m|[0m         for i in 1..5 {
+   [1m[94m|[0m             [1m[33m^[0m [1m[33mhelp: if this is intentional, prefix it with an underscore: `_i`[0m
+
+[1m[33mwarning[0m[1m: function `cdist` is never used[0m
+ [1m[94m--> [0msrc/main.rs:5:4
+  [1m[94m|[0m
+[1m[94m5[0m [1m[94m|[0m fn cdist(x1: &Tensor, x2: &Tensor) -> Result<Tensor> {
+  [1m[94m|[0m    [1m[33m^^^^^[0m
+  [1m[94m|[0m
+  [1m[94m= [0m[1mnote[0m: `#[warn(dead_code)]` (part of `#[warn(unused)]`) on by default
+
+[1m[33mwarning[0m[1m: function `load_dataset` is never used[0m
+  [1m[94m--> [0msrc/main.rs:18:4
+   [1m[94m|[0m
+[1m[94m18[0m [1m[94m|[0m fn load_dataset(file: &str, device: &Device) -> Result<Tensor> {
+   [1m[94m|[0m    [1m[33m^^^^^^^^^^^^[0m
+
+[1m[33mwarning[0m: `rust-candle-course` (bin "rust-candle-course") generated 8 warnings (run `cargo fix --bin "rust-candle-course" -p rust-candle-course` to apply 6 suggestions)
+[1m[92m    Finished[0m `dev` profile [unoptimized + debuginfo] target(s) in 0.12s
+[1m[38;5;255m[48;5;240m rust-candle-course [0m[1m[38;5;235m[48;5;204m check [0m[1m[38;5;235m[48;5;11m  8 warnings  [0m
+[1m[92m    Checking[0m rust-candle-course v0.1.0 (/Users/stephen/Desktop/rust-candle-course)
+[1m[33mwarning[0m[1m: unused import: `DType`[0m
+ [1m[94m--> [0msrc/main.rs:3:19
+  [1m[94m|[0m
+[1m[94m3[0m [1m[94m|[0m use candle_core::{DType, Device, Tensor, D};
+  [1m[94m|[0m                   [1m[33m^^^^^[0m
+  [1m[94m|[0m
+  [1m[94m= [0m[1mnote[0m: `#[warn(unused_imports)]` (part of `#[warn(unused)]`) on by default
+
+[1m[33mwarning[0m[1m: variable does not need to be mutable[0m
+  [1m[94m--> [0msrc/main.rs:20:9
+   [1m[94m|[0m
+[1m[94m20[0m [1m[94m|[0m     let mut data: Vec<f64> = vec![];
+   [1m[94m|[0m         [1m[94m----[0m[1m[33m^^^^[0m
+   [1m[94m|[0m         [1m[94m|[0m
+   [1m[94m|[0m         [1m[94mhelp: remove this `mut`[0m
+   [1m[94m|[0m
+   [1m[94m= [0m[1mnote[0m: `#[warn(unused_mut)]` (part of `#[warn(unused)]`) on by default
+
+[1m[33mwarning[0m[1m: variable does not need to be mutable[0m
+  [1m[94m--> [0msrc/main.rs:25:13
+   [1m[94m|[0m
+[1m[94m25[0m [1m[94m|[0m         let mut row: Vec<f64> = vec![];
+   [1m[94m|[0m             [1m[94m----[0m[1m[33m^^^[0m
+   [1m[94m|[0m             [1m[94m|[0m
+   [1m[94m|[0m             [1m[94mhelp: remove this `mut`[0m
+
+[1m[33mwarning[0m[1m: unused variable: `record`[0m
+  [1m[94m--> [0msrc/main.rs:24:13
+   [1m[94m|[0m
+[1m[94m24[0m [1m[94m|[0m         let record = result?;
+   [1m[94m|[0m             [1m[33m^^^^^^[0m [1m[33mhelp: if this is intentional, prefix it with an underscore: `_record`[0m
+   [1m[94m|[0m
+   [1m[94m= [0m[1mnote[0m: `#[warn(unused_variables)]` (part of `#[warn(unused)]`) on by default
+
+[1m[33mwarning[0m[1m: unused variable: `row`[0m
+  [1m[94m--> [0msrc/main.rs:25:13
+   [1m[94m|[0m
+[1m[94m25[0m [1m[94m|[0m         let mut row: Vec<f64> = vec![];
+   [1m[94m|[0m             [1m[33m^^^^^^^[0m [1m[33mhelp: if this is intentional, prefix it with an underscore: `_row`[0m
+
+[1m[33mwarning[0m[1m: unused variable: `i`[0m
+  [1m[94m--> [0msrc/main.rs:26:13
+   [1m[94m|[0m
+[1m[94m26[0m [1m[94m|[0m         for i in 1..5 {
+   [1m[94m|[0m             [1m[33m^[0m [1m[33mhelp: if this is intentional, prefix it with an underscore: `_i`[0m
+
+[1m[33mwarning[0m[1m: function `cdist` is never used[0m
+ [1m[94m--> [0msrc/main.rs:5:4
+  [1m[94m|[0m
+[1m[94m5[0m [1m[94m|[0m fn cdist(x1: &Tensor, x2: &Tensor) -> Result<Tensor> {
+  [1m[94m|[0m    [1m[33m^^^^^[0m
+  [1m[94m|[0m
+  [1m[94m= [0m[1mnote[0m: `#[warn(dead_code)]` (part of `#[warn(unused)]`) on by default
+
+[1m[33mwarning[0m[1m: function `load_dataset` is never used[0m
+  [1m[94m--> [0msrc/main.rs:18:4
+   [1m[94m|[0m
+[1m[94m18[0m [1m[94m|[0m fn load_dataset(file: &str, device: &Device) -> Result<Tensor> {
+   [1m[94m|[0m    [1m[33m^^^^^^^^^^^^[0m
+
+[1m[33mwarning[0m: `rust-candle-course` (bin "rust-candle-course") generated 8 warnings (run `cargo fix --bin "rust-candle-course" -p rust-candle-course` to apply 6 suggestions)
+[1m[92m    Finished[0m `dev` profile [unoptimized + debuginfo] target(s) in 0.13s
+[1m[38;5;255m[48;5;240m rust-candle-course [0m[1m[38;5;235m[48;5;204m check [0m[1m[38;5;235m[48;5;11m  8 warnings  [0m
+[1m[92m    Checking[0m rust-candle-course v0.1.0 (/Users/stephen/Desktop/rust-candle-course)
+[1m[91merror[0m[1m: mismatched closing delimiter: `}`[0m
+  [1m[94m--> [0msrc/main.rs:27:21
+   [1m[94m|[0m
+[1m[94m26[0m [1m[94m|[0m         for i in 1..5 {
+   [1m[94m|[0m                       [1m[94m-[0m [1m[94mclosing delimiter possibly meant for this[0m
+[1m[94m27[0m [1m[94m|[0m             row.push(records[i].parse()?;
+   [1m[94m|[0m                     [1m[91m^[0m [1m[91munclosed delimiter[0m
+[1m[94m28[0m [1m[94m|[0m         }
+   [1m[94m|[0m         [1m[91m^[0m [1m[91mmismatched closing delimiter[0m
+
+[1m[91merror[0m: could not compile `rust-candle-course` (bin "rust-candle-course") due to 1 previous error
+[1m[38;5;255m[48;5;240m rust-candle-course [0m[1m[38;5;235m[48;5;204m check [0m[1m[38;5;235m[48;5;9m  1 error  [0m
+[1m[92m    Checking[0m rust-candle-course v0.1.0 (/Users/stephen/Desktop/rust-candle-course)
+[1m[91merror[E0425][0m[1m: cannot find value `records` in this scope[0m
+  [1m[94m--> [0msrc/main.rs:27:22
+   [1m[94m|[0m
+[1m[94m27[0m [1m[94m|[0m             row.push(records[i].parse()?);
+   [1m[94m|[0m                      [1m[91m^^^^^^^[0m
+   [1m[94m|[0m
+[1m[96mhelp[0m: a local variable with a similar name exists
+   [1m[94m|[0m
+[1m[94m27[0m [91m- [0m            row.push([91mrecords[0m[i].parse()?);
+[1m[94m27[0m [92m+ [0m            row.push([92mrecord[0m[i].parse()?);
+   [1m[94m|[0m
+
+[1m[33mwarning[0m[1m: unused import: `DType`[0m
+ [1m[94m--> [0msrc/main.rs:3:19
+  [1m[94m|[0m
+[1m[94m3[0m [1m[94m|[0m use candle_core::{DType, Device, Tensor, D};
+  [1m[94m|[0m                   [1m[33m^^^^^[0m
+  [1m[94m|[0m
+  [1m[94m= [0m[1mnote[0m: `#[warn(unused_imports)]` (part of `#[warn(unused)]`) on by default
+
+[1mFor more information about this error, try `rustc --explain E0425`.[0m
+[1m[33mwarning[0m: `rust-candle-course` (bin "rust-candle-course") generated 1 warning
+[1m[91merror[0m: could not compile `rust-candle-course` (bin "rust-candle-course") due to 1 previous error; 1 warning emitted
+[1m[38;5;255m[48;5;240m rust-candle-course [0m[1m[38;5;235m[48;5;204m check [0m[1m[38;5;235m[48;5;9m  1 error  [0m[1m[38;5;235m[48;5;11m  1 warning  [0m
+[1m[92m    Checking[0m rust-candle-course v0.1.0 (/Users/stephen/Desktop/rust-candle-course)
+[1m[33mwarning[0m[1m: unused import: `DType`[0m
+ [1m[94m--> [0msrc/main.rs:3:19
+  [1m[94m|[0m
+[1m[94m3[0m [1m[94m|[0m use candle_core::{DType, Device, Tensor, D};
+  [1m[94m|[0m                   [1m[33m^^^^^[0m
+  [1m[94m|[0m
+  [1m[94m= [0m[1mnote[0m: `#[warn(unused_imports)]` (part of `#[warn(unused)]`) on by default
+
+[1m[33mwarning[0m[1m: variable does not need to be mutable[0m
+  [1m[94m--> [0msrc/main.rs:20:9
+   [1m[94m|[0m
+[1m[94m20[0m [1m[94m|[0m     let mut data: Vec<f64> = vec![];
+   [1m[94m|[0m         [1m[94m----[0m[1m[33m^^^^[0m
+   [1m[94m|[0m         [1m[94m|[0m
+   [1m[94m|[0m         [1m[94mhelp: remove this `mut`[0m
+   [1m[94m|[0m
+   [1m[94m= [0m[1mnote[0m: `#[warn(unused_mut)]` (part of `#[warn(unused)]`) on by default
+
+[1m[33mwarning[0m[1m: function `cdist` is never used[0m
+ [1m[94m--> [0msrc/main.rs:5:4
+  [1m[94m|[0m
+[1m[94m5[0m [1m[94m|[0m fn cdist(x1: &Tensor, x2: &Tensor) -> Result<Tensor> {
+  [1m[94m|[0m    [1m[33m^^^^^[0m
+  [1m[94m|[0m
+  [1m[94m= [0m[1mnote[0m: `#[warn(dead_code)]` (part of `#[warn(unused)]`) on by default
+
+[1m[33mwarning[0m[1m: function `load_dataset` is never used[0m
+  [1m[94m--> [0msrc/main.rs:18:4
+   [1m[94m|[0m
+[1m[94m18[0m [1m[94m|[0m fn load_dataset(file: &str, device: &Device) -> Result<Tensor> {
+   [1m[94m|[0m    [1m[33m^^^^^^^^^^^^[0m
+
+[1m[33mwarning[0m: `rust-candle-course` (bin "rust-candle-course") generated 4 warnings (run `cargo fix --bin "rust-candle-course" -p rust-candle-course` to apply 2 suggestions)
+[1m[92m    Finished[0m `dev` profile [unoptimized + debuginfo] target(s) in 0.13s
+[1m[38;5;255m[48;5;240m rust-candle-course [0m[1m[38;5;235m[48;5;204m check [0m[1m[38;5;235m[48;5;11m  4 warnings  [0m
+[1m[92m    Checking[0m rust-candle-course v0.1.0 (/Users/stephen/Desktop/rust-candle-course)
+[1m[91merror[0m[1m: expected one of `!` or `::`, found `=`[0m
+  [1m[94m--> [0msrc/main.rs:18:5
+   [1m[94m|[0m
+[1m[94m18[0m [1m[94m|[0m TDD = Test Driven Development
+   [1m[94m|[0m     [1m[91m^[0m [1m[91mexpected one of `!` or `::`[0m
+
+[1m[91merror[0m: could not compile `rust-candle-course` (bin "rust-candle-course") due to 1 previous error
+[1m[38;5;255m[48;5;240m rust-candle-course [0m[1m[38;5;235m[48;5;204m check [0m[1m[38;5;235m[48;5;9m  1 error  [0m
+[1m[92m    Checking[0m rust-candle-course v0.1.0 (/Users/stephen/Desktop/rust-candle-course)
+[1m[91merror[0m[1m: expected one of `!` or `::`, found `=`[0m
+  [1m[94m--> [0msrc/main.rs:18:5
+   [1m[94m|[0m
+[1m[94m18[0m [1m[94m|[0m TDD = Test Driven Development
+   [1m[94m|[0m     [1m[91m^[0m [1m[91mexpected one of `!` or `::`[0m
+
+[1m[91merror[0m: could not compile `rust-candle-course` (bin "rust-candle-course") due to 1 previous error
+[1m[38;5;255m[48;5;240m rust-candle-course [0m[1m[38;5;235m[48;5;204m check [0m[1m[38;5;235m[48;5;9m  1 error  [0m
+[1m[92m    Checking[0m rust-candle-course v0.1.0 (/Users/stephen/Desktop/rust-candle-course)
+[1m[33mwarning[0m[1m: unused import: `DType`[0m
+ [1m[94m--> [0msrc/main.rs:3:19
+  [1m[94m|[0m
+[1m[94m3[0m [1m[94m|[0m use candle_core::{DType, Device, Tensor, D};
+  [1m[94m|[0m                   [1m[33m^^^^^[0m
+  [1m[94m|[0m
+  [1m[94m= [0m[1mnote[0m: `#[warn(unused_imports)]` (part of `#[warn(unused)]`) on by default
+
+[1m[33mwarning[0m[1m: variable does not need to be mutable[0m
+  [1m[94m--> [0msrc/main.rs:20:9
+   [1m[94m|[0m
+[1m[94m20[0m [1m[94m|[0m     let mut data: Vec<f64> = vec![];
+   [1m[94m|[0m         [1m[94m----[0m[1m[33m^^^^[0m
+   [1m[94m|[0m         [1m[94m|[0m
+   [1m[94m|[0m         [1m[94mhelp: remove this `mut`[0m
+   [1m[94m|[0m
+   [1m[94m= [0m[1mnote[0m: `#[warn(unused_mut)]` (part of `#[warn(unused)]`) on by default
+
+[1m[33mwarning[0m[1m: function `cdist` is never used[0m
+ [1m[94m--> [0msrc/main.rs:5:4
+  [1m[94m|[0m
+[1m[94m5[0m [1m[94m|[0m fn cdist(x1: &Tensor, x2: &Tensor) -> Result<Tensor> {
+  [1m[94m|[0m    [1m[33m^^^^^[0m
+  [1m[94m|[0m
+  [1m[94m= [0m[1mnote[0m: `#[warn(dead_code)]` (part of `#[warn(unused)]`) on by default
+
+[1m[33mwarning[0m[1m: function `load_dataset` is never used[0m
+  [1m[94m--> [0msrc/main.rs:18:4
+   [1m[94m|[0m
+[1m[94m18[0m [1m[94m|[0m fn load_dataset(file: &str, device: &Device) -> Result<Tensor> {
+   [1m[94m|[0m    [1m[33m^^^^^^^^^^^^[0m
+
+[1m[33mwarning[0m: `rust-candle-course` (bin "rust-candle-course") generated 4 warnings (run `cargo fix --bin "rust-candle-course" -p rust-candle-course` to apply 2 suggestions)
+[1m[92m    Finished[0m `dev` profile [unoptimized + debuginfo] target(s) in 0.13s
+[1m[38;5;255m[48;5;240m rust-candle-course [0m[1m[38;5;235m[48;5;204m check [0m[1m[38;5;235m[48;5;11m  4 warnings  [0m
+[1m[92m    Checking[0m rust-candle-course v0.1.0 (/Users/stephen/Desktop/rust-candle-course)
+[1m[33mwarning[0m[1m: unused import: `DType`[0m
+ [1m[94m--> [0msrc/main.rs:3:19
+  [1m[94m|[0m
+[1m[94m3[0m [1m[94m|[0m use candle_core::{DType, Device, Tensor, D};
+  [1m[94m|[0m                   [1m[33m^^^^^[0m
+  [1m[94m|[0m
+  [1m[94m= [0m[1mnote[0m: `#[warn(unused_imports)]` (part of `#[warn(unused)]`) on by default
+
+[1m[91merror[E0308][0m[1m: mismatched types[0m
+  [1m[94m--> [0msrc/main.rs:36:19
+   [1m[94m|[0m
+[1m[94m36[0m [1m[94m|[0m         data.push(row);
+   [1m[94m|[0m              [1m[94m----[0m [1m[91m^^^[0m [1m[91mexpected `f64`, found `Vec<f64>`[0m
+   [1m[94m|[0m              [1m[94m|[0m
+   [1m[94m|[0m              [1m[94marguments to this method are incorrect[0m
+   [1m[94m|[0m
+   [1m[94m= [0m[1mnote[0m: expected type `[1m[35mf64[0m`
+            found struct `[1m[35mVec<f64>[0m`
+[1m[92mnote[0m: method defined here
+  [1m[94m--> [0m/rustc/65407954098ca3c19f0d46092cb374b5d3e9dc3c/library/alloc/src/vec/mod.rs:1003:11
+
+[1mFor more information about this error, try `rustc --explain E0308`.[0m
+[1m[33mwarning[0m: `rust-candle-course` (bin "rust-candle-course") generated 1 warning
+[1m[91merror[0m: could not compile `rust-candle-course` (bin "rust-candle-course") due to 1 previous error; 1 warning emitted
+[1m[38;5;255m[48;5;240m rust-candle-course [0m[1m[38;5;235m[48;5;204m check [0m[1m[38;5;235m[48;5;9m  1 error  [0m[1m[38;5;235m[48;5;11m  1 warning  [0m
+[1m[92m    Checking[0m rust-candle-course v0.1.0 (/Users/stephen/Desktop/rust-candle-course)
+[1m[33mwarning[0m[1m: unused import: `DType`[0m
+ [1m[94m--> [0msrc/main.rs:3:19
+  [1m[94m|[0m
+[1m[94m3[0m [1m[94m|[0m use candle_core::{DType, Device, Tensor, D};
+  [1m[94m|[0m                   [1m[33m^^^^^[0m
+  [1m[94m|[0m
+  [1m[94m= [0m[1mnote[0m: `#[warn(unused_imports)]` (part of `#[warn(unused)]`) on by default
+
+[1m[91merror[E0277][0m[1m: the trait bound `Vec<f64>: WithDType` is not satisfied[0m
+   [1m[94m--> [0msrc/main.rs:21:37
+    [1m[94m|[0m
+[1m[94m 21[0m [1m[94m|[0m     let tensor = Tensor::from_slice(data.as_slice(), (1,1), device)?;
+    [1m[94m|[0m                  [1m[94m------------------[0m [1m[91m^^^^^^^^^^^^^^^[0m [1m[91mthe trait `WithDType` is not implemented for `Vec<f64>`[0m
+    [1m[94m|[0m                  [1m[94m|[0m
+    [1m[94m|[0m                  [1m[94mrequired by a bound introduced by this call[0m
+    [1m[94m|[0m
+    [1m[94m= [0m[1mhelp[0m: the following other types implement trait `WithDType`:
+              candle_core::F4
+              candle_core::F6E2M3
+              candle_core::F6E3M2
+              candle_core::F8E8M0
+              f32
+              f64
+              float8::F8E4M3
+              half::bfloat::bf16
+            and 6 others
+[1m[92mnote[0m: required by a bound in `candle_core::Tensor::from_slice`
+   [1m[94m--> [0m/Users/stephen/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/candle-core-0.11.0/src/tensor.rs:564:47
+    [1m[94m|[0m
+[1m[94m564[0m [1m[94m|[0m     pub fn from_slice<S: ShapeWithOneHole, D: crate::WithDType>(
+    [1m[94m|[0m                                               [1m[92m^^^^^^^^^^^^^^^^[0m [1m[92mrequired by this bound in `Tensor::from_slice`[0m
+
+[1mFor more information about this error, try `rustc --explain E0277`.[0m
+[1m[33mwarning[0m: `rust-candle-course` (bin "rust-candle-course") generated 1 warning
+[1m[91merror[0m: could not compile `rust-candle-course` (bin "rust-candle-course") due to 1 previous error; 1 warning emitted
+[1m[38;5;255m[48;5;240m rust-candle-course [0m[1m[38;5;235m[48;5;204m check [0m[1m[38;5;235m[48;5;9m  1 error  [0m[1m[38;5;235m[48;5;11m  1 warning  [0m
+[1m[92m    Checking[0m rust-candle-course v0.1.0 (/Users/stephen/Desktop/rust-candle-course)
+[1m[91merror[E0425][0m[1m: cannot find value `tensor` in this scope[0m
+  [1m[94m--> [0msrc/main.rs:39:8
+   [1m[94m|[0m
+[1m[94m39[0m [1m[94m|[0m     Ok(tensor)
+   [1m[94m|[0m        [1m[91m^^^^^^[0m [1m[91mnot found in this scope[0m
+
+[1m[33mwarning[0m[1m: unused import: `DType`[0m
+ [1m[94m--> [0msrc/main.rs:3:19
+  [1m[94m|[0m
+[1m[94m3[0m [1m[94m|[0m use candle_core::{DType, Device, Tensor, D};
+  [1m[94m|[0m                   [1m[33m^^^^^[0m
+  [1m[94m|[0m
+  [1m[94m= [0m[1mnote[0m: `#[warn(unused_imports)]` (part of `#[warn(unused)]`) on by default
+
+[1mFor more information about this error, try `rustc --explain E0425`.[0m
+[1m[33mwarning[0m: `rust-candle-course` (bin "rust-candle-course") generated 1 warning
+[1m[91merror[0m: could not compile `rust-candle-course` (bin "rust-candle-course") due to 1 previous error; 1 warning emitted
+[1m[38;5;255m[48;5;240m rust-candle-course [0m[1m[38;5;235m[48;5;204m check [0m[1m[38;5;235m[48;5;9m  1 error  [0m[1m[38;5;235m[48;5;11m  1 warning  [0m
+[1m[92m    Checking[0m rust-candle-course v0.1.0 (/Users/stephen/Desktop/rust-candle-course)
+[1m[91merror[E0425][0m[1m: cannot find value `tensor` in this scope[0m
+  [1m[94m--> [0msrc/main.rs:39:8
+   [1m[94m|[0m
+[1m[94m39[0m [1m[94m|[0m     Ok(tensor)
+   [1m[94m|[0m        [1m[91m^^^^^^[0m [1m[91mnot found in this scope[0m
+
+[1m[33mwarning[0m[1m: unused import: `DType`[0m
+ [1m[94m--> [0msrc/main.rs:3:19
+  [1m[94m|[0m
+[1m[94m3[0m [1m[94m|[0m use candle_core::{DType, Device, Tensor, D};
+  [1m[94m|[0m                   [1m[33m^^^^^[0m
+  [1m[94m|[0m
+  [1m[94m= [0m[1mnote[0m: `#[warn(unused_imports)]` (part of `#[warn(unused)]`) on by default
+
+[1mFor more information about this error, try `rustc --explain E0425`.[0m
+[1m[33mwarning[0m: `rust-candle-course` (bin "rust-candle-course") generated 1 warning
+[1m[91merror[0m: could not compile `rust-candle-course` (bin "rust-candle-course") due to 1 previous error; 1 warning emitted
+[1m[38;5;255m[48;5;240m rust-candle-course [0m[1m[38;5;235m[48;5;204m check [0m[1m[38;5;235m[48;5;9m  1 error  [0m[1m[38;5;235m[48;5;11m  1 warning  [0m
+[1m[92m    Checking[0m rust-candle-course v0.1.0 (/Users/stephen/Desktop/rust-candle-course)
+[1m[91merror[E0425][0m[1m: cannot find value `tensor` in this scope[0m
+  [1m[94m--> [0msrc/main.rs:39:8
+   [1m[94m|[0m
+[1m[94m39[0m [1m[94m|[0m     Ok(tensor)
+   [1m[94m|[0m        [1m[91m^^^^^^[0m [1m[91mnot found in this scope[0m
+
+[1m[33mwarning[0m[1m: unused import: `DType`[0m
+ [1m[94m--> [0msrc/main.rs:3:19
+  [1m[94m|[0m
+[1m[94m3[0m [1m[94m|[0m use candle_core::{DType, Device, Tensor, D};
+  [1m[94m|[0m                   [1m[33m^^^^^[0m
+  [1m[94m|[0m
+  [1m[94m= [0m[1mnote[0m: `#[warn(unused_imports)]` (part of `#[warn(unused)]`) on by default
+
+[1mFor more information about this error, try `rustc --explain E0425`.[0m
+[1m[33mwarning[0m: `rust-candle-course` (bin "rust-candle-course") generated 1 warning
+[1m[91merror[0m: could not compile `rust-candle-course` (bin "rust-candle-course") due to 1 previous error; 1 warning emitted
+[1m[38;5;255m[48;5;240m rust-candle-course [0m[1m[38;5;235m[48;5;204m check [0m[1m[38;5;235m[48;5;9m  1 error  [0m[1m[38;5;235m[48;5;11m  1 warning  [0m
+[1m[92m    Checking[0m rust-candle-course v0.1.0 (/Users/stephen/Desktop/rust-candle-course)
+[1m[33mwarning[0m[1m: unused import: `DType`[0m
+ [1m[94m--> [0msrc/main.rs:3:19
+  [1m[94m|[0m
+[1m[94m3[0m [1m[94m|[0m use candle_core::{DType, Device, Tensor, D};
+  [1m[94m|[0m                   [1m[33m^^^^^[0m
+  [1m[94m|[0m
+  [1m[94m= [0m[1mnote[0m: `#[warn(unused_imports)]` (part of `#[warn(unused)]`) on by default
+
+[1m[33mwarning[0m[1m: unused variable: `device`[0m
+  [1m[94m--> [0msrc/main.rs:18:29
+   [1m[94m|[0m
+[1m[94m18[0m [1m[94m|[0m fn load_dataset(file: &str, device: &Device) -> Result<f32> {
+   [1m[94m|[0m                             [1m[33m^^^^^^[0m [1m[33mhelp: if this is intentional, prefix it with an underscore: `_device`[0m
+   [1m[94m|[0m
+   [1m[94m= [0m[1mnote[0m: `#[warn(unused_variables)]` (part of `#[warn(unused)]`) on by default
+
+[1m[33mwarning[0m[1m: function `cdist` is never used[0m
+ [1m[94m--> [0msrc/main.rs:5:4
+  [1m[94m|[0m
+[1m[94m5[0m [1m[94m|[0m fn cdist(x1: &Tensor, x2: &Tensor) -> Result<Tensor> {
+  [1m[94m|[0m    [1m[33m^^^^^[0m
+  [1m[94m|[0m
+  [1m[94m= [0m[1mnote[0m: `#[warn(dead_code)]` (part of `#[warn(unused)]`) on by default
+
+[1m[33mwarning[0m[1m: function `load_dataset` is never used[0m
+  [1m[94m--> [0msrc/main.rs:18:4
+   [1m[94m|[0m
+[1m[94m18[0m [1m[94m|[0m fn load_dataset(file: &str, device: &Device) -> Result<f32> {
+   [1m[94m|[0m    [1m[33m^^^^^^^^^^^^[0m
+
+[1m[33mwarning[0m: `rust-candle-course` (bin "rust-candle-course") generated 4 warnings (run `cargo fix --bin "rust-candle-course" -p rust-candle-course` to apply 2 suggestions)
+[1m[92m    Finished[0m `dev` profile [unoptimized + debuginfo] target(s) in 0.13s
+[1m[38;5;255m[48;5;240m rust-candle-course [0m[1m[38;5;235m[48;5;204m check [0m[1m[38;5;235m[48;5;11m  4 warnings  [0m
+[1m[92m    Checking[0m rust-candle-course v0.1.0 (/Users/stephen/Desktop/rust-candle-course)
+[1m[33mwarning[0m[1m: unused import: `DType`[0m
+ [1m[94m--> [0msrc/main.rs:3:19
+  [1m[94m|[0m
+[1m[94m3[0m [1m[94m|[0m use candle_core::{DType, Device, Tensor, D};
+  [1m[94m|[0m                   [1m[33m^^^^^[0m
+  [1m[94m|[0m
+  [1m[94m= [0m[1mnote[0m: `#[warn(unused_imports)]` (part of `#[warn(unused)]`) on by default
+
+[1m[33mwarning[0m[1m: unused variable: `device`[0m
+  [1m[94m--> [0msrc/main.rs:22:29
+   [1m[94m|[0m
+[1m[94m22[0m [1m[94m|[0m fn load_dataset(file: &str, device: &Device) -> Result<f32> {
+   [1m[94m|[0m                             [1m[33m^^^^^^[0m [1m[33mhelp: if this is intentional, prefix it with an underscore: `_device`[0m
+   [1m[94m|[0m
+   [1m[94m= [0m[1mnote[0m: `#[warn(unused_variables)]` (part of `#[warn(unused)]`) on by default
+
+[1m[33mwarning[0m[1m: function `cdist` is never used[0m
+ [1m[94m--> [0msrc/main.rs:9:4
+  [1m[94m|[0m
+[1m[94m9[0m [1m[94m|[0m fn cdist(x1: &Tensor, x2: &Tensor) -> Result<Tensor> {
+  [1m[94m|[0m    [1m[33m^^^^^[0m
+  [1m[94m|[0m
+  [1m[94m= [0m[1mnote[0m: `#[warn(dead_code)]` (part of `#[warn(unused)]`) on by default
+
+[1m[33mwarning[0m[1m: function `load_dataset` is never used[0m
+  [1m[94m--> [0msrc/main.rs:22:4
+   [1m[94m|[0m
+[1m[94m22[0m [1m[94m|[0m fn load_dataset(file: &str, device: &Device) -> Result<f32> {
+   [1m[94m|[0m    [1m[33m^^^^^^^^^^^^[0m
+
+[1m[33mwarning[0m: `rust-candle-course` (bin "rust-candle-course") generated 4 warnings (run `cargo fix --bin "rust-candle-course" -p rust-candle-course` to apply 2 suggestions)
+[1m[92m    Finished[0m `dev` profile [unoptimized + debuginfo] target(s) in 0.13s
+[1m[38;5;255m[48;5;240m rust-candle-course [0m[1m[38;5;235m[48;5;204m check [0m[1m[38;5;235m[48;5;11m  4 warnings  [0m
+[1m[92m    Checking[0m rust-candle-course v0.1.0 (/Users/stephen/Desktop/rust-candle-course)
+[1m[33mwarning[0m[1m: unused import: `DType`[0m
+ [1m[94m--> [0msrc/main.rs:3:19
+  [1m[94m|[0m
+[1m[94m3[0m [1m[94m|[0m use candle_core::{DType, Device, Tensor, D};
+  [1m[94m|[0m                   [1m[33m^^^^^[0m
+  [1m[94m|[0m
+  [1m[94m= [0m[1mnote[0m: `#[warn(unused_imports)]` (part of `#[warn(unused)]`) on by default
+
+[1m[33mwarning[0m[1m: unused variable: `device`[0m
+  [1m[94m--> [0msrc/main.rs:22:29
+   [1m[94m|[0m
+[1m[94m22[0m [1m[94m|[0m fn load_dataset(file: &str, device: &Device) -> Result<f32> {
+   [1m[94m|[0m                             [1m[33m^^^^^^[0m [1m[33mhelp: if this is intentional, prefix it with an underscore: `_device`[0m
+   [1m[94m|[0m
+   [1m[94m= [0m[1mnote[0m: `#[warn(unused_variables)]` (part of `#[warn(unused)]`) on by default
+
+[1m[33mwarning[0m[1m: function `cdist` is never used[0m
+ [1m[94m--> [0msrc/main.rs:9:4
+  [1m[94m|[0m
+[1m[94m9[0m [1m[94m|[0m fn cdist(x1: &Tensor, x2: &Tensor) -> Result<Tensor> {
+  [1m[94m|[0m    [1m[33m^^^^^[0m
+  [1m[94m|[0m
+  [1m[94m= [0m[1mnote[0m: `#[warn(dead_code)]` (part of `#[warn(unused)]`) on by default
+
+[1m[33mwarning[0m[1m: function `load_dataset` is never used[0m
+  [1m[94m--> [0msrc/main.rs:22:4
+   [1m[94m|[0m
+[1m[94m22[0m [1m[94m|[0m fn load_dataset(file: &str, device: &Device) -> Result<f32> {
+   [1m[94m|[0m    [1m[33m^^^^^^^^^^^^[0m
+
+[1m[33mwarning[0m: `rust-candle-course` (bin "rust-candle-course") generated 4 warnings (run `cargo fix --bin "rust-candle-course" -p rust-candle-course` to apply 2 suggestions)
+[1m[92m    Finished[0m `dev` profile [unoptimized + debuginfo] target(s) in 0.12s
+[1m[38;5;255m[48;5;240m rust-candle-course [0m[1m[38;5;235m[48;5;204m check [0m[1m[38;5;235m[48;5;11m  4 warnings  [0m
+[1m[92m    Checking[0m rust-candle-course v0.1.0 (/Users/stephen/Desktop/rust-candle-course)
+[1m[33mwarning[0m[1m: unused import: `DType`[0m
+ [1m[94m--> [0msrc/main.rs:3:19
+  [1m[94m|[0m
+[1m[94m3[0m [1m[94m|[0m use candle_core::{DType, Device, Tensor, D};
+  [1m[94m|[0m                   [1m[33m^^^^^[0m
+  [1m[94m|[0m
+  [1m[94m= [0m[1mnote[0m: `#[warn(unused_imports)]` (part of `#[warn(unused)]`) on by default
+
+[1m[33mwarning[0m[1m: unused variable: `device`[0m
+  [1m[94m--> [0msrc/main.rs:22:29
+   [1m[94m|[0m
+[1m[94m22[0m [1m[94m|[0m fn load_dataset(file: &str, device: &Device) -> Result<f32> {
+   [1m[94m|[0m                             [1m[33m^^^^^^[0m [1m[33mhelp: if this is intentional, prefix it with an underscore: `_device`[0m
+   [1m[94m|[0m
+   [1m[94m= [0m[1mnote[0m: `#[warn(unused_variables)]` (part of `#[warn(unused)]`) on by default
+
+[1m[33mwarning[0m[1m: function `cdist` is never used[0m
+ [1m[94m--> [0msrc/main.rs:9:4
+  [1m[94m|[0m
+[1m[94m9[0m [1m[94m|[0m fn cdist(x1: &Tensor, x2: &Tensor) -> Result<Tensor> {
+  [1m[94m|[0m    [1m[33m^^^^^[0m
+  [1m[94m|[0m
+  [1m[94m= [0m[1mnote[0m: `#[warn(dead_code)]` (part of `#[warn(unused)]`) on by default
+
+[1m[33mwarning[0m[1m: function `load_dataset` is never used[0m
+  [1m[94m--> [0msrc/main.rs:22:4
+   [1m[94m|[0m
+[1m[94m22[0m [1m[94m|[0m fn load_dataset(file: &str, device: &Device) -> Result<f32> {
+   [1m[94m|[0m    [1m[33m^^^^^^^^^^^^[0m
+
+[1m[33mwarning[0m: `rust-candle-course` (bin "rust-candle-course") generated 4 warnings (run `cargo fix --bin "rust-candle-course" -p rust-candle-course` to apply 2 suggestions)
+[1m[92m    Finished[0m `dev` profile [unoptimized + debuginfo] target(s) in 0.13s
+[1m[38;5;255m[48;5;240m rust-candle-course [0m[1m[38;5;235m[48;5;204m check [0m[1m[38;5;235m[48;5;11m  4 warnings  [0m
+[1m[92m    Checking[0m rust-candle-course v0.1.0 (/Users/stephen/Desktop/rust-candle-course)
+[1m[33mwarning[0m[1m: unused import: `DType`[0m
+ [1m[94m--> [0msrc/main.rs:3:19
+  [1m[94m|[0m
+[1m[94m3[0m [1m[94m|[0m use candle_core::{DType, Device, Tensor, D};
+  [1m[94m|[0m                   [1m[33m^^^^^[0m
+  [1m[94m|[0m
+  [1m[94m= [0m[1mnote[0m: `#[warn(unused_imports)]` (part of `#[warn(unused)]`) on by default
+
+[1m[33mwarning[0m[1m: unused variable: `device`[0m
+  [1m[94m--> [0msrc/main.rs:22:29
+   [1m[94m|[0m
+[1m[94m22[0m [1m[94m|[0m fn load_dataset(file: &str, device: &Device) -> Result<f32> {
+   [1m[94m|[0m                             [1m[33m^^^^^^[0m [1m[33mhelp: if this is intentional, prefix it with an underscore: `_device`[0m
+   [1m[94m|[0m
+   [1m[94m= [0m[1mnote[0m: `#[warn(unused_variables)]` (part of `#[warn(unused)]`) on by default
+
+[1m[33mwarning[0m[1m: function `cdist` is never used[0m
+ [1m[94m--> [0msrc/main.rs:9:4
+  [1m[94m|[0m
+[1m[94m9[0m [1m[94m|[0m fn cdist(x1: &Tensor, x2: &Tensor) -> Result<Tensor> {
+  [1m[94m|[0m    [1m[33m^^^^^[0m
+  [1m[94m|[0m
+  [1m[94m= [0m[1mnote[0m: `#[warn(dead_code)]` (part of `#[warn(unused)]`) on by default
+
+[1m[33mwarning[0m[1m: function `load_dataset` is never used[0m
+  [1m[94m--> [0msrc/main.rs:22:4
+   [1m[94m|[0m
+[1m[94m22[0m [1m[94m|[0m fn load_dataset(file: &str, device: &Device) -> Result<f32> {
+   [1m[94m|[0m    [1m[33m^^^^^^^^^^^^[0m
+
+[1m[33mwarning[0m: `rust-candle-course` (bin "rust-candle-course") generated 4 warnings (run `cargo fix --bin "rust-candle-course" -p rust-candle-course` to apply 2 suggestions)
+[1m[92m    Finished[0m `dev` profile [unoptimized + debuginfo] target(s) in 0.12s
+[1m[38;5;255m[48;5;240m rust-candle-course [0m[1m[38;5;235m[48;5;204m check [0m[1m[38;5;235m[48;5;11m  4 warnings  [0m
+[1m[92m    Checking[0m rust-candle-course v0.1.0 (/Users/stephen/Desktop/rust-candle-course)
+[1m[33mwarning[0m[1m: unused import: `DType`[0m
+ [1m[94m--> [0msrc/main.rs:3:19
+  [1m[94m|[0m
+[1m[94m3[0m [1m[94m|[0m use candle_core::{DType, Device, Tensor, D};
+  [1m[94m|[0m                   [1m[33m^^^^^[0m
+  [1m[94m|[0m
+  [1m[94m= [0m[1mnote[0m: `#[warn(unused_imports)]` (part of `#[warn(unused)]`) on by default
+
+[1m[33mwarning[0m[1m: unused variable: `device`[0m
+  [1m[94m--> [0msrc/main.rs:22:29
+   [1m[94m|[0m
+[1m[94m22[0m [1m[94m|[0m fn load_dataset(file: &str, device: &Device) -> Result<f32> {
+   [1m[94m|[0m                             [1m[33m^^^^^^[0m [1m[33mhelp: if this is intentional, prefix it with an underscore: `_device`[0m
+   [1m[94m|[0m
+   [1m[94m= [0m[1mnote[0m: `#[warn(unused_variables)]` (part of `#[warn(unused)]`) on by default
+
+[1m[33mwarning[0m[1m: function `cdist` is never used[0m
+ [1m[94m--> [0msrc/main.rs:9:4
+  [1m[94m|[0m
+[1m[94m9[0m [1m[94m|[0m fn cdist(x1: &Tensor, x2: &Tensor) -> Result<Tensor> {
+  [1m[94m|[0m    [1m[33m^^^^^[0m
+  [1m[94m|[0m
+  [1m[94m= [0m[1mnote[0m: `#[warn(dead_code)]` (part of `#[warn(unused)]`) on by default
+
+[1m[33mwarning[0m[1m: function `load_dataset` is never used[0m
+  [1m[94m--> [0msrc/main.rs:22:4
+   [1m[94m|[0m
+[1m[94m22[0m [1m[94m|[0m fn load_dataset(file: &str, device: &Device) -> Result<f32> {
+   [1m[94m|[0m    [1m[33m^^^^^^^^^^^^[0m
+
+[1m[33mwarning[0m: `rust-candle-course` (bin "rust-candle-course") generated 4 warnings (run `cargo fix --bin "rust-candle-course" -p rust-candle-course` to apply 2 suggestions)
+[1m[92m    Finished[0m `dev` profile [unoptimized + debuginfo] target(s) in 0.13s
+[1m[38;5;255m[48;5;240m rust-candle-course [0m[1m[38;5;235m[48;5;204m check [0m[1m[38;5;235m[48;5;11m  4 warnings  [0m
+[1m[92m    Checking[0m rust-candle-course v0.1.0 (/Users/stephen/Desktop/rust-candle-course)
+[1m[33mwarning[0m[1m: unused import: `DType`[0m
+ [1m[94m--> [0msrc/main.rs:3:19
+  [1m[94m|[0m
+[1m[94m3[0m [1m[94m|[0m use candle_core::{DType, Device, Tensor, D};
+  [1m[94m|[0m                   [1m[33m^^^^^[0m
+  [1m[94m|[0m
+  [1m[94m= [0m[1mnote[0m: `#[warn(unused_imports)]` (part of `#[warn(unused)]`) on by default
+
+[1m[33mwarning[0m[1m: unused variable: `device`[0m
+  [1m[94m--> [0msrc/main.rs:22:29
+   [1m[94m|[0m
+[1m[94m22[0m [1m[94m|[0m fn load_dataset(file: &str, device: &Device) -> Result<f32> {
+   [1m[94m|[0m                             [1m[33m^^^^^^[0m [1m[33mhelp: if this is intentional, prefix it with an underscore: `_device`[0m
+   [1m[94m|[0m
+   [1m[94m= [0m[1mnote[0m: `#[warn(unused_variables)]` (part of `#[warn(unused)]`) on by default
+
+[1m[33mwarning[0m[1m: unused variable: `features`[0m
+  [1m[94m--> [0msrc/main.rs:35:9
+   [1m[94m|[0m
+[1m[94m35[0m [1m[94m|[0m     let features = data[0].len();
+   [1m[94m|[0m         [1m[33m^^^^^^^^[0m [1m[33mhelp: if this is intentional, prefix it with an underscore: `_features`[0m
+
+[1m[33mwarning[0m[1m: function `cdist` is never used[0m
+ [1m[94m--> [0msrc/main.rs:9:4
+  [1m[94m|[0m
+[1m[94m9[0m [1m[94m|[0m fn cdist(x1: &Tensor, x2: &Tensor) -> Result<Tensor> {
+  [1m[94m|[0m    [1m[33m^^^^^[0m
+  [1m[94m|[0m
+  [1m[94m= [0m[1mnote[0m: `#[warn(dead_code)]` (part of `#[warn(unused)]`) on by default
+
+[1m[33mwarning[0m[1m: function `load_dataset` is never used[0m
+  [1m[94m--> [0msrc/main.rs:22:4
+   [1m[94m|[0m
+[1m[94m22[0m [1m[94m|[0m fn load_dataset(file: &str, device: &Device) -> Result<f32> {
+   [1m[94m|[0m    [1m[33m^^^^^^^^^^^^[0m
+
+[1m[33mwarning[0m: `rust-candle-course` (bin "rust-candle-course") generated 5 warnings (run `cargo fix --bin "rust-candle-course" -p rust-candle-course` to apply 3 suggestions)
+[1m[92m    Finished[0m `dev` profile [unoptimized + debuginfo] target(s) in 0.13s
+[1m[38;5;255m[48;5;240m rust-candle-course [0m[1m[38;5;235m[48;5;204m check [0m[1m[38;5;235m[48;5;11m  5 warnings  [0m
+[1m[92m    Checking[0m rust-candle-course v0.1.0 (/Users/stephen/Desktop/rust-candle-course)
+[1m[91merror[0m[1m: expected `;`, found `Ok`[0m
+  [1m[94m--> [0msrc/main.rs:35:33
+   [1m[94m|[0m
+[1m[94m35[0m [1m[94m|[0m     let features = data[0].len()
+   [1m[94m|[0m                                 [1m[91m^[0m [1m[91mhelp: add `;` here[0m
+[1m[94m...[0m
+[1m[94m44[0m [1m[94m|[0m     Ok(1f32)
+   [1m[94m|[0m     [1m[94m--[0m [1m[94munexpected token[0m
+
+[1m[33mwarning[0m[1m: unused import: `DType`[0m
+ [1m[94m--> [0msrc/main.rs:3:19
+  [1m[94m|[0m
+[1m[94m3[0m [1m[94m|[0m use candle_core::{DType, Device, Tensor, D};
+  [1m[94m|[0m                   [1m[33m^^^^^[0m
+  [1m[94m|[0m
+  [1m[94m= [0m[1mnote[0m: `#[warn(unused_imports)]` (part of `#[warn(unused)]`) on by default
+
+[1m[33mwarning[0m[1m: unused variable: `device`[0m
+  [1m[94m--> [0msrc/main.rs:22:29
+   [1m[94m|[0m
+[1m[94m22[0m [1m[94m|[0m fn load_dataset(file: &str, device: &Device) -> Result<f32> {
+   [1m[94m|[0m                             [1m[33m^^^^^^[0m [1m[33mhelp: if this is intentional, prefix it with an underscore: `_device`[0m
+   [1m[94m|[0m
+   [1m[94m= [0m[1mnote[0m: `#[warn(unused_variables)]` (part of `#[warn(unused)]`) on by default
+
+[1m[33mwarning[0m[1m: unused variable: `features`[0m
+  [1m[94m--> [0msrc/main.rs:35:9
+   [1m[94m|[0m
+[1m[94m35[0m [1m[94m|[0m     let features = data[0].len()
+   [1m[94m|[0m         [1m[33m^^^^^^^^[0m [1m[33mhelp: if this is intentional, prefix it with an underscore: `_features`[0m
+
+[1m[33mwarning[0m: `rust-candle-course` (bin "rust-candle-course") generated 3 warnings
+[1m[91merror[0m: could not compile `rust-candle-course` (bin "rust-candle-course") due to 1 previous error; 3 warnings emitted
+[1m[38;5;255m[48;5;240m rust-candle-course [0m[1m[38;5;235m[48;5;204m check [0m[1m[38;5;235m[48;5;9m  1 error  [0m[1m[38;5;235m[48;5;11m  3 warnings  [0m
+[1m[92m    Checking[0m rust-candle-course v0.1.0 (/Users/stephen/Desktop/rust-candle-course)
+[1m[33mwarning[0m[1m: unused import: `DType`[0m
+ [1m[94m--> [0msrc/main.rs:3:19
+  [1m[94m|[0m
+[1m[94m3[0m [1m[94m|[0m use candle_core::{DType, Device, Tensor, D};
+  [1m[94m|[0m                   [1m[33m^^^^^[0m
+  [1m[94m|[0m
+  [1m[94m= [0m[1mnote[0m: `#[warn(unused_imports)]` (part of `#[warn(unused)]`) on by default
+
+[1m[33mwarning[0m[1m: unused variable: `device`[0m
+  [1m[94m--> [0msrc/main.rs:22:29
+   [1m[94m|[0m
+[1m[94m22[0m [1m[94m|[0m fn load_dataset(file: &str, device: &Device) -> Result<f32> {
+   [1m[94m|[0m                             [1m[33m^^^^^^[0m [1m[33mhelp: if this is intentional, prefix it with an underscore: `_device`[0m
+   [1m[94m|[0m
+   [1m[94m= [0m[1mnote[0m: `#[warn(unused_variables)]` (part of `#[warn(unused)]`) on by default
+
+[1m[33mwarning[0m[1m: unused variable: `features`[0m
+  [1m[94m--> [0msrc/main.rs:35:9
+   [1m[94m|[0m
+[1m[94m35[0m [1m[94m|[0m     let features = data[0].len();
+   [1m[94m|[0m         [1m[33m^^^^^^^^[0m [1m[33mhelp: if this is intentional, prefix it with an underscore: `_features`[0m
+
+[1m[33mwarning[0m[1m: function `cdist` is never used[0m
+ [1m[94m--> [0msrc/main.rs:9:4
+  [1m[94m|[0m
+[1m[94m9[0m [1m[94m|[0m fn cdist(x1: &Tensor, x2: &Tensor) -> Result<Tensor> {
+  [1m[94m|[0m    [1m[33m^^^^^[0m
+  [1m[94m|[0m
+  [1m[94m= [0m[1mnote[0m: `#[warn(dead_code)]` (part of `#[warn(unused)]`) on by default
+
+[1m[33mwarning[0m[1m: function `load_dataset` is never used[0m
+  [1m[94m--> [0msrc/main.rs:22:4
+   [1m[94m|[0m
+[1m[94m22[0m [1m[94m|[0m fn load_dataset(file: &str, device: &Device) -> Result<f32> {
+   [1m[94m|[0m    [1m[33m^^^^^^^^^^^^[0m
+
+[1m[33mwarning[0m: `rust-candle-course` (bin "rust-candle-course") generated 5 warnings (run `cargo fix --bin "rust-candle-course" -p rust-candle-course` to apply 3 suggestions)
+[1m[92m    Finished[0m `dev` profile [unoptimized + debuginfo] target(s) in 0.13s
+[1m[38;5;255m[48;5;240m rust-candle-course [0m[1m[38;5;235m[48;5;204m check [0m[1m[38;5;235m[48;5;11m  5 warnings  [0m
+[1m[92m    Checking[0m rust-candle-course v0.1.0 (/Users/stephen/Desktop/rust-candle-course)
+[1m[33mwarning[0m[1m: unused import: `DType`[0m
+ [1m[94m--> [0msrc/main.rs:3:19
+  [1m[94m|[0m
+[1m[94m3[0m [1m[94m|[0m use candle_core::{DType, Device, Tensor, D};
+  [1m[94m|[0m                   [1m[33m^^^^^[0m
+  [1m[94m|[0m
+  [1m[94m= [0m[1mnote[0m: `#[warn(unused_imports)]` (part of `#[warn(unused)]`) on by default
+
+[1m[33mwarning[0m[1m: unused variable: `device`[0m
+  [1m[94m--> [0msrc/main.rs:22:29
+   [1m[94m|[0m
+[1m[94m22[0m [1m[94m|[0m fn load_dataset(file: &str, device: &Device) -> Result<f32> {
+   [1m[94m|[0m                             [1m[33m^^^^^^[0m [1m[33mhelp: if this is intentional, prefix it with an underscore: `_device`[0m
+   [1m[94m|[0m
+   [1m[94m= [0m[1mnote[0m: `#[warn(unused_variables)]` (part of `#[warn(unused)]`) on by default
+
+[1m[33mwarning[0m[1m: unused variable: `features`[0m
+  [1m[94m--> [0msrc/main.rs:35:9
+   [1m[94m|[0m
+[1m[94m35[0m [1m[94m|[0m     let features = data[0].len();
+   [1m[94m|[0m         [1m[33m^^^^^^^^[0m [1m[33mhelp: if this is intentional, prefix it with an underscore: `_features`[0m
+
+[1m[33mwarning[0m[1m: unused variable: `samples`[0m
+  [1m[94m--> [0msrc/main.rs:36:9
+   [1m[94m|[0m
+[1m[94m36[0m [1m[94m|[0m     let samples = data.len();
+   [1m[94m|[0m         [1m[33m^^^^^^^[0m [1m[33mhelp: if this is intentional, prefix it with an underscore: `_samples`[0m
+
+[1m[33mwarning[0m[1m: function `cdist` is never used[0m
+ [1m[94m--> [0msrc/main.rs:9:4
+  [1m[94m|[0m
+[1m[94m9[0m [1m[94m|[0m fn cdist(x1: &Tensor, x2: &Tensor) -> Result<Tensor> {
+  [1m[94m|[0m    [1m[33m^^^^^[0m
+  [1m[94m|[0m
+  [1m[94m= [0m[1mnote[0m: `#[warn(dead_code)]` (part of `#[warn(unused)]`) on by default
+
+[1m[33mwarning[0m[1m: function `load_dataset` is never used[0m
+  [1m[94m--> [0msrc/main.rs:22:4
+   [1m[94m|[0m
+[1m[94m22[0m [1m[94m|[0m fn load_dataset(file: &str, device: &Device) -> Result<f32> {
+   [1m[94m|[0m    [1m[33m^^^^^^^^^^^^[0m
+
+[1m[33mwarning[0m: `rust-candle-course` (bin "rust-candle-course") generated 6 warnings (run `cargo fix --bin "rust-candle-course" -p rust-candle-course` to apply 4 suggestions)
+[1m[92m    Finished[0m `dev` profile [unoptimized + debuginfo] target(s) in 0.14s
+[1m[38;5;255m[48;5;240m rust-candle-course [0m[1m[38;5;235m[48;5;204m check [0m[1m[38;5;235m[48;5;11m  6 warnings  [0m
+[1m[33mwarning[0m[1m: unused import: `DType`[0m
+ [1m[94m--> [0msrc/main.rs:3:19
+  [1m[94m|[0m
+[1m[94m3[0m [1m[94m|[0m use candle_core::{DType, Device, Tensor, D};
+  [1m[94m|[0m                   [1m[33m^^^^^[0m
+  [1m[94m|[0m
+  [1m[94m= [0m[1mnote[0m: `#[warn(unused_imports)]` (part of `#[warn(unused)]`) on by default
+
+[1m[33mwarning[0m[1m: unused variable: `device`[0m
+  [1m[94m--> [0msrc/main.rs:22:29
+   [1m[94m|[0m
+[1m[94m22[0m [1m[94m|[0m fn load_dataset(file: &str, device: &Device) -> Result<f32> {
+   [1m[94m|[0m                             [1m[33m^^^^^^[0m [1m[33mhelp: if this is intentional, prefix it with an underscore: `_device`[0m
+   [1m[94m|[0m
+   [1m[94m= [0m[1mnote[0m: `#[warn(unused_variables)]` (part of `#[warn(unused)]`) on by default
+
+[1m[33mwarning[0m[1m: unused variable: `features`[0m
+  [1m[94m--> [0msrc/main.rs:35:9
+   [1m[94m|[0m
+[1m[94m35[0m [1m[94m|[0m     let features = data[0].len();
+   [1m[94m|[0m         [1m[33m^^^^^^^^[0m [1m[33mhelp: if this is intentional, prefix it with an underscore: `_features`[0m
+
+[1m[33mwarning[0m[1m: unused variable: `samples`[0m
+  [1m[94m--> [0msrc/main.rs:36:9
+   [1m[94m|[0m
+[1m[94m36[0m [1m[94m|[0m     let samples = data.len();
+   [1m[94m|[0m         [1m[33m^^^^^^^[0m [1m[33mhelp: if this is intentional, prefix it with an underscore: `_samples`[0m
+
+[1m[33mwarning[0m[1m: function `cdist` is never used[0m
+ [1m[94m--> [0msrc/main.rs:9:4
+  [1m[94m|[0m
+[1m[94m9[0m [1m[94m|[0m fn cdist(x1: &Tensor, x2: &Tensor) -> Result<Tensor> {
+  [1m[94m|[0m    [1m[33m^^^^^[0m
+  [1m[94m|[0m
+  [1m[94m= [0m[1mnote[0m: `#[warn(dead_code)]` (part of `#[warn(unused)]`) on by default
+
+[1m[33mwarning[0m[1m: function `load_dataset` is never used[0m
+  [1m[94m--> [0msrc/main.rs:22:4
+   [1m[94m|[0m
+[1m[94m22[0m [1m[94m|[0m fn load_dataset(file: &str, device: &Device) -> Result<f32> {
+   [1m[94m|[0m    [1m[33m^^^^^^^^^^^^[0m
+
+[1m[33mwarning[0m: `rust-candle-course` (bin "rust-candle-course") generated 6 warnings (run `cargo fix --bin "rust-candle-course" -p rust-candle-course` to apply 4 suggestions)
+[1m[92m    Finished[0m `dev` profile [unoptimized + debuginfo] target(s) in 0.06s
+[1m[38;5;255m[48;5;240m rust-candle-course [0m[1m[38;5;235m[48;5;204m check [0m[1m[38;5;235m[48;5;11m  6 warnings  [0m
+[1m[92m    Checking[0m rust-candle-course v0.1.0 (/Users/stephen/Desktop/rust-candle-course)
+[1m[33mwarning[0m[1m: unused import: `DType`[0m
+ [1m[94m--> [0msrc/main.rs:3:19
+  [1m[94m|[0m
+[1m[94m3[0m [1m[94m|[0m use candle_core::{DType, Device, Tensor, D};
+  [1m[94m|[0m                   [1m[33m^^^^^[0m
+  [1m[94m|[0m
+  [1m[94m= [0m[1mnote[0m: `#[warn(unused_imports)]` (part of `#[warn(unused)]`) on by default
+
+[1m[33mwarning[0m[1m: unused variable: `device`[0m
+  [1m[94m--> [0msrc/main.rs:22:29
+   [1m[94m|[0m
+[1m[94m22[0m [1m[94m|[0m fn load_dataset(file: &str, device: &Device) -> Result<f32> {
+   [1m[94m|[0m                             [1m[33m^^^^^^[0m [1m[33mhelp: if this is intentional, prefix it with an underscore: `_device`[0m
+   [1m[94m|[0m
+   [1m[94m= [0m[1mnote[0m: `#[warn(unused_variables)]` (part of `#[warn(unused)]`) on by default
+
+[1m[33mwarning[0m[1m: unused variable: `features`[0m
+  [1m[94m--> [0msrc/main.rs:35:9
+   [1m[94m|[0m
+[1m[94m35[0m [1m[94m|[0m     let features = data[0].len();
+   [1m[94m|[0m         [1m[33m^^^^^^^^[0m [1m[33mhelp: if this is intentional, prefix it with an underscore: `_features`[0m
+
+[1m[33mwarning[0m[1m: unused variable: `samples`[0m
+  [1m[94m--> [0msrc/main.rs:36:9
+   [1m[94m|[0m
+[1m[94m36[0m [1m[94m|[0m     let samples = data.len();
+   [1m[94m|[0m         [1m[33m^^^^^^^[0m [1m[33mhelp: if this is intentional, prefix it with an underscore: `_samples`[0m
+
+[1m[33mwarning[0m[1m: unused variable: `data`[0m
+  [1m[94m--> [0msrc/main.rs:37:9
+   [1m[94m|[0m
+[1m[94m37[0m [1m[94m|[0m     let data: Vec<_> = data
+   [1m[94m|[0m         [1m[33m^^^^[0m [1m[33mhelp: if this is intentional, prefix it with an underscore: `_data`[0m
+
+[1m[33mwarning[0m[1m: function `cdist` is never used[0m
+ [1m[94m--> [0msrc/main.rs:9:4
+  [1m[94m|[0m
+[1m[94m9[0m [1m[94m|[0m fn cdist(x1: &Tensor, x2: &Tensor) -> Result<Tensor> {
+  [1m[94m|[0m    [1m[33m^^^^^[0m
+  [1m[94m|[0m
+  [1m[94m= [0m[1mnote[0m: `#[warn(dead_code)]` (part of `#[warn(unused)]`) on by default
+
+[1m[33mwarning[0m[1m: function `load_dataset` is never used[0m
+  [1m[94m--> [0msrc/main.rs:22:4
+   [1m[94m|[0m
+[1m[94m22[0m [1m[94m|[0m fn load_dataset(file: &str, device: &Device) -> Result<f32> {
+   [1m[94m|[0m    [1m[33m^^^^^^^^^^^^[0m
+
+[1m[33mwarning[0m: `rust-candle-course` (bin "rust-candle-course") generated 7 warnings (run `cargo fix --bin "rust-candle-course" -p rust-candle-course` to apply 5 suggestions)
+[1m[92m    Finished[0m `dev` profile [unoptimized + debuginfo] target(s) in 0.28s
+[1m[38;5;255m[48;5;240m rust-candle-course [0m[1m[38;5;235m[48;5;204m check [0m[1m[38;5;235m[48;5;11m  7 warnings  [0m
+[1m[92m    Checking[0m rust-candle-course v0.1.0 (/Users/stephen/Desktop/rust-candle-course)
+[1m[33mwarning[0m[1m: unused import: `DType`[0m
+ [1m[94m--> [0msrc/main.rs:3:19
+  [1m[94m|[0m
+[1m[94m3[0m [1m[94m|[0m use candle_core::{DType, Device, Tensor, D};
+  [1m[94m|[0m                   [1m[33m^^^^^[0m
+  [1m[94m|[0m
+  [1m[94m= [0m[1mnote[0m: `#[warn(unused_imports)]` (part of `#[warn(unused)]`) on by default
+
+[1m[33mwarning[0m[1m: unused variable: `device`[0m
+  [1m[94m--> [0msrc/main.rs:22:29
+   [1m[94m|[0m
+[1m[94m22[0m [1m[94m|[0m fn load_dataset(file: &str, device: &Device) -> Result<f32> {
+   [1m[94m|[0m                             [1m[33m^^^^^^[0m [1m[33mhelp: if this is intentional, prefix it with an underscore: `_device`[0m
+   [1m[94m|[0m
+   [1m[94m= [0m[1mnote[0m: `#[warn(unused_variables)]` (part of `#[warn(unused)]`) on by default
+
+[1m[33mwarning[0m[1m: unused variable: `features`[0m
+  [1m[94m--> [0msrc/main.rs:35:9
+   [1m[94m|[0m
+[1m[94m35[0m [1m[94m|[0m     let features = data[0].len();
+   [1m[94m|[0m         [1m[33m^^^^^^^^[0m [1m[33mhelp: if this is intentional, prefix it with an underscore: `_features`[0m
+
+[1m[33mwarning[0m[1m: unused variable: `samples`[0m
+  [1m[94m--> [0msrc/main.rs:36:9
+   [1m[94m|[0m
+[1m[94m36[0m [1m[94m|[0m     let samples = data.len();
+   [1m[94m|[0m         [1m[33m^^^^^^^[0m [1m[33mhelp: if this is intentional, prefix it with an underscore: `_samples`[0m
+
+[1m[33mwarning[0m[1m: unused variable: `data`[0m
+  [1m[94m--> [0msrc/main.rs:37:9
+   [1m[94m|[0m
+[1m[94m37[0m [1m[94m|[0m     let data: Vec<_> = data
+   [1m[94m|[0m         [1m[33m^^^^[0m [1m[33mhelp: if this is intentional, prefix it with an underscore: `_data`[0m
+
+[1m[33mwarning[0m[1m: function `cdist` is never used[0m
+ [1m[94m--> [0msrc/main.rs:9:4
+  [1m[94m|[0m
+[1m[94m9[0m [1m[94m|[0m fn cdist(x1: &Tensor, x2: &Tensor) -> Result<Tensor> {
+  [1m[94m|[0m    [1m[33m^^^^^[0m
+  [1m[94m|[0m
+  [1m[94m= [0m[1mnote[0m: `#[warn(dead_code)]` (part of `#[warn(unused)]`) on by default
+
+[1m[33mwarning[0m[1m: function `load_dataset` is never used[0m
+  [1m[94m--> [0msrc/main.rs:22:4
+   [1m[94m|[0m
+[1m[94m22[0m [1m[94m|[0m fn load_dataset(file: &str, device: &Device) -> Result<f32> {
+   [1m[94m|[0m    [1m[33m^^^^^^^^^^^^[0m
+
+[1m[33mwarning[0m: `rust-candle-course` (bin "rust-candle-course") generated 7 warnings (run `cargo fix --bin "rust-candle-course" -p rust-candle-course` to apply 5 suggestions)
+[1m[92m    Finished[0m `dev` profile [unoptimized + debuginfo] target(s) in 0.13s
+[1m[38;5;255m[48;5;240m rust-candle-course [0m[1m[38;5;235m[48;5;204m check [0m[1m[38;5;235m[48;5;11m  7 warnings  [0m
+[1m[92m    Checking[0m rust-candle-course v0.1.0 (/Users/stephen/Desktop/rust-candle-course)
+[1m[91merror[E0425][0m[1m: cannot find value `sample_cnt` in this scope[0m
+  [1m[94m--> [0msrc/main.rs:41:52
+   [1m[94m|[0m
+[1m[94m41[0m [1m[94m|[0m     let out = Tensor::from_slice(data.as_slice(), (sample_cnt, feature_cnt), device)?;
+   [1m[94m|[0m                                                    [1m[91m^^^^^^^^^^[0m [1m[91mnot found in this scope[0m
+
+[1m[91merror[E0425][0m[1m: cannot find value `feature_cnt` in this scope[0m
+  [1m[94m--> [0msrc/main.rs:41:64
+   [1m[94m|[0m
+[1m[94m41[0m [1m[94m|[0m     let out = Tensor::from_slice(data.as_slice(), (sample_cnt, feature_cnt), device)?;
+   [1m[94m|[0m                                                                [1m[91m^^^^^^^^^^^[0m [1m[91mnot found in this scope[0m
+
+[1m[33mwarning[0m[1m: unused import: `DType`[0m
+ [1m[94m--> [0msrc/main.rs:3:19
+  [1m[94m|[0m
+[1m[94m3[0m [1m[94m|[0m use candle_core::{DType, Device, Tensor, D};
+  [1m[94m|[0m                   [1m[33m^^^^^[0m
+  [1m[94m|[0m
+  [1m[94m= [0m[1mnote[0m: `#[warn(unused_imports)]` (part of `#[warn(unused)]`) on by default
+
+[1m[91merror[E0277][0m[1m: the trait bound `&f64: WithDType` is not satisfied[0m
+   [1m[94m--> [0msrc/main.rs:41:34
+    [1m[94m|[0m
+[1m[94m 41[0m [1m[94m|[0m     let out = Tensor::from_slice(data.as_slice(), (sample_cnt, feature_cnt), device)?;
+    [1m[94m|[0m               [1m[94m------------------[0m [1m[91m^^^^^^^^^^^^^^^[0m [1m[91mthe trait `WithDType` is not implemented for `&f64`[0m
+    [1m[94m|[0m               [1m[94m|[0m
+    [1m[94m|[0m               [1m[94mrequired by a bound introduced by this call[0m
+    [1m[94m|[0m
+[1m[96mhelp[0m: the trait `WithDType` [1m[35mis[0m implemented for `[1m[35mf64[0m`
+   [1m[94m--> [0m/Users/stephen/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/candle-core-0.11.0/src/dtype.rs:176:9
+    [1m[94m|[0m
+[1m[94m176[0m [1m[94m|[0m         impl WithDType for $ty {
+    [1m[94m|[0m         [1m[96m^^^^^^^^^^^^^^^^^^^^^^[0m
+[1m[94m...[0m
+[1m[94m236[0m [1m[94m|[0m with_dtype!(f64, F64, |v: f64| v, |v: f64| v);
+    [1m[94m|[0m [1m[94m---------------------------------------------[0m [1m[94min this macro invocation[0m
+[1m[92mnote[0m: required by a bound in `candle_core::Tensor::from_slice`
+   [1m[94m--> [0m/Users/stephen/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/candle-core-0.11.0/src/tensor.rs:564:47
+    [1m[94m|[0m
+[1m[94m564[0m [1m[94m|[0m     pub fn from_slice<S: ShapeWithOneHole, D: crate::WithDType>(
+    [1m[94m|[0m                                               [1m[92m^^^^^^^^^^^^^^^^[0m [1m[92mrequired by this bound in `Tensor::from_slice`[0m
+    [1m[94m= [0m[1mnote[0m: this error originates in the macro `with_dtype` (in Nightly builds, run with -Z macro-backtrace for more info)
+
+[1mSome errors have detailed explanations: E0277, E0425.[0m
+[1mFor more information about an error, try `rustc --explain E0277`.[0m
+[1m[33mwarning[0m: `rust-candle-course` (bin "rust-candle-course") generated 1 warning
+[1m[91merror[0m: could not compile `rust-candle-course` (bin "rust-candle-course") due to 3 previous errors; 1 warning emitted
+[1m[38;5;255m[48;5;240m rust-candle-course [0m[1m[38;5;235m[48;5;204m check [0m[1m[38;5;235m[48;5;9m  3 errors  [0m[1m[38;5;235m[48;5;11m  1 warning  [0m
+[1m[92m    Checking[0m rust-candle-course v0.1.0 (/Users/stephen/Desktop/rust-candle-course)
+[1m[91merror[E0425][0m[1m: cannot find value `sample_cnt` in this scope[0m
+  [1m[94m--> [0msrc/main.rs:41:52
+   [1m[94m|[0m
+[1m[94m41[0m [1m[94m|[0m     let out = Tensor::from_slice(data.as_slice(), (sample_cnt, feature_cnt), device)?;
+   [1m[94m|[0m                                                    [1m[91m^^^^^^^^^^[0m [1m[91mnot found in this scope[0m
+
+[1m[91merror[E0425][0m[1m: cannot find value `feature_cnt` in this scope[0m
+  [1m[94m--> [0msrc/main.rs:41:64
+   [1m[94m|[0m
+[1m[94m41[0m [1m[94m|[0m     let out = Tensor::from_slice(data.as_slice(), (sample_cnt, feature_cnt), device)?;
+   [1m[94m|[0m                                                                [1m[91m^^^^^^^^^^^[0m [1m[91mnot found in this scope[0m
+
+[1m[33mwarning[0m[1m: unused import: `DType`[0m
+ [1m[94m--> [0msrc/main.rs:3:19
+  [1m[94m|[0m
+[1m[94m3[0m [1m[94m|[0m use candle_core::{DType, Device, Tensor, D};
+  [1m[94m|[0m                   [1m[33m^^^^^[0m
+  [1m[94m|[0m
+  [1m[94m= [0m[1mnote[0m: `#[warn(unused_imports)]` (part of `#[warn(unused)]`) on by default
+
+[1m[91merror[E0277][0m[1m: the trait bound `&f64: WithDType` is not satisfied[0m
+   [1m[94m--> [0msrc/main.rs:41:34
+    [1m[94m|[0m
+[1m[94m 41[0m [1m[94m|[0m     let out = Tensor::from_slice(data.as_slice(), (sample_cnt, feature_cnt), device)?;
+    [1m[94m|[0m               [1m[94m------------------[0m [1m[91m^^^^^^^^^^^^^^^[0m [1m[91mthe trait `WithDType` is not implemented for `&f64`[0m
+    [1m[94m|[0m               [1m[94m|[0m
+    [1m[94m|[0m               [1m[94mrequired by a bound introduced by this call[0m
+    [1m[94m|[0m
+[1m[96mhelp[0m: the trait `WithDType` [1m[35mis[0m implemented for `[1m[35mf64[0m`
+   [1m[94m--> [0m/Users/stephen/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/candle-core-0.11.0/src/dtype.rs:176:9
+    [1m[94m|[0m
+[1m[94m176[0m [1m[94m|[0m         impl WithDType for $ty {
+    [1m[94m|[0m         [1m[96m^^^^^^^^^^^^^^^^^^^^^^[0m
+[1m[94m...[0m
+[1m[94m236[0m [1m[94m|[0m with_dtype!(f64, F64, |v: f64| v, |v: f64| v);
+    [1m[94m|[0m [1m[94m---------------------------------------------[0m [1m[94min this macro invocation[0m
+[1m[92mnote[0m: required by a bound in `candle_core::Tensor::from_slice`
+   [1m[94m--> [0m/Users/stephen/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/candle-core-0.11.0/src/tensor.rs:564:47
+    [1m[94m|[0m
+[1m[94m564[0m [1m[94m|[0m     pub fn from_slice<S: ShapeWithOneHole, D: crate::WithDType>(
+    [1m[94m|[0m                                               [1m[92m^^^^^^^^^^^^^^^^[0m [1m[92mrequired by this bound in `Tensor::from_slice`[0m
+    [1m[94m= [0m[1mnote[0m: this error originates in the macro `with_dtype` (in Nightly builds, run with -Z macro-backtrace for more info)
+
+[1mSome errors have detailed explanations: E0277, E0425.[0m
+[1mFor more information about an error, try `rustc --explain E0277`.[0m
+[1m[33mwarning[0m: `rust-candle-course` (bin "rust-candle-course") generated 1 warning
+[1m[91merror[0m: could not compile `rust-candle-course` (bin "rust-candle-course") due to 3 previous errors; 1 warning emitted
+[1m[38;5;255m[48;5;240m rust-candle-course [0m[1m[38;5;235m[48;5;204m check [0m[1m[38;5;235m[48;5;9m  3 errors  [0m[1m[38;5;235m[48;5;11m  1 warning  [0m
+[1m[92m    Checking[0m rust-candle-course v0.1.0 (/Users/stephen/Desktop/rust-candle-course)
+[1m[33mwarning[0m[1m: unused import: `DType`[0m
+ [1m[94m--> [0msrc/main.rs:3:19
+  [1m[94m|[0m
+[1m[94m3[0m [1m[94m|[0m use candle_core::{DType, Device, Tensor, D};
+  [1m[94m|[0m                   [1m[33m^^^^^[0m
+  [1m[94m|[0m
+  [1m[94m= [0m[1mnote[0m: `#[warn(unused_imports)]` (part of `#[warn(unused)]`) on by default
+
+[1m[91merror[E0277][0m[1m: the trait bound `&f64: WithDType` is not satisfied[0m
+   [1m[94m--> [0msrc/main.rs:41:34
+    [1m[94m|[0m
+[1m[94m 41[0m [1m[94m|[0m     let out = Tensor::from_slice(data.as_slice(), (samples, features), device)?;
+    [1m[94m|[0m               [1m[94m------------------[0m [1m[91m^^^^^^^^^^^^^^^[0m [1m[91mthe trait `WithDType` is not implemented for `&f64`[0m
+    [1m[94m|[0m               [1m[94m|[0m
+    [1m[94m|[0m               [1m[94mrequired by a bound introduced by this call[0m
+    [1m[94m|[0m
+[1m[96mhelp[0m: the trait `WithDType` [1m[35mis[0m implemented for `[1m[35mf64[0m`
+   [1m[94m--> [0m/Users/stephen/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/candle-core-0.11.0/src/dtype.rs:176:9
+    [1m[94m|[0m
+[1m[94m176[0m [1m[94m|[0m         impl WithDType for $ty {
+    [1m[94m|[0m         [1m[96m^^^^^^^^^^^^^^^^^^^^^^[0m
+[1m[94m...[0m
+[1m[94m236[0m [1m[94m|[0m with_dtype!(f64, F64, |v: f64| v, |v: f64| v);
+    [1m[94m|[0m [1m[94m---------------------------------------------[0m [1m[94min this macro invocation[0m
+[1m[92mnote[0m: required by a bound in `candle_core::Tensor::from_slice`
+   [1m[94m--> [0m/Users/stephen/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/candle-core-0.11.0/src/tensor.rs:564:47
+    [1m[94m|[0m
+[1m[94m564[0m [1m[94m|[0m     pub fn from_slice<S: ShapeWithOneHole, D: crate::WithDType>(
+    [1m[94m|[0m                                               [1m[92m^^^^^^^^^^^^^^^^[0m [1m[92mrequired by this bound in `Tensor::from_slice`[0m
+    [1m[94m= [0m[1mnote[0m: this error originates in the macro `with_dtype` (in Nightly builds, run with -Z macro-backtrace for more info)
+
+[1mFor more information about this error, try `rustc --explain E0277`.[0m
+[1m[33mwarning[0m: `rust-candle-course` (bin "rust-candle-course") generated 1 warning
+[1m[91merror[0m: could not compile `rust-candle-course` (bin "rust-candle-course") due to 1 previous error; 1 warning emitted
+[1m[38;5;255m[48;5;240m rust-candle-course [0m[1m[38;5;235m[48;5;204m check [0m[1m[38;5;235m[48;5;9m  1 error  [0m[1m[38;5;235m[48;5;11m  1 warning  [0m
+[1m[92m    Checking[0m rust-candle-course v0.1.0 (/Users/stephen/Desktop/rust-candle-course)
+[1m[33mwarning[0m[1m: unused import: `DType`[0m
+ [1m[94m--> [0msrc/main.rs:3:19
+  [1m[94m|[0m
+[1m[94m3[0m [1m[94m|[0m use candle_core::{DType, Device, Tensor, D};
+  [1m[94m|[0m                   [1m[33m^^^^^[0m
+  [1m[94m|[0m
+  [1m[94m= [0m[1mnote[0m: `#[warn(unused_imports)]` (part of `#[warn(unused)]`) on by default
+
+[1m[91merror[E0277][0m[1m: the trait bound `&f64: WithDType` is not satisfied[0m
+   [1m[94m--> [0msrc/main.rs:41:34
+    [1m[94m|[0m
+[1m[94m 41[0m [1m[94m|[0m     let out = Tensor::from_slice(data.as_slice(), (samples, features), device)?;
+    [1m[94m|[0m               [1m[94m------------------[0m [1m[91m^^^^^^^^^^^^^^^[0m [1m[91mthe trait `WithDType` is not implemented for `&f64`[0m
+    [1m[94m|[0m               [1m[94m|[0m
+    [1m[94m|[0m               [1m[94mrequired by a bound introduced by this call[0m
+    [1m[94m|[0m
+[1m[96mhelp[0m: the trait `WithDType` [1m[35mis[0m implemented for `[1m[35mf64[0m`
+   [1m[94m--> [0m/Users/stephen/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/candle-core-0.11.0/src/dtype.rs:176:9
+    [1m[94m|[0m
+[1m[94m176[0m [1m[94m|[0m         impl WithDType for $ty {
+    [1m[94m|[0m         [1m[96m^^^^^^^^^^^^^^^^^^^^^^[0m
+[1m[94m...[0m
+[1m[94m236[0m [1m[94m|[0m with_dtype!(f64, F64, |v: f64| v, |v: f64| v);
+    [1m[94m|[0m [1m[94m---------------------------------------------[0m [1m[94min this macro invocation[0m
+[1m[92mnote[0m: required by a bound in `candle_core::Tensor::from_slice`
+   [1m[94m--> [0m/Users/stephen/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/candle-core-0.11.0/src/tensor.rs:564:47
+    [1m[94m|[0m
+[1m[94m564[0m [1m[94m|[0m     pub fn from_slice<S: ShapeWithOneHole, D: crate::WithDType>(
+    [1m[94m|[0m                                               [1m[92m^^^^^^^^^^^^^^^^[0m [1m[92mrequired by this bound in `Tensor::from_slice`[0m
+    [1m[94m= [0m[1mnote[0m: this error originates in the macro `with_dtype` (in Nightly builds, run with -Z macro-backtrace for more info)
+
+[1mFor more information about this error, try `rustc --explain E0277`.[0m
+[1m[33mwarning[0m: `rust-candle-course` (bin "rust-candle-course") generated 1 warning
+[1m[91merror[0m: could not compile `rust-candle-course` (bin "rust-candle-course") due to 1 previous error; 1 warning emitted
+[1m[38;5;255m[48;5;240m rust-candle-course [0m[1m[38;5;235m[48;5;204m check [0m[1m[38;5;235m[48;5;9m  1 error  [0m[1m[38;5;235m[48;5;11m  1 warning  [0m
+[1m[92m    Checking[0m rust-candle-course v0.1.0 (/Users/stephen/Desktop/rust-candle-course)
+[1m[33mwarning[0m[1m: unused import: `DType`[0m
+ [1m[94m--> [0msrc/main.rs:3:19
+  [1m[94m|[0m
+[1m[94m3[0m [1m[94m|[0m use candle_core::{DType, Device, Tensor, D};
+  [1m[94m|[0m                   [1m[33m^^^^^[0m
+  [1m[94m|[0m
+  [1m[94m= [0m[1mnote[0m: `#[warn(unused_imports)]` (part of `#[warn(unused)]`) on by default
+
+[1m[91merror[E0277][0m[1m: the trait bound `&f64: WithDType` is not satisfied[0m
+   [1m[94m--> [0msrc/main.rs:41:34
+    [1m[94m|[0m
+[1m[94m 41[0m [1m[94m|[0m     let out = Tensor::from_slice(data.as_slice(), (samples, features), device)?;
+    [1m[94m|[0m               [1m[94m------------------[0m [1m[91m^^^^^^^^^^^^^^^[0m [1m[91mthe trait `WithDType` is not implemented for `&f64`[0m
+    [1m[94m|[0m               [1m[94m|[0m
+    [1m[94m|[0m               [1m[94mrequired by a bound introduced by this call[0m
+    [1m[94m|[0m
+[1m[96mhelp[0m: the trait `WithDType` [1m[35mis[0m implemented for `[1m[35mf64[0m`
+   [1m[94m--> [0m/Users/stephen/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/candle-core-0.11.0/src/dtype.rs:176:9
+    [1m[94m|[0m
+[1m[94m176[0m [1m[94m|[0m         impl WithDType for $ty {
+    [1m[94m|[0m         [1m[96m^^^^^^^^^^^^^^^^^^^^^^[0m
+[1m[94m...[0m
+[1m[94m236[0m [1m[94m|[0m with_dtype!(f64, F64, |v: f64| v, |v: f64| v);
+    [1m[94m|[0m [1m[94m---------------------------------------------[0m [1m[94min this macro invocation[0m
+[1m[92mnote[0m: required by a bound in `candle_core::Tensor::from_slice`
+   [1m[94m--> [0m/Users/stephen/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/candle-core-0.11.0/src/tensor.rs:564:47
+    [1m[94m|[0m
+[1m[94m564[0m [1m[94m|[0m     pub fn from_slice<S: ShapeWithOneHole, D: crate::WithDType>(
+    [1m[94m|[0m                                               [1m[92m^^^^^^^^^^^^^^^^[0m [1m[92mrequired by this bound in `Tensor::from_slice`[0m
+    [1m[94m= [0m[1mnote[0m: this error originates in the macro `with_dtype` (in Nightly builds, run with -Z macro-backtrace for more info)
+
+[1mFor more information about this error, try `rustc --explain E0277`.[0m
+[1m[33mwarning[0m: `rust-candle-course` (bin "rust-candle-course") generated 1 warning
+[1m[91merror[0m: could not compile `rust-candle-course` (bin "rust-candle-course") due to 1 previous error; 1 warning emitted
+[1m[38;5;255m[48;5;240m rust-candle-course [0m[1m[38;5;235m[48;5;204m check [0m[1m[38;5;235m[48;5;9m  1 error  [0m[1m[38;5;235m[48;5;11m  1 warning  [0m
+[1m[92m    Checking[0m rust-candle-course v0.1.0 (/Users/stephen/Desktop/rust-candle-course)
+[1m[33mwarning[0m[1m: unused import: `DType`[0m
+ [1m[94m--> [0msrc/main.rs:3:19
+  [1m[94m|[0m
+[1m[94m3[0m [1m[94m|[0m use candle_core::{DType, Device, Tensor, D};
+  [1m[94m|[0m                   [1m[33m^^^^^[0m
+  [1m[94m|[0m
+  [1m[94m= [0m[1mnote[0m: `#[warn(unused_imports)]` (part of `#[warn(unused)]`) on by default
+
+[1m[33mwarning[0m[1m: unused variable: `device`[0m
+  [1m[94m--> [0msrc/main.rs:22:29
+   [1m[94m|[0m
+[1m[94m22[0m [1m[94m|[0m fn load_dataset(file: &str, device: &Device) -> Result<f32> {
+   [1m[94m|[0m                             [1m[33m^^^^^^[0m [1m[33mhelp: if this is intentional, prefix it with an underscore: `_device`[0m
+   [1m[94m|[0m
+   [1m[94m= [0m[1mnote[0m: `#[warn(unused_variables)]` (part of `#[warn(unused)]`) on by default
+
+[1m[33mwarning[0m[1m: unused variable: `features`[0m
+  [1m[94m--> [0msrc/main.rs:35:9
+   [1m[94m|[0m
+[1m[94m35[0m [1m[94m|[0m     let features = data[0].len();
+   [1m[94m|[0m         [1m[33m^^^^^^^^[0m [1m[33mhelp: if this is intentional, prefix it with an underscore: `_features`[0m
+
+[1m[33mwarning[0m[1m: unused variable: `samples`[0m
+  [1m[94m--> [0msrc/main.rs:36:9
+   [1m[94m|[0m
+[1m[94m36[0m [1m[94m|[0m     let samples = data.len();
+   [1m[94m|[0m         [1m[33m^^^^^^^[0m [1m[33mhelp: if this is intentional, prefix it with an underscore: `_samples`[0m
+
+[1m[33mwarning[0m[1m: unused variable: `data`[0m
+  [1m[94m--> [0msrc/main.rs:37:9
+   [1m[94m|[0m
+[1m[94m37[0m [1m[94m|[0m     let data: Vec<_> = data
+   [1m[94m|[0m         [1m[33m^^^^[0m [1m[33mhelp: if this is intentional, prefix it with an underscore: `_data`[0m
+
+[1m[33mwarning[0m[1m: function `cdist` is never used[0m
+ [1m[94m--> [0msrc/main.rs:9:4
+  [1m[94m|[0m
+[1m[94m9[0m [1m[94m|[0m fn cdist(x1: &Tensor, x2: &Tensor) -> Result<Tensor> {
+  [1m[94m|[0m    [1m[33m^^^^^[0m
+  [1m[94m|[0m
+  [1m[94m= [0m[1mnote[0m: `#[warn(dead_code)]` (part of `#[warn(unused)]`) on by default
+
+[1m[33mwarning[0m[1m: function `load_dataset` is never used[0m
+  [1m[94m--> [0msrc/main.rs:22:4
+   [1m[94m|[0m
+[1m[94m22[0m [1m[94m|[0m fn load_dataset(file: &str, device: &Device) -> Result<f32> {
+   [1m[94m|[0m    [1m[33m^^^^^^^^^^^^[0m
+
+[1m[33mwarning[0m: `rust-candle-course` (bin "rust-candle-course") generated 7 warnings (run `cargo fix --bin "rust-candle-course" -p rust-candle-course` to apply 5 suggestions)
+[1m[92m    Finished[0m `dev` profile [unoptimized + debuginfo] target(s) in 0.17s
+[1m[38;5;255m[48;5;240m rust-candle-course [0m[1m[38;5;235m[48;5;204m check [0m[1m[38;5;235m[48;5;11m  7 warnings  [0m
+[1m[92m    Checking[0m rust-candle-course v0.1.0 (/Users/stephen/Desktop/rust-candle-course)
+[1m[33mwarning[0m[1m: unused import: `DType`[0m
+ [1m[94m--> [0msrc/main.rs:3:19
+  [1m[94m|[0m
+[1m[94m3[0m [1m[94m|[0m use candle_core::{DType, Device, Tensor, D};
+  [1m[94m|[0m                   [1m[33m^^^^^[0m
+  [1m[94m|[0m
+  [1m[94m= [0m[1mnote[0m: `#[warn(unused_imports)]` (part of `#[warn(unused)]`) on by default
+
+[1m[91merror[E0277][0m[1m: the trait bound `&f64: WithDType` is not satisfied[0m
+   [1m[94m--> [0msrc/main.rs:42:9
+    [1m[94m|[0m
+[1m[94m 41[0m [1m[94m|[0m     let out = Tensor::from_slice(
+    [1m[94m|[0m               [1m[94m------------------[0m [1m[94mrequired by a bound introduced by this call[0m
+[1m[94m 42[0m [1m[94m|[0m         data.as_slice(),
+    [1m[94m|[0m         [1m[91m^^^^^^^^^^^^^^^[0m [1m[91mthe trait `WithDType` is not implemented for `&f64`[0m
+    [1m[94m|[0m
+[1m[96mhelp[0m: the trait `WithDType` [1m[35mis[0m implemented for `[1m[35mf64[0m`
+   [1m[94m--> [0m/Users/stephen/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/candle-core-0.11.0/src/dtype.rs:176:9
+    [1m[94m|[0m
+[1m[94m176[0m [1m[94m|[0m         impl WithDType for $ty {
+    [1m[94m|[0m         [1m[96m^^^^^^^^^^^^^^^^^^^^^^[0m
+[1m[94m...[0m
+[1m[94m236[0m [1m[94m|[0m with_dtype!(f64, F64, |v: f64| v, |v: f64| v);
+    [1m[94m|[0m [1m[94m---------------------------------------------[0m [1m[94min this macro invocation[0m
+[1m[92mnote[0m: required by a bound in `candle_core::Tensor::from_slice`
+   [1m[94m--> [0m/Users/stephen/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/candle-core-0.11.0/src/tensor.rs:564:47
+    [1m[94m|[0m
+[1m[94m564[0m [1m[94m|[0m     pub fn from_slice<S: ShapeWithOneHole, D: crate::WithDType>(
+    [1m[94m|[0m                                               [1m[92m^^^^^^^^^^^^^^^^[0m [1m[92mrequired by this bound in `Tensor::from_slice`[0m
+    [1m[94m= [0m[1mnote[0m: this error originates in the macro `with_dtype` (in Nightly builds, run with -Z macro-backtrace for more info)
+
+[1mFor more information about this error, try `rustc --explain E0277`.[0m
+[1m[33mwarning[0m: `rust-candle-course` (bin "rust-candle-course") generated 1 warning
+[1m[91merror[0m: could not compile `rust-candle-course` (bin "rust-candle-course") due to 1 previous error; 1 warning emitted
+[1m[38;5;255m[48;5;240m rust-candle-course [0m[1m[38;5;235m[48;5;204m check [0m[1m[38;5;235m[48;5;9m  1 error  [0m[1m[38;5;235m[48;5;11m  1 warning  [0m
+[1m[92m    Checking[0m rust-candle-course v0.1.0 (/Users/stephen/Desktop/rust-candle-course)
+[1m[33mwarning[0m[1m: unused import: `DType`[0m
+ [1m[94m--> [0msrc/main.rs:3:19
+  [1m[94m|[0m
+[1m[94m3[0m [1m[94m|[0m use candle_core::{DType, Device, Tensor, D};
+  [1m[94m|[0m                   [1m[33m^^^^^[0m
+  [1m[94m|[0m
+  [1m[94m= [0m[1mnote[0m: `#[warn(unused_imports)]` (part of `#[warn(unused)]`) on by default
+
+[1m[91merror[E0277][0m[1m: the trait bound `&f64: WithDType` is not satisfied[0m
+   [1m[94m--> [0msrc/main.rs:42:9
+    [1m[94m|[0m
+[1m[94m 41[0m [1m[94m|[0m     let out = Tensor::from_slice(
+    [1m[94m|[0m               [1m[94m------------------[0m [1m[94mrequired by a bound introduced by this call[0m
+[1m[94m 42[0m [1m[94m|[0m         data.as_slice(),
+    [1m[94m|[0m         [1m[91m^^^^^^^^^^^^^^^[0m [1m[91mthe trait `WithDType` is not implemented for `&f64`[0m
+    [1m[94m|[0m
+[1m[96mhelp[0m: the trait `WithDType` [1m[35mis[0m implemented for `[1m[35mf64[0m`
+   [1m[94m--> [0m/Users/stephen/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/candle-core-0.11.0/src/dtype.rs:176:9
+    [1m[94m|[0m
+[1m[94m176[0m [1m[94m|[0m         impl WithDType for $ty {
+    [1m[94m|[0m         [1m[96m^^^^^^^^^^^^^^^^^^^^^^[0m
+[1m[94m...[0m
+[1m[94m236[0m [1m[94m|[0m with_dtype!(f64, F64, |v: f64| v, |v: f64| v);
+    [1m[94m|[0m [1m[94m---------------------------------------------[0m [1m[94min this macro invocation[0m
+[1m[92mnote[0m: required by a bound in `candle_core::Tensor::from_slice`
+   [1m[94m--> [0m/Users/stephen/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/candle-core-0.11.0/src/tensor.rs:564:47
+    [1m[94m|[0m
+[1m[94m564[0m [1m[94m|[0m     pub fn from_slice<S: ShapeWithOneHole, D: crate::WithDType>(
+    [1m[94m|[0m                                               [1m[92m^^^^^^^^^^^^^^^^[0m [1m[92mrequired by this bound in `Tensor::from_slice`[0m
+    [1m[94m= [0m[1mnote[0m: this error originates in the macro `with_dtype` (in Nightly builds, run with -Z macro-backtrace for more info)
+
+[1mFor more information about this error, try `rustc --explain E0277`.[0m
+[1m[33mwarning[0m: `rust-candle-course` (bin "rust-candle-course") generated 1 warning
+[1m[91merror[0m: could not compile `rust-candle-course` (bin "rust-candle-course") due to 1 previous error; 1 warning emitted
+[1m[38;5;255m[48;5;240m rust-candle-course [0m[1m[38;5;235m[48;5;204m check [0m[1m[38;5;235m[48;5;9m  1 error  [0m[1m[38;5;235m[48;5;11m  1 warning  [0m
+[1m[92m    Checking[0m rust-candle-course v0.1.0 (/Users/stephen/Desktop/rust-candle-course)
+[1m[33mwarning[0m[1m: unused import: `DType`[0m
+ [1m[94m--> [0msrc/main.rs:3:19
+  [1m[94m|[0m
+[1m[94m3[0m [1m[94m|[0m use candle_core::{DType, Device, Tensor, D};
+  [1m[94m|[0m                   [1m[33m^^^^^[0m
+  [1m[94m|[0m
+  [1m[94m= [0m[1mnote[0m: `#[warn(unused_imports)]` (part of `#[warn(unused)]`) on by default
+
+[1m[91merror[E0277][0m[1m: a value of type `Vec<f64>` cannot be built from an iterator over elements of type `&f64`[0m
+  [1m[94m--> [0msrc/main.rs:40:10
+   [1m[94m|[0m
+[1m[94m40[0m [1m[94m|[0m         .collect();
+   [1m[94m|[0m          [1m[91m^^^^^^^[0m [1m[91mvalue of type `Vec<f64>` cannot be built from `std::iter::Iterator<Item=&f64>`[0m
+   [1m[94m|[0m
+[1m[96mhelp[0m: the trait `FromIterator<[1m[35m&[0m_>` [1m[35mis not[0m implemented for `Vec<f64>`
+      but trait `FromIterator<_>` [1m[35mis[0m implemented for it
+  [1m[94m--> [0m/rustc/65407954098ca3c19f0d46092cb374b5d3e9dc3c/library/alloc/src/vec/mod.rs:3935:0
+   [1m[94m= [0m[1mhelp[0m: for that trait implementation, expected `[1m[35mf64[0m`, found `[1m[35m&f64[0m`
+[1m[92mnote[0m: the method call chain might not have had the expected associated types
+  [1m[94m--> [0msrc/main.rs:39:10
+   [1m[94m|[0m
+[1m[94m24[0m [1m[94m|[0m     let mut data = vec![];
+   [1m[94m|[0m                    [1m[94m------[0m [1m[94mthis expression has type `Vec<Vec<f64>>`[0m
+[1m[94m...[0m
+[1m[94m38[0m [1m[94m|[0m         .iter()
+   [1m[94m|[0m          [1m[94m------[0m [1m[94m`Iterator::Item` is `&Vec<f64>` here[0m
+[1m[94m39[0m [1m[94m|[0m         .flatten()
+   [1m[94m|[0m          [1m[92m^^^^^^^^^[0m [1m[92m`Iterator::Item` changed to `&f64` here[0m
+[1m[92mnote[0m: required by a bound in `collect`
+  [1m[94m--> [0m/rustc/65407954098ca3c19f0d46092cb374b5d3e9dc3c/library/core/src/iter/traits/iterator.rs:2077:4
+
+[1mFor more information about this error, try `rustc --explain E0277`.[0m
+[1m[33mwarning[0m: `rust-candle-course` (bin "rust-candle-course") generated 1 warning
+[1m[91merror[0m: could not compile `rust-candle-course` (bin "rust-candle-course") due to 1 previous error; 1 warning emitted
+[1m[38;5;255m[48;5;240m rust-candle-course [0m[1m[38;5;235m[48;5;204m check [0m[1m[38;5;235m[48;5;9m  1 error  [0m[1m[38;5;235m[48;5;11m  1 warning  [0m
+[1m[92m    Checking[0m rust-candle-course v0.1.0 (/Users/stephen/Desktop/rust-candle-course)
+[1m[33mwarning[0m[1m: unused import: `DType`[0m
+ [1m[94m--> [0msrc/main.rs:3:19
+  [1m[94m|[0m
+[1m[94m3[0m [1m[94m|[0m use candle_core::{DType, Device, Tensor, D};
+  [1m[94m|[0m                   [1m[33m^^^^^[0m
+  [1m[94m|[0m
+  [1m[94m= [0m[1mnote[0m: `#[warn(unused_imports)]` (part of `#[warn(unused)]`) on by default
+
+[1m[91merror[E0277][0m[1m: a value of type `Vec<f32>` cannot be built from an iterator over elements of type `&f64`[0m
+  [1m[94m--> [0msrc/main.rs:40:10
+   [1m[94m|[0m
+[1m[94m40[0m [1m[94m|[0m         .collect();
+   [1m[94m|[0m          [1m[91m^^^^^^^[0m [1m[91mvalue of type `Vec<f32>` cannot be built from `std::iter::Iterator<Item=&f64>`[0m
+   [1m[94m|[0m
+[1m[96mhelp[0m: the trait `FromIterator<[1m[35m&[0m[1m[35mf64[0m>` [1m[35mis not[0m implemented for `Vec<f32>`
+      but trait `FromIterator<[1m[35mf32[0m>` [1m[35mis[0m implemented for it
+  [1m[94m--> [0m/rustc/65407954098ca3c19f0d46092cb374b5d3e9dc3c/library/alloc/src/vec/mod.rs:3935:0
+   [1m[94m= [0m[1mhelp[0m: for that trait implementation, expected `[1m[35mf32[0m`, found `[1m[35m&f64[0m`
+[1m[92mnote[0m: the method call chain might not have had the expected associated types
+  [1m[94m--> [0msrc/main.rs:39:10
+   [1m[94m|[0m
+[1m[94m24[0m [1m[94m|[0m     let mut data = vec![];
+   [1m[94m|[0m                    [1m[94m------[0m [1m[94mthis expression has type `Vec<Vec<f64>>`[0m
+[1m[94m...[0m
+[1m[94m38[0m [1m[94m|[0m         .iter()
+   [1m[94m|[0m          [1m[94m------[0m [1m[94m`Iterator::Item` is `&Vec<f64>` here[0m
+[1m[94m39[0m [1m[94m|[0m         .flatten()
+   [1m[94m|[0m          [1m[92m^^^^^^^^^[0m [1m[92m`Iterator::Item` changed to `&f64` here[0m
+[1m[92mnote[0m: required by a bound in `collect`
+  [1m[94m--> [0m/rustc/65407954098ca3c19f0d46092cb374b5d3e9dc3c/library/core/src/iter/traits/iterator.rs:2077:4
+
+[1mFor more information about this error, try `rustc --explain E0277`.[0m
+[1m[33mwarning[0m: `rust-candle-course` (bin "rust-candle-course") generated 1 warning
+[1m[91merror[0m: could not compile `rust-candle-course` (bin "rust-candle-course") due to 1 previous error; 1 warning emitted
+[1m[38;5;255m[48;5;240m rust-candle-course [0m[1m[38;5;235m[48;5;204m check [0m[1m[38;5;235m[48;5;9m  1 error  [0m[1m[38;5;235m[48;5;11m  1 warning  [0m
+[1m[92m    Checking[0m rust-candle-course v0.1.0 (/Users/stephen/Desktop/rust-candle-course)
+[1m[33mwarning[0m[1m: unused import: `DType`[0m
+ [1m[94m--> [0msrc/main.rs:3:19
+  [1m[94m|[0m
+[1m[94m3[0m [1m[94m|[0m use candle_core::{DType, Device, Tensor, D};
+  [1m[94m|[0m                   [1m[33m^^^^^[0m
+  [1m[94m|[0m
+  [1m[94m= [0m[1mnote[0m: `#[warn(unused_imports)]` (part of `#[warn(unused)]`) on by default
+
+[1m[91merror[E0277][0m[1m: the trait bound `&f64: WithDType` is not satisfied[0m
+   [1m[94m--> [0msrc/main.rs:42:9
+    [1m[94m|[0m
+[1m[94m 41[0m [1m[94m|[0m     let out = Tensor::from_slice(
+    [1m[94m|[0m               [1m[94m------------------[0m [1m[94mrequired by a bound introduced by this call[0m
+[1m[94m 42[0m [1m[94m|[0m         data.as_slice(),
+    [1m[94m|[0m         [1m[91m^^^^^^^^^^^^^^^[0m [1m[91mthe trait `WithDType` is not implemented for `&f64`[0m
+    [1m[94m|[0m
+[1m[96mhelp[0m: the trait `WithDType` [1m[35mis[0m implemented for `[1m[35mf64[0m`
+   [1m[94m--> [0m/Users/stephen/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/candle-core-0.11.0/src/dtype.rs:176:9
+    [1m[94m|[0m
+[1m[94m176[0m [1m[94m|[0m         impl WithDType for $ty {
+    [1m[94m|[0m         [1m[96m^^^^^^^^^^^^^^^^^^^^^^[0m
+[1m[94m...[0m
+[1m[94m236[0m [1m[94m|[0m with_dtype!(f64, F64, |v: f64| v, |v: f64| v);
+    [1m[94m|[0m [1m[94m---------------------------------------------[0m [1m[94min this macro invocation[0m
+[1m[92mnote[0m: required by a bound in `candle_core::Tensor::from_slice`
+   [1m[94m--> [0m/Users/stephen/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/candle-core-0.11.0/src/tensor.rs:564:47
+    [1m[94m|[0m
+[1m[94m564[0m [1m[94m|[0m     pub fn from_slice<S: ShapeWithOneHole, D: crate::WithDType>(
+    [1m[94m|[0m                                               [1m[92m^^^^^^^^^^^^^^^^[0m [1m[92mrequired by this bound in `Tensor::from_slice`[0m
+    [1m[94m= [0m[1mnote[0m: this error originates in the macro `with_dtype` (in Nightly builds, run with -Z macro-backtrace for more info)
+
+[1mFor more information about this error, try `rustc --explain E0277`.[0m
+[1m[33mwarning[0m: `rust-candle-course` (bin "rust-candle-course") generated 1 warning
+[1m[91merror[0m: could not compile `rust-candle-course` (bin "rust-candle-course") due to 1 previous error; 1 warning emitted
+[1m[38;5;255m[48;5;240m rust-candle-course [0m[1m[38;5;235m[48;5;204m check [0m[1m[38;5;235m[48;5;9m  1 error  [0m[1m[38;5;235m[48;5;11m  1 warning  [0m
+[1m[92m    Checking[0m rust-candle-course v0.1.0 (/Users/stephen/Desktop/rust-candle-course)
+[1m[33mwarning[0m[1m: unused import: `DType`[0m
+ [1m[94m--> [0msrc/main.rs:3:19
+  [1m[94m|[0m
+[1m[94m3[0m [1m[94m|[0m use candle_core::{DType, Device, Tensor, D};
+  [1m[94m|[0m                   [1m[33m^^^^^[0m
+  [1m[94m|[0m
+  [1m[94m= [0m[1mnote[0m: `#[warn(unused_imports)]` (part of `#[warn(unused)]`) on by default
+
+[1m[91merror[E0277][0m[1m: a value of type `Vec<f64>` cannot be built from an iterator over elements of type `&f64`[0m
+  [1m[94m--> [0msrc/main.rs:40:10
+   [1m[94m|[0m
+[1m[94m40[0m [1m[94m|[0m         .collect();
+   [1m[94m|[0m          [1m[91m^^^^^^^[0m [1m[91mvalue of type `Vec<f64>` cannot be built from `std::iter::Iterator<Item=&f64>`[0m
+   [1m[94m|[0m
+[1m[96mhelp[0m: the trait `FromIterator<[1m[35m&[0m_>` [1m[35mis not[0m implemented for `Vec<f64>`
+      but trait `FromIterator<_>` [1m[35mis[0m implemented for it
+  [1m[94m--> [0m/rustc/65407954098ca3c19f0d46092cb374b5d3e9dc3c/library/alloc/src/vec/mod.rs:3935:0
+   [1m[94m= [0m[1mhelp[0m: for that trait implementation, expected `[1m[35mf64[0m`, found `[1m[35m&f64[0m`
+[1m[92mnote[0m: the method call chain might not have had the expected associated types
+  [1m[94m--> [0msrc/main.rs:39:10
+   [1m[94m|[0m
+[1m[94m24[0m [1m[94m|[0m     let mut data = vec![];
+   [1m[94m|[0m                    [1m[94m------[0m [1m[94mthis expression has type `Vec<Vec<f64>>`[0m
+[1m[94m...[0m
+[1m[94m38[0m [1m[94m|[0m         .iter()
+   [1m[94m|[0m          [1m[94m------[0m [1m[94m`Iterator::Item` is `&Vec<f64>` here[0m
+[1m[94m39[0m [1m[94m|[0m         .flatten()
+   [1m[94m|[0m          [1m[92m^^^^^^^^^[0m [1m[92m`Iterator::Item` changed to `&f64` here[0m
+[1m[92mnote[0m: required by a bound in `collect`
+  [1m[94m--> [0m/rustc/65407954098ca3c19f0d46092cb374b5d3e9dc3c/library/core/src/iter/traits/iterator.rs:2077:4
+
+[1mFor more information about this error, try `rustc --explain E0277`.[0m
+[1m[33mwarning[0m: `rust-candle-course` (bin "rust-candle-course") generated 1 warning
+[1m[91merror[0m: could not compile `rust-candle-course` (bin "rust-candle-course") due to 1 previous error; 1 warning emitted
+[1m[38;5;255m[48;5;240m rust-candle-course [0m[1m[38;5;235m[48;5;204m check [0m[1m[38;5;235m[48;5;9m  1 error  [0m[1m[38;5;235m[48;5;11m  1 warning  [0m
+[1m[92m    Checking[0m rust-candle-course v0.1.0 (/Users/stephen/Desktop/rust-candle-course)
+[1m[33mwarning[0m[1m: unused import: `DType`[0m
+ [1m[94m--> [0msrc/main.rs:3:19
+  [1m[94m|[0m
+[1m[94m3[0m [1m[94m|[0m use candle_core::{DType, Device, Tensor, D};
+  [1m[94m|[0m                   [1m[33m^^^^^[0m
+  [1m[94m|[0m
+  [1m[94m= [0m[1mnote[0m: `#[warn(unused_imports)]` (part of `#[warn(unused)]`) on by default
+
+[1m[33mwarning[0m[1m: unused variable: `features`[0m
+  [1m[94m--> [0msrc/main.rs:35:9
+   [1m[94m|[0m
+[1m[94m35[0m [1m[94m|[0m     let features = data[0].len();
+   [1m[94m|[0m         [1m[33m^^^^^^^^[0m [1m[33mhelp: if this is intentional, prefix it with an underscore: `_features`[0m
+   [1m[94m|[0m
+   [1m[94m= [0m[1mnote[0m: `#[warn(unused_variables)]` (part of `#[warn(unused)]`) on by default
+
+[1m[33mwarning[0m[1m: unused variable: `samples`[0m
+  [1m[94m--> [0msrc/main.rs:36:9
+   [1m[94m|[0m
+[1m[94m36[0m [1m[94m|[0m     let samples = data.len();
+   [1m[94m|[0m         [1m[33m^^^^^^^[0m [1m[33mhelp: if this is intentional, prefix it with an underscore: `_samples`[0m
+
+[1m[33mwarning[0m[1m: unused variable: `out`[0m
+  [1m[94m--> [0msrc/main.rs:41:9
+   [1m[94m|[0m
+[1m[94m41[0m [1m[94m|[0m     let out = Tensor::from_slice(
+   [1m[94m|[0m         [1m[33m^^^[0m [1m[33mhelp: if this is intentional, prefix it with an underscore: `_out`[0m
+
+[1m[33mwarning[0m[1m: function `cdist` is never used[0m
+ [1m[94m--> [0msrc/main.rs:9:4
+  [1m[94m|[0m
+[1m[94m9[0m [1m[94m|[0m fn cdist(x1: &Tensor, x2: &Tensor) -> Result<Tensor> {
+  [1m[94m|[0m    [1m[33m^^^^^[0m
+  [1m[94m|[0m
+  [1m[94m= [0m[1mnote[0m: `#[warn(dead_code)]` (part of `#[warn(unused)]`) on by default
+
+[1m[33mwarning[0m[1m: function `load_dataset` is never used[0m
+  [1m[94m--> [0msrc/main.rs:22:4
+   [1m[94m|[0m
+[1m[94m22[0m [1m[94m|[0m fn load_dataset(file: &str, device: &Device) -> Result<f32> {
+   [1m[94m|[0m    [1m[33m^^^^^^^^^^^^[0m
+
+[1m[33mwarning[0m: `rust-candle-course` (bin "rust-candle-course") generated 6 warnings (run `cargo fix --bin "rust-candle-course" -p rust-candle-course` to apply 4 suggestions)
+[1m[92m    Finished[0m `dev` profile [unoptimized + debuginfo] target(s) in 0.14s
+[1m[38;5;255m[48;5;240m rust-candle-course [0m[1m[38;5;235m[48;5;204m check [0m[1m[38;5;235m[48;5;11m  6 warnings  [0m
+[1m[92m    Checking[0m rust-candle-course v0.1.0 (/Users/stephen/Desktop/rust-candle-course)
+[1m[33mwarning[0m[1m: unused import: `DType`[0m
+ [1m[94m--> [0msrc/main.rs:3:19
+  [1m[94m|[0m
+[1m[94m3[0m [1m[94m|[0m use candle_core::{DType, Device, Tensor, D};
+  [1m[94m|[0m                   [1m[33m^^^^^[0m
+  [1m[94m|[0m
+  [1m[94m= [0m[1mnote[0m: `#[warn(unused_imports)]` (part of `#[warn(unused)]`) on by default
+
+[1m[33mwarning[0m[1m: unused variable: `out`[0m
+  [1m[94m--> [0msrc/main.rs:41:9
+   [1m[94m|[0m
+[1m[94m41[0m [1m[94m|[0m     let out = Tensor::from_slice(
+   [1m[94m|[0m         [1m[33m^^^[0m [1m[33mhelp: if this is intentional, prefix it with an underscore: `_out`[0m
+   [1m[94m|[0m
+   [1m[94m= [0m[1mnote[0m: `#[warn(unused_variables)]` (part of `#[warn(unused)]`) on by default
+
+[1m[33mwarning[0m[1m: function `cdist` is never used[0m
+ [1m[94m--> [0msrc/main.rs:9:4
+  [1m[94m|[0m
+[1m[94m9[0m [1m[94m|[0m fn cdist(x1: &Tensor, x2: &Tensor) -> Result<Tensor> {
+  [1m[94m|[0m    [1m[33m^^^^^[0m
+  [1m[94m|[0m
+  [1m[94m= [0m[1mnote[0m: `#[warn(dead_code)]` (part of `#[warn(unused)]`) on by default
+
+[1m[33mwarning[0m[1m: function `load_dataset` is never used[0m
+  [1m[94m--> [0msrc/main.rs:22:4
+   [1m[94m|[0m
+[1m[94m22[0m [1m[94m|[0m fn load_dataset(file: &str, device: &Device) -> Result<f32> {
+   [1m[94m|[0m    [1m[33m^^^^^^^^^^^^[0m
+
+[1m[33mwarning[0m: `rust-candle-course` (bin "rust-candle-course") generated 4 warnings (run `cargo fix --bin "rust-candle-course" -p rust-candle-course` to apply 2 suggestions)
+[1m[92m    Finished[0m `dev` profile [unoptimized + debuginfo] target(s) in 0.13s
+[1m[38;5;255m[48;5;240m rust-candle-course [0m[1m[38;5;235m[48;5;204m check [0m[1m[38;5;235m[48;5;11m  4 warnings  [0m
+[1m[92m    Checking[0m rust-candle-course v0.1.0 (/Users/stephen/Desktop/rust-candle-course)
+[1m[33mwarning[0m[1m: unused import: `DType`[0m
+ [1m[94m--> [0msrc/main.rs:3:19
+  [1m[94m|[0m
+[1m[94m3[0m [1m[94m|[0m use candle_core::{DType, Device, Tensor, D};
+  [1m[94m|[0m                   [1m[33m^^^^^[0m
+  [1m[94m|[0m
+  [1m[94m= [0m[1mnote[0m: `#[warn(unused_imports)]` (part of `#[warn(unused)]`) on by default
+
+[1m[33mwarning[0m[1m: function `cdist` is never used[0m
+ [1m[94m--> [0msrc/main.rs:9:4
+  [1m[94m|[0m
+[1m[94m9[0m [1m[94m|[0m fn cdist(x1: &Tensor, x2: &Tensor) -> Result<Tensor> {
+  [1m[94m|[0m    [1m[33m^^^^^[0m
+  [1m[94m|[0m
+  [1m[94m= [0m[1mnote[0m: `#[warn(dead_code)]` (part of `#[warn(unused)]`) on by default
+
+[1m[33mwarning[0m[1m: function `load_dataset` is never used[0m
+  [1m[94m--> [0msrc/main.rs:22:4
+   [1m[94m|[0m
+[1m[94m22[0m [1m[94m|[0m fn load_dataset(file: &str, device: &Device) -> Result<Tensor> {
+   [1m[94m|[0m    [1m[33m^^^^^^^^^^^^[0m
+
+[1m[33mwarning[0m: `rust-candle-course` (bin "rust-candle-course") generated 3 warnings (run `cargo fix --bin "rust-candle-course" -p rust-candle-course` to apply 1 suggestion)
+[1m[92m    Finished[0m `dev` profile [unoptimized + debuginfo] target(s) in 0.13s
+[1m[38;5;255m[48;5;240m rust-candle-course [0m[1m[38;5;235m[48;5;204m check [0m[1m[38;5;235m[48;5;11m  3 warnings  [0m
