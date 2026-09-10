@@ -196,29 +196,7 @@
             },
             {
               "csi": "\u001b[1m",
-              "raw": ": function `cdist` is never used"
-            }
-          ]
-        }
-      },
-      {
-        "item_idx": 0,
-        "line_type": {
-          "Raw": "StdErr"
-        },
-        "content": {
-          "strings": [
-            {
-              "csi": "",
-              "raw": " "
-            },
-            {
-              "csi": "\u001b[1m\u001b[94m",
-              "raw": "--> "
-            },
-            {
-              "csi": "",
-              "raw": "src/main.rs:9:4"
+              "raw": ": variable does not need to be mutable"
             }
           ]
         }
@@ -236,6 +214,28 @@
             },
             {
               "csi": "\u001b[1m\u001b[94m",
+              "raw": "--> "
+            },
+            {
+              "csi": "",
+              "raw": "src/main.rs:54:9"
+            }
+          ]
+        }
+      },
+      {
+        "item_idx": 0,
+        "line_type": {
+          "Raw": "StdErr"
+        },
+        "content": {
+          "strings": [
+            {
+              "csi": "",
+              "raw": "   "
+            },
+            {
+              "csi": "\u001b[1m\u001b[94m",
               "raw": "|"
             }
           ]
@@ -250,7 +250,778 @@
           "strings": [
             {
               "csi": "\u001b[1m\u001b[94m",
-              "raw": "9"
+              "raw": "54"
+            },
+            {
+              "csi": "",
+              "raw": " "
+            },
+            {
+              "csi": "\u001b[1m\u001b[94m",
+              "raw": "|"
+            },
+            {
+              "csi": "",
+              "raw": "     let mut rng = rand::rng().random_range(1..=100);"
+            }
+          ]
+        }
+      },
+      {
+        "item_idx": 0,
+        "line_type": {
+          "Raw": "StdErr"
+        },
+        "content": {
+          "strings": [
+            {
+              "csi": "",
+              "raw": "   "
+            },
+            {
+              "csi": "\u001b[1m\u001b[94m",
+              "raw": "|"
+            },
+            {
+              "csi": "",
+              "raw": "         "
+            },
+            {
+              "csi": "\u001b[1m\u001b[94m",
+              "raw": "----"
+            },
+            {
+              "csi": "\u001b[1m\u001b[33m",
+              "raw": "^^^"
+            }
+          ]
+        }
+      },
+      {
+        "item_idx": 0,
+        "line_type": {
+          "Raw": "StdErr"
+        },
+        "content": {
+          "strings": [
+            {
+              "csi": "",
+              "raw": "   "
+            },
+            {
+              "csi": "\u001b[1m\u001b[94m",
+              "raw": "|"
+            },
+            {
+              "csi": "",
+              "raw": "         "
+            },
+            {
+              "csi": "\u001b[1m\u001b[94m",
+              "raw": "|"
+            }
+          ]
+        }
+      },
+      {
+        "item_idx": 0,
+        "line_type": {
+          "Raw": "StdErr"
+        },
+        "content": {
+          "strings": [
+            {
+              "csi": "",
+              "raw": "   "
+            },
+            {
+              "csi": "\u001b[1m\u001b[94m",
+              "raw": "|"
+            },
+            {
+              "csi": "",
+              "raw": "         "
+            },
+            {
+              "csi": "\u001b[1m\u001b[94m",
+              "raw": "help: remove this `mut`"
+            }
+          ]
+        }
+      },
+      {
+        "item_idx": 0,
+        "line_type": {
+          "Raw": "StdErr"
+        },
+        "content": {
+          "strings": [
+            {
+              "csi": "",
+              "raw": "   "
+            },
+            {
+              "csi": "\u001b[1m\u001b[94m",
+              "raw": "|"
+            }
+          ]
+        }
+      },
+      {
+        "item_idx": 0,
+        "line_type": {
+          "Raw": "StdErr"
+        },
+        "content": {
+          "strings": [
+            {
+              "csi": "",
+              "raw": "   "
+            },
+            {
+              "csi": "\u001b[1m\u001b[94m",
+              "raw": "= "
+            },
+            {
+              "csi": "\u001b[1m",
+              "raw": "note"
+            },
+            {
+              "csi": "",
+              "raw": ": `#[warn(unused_mut)]` (part of `#[warn(unused)]`) on by default"
+            }
+          ]
+        }
+      },
+      {
+        "item_idx": 0,
+        "line_type": {
+          "Raw": "StdErr"
+        },
+        "content": {
+          "strings": []
+        }
+      },
+      {
+        "item_idx": 0,
+        "line_type": {
+          "Raw": "StdErr"
+        },
+        "content": {
+          "strings": [
+            {
+              "csi": "\u001b[1m\u001b[33m",
+              "raw": "warning"
+            },
+            {
+              "csi": "\u001b[1m",
+              "raw": ": unused variable: `cluters`"
+            }
+          ]
+        }
+      },
+      {
+        "item_idx": 0,
+        "line_type": {
+          "Raw": "StdErr"
+        },
+        "content": {
+          "strings": [
+            {
+              "csi": "",
+              "raw": "  "
+            },
+            {
+              "csi": "\u001b[1m\u001b[94m",
+              "raw": "--> "
+            },
+            {
+              "csi": "",
+              "raw": "src/main.rs:51:27"
+            }
+          ]
+        }
+      },
+      {
+        "item_idx": 0,
+        "line_type": {
+          "Raw": "StdErr"
+        },
+        "content": {
+          "strings": [
+            {
+              "csi": "",
+              "raw": "   "
+            },
+            {
+              "csi": "\u001b[1m\u001b[94m",
+              "raw": "|"
+            }
+          ]
+        }
+      },
+      {
+        "item_idx": 0,
+        "line_type": {
+          "Raw": "StdErr"
+        },
+        "content": {
+          "strings": [
+            {
+              "csi": "\u001b[1m\u001b[94m",
+              "raw": "51"
+            },
+            {
+              "csi": "",
+              "raw": " "
+            },
+            {
+              "csi": "\u001b[1m\u001b[94m",
+              "raw": "|"
+            },
+            {
+              "csi": "",
+              "raw": " fn k_means(data: &Tensor, cluters: usize, device: &Device) -> Result<()> {"
+            }
+          ]
+        }
+      },
+      {
+        "item_idx": 0,
+        "line_type": {
+          "Raw": "StdErr"
+        },
+        "content": {
+          "strings": [
+            {
+              "csi": "",
+              "raw": "   "
+            },
+            {
+              "csi": "\u001b[1m\u001b[94m",
+              "raw": "|"
+            },
+            {
+              "csi": "",
+              "raw": "                           "
+            },
+            {
+              "csi": "\u001b[1m\u001b[33m",
+              "raw": "^^^^^^^"
+            },
+            {
+              "csi": "",
+              "raw": " "
+            },
+            {
+              "csi": "\u001b[1m\u001b[33m",
+              "raw": "help: if this is intentional, prefix it with an underscore: `_cluters`"
+            }
+          ]
+        }
+      },
+      {
+        "item_idx": 0,
+        "line_type": {
+          "Raw": "StdErr"
+        },
+        "content": {
+          "strings": [
+            {
+              "csi": "",
+              "raw": "   "
+            },
+            {
+              "csi": "\u001b[1m\u001b[94m",
+              "raw": "|"
+            }
+          ]
+        }
+      },
+      {
+        "item_idx": 0,
+        "line_type": {
+          "Raw": "StdErr"
+        },
+        "content": {
+          "strings": [
+            {
+              "csi": "",
+              "raw": "   "
+            },
+            {
+              "csi": "\u001b[1m\u001b[94m",
+              "raw": "= "
+            },
+            {
+              "csi": "\u001b[1m",
+              "raw": "note"
+            },
+            {
+              "csi": "",
+              "raw": ": `#[warn(unused_variables)]` (part of `#[warn(unused)]`) on by default"
+            }
+          ]
+        }
+      },
+      {
+        "item_idx": 0,
+        "line_type": {
+          "Raw": "StdErr"
+        },
+        "content": {
+          "strings": []
+        }
+      },
+      {
+        "item_idx": 0,
+        "line_type": {
+          "Raw": "StdErr"
+        },
+        "content": {
+          "strings": [
+            {
+              "csi": "\u001b[1m\u001b[33m",
+              "raw": "warning"
+            },
+            {
+              "csi": "\u001b[1m",
+              "raw": ": unused variable: `device`"
+            }
+          ]
+        }
+      },
+      {
+        "item_idx": 0,
+        "line_type": {
+          "Raw": "StdErr"
+        },
+        "content": {
+          "strings": [
+            {
+              "csi": "",
+              "raw": "  "
+            },
+            {
+              "csi": "\u001b[1m\u001b[94m",
+              "raw": "--> "
+            },
+            {
+              "csi": "",
+              "raw": "src/main.rs:51:43"
+            }
+          ]
+        }
+      },
+      {
+        "item_idx": 0,
+        "line_type": {
+          "Raw": "StdErr"
+        },
+        "content": {
+          "strings": [
+            {
+              "csi": "",
+              "raw": "   "
+            },
+            {
+              "csi": "\u001b[1m\u001b[94m",
+              "raw": "|"
+            }
+          ]
+        }
+      },
+      {
+        "item_idx": 0,
+        "line_type": {
+          "Raw": "StdErr"
+        },
+        "content": {
+          "strings": [
+            {
+              "csi": "\u001b[1m\u001b[94m",
+              "raw": "51"
+            },
+            {
+              "csi": "",
+              "raw": " "
+            },
+            {
+              "csi": "\u001b[1m\u001b[94m",
+              "raw": "|"
+            },
+            {
+              "csi": "",
+              "raw": " fn k_means(data: &Tensor, cluters: usize, device: &Device) -> Result<()> {"
+            }
+          ]
+        }
+      },
+      {
+        "item_idx": 0,
+        "line_type": {
+          "Raw": "StdErr"
+        },
+        "content": {
+          "strings": [
+            {
+              "csi": "",
+              "raw": "   "
+            },
+            {
+              "csi": "\u001b[1m\u001b[94m",
+              "raw": "|"
+            },
+            {
+              "csi": "",
+              "raw": "                                           "
+            },
+            {
+              "csi": "\u001b[1m\u001b[33m",
+              "raw": "^^^^^^"
+            },
+            {
+              "csi": "",
+              "raw": " "
+            },
+            {
+              "csi": "\u001b[1m\u001b[33m",
+              "raw": "help: if this is intentional, prefix it with an underscore: `_device`"
+            }
+          ]
+        }
+      },
+      {
+        "item_idx": 0,
+        "line_type": {
+          "Raw": "StdErr"
+        },
+        "content": {
+          "strings": []
+        }
+      },
+      {
+        "item_idx": 0,
+        "line_type": {
+          "Raw": "StdErr"
+        },
+        "content": {
+          "strings": [
+            {
+              "csi": "\u001b[1m\u001b[33m",
+              "raw": "warning"
+            },
+            {
+              "csi": "\u001b[1m",
+              "raw": ": unused variable: `n`"
+            }
+          ]
+        }
+      },
+      {
+        "item_idx": 0,
+        "line_type": {
+          "Raw": "StdErr"
+        },
+        "content": {
+          "strings": [
+            {
+              "csi": "",
+              "raw": "  "
+            },
+            {
+              "csi": "\u001b[1m\u001b[94m",
+              "raw": "--> "
+            },
+            {
+              "csi": "",
+              "raw": "src/main.rs:52:10"
+            }
+          ]
+        }
+      },
+      {
+        "item_idx": 0,
+        "line_type": {
+          "Raw": "StdErr"
+        },
+        "content": {
+          "strings": [
+            {
+              "csi": "",
+              "raw": "   "
+            },
+            {
+              "csi": "\u001b[1m\u001b[94m",
+              "raw": "|"
+            }
+          ]
+        }
+      },
+      {
+        "item_idx": 0,
+        "line_type": {
+          "Raw": "StdErr"
+        },
+        "content": {
+          "strings": [
+            {
+              "csi": "\u001b[1m\u001b[94m",
+              "raw": "52"
+            },
+            {
+              "csi": "",
+              "raw": " "
+            },
+            {
+              "csi": "\u001b[1m\u001b[94m",
+              "raw": "|"
+            },
+            {
+              "csi": "",
+              "raw": "     let (n, _) = data.dims2()?;"
+            }
+          ]
+        }
+      },
+      {
+        "item_idx": 0,
+        "line_type": {
+          "Raw": "StdErr"
+        },
+        "content": {
+          "strings": [
+            {
+              "csi": "",
+              "raw": "   "
+            },
+            {
+              "csi": "\u001b[1m\u001b[94m",
+              "raw": "|"
+            },
+            {
+              "csi": "",
+              "raw": "          "
+            },
+            {
+              "csi": "\u001b[1m\u001b[33m",
+              "raw": "^"
+            },
+            {
+              "csi": "",
+              "raw": " "
+            },
+            {
+              "csi": "\u001b[1m\u001b[33m",
+              "raw": "help: if this is intentional, prefix it with an underscore: `_n`"
+            }
+          ]
+        }
+      },
+      {
+        "item_idx": 0,
+        "line_type": {
+          "Raw": "StdErr"
+        },
+        "content": {
+          "strings": []
+        }
+      },
+      {
+        "item_idx": 0,
+        "line_type": {
+          "Raw": "StdErr"
+        },
+        "content": {
+          "strings": [
+            {
+              "csi": "\u001b[1m\u001b[33m",
+              "raw": "warning"
+            },
+            {
+              "csi": "\u001b[1m",
+              "raw": ": unused variable: `rng`"
+            }
+          ]
+        }
+      },
+      {
+        "item_idx": 0,
+        "line_type": {
+          "Raw": "StdErr"
+        },
+        "content": {
+          "strings": [
+            {
+              "csi": "",
+              "raw": "  "
+            },
+            {
+              "csi": "\u001b[1m\u001b[94m",
+              "raw": "--> "
+            },
+            {
+              "csi": "",
+              "raw": "src/main.rs:54:9"
+            }
+          ]
+        }
+      },
+      {
+        "item_idx": 0,
+        "line_type": {
+          "Raw": "StdErr"
+        },
+        "content": {
+          "strings": [
+            {
+              "csi": "",
+              "raw": "   "
+            },
+            {
+              "csi": "\u001b[1m\u001b[94m",
+              "raw": "|"
+            }
+          ]
+        }
+      },
+      {
+        "item_idx": 0,
+        "line_type": {
+          "Raw": "StdErr"
+        },
+        "content": {
+          "strings": [
+            {
+              "csi": "\u001b[1m\u001b[94m",
+              "raw": "54"
+            },
+            {
+              "csi": "",
+              "raw": " "
+            },
+            {
+              "csi": "\u001b[1m\u001b[94m",
+              "raw": "|"
+            },
+            {
+              "csi": "",
+              "raw": "     let mut rng = rand::rng().random_range(1..=100);"
+            }
+          ]
+        }
+      },
+      {
+        "item_idx": 0,
+        "line_type": {
+          "Raw": "StdErr"
+        },
+        "content": {
+          "strings": [
+            {
+              "csi": "",
+              "raw": "   "
+            },
+            {
+              "csi": "\u001b[1m\u001b[94m",
+              "raw": "|"
+            },
+            {
+              "csi": "",
+              "raw": "         "
+            },
+            {
+              "csi": "\u001b[1m\u001b[33m",
+              "raw": "^^^^^^^"
+            },
+            {
+              "csi": "",
+              "raw": " "
+            },
+            {
+              "csi": "\u001b[1m\u001b[33m",
+              "raw": "help: if this is intentional, prefix it with an underscore: `_rng`"
+            }
+          ]
+        }
+      },
+      {
+        "item_idx": 0,
+        "line_type": {
+          "Raw": "StdErr"
+        },
+        "content": {
+          "strings": []
+        }
+      },
+      {
+        "item_idx": 0,
+        "line_type": {
+          "Raw": "StdErr"
+        },
+        "content": {
+          "strings": [
+            {
+              "csi": "\u001b[1m\u001b[33m",
+              "raw": "warning"
+            },
+            {
+              "csi": "\u001b[1m",
+              "raw": ": function `cdist` is never used"
+            }
+          ]
+        }
+      },
+      {
+        "item_idx": 0,
+        "line_type": {
+          "Raw": "StdErr"
+        },
+        "content": {
+          "strings": [
+            {
+              "csi": "",
+              "raw": "  "
+            },
+            {
+              "csi": "\u001b[1m\u001b[94m",
+              "raw": "--> "
+            },
+            {
+              "csi": "",
+              "raw": "src/main.rs:10:4"
+            }
+          ]
+        }
+      },
+      {
+        "item_idx": 0,
+        "line_type": {
+          "Raw": "StdErr"
+        },
+        "content": {
+          "strings": [
+            {
+              "csi": "",
+              "raw": "   "
+            },
+            {
+              "csi": "\u001b[1m\u001b[94m",
+              "raw": "|"
+            }
+          ]
+        }
+      },
+      {
+        "item_idx": 0,
+        "line_type": {
+          "Raw": "StdErr"
+        },
+        "content": {
+          "strings": [
+            {
+              "csi": "\u001b[1m\u001b[94m",
+              "raw": "10"
             },
             {
               "csi": "",
@@ -276,7 +1047,7 @@
           "strings": [
             {
               "csi": "",
-              "raw": "  "
+              "raw": "   "
             },
             {
               "csi": "\u001b[1m\u001b[94m",
@@ -302,7 +1073,7 @@
           "strings": [
             {
               "csi": "",
-              "raw": "  "
+              "raw": "   "
             },
             {
               "csi": "\u001b[1m\u001b[94m",
@@ -320,7 +1091,7 @@
           "strings": [
             {
               "csi": "",
-              "raw": "  "
+              "raw": "   "
             },
             {
               "csi": "\u001b[1m\u001b[94m",
@@ -359,7 +1130,7 @@
             },
             {
               "csi": "\u001b[1m",
-              "raw": ": function `load_dataset` is never used"
+              "raw": ": function `k_means` is never used"
             }
           ]
         }
@@ -381,7 +1152,7 @@
             },
             {
               "csi": "",
-              "raw": "src/main.rs:22:4"
+              "raw": "src/main.rs:51:4"
             }
           ]
         }
@@ -413,7 +1184,7 @@
           "strings": [
             {
               "csi": "\u001b[1m\u001b[94m",
-              "raw": "22"
+              "raw": "51"
             },
             {
               "csi": "",
@@ -425,7 +1196,7 @@
             },
             {
               "csi": "",
-              "raw": " fn load_dataset(file: &str, device: &Device) -> Result<Tensor> {"
+              "raw": " fn k_means(data: &Tensor, cluters: usize, device: &Device) -> Result<()> {"
             }
           ]
         }
@@ -451,7 +1222,7 @@
             },
             {
               "csi": "\u001b[1m\u001b[33m",
-              "raw": "^^^^^^^^^^^^"
+              "raw": "^^^^^^^"
             }
           ]
         }
@@ -478,7 +1249,7 @@
             },
             {
               "csi": "",
-              "raw": ": `rust-candle-course` (bin \"rust-candle-course\") generated 3 warnings (run `cargo fix --bin \"rust-candle-course\" -p rust-candle-course` to apply 1 suggestion)"
+              "raw": ": `rust-candle-course` (bin \"rust-candle-course\") generated 8 warnings (run `cargo fix --bin \"rust-candle-course\" -p rust-candle-course` to apply 6 suggestions)"
             }
           ]
         }
@@ -496,7 +1267,7 @@
             },
             {
               "csi": "",
-              "raw": " `dev` profile [unoptimized + debuginfo] target(s) in 0.13s"
+              "raw": " `dev` profile [unoptimized + debuginfo] target(s) in 0.12s"
             }
           ]
         }
@@ -666,7 +1437,7 @@
           },
           {
             "csi": "\u001b[1m",
-            "raw": ": function `cdist` is never used"
+            "raw": ": variable does not need to be mutable"
           }
         ]
       }
@@ -678,7 +1449,7 @@
         "strings": [
           {
             "csi": "",
-            "raw": " "
+            "raw": "  "
           },
           {
             "csi": "\u001b[1m\u001b[94m",
@@ -686,7 +1457,7 @@
           },
           {
             "csi": "",
-            "raw": "src/main.rs:9:4"
+            "raw": "src/main.rs:54:9"
           }
         ]
       }
@@ -698,7 +1469,7 @@
         "strings": [
           {
             "csi": "",
-            "raw": "  "
+            "raw": "   "
           },
           {
             "csi": "\u001b[1m\u001b[94m",
@@ -714,7 +1485,7 @@
         "strings": [
           {
             "csi": "\u001b[1m\u001b[94m",
-            "raw": "9"
+            "raw": "54"
           },
           {
             "csi": "",
@@ -726,7 +1497,7 @@
           },
           {
             "csi": "",
-            "raw": " fn cdist(x1: &Tensor, x2: &Tensor) -> Result<Tensor> {"
+            "raw": "     let mut rng = rand::rng().random_range(1..=100);"
           }
         ]
       }
@@ -738,7 +1509,7 @@
         "strings": [
           {
             "csi": "",
-            "raw": "  "
+            "raw": "   "
           },
           {
             "csi": "\u001b[1m\u001b[94m",
@@ -746,11 +1517,15 @@
           },
           {
             "csi": "",
-            "raw": "    "
+            "raw": "         "
+          },
+          {
+            "csi": "\u001b[1m\u001b[94m",
+            "raw": "----"
           },
           {
             "csi": "\u001b[1m\u001b[33m",
-            "raw": "^^^^^"
+            "raw": "^^^"
           }
         ]
       }
@@ -762,7 +1537,15 @@
         "strings": [
           {
             "csi": "",
-            "raw": "  "
+            "raw": "   "
+          },
+          {
+            "csi": "\u001b[1m\u001b[94m",
+            "raw": "|"
+          },
+          {
+            "csi": "",
+            "raw": "         "
           },
           {
             "csi": "\u001b[1m\u001b[94m",
@@ -778,7 +1561,47 @@
         "strings": [
           {
             "csi": "",
-            "raw": "  "
+            "raw": "   "
+          },
+          {
+            "csi": "\u001b[1m\u001b[94m",
+            "raw": "|"
+          },
+          {
+            "csi": "",
+            "raw": "         "
+          },
+          {
+            "csi": "\u001b[1m\u001b[94m",
+            "raw": "help: remove this `mut`"
+          }
+        ]
+      }
+    },
+    {
+      "item_idx": 2,
+      "line_type": "Normal",
+      "content": {
+        "strings": [
+          {
+            "csi": "",
+            "raw": "   "
+          },
+          {
+            "csi": "\u001b[1m\u001b[94m",
+            "raw": "|"
+          }
+        ]
+      }
+    },
+    {
+      "item_idx": 2,
+      "line_type": "Normal",
+      "content": {
+        "strings": [
+          {
+            "csi": "",
+            "raw": "   "
           },
           {
             "csi": "\u001b[1m\u001b[94m",
@@ -790,7 +1613,7 @@
           },
           {
             "csi": "",
-            "raw": ": `#[warn(dead_code)]` (part of `#[warn(unused)]`) on by default"
+            "raw": ": `#[warn(unused_mut)]` (part of `#[warn(unused)]`) on by default"
           }
         ]
       }
@@ -815,7 +1638,7 @@
           },
           {
             "csi": "\u001b[1m",
-            "raw": ": function `load_dataset` is never used"
+            "raw": ": unused variable: `cluters`"
           }
         ]
       }
@@ -835,7 +1658,7 @@
           },
           {
             "csi": "",
-            "raw": "src/main.rs:22:4"
+            "raw": "src/main.rs:51:27"
           }
         ]
       }
@@ -863,7 +1686,7 @@
         "strings": [
           {
             "csi": "\u001b[1m\u001b[94m",
-            "raw": "22"
+            "raw": "51"
           },
           {
             "csi": "",
@@ -875,13 +1698,521 @@
           },
           {
             "csi": "",
-            "raw": " fn load_dataset(file: &str, device: &Device) -> Result<Tensor> {"
+            "raw": " fn k_means(data: &Tensor, cluters: usize, device: &Device) -> Result<()> {"
           }
         ]
       }
     },
     {
       "item_idx": 3,
+      "line_type": "Normal",
+      "content": {
+        "strings": [
+          {
+            "csi": "",
+            "raw": "   "
+          },
+          {
+            "csi": "\u001b[1m\u001b[94m",
+            "raw": "|"
+          },
+          {
+            "csi": "",
+            "raw": "                           "
+          },
+          {
+            "csi": "\u001b[1m\u001b[33m",
+            "raw": "^^^^^^^"
+          },
+          {
+            "csi": "",
+            "raw": " "
+          },
+          {
+            "csi": "\u001b[1m\u001b[33m",
+            "raw": "help: if this is intentional, prefix it with an underscore: `_cluters`"
+          }
+        ]
+      }
+    },
+    {
+      "item_idx": 3,
+      "line_type": "Normal",
+      "content": {
+        "strings": [
+          {
+            "csi": "",
+            "raw": "   "
+          },
+          {
+            "csi": "\u001b[1m\u001b[94m",
+            "raw": "|"
+          }
+        ]
+      }
+    },
+    {
+      "item_idx": 3,
+      "line_type": "Normal",
+      "content": {
+        "strings": [
+          {
+            "csi": "",
+            "raw": "   "
+          },
+          {
+            "csi": "\u001b[1m\u001b[94m",
+            "raw": "= "
+          },
+          {
+            "csi": "\u001b[1m",
+            "raw": "note"
+          },
+          {
+            "csi": "",
+            "raw": ": `#[warn(unused_variables)]` (part of `#[warn(unused)]`) on by default"
+          }
+        ]
+      }
+    },
+    {
+      "item_idx": 3,
+      "line_type": "Normal",
+      "content": {
+        "strings": []
+      }
+    },
+    {
+      "item_idx": 4,
+      "line_type": {
+        "Title": "Warning"
+      },
+      "content": {
+        "strings": [
+          {
+            "csi": "\u001b[1m\u001b[33m",
+            "raw": "warning"
+          },
+          {
+            "csi": "\u001b[1m",
+            "raw": ": unused variable: `device`"
+          }
+        ]
+      }
+    },
+    {
+      "item_idx": 4,
+      "line_type": "Location",
+      "content": {
+        "strings": [
+          {
+            "csi": "",
+            "raw": "  "
+          },
+          {
+            "csi": "\u001b[1m\u001b[94m",
+            "raw": "--> "
+          },
+          {
+            "csi": "",
+            "raw": "src/main.rs:51:43"
+          }
+        ]
+      }
+    },
+    {
+      "item_idx": 4,
+      "line_type": "Normal",
+      "content": {
+        "strings": [
+          {
+            "csi": "",
+            "raw": "   "
+          },
+          {
+            "csi": "\u001b[1m\u001b[94m",
+            "raw": "|"
+          }
+        ]
+      }
+    },
+    {
+      "item_idx": 4,
+      "line_type": "Normal",
+      "content": {
+        "strings": [
+          {
+            "csi": "\u001b[1m\u001b[94m",
+            "raw": "51"
+          },
+          {
+            "csi": "",
+            "raw": " "
+          },
+          {
+            "csi": "\u001b[1m\u001b[94m",
+            "raw": "|"
+          },
+          {
+            "csi": "",
+            "raw": " fn k_means(data: &Tensor, cluters: usize, device: &Device) -> Result<()> {"
+          }
+        ]
+      }
+    },
+    {
+      "item_idx": 4,
+      "line_type": "Normal",
+      "content": {
+        "strings": [
+          {
+            "csi": "",
+            "raw": "   "
+          },
+          {
+            "csi": "\u001b[1m\u001b[94m",
+            "raw": "|"
+          },
+          {
+            "csi": "",
+            "raw": "                                           "
+          },
+          {
+            "csi": "\u001b[1m\u001b[33m",
+            "raw": "^^^^^^"
+          },
+          {
+            "csi": "",
+            "raw": " "
+          },
+          {
+            "csi": "\u001b[1m\u001b[33m",
+            "raw": "help: if this is intentional, prefix it with an underscore: `_device`"
+          }
+        ]
+      }
+    },
+    {
+      "item_idx": 4,
+      "line_type": "Normal",
+      "content": {
+        "strings": []
+      }
+    },
+    {
+      "item_idx": 5,
+      "line_type": {
+        "Title": "Warning"
+      },
+      "content": {
+        "strings": [
+          {
+            "csi": "\u001b[1m\u001b[33m",
+            "raw": "warning"
+          },
+          {
+            "csi": "\u001b[1m",
+            "raw": ": unused variable: `n`"
+          }
+        ]
+      }
+    },
+    {
+      "item_idx": 5,
+      "line_type": "Location",
+      "content": {
+        "strings": [
+          {
+            "csi": "",
+            "raw": "  "
+          },
+          {
+            "csi": "\u001b[1m\u001b[94m",
+            "raw": "--> "
+          },
+          {
+            "csi": "",
+            "raw": "src/main.rs:52:10"
+          }
+        ]
+      }
+    },
+    {
+      "item_idx": 5,
+      "line_type": "Normal",
+      "content": {
+        "strings": [
+          {
+            "csi": "",
+            "raw": "   "
+          },
+          {
+            "csi": "\u001b[1m\u001b[94m",
+            "raw": "|"
+          }
+        ]
+      }
+    },
+    {
+      "item_idx": 5,
+      "line_type": "Normal",
+      "content": {
+        "strings": [
+          {
+            "csi": "\u001b[1m\u001b[94m",
+            "raw": "52"
+          },
+          {
+            "csi": "",
+            "raw": " "
+          },
+          {
+            "csi": "\u001b[1m\u001b[94m",
+            "raw": "|"
+          },
+          {
+            "csi": "",
+            "raw": "     let (n, _) = data.dims2()?;"
+          }
+        ]
+      }
+    },
+    {
+      "item_idx": 5,
+      "line_type": "Normal",
+      "content": {
+        "strings": [
+          {
+            "csi": "",
+            "raw": "   "
+          },
+          {
+            "csi": "\u001b[1m\u001b[94m",
+            "raw": "|"
+          },
+          {
+            "csi": "",
+            "raw": "          "
+          },
+          {
+            "csi": "\u001b[1m\u001b[33m",
+            "raw": "^"
+          },
+          {
+            "csi": "",
+            "raw": " "
+          },
+          {
+            "csi": "\u001b[1m\u001b[33m",
+            "raw": "help: if this is intentional, prefix it with an underscore: `_n`"
+          }
+        ]
+      }
+    },
+    {
+      "item_idx": 5,
+      "line_type": "Normal",
+      "content": {
+        "strings": []
+      }
+    },
+    {
+      "item_idx": 6,
+      "line_type": {
+        "Title": "Warning"
+      },
+      "content": {
+        "strings": [
+          {
+            "csi": "\u001b[1m\u001b[33m",
+            "raw": "warning"
+          },
+          {
+            "csi": "\u001b[1m",
+            "raw": ": unused variable: `rng`"
+          }
+        ]
+      }
+    },
+    {
+      "item_idx": 6,
+      "line_type": "Location",
+      "content": {
+        "strings": [
+          {
+            "csi": "",
+            "raw": "  "
+          },
+          {
+            "csi": "\u001b[1m\u001b[94m",
+            "raw": "--> "
+          },
+          {
+            "csi": "",
+            "raw": "src/main.rs:54:9"
+          }
+        ]
+      }
+    },
+    {
+      "item_idx": 6,
+      "line_type": "Normal",
+      "content": {
+        "strings": [
+          {
+            "csi": "",
+            "raw": "   "
+          },
+          {
+            "csi": "\u001b[1m\u001b[94m",
+            "raw": "|"
+          }
+        ]
+      }
+    },
+    {
+      "item_idx": 6,
+      "line_type": "Normal",
+      "content": {
+        "strings": [
+          {
+            "csi": "\u001b[1m\u001b[94m",
+            "raw": "54"
+          },
+          {
+            "csi": "",
+            "raw": " "
+          },
+          {
+            "csi": "\u001b[1m\u001b[94m",
+            "raw": "|"
+          },
+          {
+            "csi": "",
+            "raw": "     let mut rng = rand::rng().random_range(1..=100);"
+          }
+        ]
+      }
+    },
+    {
+      "item_idx": 6,
+      "line_type": "Normal",
+      "content": {
+        "strings": [
+          {
+            "csi": "",
+            "raw": "   "
+          },
+          {
+            "csi": "\u001b[1m\u001b[94m",
+            "raw": "|"
+          },
+          {
+            "csi": "",
+            "raw": "         "
+          },
+          {
+            "csi": "\u001b[1m\u001b[33m",
+            "raw": "^^^^^^^"
+          },
+          {
+            "csi": "",
+            "raw": " "
+          },
+          {
+            "csi": "\u001b[1m\u001b[33m",
+            "raw": "help: if this is intentional, prefix it with an underscore: `_rng`"
+          }
+        ]
+      }
+    },
+    {
+      "item_idx": 6,
+      "line_type": "Normal",
+      "content": {
+        "strings": []
+      }
+    },
+    {
+      "item_idx": 7,
+      "line_type": {
+        "Title": "Warning"
+      },
+      "content": {
+        "strings": [
+          {
+            "csi": "\u001b[1m\u001b[33m",
+            "raw": "warning"
+          },
+          {
+            "csi": "\u001b[1m",
+            "raw": ": function `cdist` is never used"
+          }
+        ]
+      }
+    },
+    {
+      "item_idx": 7,
+      "line_type": "Location",
+      "content": {
+        "strings": [
+          {
+            "csi": "",
+            "raw": "  "
+          },
+          {
+            "csi": "\u001b[1m\u001b[94m",
+            "raw": "--> "
+          },
+          {
+            "csi": "",
+            "raw": "src/main.rs:10:4"
+          }
+        ]
+      }
+    },
+    {
+      "item_idx": 7,
+      "line_type": "Normal",
+      "content": {
+        "strings": [
+          {
+            "csi": "",
+            "raw": "   "
+          },
+          {
+            "csi": "\u001b[1m\u001b[94m",
+            "raw": "|"
+          }
+        ]
+      }
+    },
+    {
+      "item_idx": 7,
+      "line_type": "Normal",
+      "content": {
+        "strings": [
+          {
+            "csi": "\u001b[1m\u001b[94m",
+            "raw": "10"
+          },
+          {
+            "csi": "",
+            "raw": " "
+          },
+          {
+            "csi": "\u001b[1m\u001b[94m",
+            "raw": "|"
+          },
+          {
+            "csi": "",
+            "raw": " fn cdist(x1: &Tensor, x2: &Tensor) -> Result<Tensor> {"
+          }
+        ]
+      }
+    },
+    {
+      "item_idx": 7,
       "line_type": "Normal",
       "content": {
         "strings": [
@@ -899,18 +2230,167 @@
           },
           {
             "csi": "\u001b[1m\u001b[33m",
-            "raw": "^^^^^^^^^^^^"
+            "raw": "^^^^^"
+          }
+        ]
+      }
+    },
+    {
+      "item_idx": 7,
+      "line_type": "Normal",
+      "content": {
+        "strings": [
+          {
+            "csi": "",
+            "raw": "   "
+          },
+          {
+            "csi": "\u001b[1m\u001b[94m",
+            "raw": "|"
+          }
+        ]
+      }
+    },
+    {
+      "item_idx": 7,
+      "line_type": "Normal",
+      "content": {
+        "strings": [
+          {
+            "csi": "",
+            "raw": "   "
+          },
+          {
+            "csi": "\u001b[1m\u001b[94m",
+            "raw": "= "
+          },
+          {
+            "csi": "\u001b[1m",
+            "raw": "note"
+          },
+          {
+            "csi": "",
+            "raw": ": `#[warn(dead_code)]` (part of `#[warn(unused)]`) on by default"
+          }
+        ]
+      }
+    },
+    {
+      "item_idx": 7,
+      "line_type": "Normal",
+      "content": {
+        "strings": []
+      }
+    },
+    {
+      "item_idx": 8,
+      "line_type": {
+        "Title": "Warning"
+      },
+      "content": {
+        "strings": [
+          {
+            "csi": "\u001b[1m\u001b[33m",
+            "raw": "warning"
+          },
+          {
+            "csi": "\u001b[1m",
+            "raw": ": function `k_means` is never used"
+          }
+        ]
+      }
+    },
+    {
+      "item_idx": 8,
+      "line_type": "Location",
+      "content": {
+        "strings": [
+          {
+            "csi": "",
+            "raw": "  "
+          },
+          {
+            "csi": "\u001b[1m\u001b[94m",
+            "raw": "--> "
+          },
+          {
+            "csi": "",
+            "raw": "src/main.rs:51:4"
+          }
+        ]
+      }
+    },
+    {
+      "item_idx": 8,
+      "line_type": "Normal",
+      "content": {
+        "strings": [
+          {
+            "csi": "",
+            "raw": "   "
+          },
+          {
+            "csi": "\u001b[1m\u001b[94m",
+            "raw": "|"
+          }
+        ]
+      }
+    },
+    {
+      "item_idx": 8,
+      "line_type": "Normal",
+      "content": {
+        "strings": [
+          {
+            "csi": "\u001b[1m\u001b[94m",
+            "raw": "51"
+          },
+          {
+            "csi": "",
+            "raw": " "
+          },
+          {
+            "csi": "\u001b[1m\u001b[94m",
+            "raw": "|"
+          },
+          {
+            "csi": "",
+            "raw": " fn k_means(data: &Tensor, cluters: usize, device: &Device) -> Result<()> {"
+          }
+        ]
+      }
+    },
+    {
+      "item_idx": 8,
+      "line_type": "Normal",
+      "content": {
+        "strings": [
+          {
+            "csi": "",
+            "raw": "   "
+          },
+          {
+            "csi": "\u001b[1m\u001b[94m",
+            "raw": "|"
+          },
+          {
+            "csi": "",
+            "raw": "    "
+          },
+          {
+            "csi": "\u001b[1m\u001b[33m",
+            "raw": "^^^^^^^"
           }
         ]
       }
     }
   ],
   "stats": {
-    "warnings": 3,
+    "warnings": 8,
     "errors": 0,
     "test_fails": 0,
-    "location_lines": 3,
-    "normal_lines": 15
+    "location_lines": 8,
+    "normal_lines": 41
   },
   "suggest_backtrace": false,
   "failure_keys": [],

@@ -1,6 +1,7 @@
 use csv;
 use anyhow::Result;
 use candle_core::{DType, Device, Tensor, D};
+use rand::prelude::*;
 
 ///
 /// K-means Clustering
@@ -47,6 +48,20 @@ fn load_dataset(file: &str, device: &Device) -> Result<Tensor> {
     Ok(out)
 }
 
+fn k_means(data: &Tensor, cluters: usize, device: &Device) -> Result<()> {
+    let (n, _) = data.dims2()?;
+    //let mut rng = rand::thread_rng();
+    let mut rng = rand::rng().random_range(1..=100);
+    Ok(())
+}
+
 fn main() -> Result<()> {
+    let file: &str = "data/iris.csv";
+    let device: Device = Device::metal_if_available(0)?;
+    let data: Tensor = load_dataset(
+        file,
+        &device,
+    )?;
+    println!("data: {data}");
     Ok(())
 }
