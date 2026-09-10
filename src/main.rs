@@ -48,10 +48,16 @@ fn load_dataset(file: &str, device: &Device) -> Result<Tensor> {
     Ok(out)
 }
 
-fn k_means(data: &Tensor, cluters: usize, device: &Device) -> Result<()> {
-    let (n, _) = data.dims2()?;
-    //let mut rng = rand::thread_rng();
-    let mut rng = rand::rng().random_range(1..=100);
+fn k_means(data: &Tensor, clusters: usize, device: &Device) -> Result<()> {
+    let (items, _) = data.dims2()?;
+    let mut rng = rand::rng();//.random_range(1..=100);
+    let mut indicies: Vec<_> = (0..items).collect();
+    indicies.shuffle(&mut rng);
+    let centeroid_idx: Vec<_> = indicies[..clusters]
+        .iter()
+        .copied()
+        .map(|x| x as i64 )
+        .collect();
     Ok(())
 }
 

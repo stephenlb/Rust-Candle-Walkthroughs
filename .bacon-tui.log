@@ -246,3 +246,692 @@
 [1m[33mwarning[0m: `rust-candle-course` (bin "rust-candle-course") generated 8 warnings (run `cargo fix --bin "rust-candle-course" -p rust-candle-course` to apply 6 suggestions)
 [1m[92m    Finished[0m `dev` profile [unoptimized + debuginfo] target(s) in 0.12s
 [1m[38;5;255m[48;5;240m rust-candle-course [0m[1m[38;5;235m[48;5;204m check [0m[1m[38;5;235m[48;5;11m  8 warnings  [0m
+[1m[92m    Checking[0m rust-candle-course v0.1.0 (/Users/stephen/Desktop/rust-candle-course)
+[1m[33mwarning[0m[1m: unused import: `DType`[0m
+ [1m[94m--> [0msrc/main.rs:3:19
+  [1m[94m|[0m
+[1m[94m3[0m [1m[94m|[0m use candle_core::{DType, Device, Tensor, D};
+  [1m[94m|[0m                   [1m[33m^^^^^[0m
+  [1m[94m|[0m
+  [1m[94m= [0m[1mnote[0m: `#[warn(unused_imports)]` (part of `#[warn(unused)]`) on by default
+
+[1m[33mwarning[0m[1m: variable does not need to be mutable[0m
+  [1m[94m--> [0msrc/main.rs:53:9
+   [1m[94m|[0m
+[1m[94m53[0m [1m[94m|[0m     let mut rng = rand::rng().random_range(1..=100);
+   [1m[94m|[0m         [1m[94m----[0m[1m[33m^^^[0m
+   [1m[94m|[0m         [1m[94m|[0m
+   [1m[94m|[0m         [1m[94mhelp: remove this `mut`[0m
+   [1m[94m|[0m
+   [1m[94m= [0m[1mnote[0m: `#[warn(unused_mut)]` (part of `#[warn(unused)]`) on by default
+
+[1m[33mwarning[0m[1m: unused variable: `cluters`[0m
+  [1m[94m--> [0msrc/main.rs:51:27
+   [1m[94m|[0m
+[1m[94m51[0m [1m[94m|[0m fn k_means(data: &Tensor, cluters: usize, device: &Device) -> Result<()> {
+   [1m[94m|[0m                           [1m[33m^^^^^^^[0m [1m[33mhelp: if this is intentional, prefix it with an underscore: `_cluters`[0m
+   [1m[94m|[0m
+   [1m[94m= [0m[1mnote[0m: `#[warn(unused_variables)]` (part of `#[warn(unused)]`) on by default
+
+[1m[33mwarning[0m[1m: unused variable: `device`[0m
+  [1m[94m--> [0msrc/main.rs:51:43
+   [1m[94m|[0m
+[1m[94m51[0m [1m[94m|[0m fn k_means(data: &Tensor, cluters: usize, device: &Device) -> Result<()> {
+   [1m[94m|[0m                                           [1m[33m^^^^^^[0m [1m[33mhelp: if this is intentional, prefix it with an underscore: `_device`[0m
+
+[1m[33mwarning[0m[1m: unused variable: `n`[0m
+  [1m[94m--> [0msrc/main.rs:52:10
+   [1m[94m|[0m
+[1m[94m52[0m [1m[94m|[0m     let (n, _) = data.dims2()?;
+   [1m[94m|[0m          [1m[33m^[0m [1m[33mhelp: if this is intentional, prefix it with an underscore: `_n`[0m
+
+[1m[33mwarning[0m[1m: unused variable: `rng`[0m
+  [1m[94m--> [0msrc/main.rs:53:9
+   [1m[94m|[0m
+[1m[94m53[0m [1m[94m|[0m     let mut rng = rand::rng().random_range(1..=100);
+   [1m[94m|[0m         [1m[33m^^^^^^^[0m [1m[33mhelp: if this is intentional, prefix it with an underscore: `_rng`[0m
+
+[1m[33mwarning[0m[1m: function `cdist` is never used[0m
+  [1m[94m--> [0msrc/main.rs:10:4
+   [1m[94m|[0m
+[1m[94m10[0m [1m[94m|[0m fn cdist(x1: &Tensor, x2: &Tensor) -> Result<Tensor> {
+   [1m[94m|[0m    [1m[33m^^^^^[0m
+   [1m[94m|[0m
+   [1m[94m= [0m[1mnote[0m: `#[warn(dead_code)]` (part of `#[warn(unused)]`) on by default
+
+[1m[33mwarning[0m[1m: function `k_means` is never used[0m
+  [1m[94m--> [0msrc/main.rs:51:4
+   [1m[94m|[0m
+[1m[94m51[0m [1m[94m|[0m fn k_means(data: &Tensor, cluters: usize, device: &Device) -> Result<()> {
+   [1m[94m|[0m    [1m[33m^^^^^^^[0m
+
+[1m[33mwarning[0m: `rust-candle-course` (bin "rust-candle-course") generated 8 warnings (run `cargo fix --bin "rust-candle-course" -p rust-candle-course` to apply 6 suggestions)
+[1m[92m    Finished[0m `dev` profile [unoptimized + debuginfo] target(s) in 0.12s
+[1m[38;5;255m[48;5;240m rust-candle-course [0m[1m[38;5;235m[48;5;204m check [0m[1m[38;5;235m[48;5;11m  8 warnings  [0m
+[1m[92m    Checking[0m rust-candle-course v0.1.0 (/Users/stephen/Desktop/rust-candle-course)
+[1m[33mwarning[0m[1m: unused import: `DType`[0m
+ [1m[94m--> [0msrc/main.rs:3:19
+  [1m[94m|[0m
+[1m[94m3[0m [1m[94m|[0m use candle_core::{DType, Device, Tensor, D};
+  [1m[94m|[0m                   [1m[33m^^^^^[0m
+  [1m[94m|[0m
+  [1m[94m= [0m[1mnote[0m: `#[warn(unused_imports)]` (part of `#[warn(unused)]`) on by default
+
+[1m[33mwarning[0m[1m: variable does not need to be mutable[0m
+  [1m[94m--> [0msrc/main.rs:53:9
+   [1m[94m|[0m
+[1m[94m53[0m [1m[94m|[0m     let mut rng = rand::rng().random_range(1..=100);
+   [1m[94m|[0m         [1m[94m----[0m[1m[33m^^^[0m
+   [1m[94m|[0m         [1m[94m|[0m
+   [1m[94m|[0m         [1m[94mhelp: remove this `mut`[0m
+   [1m[94m|[0m
+   [1m[94m= [0m[1mnote[0m: `#[warn(unused_mut)]` (part of `#[warn(unused)]`) on by default
+
+[1m[33mwarning[0m[1m: variable does not need to be mutable[0m
+  [1m[94m--> [0msrc/main.rs:54:9
+   [1m[94m|[0m
+[1m[94m54[0m [1m[94m|[0m     let mut indicies: Vec<_> = (0..items)
+   [1m[94m|[0m         [1m[94m----[0m[1m[33m^^^^^^^^[0m
+   [1m[94m|[0m         [1m[94m|[0m
+   [1m[94m|[0m         [1m[94mhelp: remove this `mut`[0m
+
+[1m[33mwarning[0m[1m: unused variable: `cluters`[0m
+  [1m[94m--> [0msrc/main.rs:51:27
+   [1m[94m|[0m
+[1m[94m51[0m [1m[94m|[0m fn k_means(data: &Tensor, cluters: usize, device: &Device) -> Result<()> {
+   [1m[94m|[0m                           [1m[33m^^^^^^^[0m [1m[33mhelp: if this is intentional, prefix it with an underscore: `_cluters`[0m
+   [1m[94m|[0m
+   [1m[94m= [0m[1mnote[0m: `#[warn(unused_variables)]` (part of `#[warn(unused)]`) on by default
+
+[1m[33mwarning[0m[1m: unused variable: `device`[0m
+  [1m[94m--> [0msrc/main.rs:51:43
+   [1m[94m|[0m
+[1m[94m51[0m [1m[94m|[0m fn k_means(data: &Tensor, cluters: usize, device: &Device) -> Result<()> {
+   [1m[94m|[0m                                           [1m[33m^^^^^^[0m [1m[33mhelp: if this is intentional, prefix it with an underscore: `_device`[0m
+
+[1m[33mwarning[0m[1m: unused variable: `rng`[0m
+  [1m[94m--> [0msrc/main.rs:53:9
+   [1m[94m|[0m
+[1m[94m53[0m [1m[94m|[0m     let mut rng = rand::rng().random_range(1..=100);
+   [1m[94m|[0m         [1m[33m^^^^^^^[0m [1m[33mhelp: if this is intentional, prefix it with an underscore: `_rng`[0m
+
+[1m[33mwarning[0m[1m: unused variable: `indicies`[0m
+  [1m[94m--> [0msrc/main.rs:54:9
+   [1m[94m|[0m
+[1m[94m54[0m [1m[94m|[0m     let mut indicies: Vec<_> = (0..items)
+   [1m[94m|[0m         [1m[33m^^^^^^^^^^^^[0m [1m[33mhelp: if this is intentional, prefix it with an underscore: `_indicies`[0m
+
+[1m[33mwarning[0m[1m: function `cdist` is never used[0m
+  [1m[94m--> [0msrc/main.rs:10:4
+   [1m[94m|[0m
+[1m[94m10[0m [1m[94m|[0m fn cdist(x1: &Tensor, x2: &Tensor) -> Result<Tensor> {
+   [1m[94m|[0m    [1m[33m^^^^^[0m
+   [1m[94m|[0m
+   [1m[94m= [0m[1mnote[0m: `#[warn(dead_code)]` (part of `#[warn(unused)]`) on by default
+
+[1m[33mwarning[0m[1m: function `k_means` is never used[0m
+  [1m[94m--> [0msrc/main.rs:51:4
+   [1m[94m|[0m
+[1m[94m51[0m [1m[94m|[0m fn k_means(data: &Tensor, cluters: usize, device: &Device) -> Result<()> {
+   [1m[94m|[0m    [1m[33m^^^^^^^[0m
+
+[1m[33mwarning[0m: `rust-candle-course` (bin "rust-candle-course") generated 9 warnings (run `cargo fix --bin "rust-candle-course" -p rust-candle-course` to apply 7 suggestions)
+[1m[92m    Finished[0m `dev` profile [unoptimized + debuginfo] target(s) in 0.13s
+[1m[38;5;255m[48;5;240m rust-candle-course [0m[1m[38;5;235m[48;5;204m check [0m[1m[38;5;235m[48;5;11m  9 warnings  [0m
+[1m[92m    Checking[0m rust-candle-course v0.1.0 (/Users/stephen/Desktop/rust-candle-course)
+[1m[33mwarning[0m[1m: unused import: `DType`[0m
+ [1m[94m--> [0msrc/main.rs:3:19
+  [1m[94m|[0m
+[1m[94m3[0m [1m[94m|[0m use candle_core::{DType, Device, Tensor, D};
+  [1m[94m|[0m                   [1m[33m^^^^^[0m
+  [1m[94m|[0m
+  [1m[94m= [0m[1mnote[0m: `#[warn(unused_imports)]` (part of `#[warn(unused)]`) on by default
+
+[1m[33mwarning[0m[1m: variable does not need to be mutable[0m
+  [1m[94m--> [0msrc/main.rs:53:9
+   [1m[94m|[0m
+[1m[94m53[0m [1m[94m|[0m     let mut rng = rand::rng().random_range(1..=100);
+   [1m[94m|[0m         [1m[94m----[0m[1m[33m^^^[0m
+   [1m[94m|[0m         [1m[94m|[0m
+   [1m[94m|[0m         [1m[94mhelp: remove this `mut`[0m
+   [1m[94m|[0m
+   [1m[94m= [0m[1mnote[0m: `#[warn(unused_mut)]` (part of `#[warn(unused)]`) on by default
+
+[1m[33mwarning[0m[1m: variable does not need to be mutable[0m
+  [1m[94m--> [0msrc/main.rs:54:9
+   [1m[94m|[0m
+[1m[94m54[0m [1m[94m|[0m     let mut indicies: Vec<_> = (0..items)
+   [1m[94m|[0m         [1m[94m----[0m[1m[33m^^^^^^^^[0m
+   [1m[94m|[0m         [1m[94m|[0m
+   [1m[94m|[0m         [1m[94mhelp: remove this `mut`[0m
+
+[1m[33mwarning[0m[1m: unused variable: `cluters`[0m
+  [1m[94m--> [0msrc/main.rs:51:27
+   [1m[94m|[0m
+[1m[94m51[0m [1m[94m|[0m fn k_means(data: &Tensor, cluters: usize, device: &Device) -> Result<()> {
+   [1m[94m|[0m                           [1m[33m^^^^^^^[0m [1m[33mhelp: if this is intentional, prefix it with an underscore: `_cluters`[0m
+   [1m[94m|[0m
+   [1m[94m= [0m[1mnote[0m: `#[warn(unused_variables)]` (part of `#[warn(unused)]`) on by default
+
+[1m[33mwarning[0m[1m: unused variable: `device`[0m
+  [1m[94m--> [0msrc/main.rs:51:43
+   [1m[94m|[0m
+[1m[94m51[0m [1m[94m|[0m fn k_means(data: &Tensor, cluters: usize, device: &Device) -> Result<()> {
+   [1m[94m|[0m                                           [1m[33m^^^^^^[0m [1m[33mhelp: if this is intentional, prefix it with an underscore: `_device`[0m
+
+[1m[33mwarning[0m[1m: unused variable: `rng`[0m
+  [1m[94m--> [0msrc/main.rs:53:9
+   [1m[94m|[0m
+[1m[94m53[0m [1m[94m|[0m     let mut rng = rand::rng().random_range(1..=100);
+   [1m[94m|[0m         [1m[33m^^^^^^^[0m [1m[33mhelp: if this is intentional, prefix it with an underscore: `_rng`[0m
+
+[1m[33mwarning[0m[1m: unused variable: `indicies`[0m
+  [1m[94m--> [0msrc/main.rs:54:9
+   [1m[94m|[0m
+[1m[94m54[0m [1m[94m|[0m     let mut indicies: Vec<_> = (0..items)
+   [1m[94m|[0m         [1m[33m^^^^^^^^^^^^[0m [1m[33mhelp: if this is intentional, prefix it with an underscore: `_indicies`[0m
+
+[1m[33mwarning[0m[1m: function `cdist` is never used[0m
+  [1m[94m--> [0msrc/main.rs:10:4
+   [1m[94m|[0m
+[1m[94m10[0m [1m[94m|[0m fn cdist(x1: &Tensor, x2: &Tensor) -> Result<Tensor> {
+   [1m[94m|[0m    [1m[33m^^^^^[0m
+   [1m[94m|[0m
+   [1m[94m= [0m[1mnote[0m: `#[warn(dead_code)]` (part of `#[warn(unused)]`) on by default
+
+[1m[33mwarning[0m[1m: function `k_means` is never used[0m
+  [1m[94m--> [0msrc/main.rs:51:4
+   [1m[94m|[0m
+[1m[94m51[0m [1m[94m|[0m fn k_means(data: &Tensor, cluters: usize, device: &Device) -> Result<()> {
+   [1m[94m|[0m    [1m[33m^^^^^^^[0m
+
+[1m[33mwarning[0m: `rust-candle-course` (bin "rust-candle-course") generated 9 warnings (run `cargo fix --bin "rust-candle-course" -p rust-candle-course` to apply 7 suggestions)
+[1m[92m    Finished[0m `dev` profile [unoptimized + debuginfo] target(s) in 0.11s
+[1m[38;5;255m[48;5;240m rust-candle-course [0m[1m[38;5;235m[48;5;204m check [0m[1m[38;5;235m[48;5;11m  9 warnings  [0m
+[1m[92m    Checking[0m rust-candle-course v0.1.0 (/Users/stephen/Desktop/rust-candle-course)
+[1m[33mwarning[0m[1m: unused import: `DType`[0m
+ [1m[94m--> [0msrc/main.rs:3:19
+  [1m[94m|[0m
+[1m[94m3[0m [1m[94m|[0m use candle_core::{DType, Device, Tensor, D};
+  [1m[94m|[0m                   [1m[33m^^^^^[0m
+  [1m[94m|[0m
+  [1m[94m= [0m[1mnote[0m: `#[warn(unused_imports)]` (part of `#[warn(unused)]`) on by default
+
+[1m[33mwarning[0m[1m: variable does not need to be mutable[0m
+  [1m[94m--> [0msrc/main.rs:53:9
+   [1m[94m|[0m
+[1m[94m53[0m [1m[94m|[0m     let mut rng = rand::rng().random_range(1..=100);
+   [1m[94m|[0m         [1m[94m----[0m[1m[33m^^^[0m
+   [1m[94m|[0m         [1m[94m|[0m
+   [1m[94m|[0m         [1m[94mhelp: remove this `mut`[0m
+   [1m[94m|[0m
+   [1m[94m= [0m[1mnote[0m: `#[warn(unused_mut)]` (part of `#[warn(unused)]`) on by default
+
+[1m[33mwarning[0m[1m: variable does not need to be mutable[0m
+  [1m[94m--> [0msrc/main.rs:54:9
+   [1m[94m|[0m
+[1m[94m54[0m [1m[94m|[0m     let mut indicies: Vec<_> = (0..items)
+   [1m[94m|[0m         [1m[94m----[0m[1m[33m^^^^^^^^[0m
+   [1m[94m|[0m         [1m[94m|[0m
+   [1m[94m|[0m         [1m[94mhelp: remove this `mut`[0m
+
+[1m[33mwarning[0m[1m: unused variable: `cluters`[0m
+  [1m[94m--> [0msrc/main.rs:51:27
+   [1m[94m|[0m
+[1m[94m51[0m [1m[94m|[0m fn k_means(data: &Tensor, cluters: usize, device: &Device) -> Result<()> {
+   [1m[94m|[0m                           [1m[33m^^^^^^^[0m [1m[33mhelp: if this is intentional, prefix it with an underscore: `_cluters`[0m
+   [1m[94m|[0m
+   [1m[94m= [0m[1mnote[0m: `#[warn(unused_variables)]` (part of `#[warn(unused)]`) on by default
+
+[1m[33mwarning[0m[1m: unused variable: `device`[0m
+  [1m[94m--> [0msrc/main.rs:51:43
+   [1m[94m|[0m
+[1m[94m51[0m [1m[94m|[0m fn k_means(data: &Tensor, cluters: usize, device: &Device) -> Result<()> {
+   [1m[94m|[0m                                           [1m[33m^^^^^^[0m [1m[33mhelp: if this is intentional, prefix it with an underscore: `_device`[0m
+
+[1m[33mwarning[0m[1m: unused variable: `rng`[0m
+  [1m[94m--> [0msrc/main.rs:53:9
+   [1m[94m|[0m
+[1m[94m53[0m [1m[94m|[0m     let mut rng = rand::rng().random_range(1..=100);
+   [1m[94m|[0m         [1m[33m^^^^^^^[0m [1m[33mhelp: if this is intentional, prefix it with an underscore: `_rng`[0m
+
+[1m[33mwarning[0m[1m: unused variable: `indicies`[0m
+  [1m[94m--> [0msrc/main.rs:54:9
+   [1m[94m|[0m
+[1m[94m54[0m [1m[94m|[0m     let mut indicies: Vec<_> = (0..items)
+   [1m[94m|[0m         [1m[33m^^^^^^^^^^^^[0m [1m[33mhelp: if this is intentional, prefix it with an underscore: `_indicies`[0m
+
+[1m[33mwarning[0m[1m: function `cdist` is never used[0m
+  [1m[94m--> [0msrc/main.rs:10:4
+   [1m[94m|[0m
+[1m[94m10[0m [1m[94m|[0m fn cdist(x1: &Tensor, x2: &Tensor) -> Result<Tensor> {
+   [1m[94m|[0m    [1m[33m^^^^^[0m
+   [1m[94m|[0m
+   [1m[94m= [0m[1mnote[0m: `#[warn(dead_code)]` (part of `#[warn(unused)]`) on by default
+
+[1m[33mwarning[0m[1m: function `k_means` is never used[0m
+  [1m[94m--> [0msrc/main.rs:51:4
+   [1m[94m|[0m
+[1m[94m51[0m [1m[94m|[0m fn k_means(data: &Tensor, cluters: usize, device: &Device) -> Result<()> {
+   [1m[94m|[0m    [1m[33m^^^^^^^[0m
+
+[1m[33mwarning[0m: `rust-candle-course` (bin "rust-candle-course") generated 9 warnings (run `cargo fix --bin "rust-candle-course" -p rust-candle-course` to apply 7 suggestions)
+[1m[92m    Finished[0m `dev` profile [unoptimized + debuginfo] target(s) in 0.12s
+[1m[38;5;255m[48;5;240m rust-candle-course [0m[1m[38;5;235m[48;5;204m check [0m[1m[38;5;235m[48;5;11m  9 warnings  [0m
+[1m[92m    Checking[0m rust-candle-course v0.1.0 (/Users/stephen/Desktop/rust-candle-course)
+[1m[33mwarning[0m[1m: unused import: `DType`[0m
+ [1m[94m--> [0msrc/main.rs:3:19
+  [1m[94m|[0m
+[1m[94m3[0m [1m[94m|[0m use candle_core::{DType, Device, Tensor, D};
+  [1m[94m|[0m                   [1m[33m^^^^^[0m
+  [1m[94m|[0m
+  [1m[94m= [0m[1mnote[0m: `#[warn(unused_imports)]` (part of `#[warn(unused)]`) on by default
+
+[1m[33mwarning[0m[1m: variable does not need to be mutable[0m
+  [1m[94m--> [0msrc/main.rs:53:9
+   [1m[94m|[0m
+[1m[94m53[0m [1m[94m|[0m     let mut rng = rand::rng().random_range(1..=100);
+   [1m[94m|[0m         [1m[94m----[0m[1m[33m^^^[0m
+   [1m[94m|[0m         [1m[94m|[0m
+   [1m[94m|[0m         [1m[94mhelp: remove this `mut`[0m
+   [1m[94m|[0m
+   [1m[94m= [0m[1mnote[0m: `#[warn(unused_mut)]` (part of `#[warn(unused)]`) on by default
+
+[1m[33mwarning[0m[1m: variable does not need to be mutable[0m
+  [1m[94m--> [0msrc/main.rs:54:9
+   [1m[94m|[0m
+[1m[94m54[0m [1m[94m|[0m     let mut indicies: Vec<_> = (0..items).collect();
+   [1m[94m|[0m         [1m[94m----[0m[1m[33m^^^^^^^^[0m
+   [1m[94m|[0m         [1m[94m|[0m
+   [1m[94m|[0m         [1m[94mhelp: remove this `mut`[0m
+
+[1m[33mwarning[0m[1m: unused variable: `cluters`[0m
+  [1m[94m--> [0msrc/main.rs:51:27
+   [1m[94m|[0m
+[1m[94m51[0m [1m[94m|[0m fn k_means(data: &Tensor, cluters: usize, device: &Device) -> Result<()> {
+   [1m[94m|[0m                           [1m[33m^^^^^^^[0m [1m[33mhelp: if this is intentional, prefix it with an underscore: `_cluters`[0m
+   [1m[94m|[0m
+   [1m[94m= [0m[1mnote[0m: `#[warn(unused_variables)]` (part of `#[warn(unused)]`) on by default
+
+[1m[33mwarning[0m[1m: unused variable: `device`[0m
+  [1m[94m--> [0msrc/main.rs:51:43
+   [1m[94m|[0m
+[1m[94m51[0m [1m[94m|[0m fn k_means(data: &Tensor, cluters: usize, device: &Device) -> Result<()> {
+   [1m[94m|[0m                                           [1m[33m^^^^^^[0m [1m[33mhelp: if this is intentional, prefix it with an underscore: `_device`[0m
+
+[1m[33mwarning[0m[1m: unused variable: `rng`[0m
+  [1m[94m--> [0msrc/main.rs:53:9
+   [1m[94m|[0m
+[1m[94m53[0m [1m[94m|[0m     let mut rng = rand::rng().random_range(1..=100);
+   [1m[94m|[0m         [1m[33m^^^^^^^[0m [1m[33mhelp: if this is intentional, prefix it with an underscore: `_rng`[0m
+
+[1m[33mwarning[0m[1m: unused variable: `indicies`[0m
+  [1m[94m--> [0msrc/main.rs:54:9
+   [1m[94m|[0m
+[1m[94m54[0m [1m[94m|[0m     let mut indicies: Vec<_> = (0..items).collect();
+   [1m[94m|[0m         [1m[33m^^^^^^^^^^^^[0m [1m[33mhelp: if this is intentional, prefix it with an underscore: `_indicies`[0m
+
+[1m[33mwarning[0m[1m: function `cdist` is never used[0m
+  [1m[94m--> [0msrc/main.rs:10:4
+   [1m[94m|[0m
+[1m[94m10[0m [1m[94m|[0m fn cdist(x1: &Tensor, x2: &Tensor) -> Result<Tensor> {
+   [1m[94m|[0m    [1m[33m^^^^^[0m
+   [1m[94m|[0m
+   [1m[94m= [0m[1mnote[0m: `#[warn(dead_code)]` (part of `#[warn(unused)]`) on by default
+
+[1m[33mwarning[0m[1m: function `k_means` is never used[0m
+  [1m[94m--> [0msrc/main.rs:51:4
+   [1m[94m|[0m
+[1m[94m51[0m [1m[94m|[0m fn k_means(data: &Tensor, cluters: usize, device: &Device) -> Result<()> {
+   [1m[94m|[0m    [1m[33m^^^^^^^[0m
+
+[1m[33mwarning[0m: `rust-candle-course` (bin "rust-candle-course") generated 9 warnings (run `cargo fix --bin "rust-candle-course" -p rust-candle-course` to apply 7 suggestions)
+[1m[92m    Finished[0m `dev` profile [unoptimized + debuginfo] target(s) in 0.13s
+[1m[38;5;255m[48;5;240m rust-candle-course [0m[1m[38;5;235m[48;5;204m check [0m[1m[38;5;235m[48;5;11m  9 warnings  [0m
+[1m[92m    Checking[0m rust-candle-course v0.1.0 (/Users/stephen/Desktop/rust-candle-course)
+[1m[33mwarning[0m[1m: unused import: `DType`[0m
+ [1m[94m--> [0msrc/main.rs:3:19
+  [1m[94m|[0m
+[1m[94m3[0m [1m[94m|[0m use candle_core::{DType, Device, Tensor, D};
+  [1m[94m|[0m                   [1m[33m^^^^^[0m
+  [1m[94m|[0m
+  [1m[94m= [0m[1mnote[0m: `#[warn(unused_imports)]` (part of `#[warn(unused)]`) on by default
+
+[1m[91merror[E0277][0m[1m: the trait bound `{integer}: Rng` is not satisfied[0m
+   [1m[94m--> [0msrc/main.rs:55:22
+    [1m[94m|[0m
+[1m[94m 55[0m [1m[94m|[0m     indicies.shuffle(&mut rng);
+    [1m[94m|[0m              [1m[94m-------[0m [1m[91m^^^^^^^^[0m [1m[91mthe trait `DerefMut` is not implemented for `{integer}`[0m
+    [1m[94m|[0m              [1m[94m|[0m
+    [1m[94m|[0m              [1m[94mrequired by a bound introduced by this call[0m
+    [1m[94m|[0m
+    [1m[94m= [0m[1mnote[0m: required for `{integer}` to implement `TryRng`
+    [1m[94m= [0m[1mnote[0m: required for `{integer}` to implement `Rng`
+[1m[92mnote[0m: required by a bound in `shuffle`
+   [1m[94m--> [0m/Users/stephen/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/rand-0.10.2/src/seq/slice.rs:420:12
+    [1m[94m|[0m
+[1m[94m418[0m [1m[94m|[0m     fn shuffle<R>(&mut self, rng: &mut R)
+    [1m[94m|[0m        [1m[94m-------[0m [1m[94mrequired by a bound in this associated function[0m
+[1m[94m419[0m [1m[94m|[0m     where
+[1m[94m420[0m [1m[94m|[0m         R: Rng + ?Sized;
+    [1m[94m|[0m            [1m[92m^^^[0m [1m[92mrequired by this bound in `SliceRandom::shuffle`[0m
+
+[1mFor more information about this error, try `rustc --explain E0277`.[0m
+[1m[33mwarning[0m: `rust-candle-course` (bin "rust-candle-course") generated 1 warning
+[1m[91merror[0m: could not compile `rust-candle-course` (bin "rust-candle-course") due to 1 previous error; 1 warning emitted
+[1m[38;5;255m[48;5;240m rust-candle-course [0m[1m[38;5;235m[48;5;204m check [0m[1m[38;5;235m[48;5;9m  1 error  [0m[1m[38;5;235m[48;5;11m  1 warning  [0m
+[1m[92m    Checking[0m rust-candle-course v0.1.0 (/Users/stephen/Desktop/rust-candle-course)
+[1m[33mwarning[0m[1m: unused import: `DType`[0m
+ [1m[94m--> [0msrc/main.rs:3:19
+  [1m[94m|[0m
+[1m[94m3[0m [1m[94m|[0m use candle_core::{DType, Device, Tensor, D};
+  [1m[94m|[0m                   [1m[33m^^^^^[0m
+  [1m[94m|[0m
+  [1m[94m= [0m[1mnote[0m: `#[warn(unused_imports)]` (part of `#[warn(unused)]`) on by default
+
+[1m[91merror[E0308][0m[1m: mismatched types[0m
+   [1m[94m--> [0msrc/main.rs:55:22
+    [1m[94m|[0m
+[1m[94m 55[0m [1m[94m|[0m     indicies.shuffle(rng);
+    [1m[94m|[0m              [1m[94m-------[0m [1m[91m^^^[0m [1m[91mexpected `&mut _`, found integer[0m
+    [1m[94m|[0m              [1m[94m|[0m
+    [1m[94m|[0m              [1m[94marguments to this method are incorrect[0m
+    [1m[94m|[0m
+    [1m[94m= [0m[1mnote[0m: expected mutable reference `[1m[35m&[0m[1m[35mmut [0m[1m[35m_[0m`
+                            found type `[1m[35m{integer}[0m`
+[1m[92mnote[0m: method defined here
+   [1m[94m--> [0m/Users/stephen/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/rand-0.10.2/src/seq/slice.rs:418:8
+    [1m[94m|[0m
+[1m[94m418[0m [1m[94m|[0m     fn shuffle<R>(&mut self, rng: &mut R)
+    [1m[94m|[0m        [1m[92m^^^^^^^[0m
+[1m[96mhelp[0m: consider mutably borrowing here
+    [1m[94m|[0m
+[1m[94m 55[0m [1m[94m| [0m    indicies.shuffle([92m&mut [0mrng);
+    [1m[94m|[0m                      [92m++++[0m
+
+[1mFor more information about this error, try `rustc --explain E0308`.[0m
+[1m[33mwarning[0m: `rust-candle-course` (bin "rust-candle-course") generated 1 warning
+[1m[91merror[0m: could not compile `rust-candle-course` (bin "rust-candle-course") due to 1 previous error; 1 warning emitted
+[1m[38;5;255m[48;5;240m rust-candle-course [0m[1m[38;5;235m[48;5;204m check [0m[1m[38;5;235m[48;5;9m  1 error  [0m[1m[38;5;235m[48;5;11m  1 warning  [0m
+[1m[92m    Checking[0m rust-candle-course v0.1.0 (/Users/stephen/Desktop/rust-candle-course)
+[1m[33mwarning[0m[1m: unused import: `DType`[0m
+ [1m[94m--> [0msrc/main.rs:3:19
+  [1m[94m|[0m
+[1m[94m3[0m [1m[94m|[0m use candle_core::{DType, Device, Tensor, D};
+  [1m[94m|[0m                   [1m[33m^^^^^[0m
+  [1m[94m|[0m
+  [1m[94m= [0m[1mnote[0m: `#[warn(unused_imports)]` (part of `#[warn(unused)]`) on by default
+
+[1m[91merror[E0308][0m[1m: mismatched types[0m
+   [1m[94m--> [0msrc/main.rs:55:22
+    [1m[94m|[0m
+[1m[94m 55[0m [1m[94m|[0m     indicies.shuffle(rng);
+    [1m[94m|[0m              [1m[94m-------[0m [1m[91m^^^[0m [1m[91mexpected `&mut _`, found integer[0m
+    [1m[94m|[0m              [1m[94m|[0m
+    [1m[94m|[0m              [1m[94marguments to this method are incorrect[0m
+    [1m[94m|[0m
+    [1m[94m= [0m[1mnote[0m: expected mutable reference `[1m[35m&[0m[1m[35mmut [0m[1m[35m_[0m`
+                            found type `[1m[35m{integer}[0m`
+[1m[92mnote[0m: method defined here
+   [1m[94m--> [0m/Users/stephen/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/rand-0.10.2/src/seq/slice.rs:418:8
+    [1m[94m|[0m
+[1m[94m418[0m [1m[94m|[0m     fn shuffle<R>(&mut self, rng: &mut R)
+    [1m[94m|[0m        [1m[92m^^^^^^^[0m
+[1m[96mhelp[0m: consider mutably borrowing here
+    [1m[94m|[0m
+[1m[94m 55[0m [1m[94m| [0m    indicies.shuffle([92m&mut [0mrng);
+    [1m[94m|[0m                      [92m++++[0m
+
+[1mFor more information about this error, try `rustc --explain E0308`.[0m
+[1m[33mwarning[0m: `rust-candle-course` (bin "rust-candle-course") generated 1 warning
+[1m[91merror[0m: could not compile `rust-candle-course` (bin "rust-candle-course") due to 1 previous error; 1 warning emitted
+[1m[38;5;255m[48;5;240m rust-candle-course [0m[1m[38;5;235m[48;5;204m check [0m[1m[38;5;235m[48;5;9m  1 error  [0m[1m[38;5;235m[48;5;11m  1 warning  [0m
+[1m[92m    Checking[0m rust-candle-course v0.1.0 (/Users/stephen/Desktop/rust-candle-course)
+[1m[33mwarning[0m[1m: unused import: `DType`[0m
+ [1m[94m--> [0msrc/main.rs:3:19
+  [1m[94m|[0m
+[1m[94m3[0m [1m[94m|[0m use candle_core::{DType, Device, Tensor, D};
+  [1m[94m|[0m                   [1m[33m^^^^^[0m
+  [1m[94m|[0m
+  [1m[94m= [0m[1mnote[0m: `#[warn(unused_imports)]` (part of `#[warn(unused)]`) on by default
+
+[1m[91merror[E0308][0m[1m: mismatched types[0m
+   [1m[94m--> [0msrc/main.rs:55:22
+    [1m[94m|[0m
+[1m[94m 55[0m [1m[94m|[0m     indicies.shuffle(rng);
+    [1m[94m|[0m              [1m[94m-------[0m [1m[91m^^^[0m [1m[91mexpected `&mut _`, found `ThreadRng`[0m
+    [1m[94m|[0m              [1m[94m|[0m
+    [1m[94m|[0m              [1m[94marguments to this method are incorrect[0m
+    [1m[94m|[0m
+    [1m[94m= [0m[1mnote[0m: expected mutable reference `[1m[35m&[0m[1m[35mmut [0m[1m[35m_[0m`
+                          found struct `[1m[35mThreadRng[0m`
+[1m[92mnote[0m: method defined here
+   [1m[94m--> [0m/Users/stephen/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/rand-0.10.2/src/seq/slice.rs:418:8
+    [1m[94m|[0m
+[1m[94m418[0m [1m[94m|[0m     fn shuffle<R>(&mut self, rng: &mut R)
+    [1m[94m|[0m        [1m[92m^^^^^^^[0m
+[1m[96mhelp[0m: consider mutably borrowing here
+    [1m[94m|[0m
+[1m[94m 55[0m [1m[94m| [0m    indicies.shuffle([92m&mut [0mrng);
+    [1m[94m|[0m                      [92m++++[0m
+
+[1mFor more information about this error, try `rustc --explain E0308`.[0m
+[1m[33mwarning[0m: `rust-candle-course` (bin "rust-candle-course") generated 1 warning
+[1m[91merror[0m: could not compile `rust-candle-course` (bin "rust-candle-course") due to 1 previous error; 1 warning emitted
+[1m[38;5;255m[48;5;240m rust-candle-course [0m[1m[38;5;235m[48;5;204m check [0m[1m[38;5;235m[48;5;9m  1 error  [0m[1m[38;5;235m[48;5;11m  1 warning  [0m
+[1m[92m    Checking[0m rust-candle-course v0.1.0 (/Users/stephen/Desktop/rust-candle-course)
+[1m[33mwarning[0m[1m: unused import: `DType`[0m
+ [1m[94m--> [0msrc/main.rs:3:19
+  [1m[94m|[0m
+[1m[94m3[0m [1m[94m|[0m use candle_core::{DType, Device, Tensor, D};
+  [1m[94m|[0m                   [1m[33m^^^^^[0m
+  [1m[94m|[0m
+  [1m[94m= [0m[1mnote[0m: `#[warn(unused_imports)]` (part of `#[warn(unused)]`) on by default
+
+[1m[33mwarning[0m[1m: unused variable: `cluters`[0m
+  [1m[94m--> [0msrc/main.rs:51:27
+   [1m[94m|[0m
+[1m[94m51[0m [1m[94m|[0m fn k_means(data: &Tensor, cluters: usize, device: &Device) -> Result<()> {
+   [1m[94m|[0m                           [1m[33m^^^^^^^[0m [1m[33mhelp: if this is intentional, prefix it with an underscore: `_cluters`[0m
+   [1m[94m|[0m
+   [1m[94m= [0m[1mnote[0m: `#[warn(unused_variables)]` (part of `#[warn(unused)]`) on by default
+
+[1m[33mwarning[0m[1m: unused variable: `device`[0m
+  [1m[94m--> [0msrc/main.rs:51:43
+   [1m[94m|[0m
+[1m[94m51[0m [1m[94m|[0m fn k_means(data: &Tensor, cluters: usize, device: &Device) -> Result<()> {
+   [1m[94m|[0m                                           [1m[33m^^^^^^[0m [1m[33mhelp: if this is intentional, prefix it with an underscore: `_device`[0m
+
+[1m[33mwarning[0m[1m: function `cdist` is never used[0m
+  [1m[94m--> [0msrc/main.rs:10:4
+   [1m[94m|[0m
+[1m[94m10[0m [1m[94m|[0m fn cdist(x1: &Tensor, x2: &Tensor) -> Result<Tensor> {
+   [1m[94m|[0m    [1m[33m^^^^^[0m
+   [1m[94m|[0m
+   [1m[94m= [0m[1mnote[0m: `#[warn(dead_code)]` (part of `#[warn(unused)]`) on by default
+
+[1m[33mwarning[0m[1m: function `k_means` is never used[0m
+  [1m[94m--> [0msrc/main.rs:51:4
+   [1m[94m|[0m
+[1m[94m51[0m [1m[94m|[0m fn k_means(data: &Tensor, cluters: usize, device: &Device) -> Result<()> {
+   [1m[94m|[0m    [1m[33m^^^^^^^[0m
+
+[1m[33mwarning[0m: `rust-candle-course` (bin "rust-candle-course") generated 5 warnings (run `cargo fix --bin "rust-candle-course" -p rust-candle-course` to apply 3 suggestions)
+[1m[92m    Finished[0m `dev` profile [unoptimized + debuginfo] target(s) in 0.13s
+[1m[38;5;255m[48;5;240m rust-candle-course [0m[1m[38;5;235m[48;5;204m check [0m[1m[38;5;235m[48;5;11m  5 warnings  [0m
+[1m[92m    Checking[0m rust-candle-course v0.1.0 (/Users/stephen/Desktop/rust-candle-course)
+[1m[33mwarning[0m[1m: unused import: `DType`[0m
+ [1m[94m--> [0msrc/main.rs:3:19
+  [1m[94m|[0m
+[1m[94m3[0m [1m[94m|[0m use candle_core::{DType, Device, Tensor, D};
+  [1m[94m|[0m                   [1m[33m^^^^^[0m
+  [1m[94m|[0m
+  [1m[94m= [0m[1mnote[0m: `#[warn(unused_imports)]` (part of `#[warn(unused)]`) on by default
+
+[1m[33mwarning[0m[1m: unused variable: `cluters`[0m
+  [1m[94m--> [0msrc/main.rs:51:27
+   [1m[94m|[0m
+[1m[94m51[0m [1m[94m|[0m fn k_means(data: &Tensor, cluters: usize, device: &Device) -> Result<()> {
+   [1m[94m|[0m                           [1m[33m^^^^^^^[0m [1m[33mhelp: if this is intentional, prefix it with an underscore: `_cluters`[0m
+   [1m[94m|[0m
+   [1m[94m= [0m[1mnote[0m: `#[warn(unused_variables)]` (part of `#[warn(unused)]`) on by default
+
+[1m[33mwarning[0m[1m: unused variable: `device`[0m
+  [1m[94m--> [0msrc/main.rs:51:43
+   [1m[94m|[0m
+[1m[94m51[0m [1m[94m|[0m fn k_means(data: &Tensor, cluters: usize, device: &Device) -> Result<()> {
+   [1m[94m|[0m                                           [1m[33m^^^^^^[0m [1m[33mhelp: if this is intentional, prefix it with an underscore: `_device`[0m
+
+[1m[33mwarning[0m[1m: function `cdist` is never used[0m
+  [1m[94m--> [0msrc/main.rs:10:4
+   [1m[94m|[0m
+[1m[94m10[0m [1m[94m|[0m fn cdist(x1: &Tensor, x2: &Tensor) -> Result<Tensor> {
+   [1m[94m|[0m    [1m[33m^^^^^[0m
+   [1m[94m|[0m
+   [1m[94m= [0m[1mnote[0m: `#[warn(dead_code)]` (part of `#[warn(unused)]`) on by default
+
+[1m[33mwarning[0m[1m: function `k_means` is never used[0m
+  [1m[94m--> [0msrc/main.rs:51:4
+   [1m[94m|[0m
+[1m[94m51[0m [1m[94m|[0m fn k_means(data: &Tensor, cluters: usize, device: &Device) -> Result<()> {
+   [1m[94m|[0m    [1m[33m^^^^^^^[0m
+
+[1m[33mwarning[0m: `rust-candle-course` (bin "rust-candle-course") generated 5 warnings (run `cargo fix --bin "rust-candle-course" -p rust-candle-course` to apply 3 suggestions)
+[1m[92m    Finished[0m `dev` profile [unoptimized + debuginfo] target(s) in 0.12s
+[1m[38;5;255m[48;5;240m rust-candle-course [0m[1m[38;5;235m[48;5;204m check [0m[1m[38;5;235m[48;5;11m  5 warnings  [0m
+[1m[92m    Checking[0m rust-candle-course v0.1.0 (/Users/stephen/Desktop/rust-candle-course)
+[1m[91merror[0m[1m: expected `;`, found keyword `let`[0m
+  [1m[94m--> [0msrc/main.rs:56:11
+   [1m[94m|[0m
+[1m[94m56[0m [1m[94m|[0m     Ok(())
+   [1m[94m|[0m           [1m[91m^[0m [1m[91mhelp: add `;` here[0m
+[1m[94m57[0m [1m[94m|[0m
+[1m[94m58[0m [1m[94m|[0m     let centeroid_idx: Vec<_> = indicies[..clusters]
+   [1m[94m|[0m     [1m[94m---[0m [1m[94munexpected token[0m
+
+[1m[91merror[E0425][0m[1m: cannot find value `clusters` in this scope[0m
+  [1m[94m--> [0msrc/main.rs:58:44
+   [1m[94m|[0m
+[1m[94m58[0m [1m[94m|[0m     let centeroid_idx: Vec<_> = indicies[..clusters]
+   [1m[94m|[0m                                            [1m[91m^^^^^^^^[0m
+   [1m[94m|[0m
+[1m[96mhelp[0m: a local variable with a similar name exists
+   [1m[94m|[0m
+[1m[94m58[0m [91m- [0m    let centeroid_idx: Vec<_> = indicies[..[91mclusters[0m]
+[1m[94m58[0m [92m+ [0m    let centeroid_idx: Vec<_> = indicies[..[92mcluters[0m]
+   [1m[94m|[0m
+
+[1m[33mwarning[0m[1m: unused import: `DType`[0m
+ [1m[94m--> [0msrc/main.rs:3:19
+  [1m[94m|[0m
+[1m[94m3[0m [1m[94m|[0m use candle_core::{DType, Device, Tensor, D};
+  [1m[94m|[0m                   [1m[33m^^^^^[0m
+  [1m[94m|[0m
+  [1m[94m= [0m[1mnote[0m: `#[warn(unused_imports)]` (part of `#[warn(unused)]`) on by default
+
+[1m[91merror[E0308][0m[1m: mismatched types[0m
+  [1m[94m--> [0msrc/main.rs:51:63
+   [1m[94m|[0m
+[1m[94m51[0m [1m[94m|[0m fn k_means(data: &Tensor, cluters: usize, device: &Device) -> Result<()> {
+   [1m[94m|[0m    [1m[94m-------[0m                                                    [1m[91m^^^^^^^^^^[0m [1m[91mexpected `Result<(), Error>`, found `()`[0m
+   [1m[94m|[0m    [1m[94m|[0m
+   [1m[94m|[0m    [1m[94mimplicitly returns `()` as its body has no tail or `return` expression[0m
+   [1m[94m|[0m
+   [1m[94m= [0m[1mnote[0m:   expected enum `[1m[35mResult<(), anyhow::Error>[0m`
+           found unit type `[1m[35m()[0m`
+
+[1mSome errors have detailed explanations: E0308, E0425.[0m
+[1mFor more information about an error, try `rustc --explain E0308`.[0m
+[1m[33mwarning[0m: `rust-candle-course` (bin "rust-candle-course") generated 1 warning
+[1m[91merror[0m: could not compile `rust-candle-course` (bin "rust-candle-course") due to 3 previous errors; 1 warning emitted
+[1m[38;5;255m[48;5;240m rust-candle-course [0m[1m[38;5;235m[48;5;204m check [0m[1m[38;5;235m[48;5;9m  3 errors  [0m[1m[38;5;235m[48;5;11m  1 warning  [0m
+[1m[92m    Checking[0m rust-candle-course v0.1.0 (/Users/stephen/Desktop/rust-candle-course)
+[1m[91merror[E0425][0m[1m: cannot find value `clusters` in this scope[0m
+  [1m[94m--> [0msrc/main.rs:57:44
+   [1m[94m|[0m
+[1m[94m57[0m [1m[94m|[0m     let centeroid_idx: Vec<_> = indicies[..clusters]
+   [1m[94m|[0m                                            [1m[91m^^^^^^^^[0m
+   [1m[94m|[0m
+[1m[96mhelp[0m: a local variable with a similar name exists
+   [1m[94m|[0m
+[1m[94m57[0m [91m- [0m    let centeroid_idx: Vec<_> = indicies[..[91mclusters[0m]
+[1m[94m57[0m [92m+ [0m    let centeroid_idx: Vec<_> = indicies[..[92mcluters[0m]
+   [1m[94m|[0m
+
+[1m[33mwarning[0m[1m: unused import: `DType`[0m
+ [1m[94m--> [0msrc/main.rs:3:19
+  [1m[94m|[0m
+[1m[94m3[0m [1m[94m|[0m use candle_core::{DType, Device, Tensor, D};
+  [1m[94m|[0m                   [1m[33m^^^^^[0m
+  [1m[94m|[0m
+  [1m[94m= [0m[1mnote[0m: `#[warn(unused_imports)]` (part of `#[warn(unused)]`) on by default
+
+[1mFor more information about this error, try `rustc --explain E0425`.[0m
+[1m[33mwarning[0m: `rust-candle-course` (bin "rust-candle-course") generated 1 warning
+[1m[91merror[0m: could not compile `rust-candle-course` (bin "rust-candle-course") due to 1 previous error; 1 warning emitted
+[1m[38;5;255m[48;5;240m rust-candle-course [0m[1m[38;5;235m[48;5;204m check [0m[1m[38;5;235m[48;5;9m  1 error  [0m[1m[38;5;235m[48;5;11m  1 warning  [0m
+[1m[92m    Checking[0m rust-candle-course v0.1.0 (/Users/stephen/Desktop/rust-candle-course)
+[1m[91merror[E0425][0m[1m: cannot find value `clusters` in this scope[0m
+  [1m[94m--> [0msrc/main.rs:56:44
+   [1m[94m|[0m
+[1m[94m56[0m [1m[94m|[0m     let centeroid_idx: Vec<_> = indicies[..clusters]
+   [1m[94m|[0m                                            [1m[91m^^^^^^^^[0m
+   [1m[94m|[0m
+[1m[96mhelp[0m: a local variable with a similar name exists
+   [1m[94m|[0m
+[1m[94m56[0m [91m- [0m    let centeroid_idx: Vec<_> = indicies[..[91mclusters[0m]
+[1m[94m56[0m [92m+ [0m    let centeroid_idx: Vec<_> = indicies[..[92mcluters[0m]
+   [1m[94m|[0m
+
+[1m[33mwarning[0m[1m: unused import: `DType`[0m
+ [1m[94m--> [0msrc/main.rs:3:19
+  [1m[94m|[0m
+[1m[94m3[0m [1m[94m|[0m use candle_core::{DType, Device, Tensor, D};
+  [1m[94m|[0m                   [1m[33m^^^^^[0m
+  [1m[94m|[0m
+  [1m[94m= [0m[1mnote[0m: `#[warn(unused_imports)]` (part of `#[warn(unused)]`) on by default
+
+[1mFor more information about this error, try `rustc --explain E0425`.[0m
+[1m[33mwarning[0m: `rust-candle-course` (bin "rust-candle-course") generated 1 warning
+[1m[91merror[0m: could not compile `rust-candle-course` (bin "rust-candle-course") due to 1 previous error; 1 warning emitted
+[1m[38;5;255m[48;5;240m rust-candle-course [0m[1m[38;5;235m[48;5;204m check [0m[1m[38;5;235m[48;5;9m  1 error  [0m[1m[38;5;235m[48;5;11m  1 warning  [0m
+[1m[92m    Checking[0m rust-candle-course v0.1.0 (/Users/stephen/Desktop/rust-candle-course)
+[1m[33mwarning[0m[1m: unused import: `DType`[0m
+ [1m[94m--> [0msrc/main.rs:3:19
+  [1m[94m|[0m
+[1m[94m3[0m [1m[94m|[0m use candle_core::{DType, Device, Tensor, D};
+  [1m[94m|[0m                   [1m[33m^^^^^[0m
+  [1m[94m|[0m
+  [1m[94m= [0m[1mnote[0m: `#[warn(unused_imports)]` (part of `#[warn(unused)]`) on by default
+
+[1m[33mwarning[0m[1m: unused variable: `device`[0m
+  [1m[94m--> [0msrc/main.rs:51:44
+   [1m[94m|[0m
+[1m[94m51[0m [1m[94m|[0m fn k_means(data: &Tensor, clusters: usize, device: &Device) -> Result<()> {
+   [1m[94m|[0m                                            [1m[33m^^^^^^[0m [1m[33mhelp: if this is intentional, prefix it with an underscore: `_device`[0m
+   [1m[94m|[0m
+   [1m[94m= [0m[1mnote[0m: `#[warn(unused_variables)]` (part of `#[warn(unused)]`) on by default
+
+[1m[33mwarning[0m[1m: unused variable: `centeroid_idx`[0m
+  [1m[94m--> [0msrc/main.rs:56:9
+   [1m[94m|[0m
+[1m[94m56[0m [1m[94m|[0m     let centeroid_idx: Vec<_> = indicies[..clusters]
+   [1m[94m|[0m         [1m[33m^^^^^^^^^^^^^[0m [1m[33mhelp: if this is intentional, prefix it with an underscore: `_centeroid_idx`[0m
+
+[1m[33mwarning[0m[1m: function `cdist` is never used[0m
+  [1m[94m--> [0msrc/main.rs:10:4
+   [1m[94m|[0m
+[1m[94m10[0m [1m[94m|[0m fn cdist(x1: &Tensor, x2: &Tensor) -> Result<Tensor> {
+   [1m[94m|[0m    [1m[33m^^^^^[0m
+   [1m[94m|[0m
+   [1m[94m= [0m[1mnote[0m: `#[warn(dead_code)]` (part of `#[warn(unused)]`) on by default
+
+[1m[33mwarning[0m[1m: function `k_means` is never used[0m
+  [1m[94m--> [0msrc/main.rs:51:4
+   [1m[94m|[0m
+[1m[94m51[0m [1m[94m|[0m fn k_means(data: &Tensor, clusters: usize, device: &Device) -> Result<()> {
+   [1m[94m|[0m    [1m[33m^^^^^^^[0m
+
+[1m[33mwarning[0m: `rust-candle-course` (bin "rust-candle-course") generated 5 warnings (run `cargo fix --bin "rust-candle-course" -p rust-candle-course` to apply 3 suggestions)
+[1m[92m    Finished[0m `dev` profile [unoptimized + debuginfo] target(s) in 0.12s
+[1m[38;5;255m[48;5;240m rust-candle-course [0m[1m[38;5;235m[48;5;204m check [0m[1m[38;5;235m[48;5;11m  5 warnings  [0m
