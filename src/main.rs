@@ -114,13 +114,13 @@ fn main() -> Result<()> {
     let (centers, cluster_assignments) =
         k_means(
             &data,
-            5 as usize,
+            3 as usize,
             20 as usize,
             &device,
         )?;
 
     println!("{}", centers);
     println!("{}", cluster_assignments);
-    println!("data: {data}");
+    //println!("data: {data}");
     Ok(())
 }
