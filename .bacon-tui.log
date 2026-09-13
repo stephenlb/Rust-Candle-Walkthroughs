@@ -1,184 +1,31 @@
-[1m[33mwarning[0m[1m: function `cdist` is never used[0m
-  [1m[94m--> [0msrc/main.rs:10:4
-   [1m[94m|[0m
-[1m[94m10[0m [1m[94m|[0m fn cdist(x1: &Tensor, x2: &Tensor) -> Result<Tensor> {
-   [1m[94m|[0m    [1m[33m^^^^^[0m
-   [1m[94m|[0m
-   [1m[94m= [0m[1mnote[0m: `#[warn(dead_code)]` (part of `#[warn(unused)]`) on by default
-
-[1m[33mwarning[0m[1m: function `k_means` is never used[0m
-  [1m[94m--> [0msrc/main.rs:51:4
-   [1m[94m|[0m
-[1m[94m51[0m [1m[94m|[0m fn k_means(data: &Tensor, clusters: usize, max_iterations: usize, device: &Device) -> Resu[1m[94m...[0m
-   [1m[94m|[0m    [1m[33m^^^^^^^[0m
-
-[1m[33mwarning[0m: `rust-candle-course` (bin "rust-candle-course") generated 2 warnings
-[1m[92m    Finished[0m `dev` profile [unoptimized + debuginfo] target(s) in 0.06s
-[1m[38;5;255m[48;5;240m rust-candle-course [0m[1m[38;5;235m[48;5;204m check [0m[1m[38;5;235m[48;5;11m  2 warnings  [0m
 [1m[92m    Checking[0m rust-candle-course v0.1.0 (/Users/stephen/Desktop/rust-candle-course)
-[1m[33mwarning[0m[1m: function `cdist` is never used[0m
-  [1m[94m--> [0msrc/main.rs:10:4
-   [1m[94m|[0m
-[1m[94m10[0m [1m[94m|[0m fn cdist(x1: &Tensor, x2: &Tensor) -> Result<Tensor> {
-   [1m[94m|[0m    [1m[33m^^^^^[0m
-   [1m[94m|[0m
-   [1m[94m= [0m[1mnote[0m: `#[warn(dead_code)]` (part of `#[warn(unused)]`) on by default
-
-[1m[33mwarning[0m[1m: function `k_means` is never used[0m
-  [1m[94m--> [0msrc/main.rs:51:4
-   [1m[94m|[0m
-[1m[94m51[0m [1m[94m|[0m fn k_means(data: &Tensor, clusters: usize, max_iterations: usize, device: &Device) -> Resu[1m[94m...[0m
-   [1m[94m|[0m    [1m[33m^^^^^^^[0m
-
-[1m[33mwarning[0m: `rust-candle-course` (bin "rust-candle-course") generated 2 warnings
-[1m[92m    Finished[0m `dev` profile [unoptimized + debuginfo] target(s) in 0.11s
-[1m[38;5;255m[48;5;240m rust-candle-course [0m[1m[38;5;235m[48;5;204m check [0m[1m[38;5;235m[48;5;11m  2 warnings  [0m
+[1m[92m    Finished[0m `dev` profile [unoptimized + debuginfo] target(s) in 0.71s
+[1m[38;5;255m[48;5;240m rust-candle-course [0m[1m[38;5;235m[48;5;204m check [0m
 [1m[92m    Checking[0m rust-candle-course v0.1.0 (/Users/stephen/Desktop/rust-candle-course)
-[1m[91merror[E0308][0m[1m: mismatched types[0m
-   [1m[94m--> [0msrc/main.rs:115:9
-    [1m[94m|[0m
-[1m[94m115[0m [1m[94m|[0m     let (centers, cluster_assignments) = k_means(&data, 5, 20, &device);
-    [1m[94m|[0m         [1m[91m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m   [1m[94m------------------------------[0m [1m[94mthis expression has type `Result<(candle_core::Tensor, candle_core::Tensor), anyhow::Error>`[0m
-    [1m[94m|[0m         [1m[91m|[0m
-    [1m[94m|[0m         [1m[91mexpected `Result<(Tensor, Tensor), Error>`, found `(_, _)`[0m
-    [1m[94m|[0m
-    [1m[94m= [0m[1mnote[0m: expected enum `[1m[35mResult<(candle_core::Tensor, candle_core::Tensor), anyhow::Error>[0m`
-              found tuple `[1m[35m(_, _)[0m`
-[1m[96mhelp[0m: try wrapping the pattern in `Ok`
-    [1m[94m|[0m
-[1m[94m115[0m [1m[94m| [0m    let [92mOk([0m(centers, cluster_assignments)[92m)[0m = k_means(&data, 5, 20, &device);
-    [1m[94m|[0m         [92m+++[0m                              [92m+[0m
-
-[1mFor more information about this error, try `rustc --explain E0308`.[0m
-[1m[91merror[0m: could not compile `rust-candle-course` (bin "rust-candle-course") due to 1 previous error
-[1m[38;5;255m[48;5;240m rust-candle-course [0m[1m[38;5;235m[48;5;204m check [0m[1m[38;5;235m[48;5;9m  1 error  [0m
-[1m[92m    Checking[0m rust-candle-course v0.1.0 (/Users/stephen/Desktop/rust-candle-course)
-[1m[91merror[E0308][0m[1m: mismatched types[0m
-   [1m[94m--> [0msrc/main.rs:115:9
-    [1m[94m|[0m
-[1m[94m115[0m [1m[94m|[0m     let (centers, cluster_assignments) = k_means(&data, 5 as usize, 20 as usize, &device);
-    [1m[94m|[0m         [1m[91m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m   [1m[94m------------------------------------------------[0m [1m[94mthis expression has type `Result<(candle_core::Tensor, candle_core::Tensor), anyhow::Error>`[0m
-    [1m[94m|[0m         [1m[91m|[0m
-    [1m[94m|[0m         [1m[91mexpected `Result<(Tensor, Tensor), Error>`, found `(_, _)`[0m
-    [1m[94m|[0m
-    [1m[94m= [0m[1mnote[0m: expected enum `[1m[35mResult<(candle_core::Tensor, candle_core::Tensor), anyhow::Error>[0m`
-              found tuple `[1m[35m(_, _)[0m`
-[1m[96mhelp[0m: try wrapping the pattern in `Ok`
-    [1m[94m|[0m
-[1m[94m115[0m [1m[94m| [0m    let [92mOk([0m(centers, cluster_assignments)[92m)[0m = k_means(&data, 5 as usize, 20 as usize, &device);
-    [1m[94m|[0m         [92m+++[0m                              [92m+[0m
-
-[1mFor more information about this error, try `rustc --explain E0308`.[0m
-[1m[91merror[0m: could not compile `rust-candle-course` (bin "rust-candle-course") due to 1 previous error
-[1m[38;5;255m[48;5;240m rust-candle-course [0m[1m[38;5;235m[48;5;204m check [0m[1m[38;5;235m[48;5;9m  1 error  [0m
-[1m[92m    Checking[0m rust-candle-course v0.1.0 (/Users/stephen/Desktop/rust-candle-course)
-[1m[33mwarning[0m[1m: unused variable: `centers`[0m
-   [1m[94m--> [0msrc/main.rs:115:10
-    [1m[94m|[0m
-[1m[94m115[0m [1m[94m|[0m     let (centers, cluster_assignments) =
-    [1m[94m|[0m          [1m[33m^^^^^^^[0m [1m[33mhelp: if this is intentional, prefix it with an underscore: `_centers`[0m
-    [1m[94m|[0m
-    [1m[94m= [0m[1mnote[0m: `#[warn(unused_variables)]` (part of `#[warn(unused)]`) on by default
-
-[1m[33mwarning[0m[1m: unused variable: `cluster_assignments`[0m
-   [1m[94m--> [0msrc/main.rs:115:19
-    [1m[94m|[0m
-[1m[94m115[0m [1m[94m|[0m     let (centers, cluster_assignments) =
-    [1m[94m|[0m                   [1m[33m^^^^^^^^^^^^^^^^^^^[0m [1m[33mhelp: if this is intentional, prefix it with an underscore: `_cluster_assignments`[0m
-
-[1m[33mwarning[0m: `rust-candle-course` (bin "rust-candle-course") generated 2 warnings (run `cargo fix --bin "rust-candle-course" -p rust-candle-course` to apply 2 suggestions)
 [1m[92m    Finished[0m `dev` profile [unoptimized + debuginfo] target(s) in 0.13s
-[1m[38;5;255m[48;5;240m rust-candle-course [0m[1m[38;5;235m[48;5;204m check [0m[1m[38;5;235m[48;5;11m  2 warnings  [0m
-[1m[92m    Checking[0m rust-candle-course v0.1.0 (/Users/stephen/Desktop/rust-candle-course)
-[1m[33mwarning[0m[1m: unused variable: `centers`[0m
-   [1m[94m--> [0msrc/main.rs:115:10
-    [1m[94m|[0m
-[1m[94m115[0m [1m[94m|[0m     let (centers, cluster_assignments) =
-    [1m[94m|[0m          [1m[33m^^^^^^^[0m [1m[33mhelp: if this is intentional, prefix it with an underscore: `_centers`[0m
-    [1m[94m|[0m
-    [1m[94m= [0m[1mnote[0m: `#[warn(unused_variables)]` (part of `#[warn(unused)]`) on by default
-
-[1m[33mwarning[0m[1m: unused variable: `cluster_assignments`[0m
-   [1m[94m--> [0msrc/main.rs:115:19
-    [1m[94m|[0m
-[1m[94m115[0m [1m[94m|[0m     let (centers, cluster_assignments) =
-    [1m[94m|[0m                   [1m[33m^^^^^^^^^^^^^^^^^^^[0m [1m[33mhelp: if this is intentional, prefix it with an underscore: `_cluster_assignments`[0m
-
-[1m[33mwarning[0m: `rust-candle-course` (bin "rust-candle-course") generated 2 warnings (run `cargo fix --bin "rust-candle-course" -p rust-candle-course` to apply 2 suggestions)
-[1m[92m    Finished[0m `dev` profile [unoptimized + debuginfo] target(s) in 0.12s
-[1m[38;5;255m[48;5;240m rust-candle-course [0m[1m[38;5;235m[48;5;204m check [0m[1m[38;5;235m[48;5;11m  2 warnings  [0m
-[1m[92m    Checking[0m rust-candle-course v0.1.0 (/Users/stephen/Desktop/rust-candle-course)
-[1m[92m    Finished[0m `dev` profile [unoptimized + debuginfo] target(s) in 0.12s
 [1m[38;5;255m[48;5;240m rust-candle-course [0m[1m[38;5;235m[48;5;204m check [0m
 [1m[92m    Checking[0m rust-candle-course v0.1.0 (/Users/stephen/Desktop/rust-candle-course)
-[1m[91merror[E0618][0m[1m: expected function, found `Device`[0m
-   [1m[94m--> [0msrc/main.rs:109:26
-    [1m[94m|[0m
-[1m[94m109[0m [1m[94m|[0m     let device: Device = Device::Cpu(0)?;
-    [1m[94m|[0m                          [1m[91m^^^^^^^^^^^[0m[1m[94m---[0m
-    [1m[94m|[0m                          [1m[94m|[0m
-    [1m[94m|[0m                          [1m[94mcall expression requires function[0m
-
-[1mFor more information about this error, try `rustc --explain E0618`.[0m
-[1m[91merror[0m: could not compile `rust-candle-course` (bin "rust-candle-course") due to 1 previous error
-[1m[38;5;255m[48;5;240m rust-candle-course [0m[1m[38;5;235m[48;5;204m check [0m[1m[38;5;235m[48;5;9m  1 error  [0m
-[1m[92m    Checking[0m rust-candle-course v0.1.0 (/Users/stephen/Desktop/rust-candle-course)
-[1m[91merror[E0618][0m[1m: expected function, found enum variant `Device::Cpu`[0m
-   [1m[94m--> [0msrc/main.rs:109:26
-    [1m[94m|[0m
-[1m[94m109[0m [1m[94m|[0m     let device: Device = Device::Cpu()?;
-    [1m[94m|[0m                          [1m[91m^^^^^^^^^^^[0m[1m[94m--[0m
-    [1m[94m|[0m                          [1m[94m|[0m
-    [1m[94m|[0m                          [1m[94mcall expression requires function[0m
-    [1m[94m|[0m
-[1m[96mhelp[0m: `Device::Cpu` is a unit enum variant, and does not take parentheses to be constructed
-    [1m[94m|[0m
-[1m[94m109[0m [91m- [0m    let device: Device = Device::Cpu[91m()[0m?;
-[1m[94m109[0m [92m+ [0m    let device: Device = Device::Cpu?;
-    [1m[94m|[0m
-
-[1mFor more information about this error, try `rustc --explain E0618`.[0m
-[1m[91merror[0m: could not compile `rust-candle-course` (bin "rust-candle-course") due to 1 previous error
-[1m[38;5;255m[48;5;240m rust-candle-course [0m[1m[38;5;235m[48;5;204m check [0m[1m[38;5;235m[48;5;9m  1 error  [0m
-[1m[92m    Checking[0m rust-candle-course v0.1.0 (/Users/stephen/Desktop/rust-candle-course)
-[1m[92m    Finished[0m `dev` profile [unoptimized + debuginfo] target(s) in 0.11s
+[1m[92m    Finished[0m `dev` profile [unoptimized + debuginfo] target(s) in 0.13s
 [1m[38;5;255m[48;5;240m rust-candle-course [0m[1m[38;5;235m[48;5;204m check [0m
 [1m[92m    Checking[0m rust-candle-course v0.1.0 (/Users/stephen/Desktop/rust-candle-course)
-[1m[92m    Finished[0m `dev` profile [unoptimized + debuginfo] target(s) in 0.11s
-[1m[38;5;255m[48;5;240m rust-candle-course [0m[1m[38;5;235m[48;5;204m check [0m
-[1m[92m    Checking[0m rust-candle-course v0.1.0 (/Users/stephen/Desktop/rust-candle-course)
-[1m[92m    Finished[0m `dev` profile [unoptimized + debuginfo] target(s) in 0.12s
-[1m[38;5;255m[48;5;240m rust-candle-course [0m[1m[38;5;235m[48;5;204m check [0m
-[1m[92m    Checking[0m rust-candle-course v0.1.0 (/Users/stephen/Desktop/rust-candle-course)
-[1m[91merror[E0277][0m[1m: the trait bound `usize: std::ops::Neg` is not satisfied[0m
-  [1m[94m--> [0msrc/main.rs:67:63
+[1m[91merror[0m[1m: expected expression, found `let` statement[0m
+  [1m[94m--> [0msrc/main.rs:13:5
    [1m[94m|[0m
-[1m[94m67[0m [1m[94m|[0m     let mut centers = data.index_select(&centroid_idx_tensor, -1)?;
-   [1m[94m|[0m                                                               [1m[91m^^[0m [1m[91mthe trait `std::ops::Neg` is not implemented for `usize`[0m
+[1m[94m13[0m [1m[94m|[0m     let out = x1
+   [1m[94m|[0m     [1m[91m^^^[0m
    [1m[94m|[0m
-[1m[96mhelp[0m: consider specifying an integer type that can be negative
-   [1m[94m|[0m
-[1m[94m67[0m [1m[94m| [0m    let mut centers = data.index_select(&centroid_idx_tensor, -1[92misize[0m)?;
-   [1m[94m|[0m                                                                 [92m+++++[0m
+   [1m[94m= [0m[1mnote[0m: only supported directly in conditions of `if` and `while` expressions
 
-[1mFor more information about this error, try `rustc --explain E0277`.[0m
-[1m[91merror[0m: could not compile `rust-candle-course` (bin "rust-candle-course") due to 1 previous error
-[1m[38;5;255m[48;5;240m rust-candle-course [0m[1m[38;5;235m[48;5;204m check [0m[1m[38;5;235m[48;5;9m  1 error  [0m
-[1m[92m    Checking[0m rust-candle-course v0.1.0 (/Users/stephen/Desktop/rust-candle-course)
-[1m[91merror[E0277][0m[1m: the trait bound `usize: std::ops::Neg` is not satisfied[0m
-  [1m[94m--> [0msrc/main.rs:67:63
+[1m[91merror[0m[1m: expected `;`, found keyword `let`[0m
+  [1m[94m--> [0msrc/main.rs:12:30
    [1m[94m|[0m
-[1m[94m67[0m [1m[94m|[0m     let mut centers = data.index_select(&centroid_idx_tensor, -1)?;
-   [1m[94m|[0m                                                               [1m[91m^^[0m [1m[91mthe trait `std::ops::Neg` is not implemented for `usize`[0m
-   [1m[94m|[0m
-[1m[96mhelp[0m: consider specifying an integer type that can be negative
-   [1m[94m|[0m
-[1m[94m67[0m [1m[94m| [0m    let mut centers = data.index_select(&centroid_idx_tensor, -1[92misize[0m)?;
-   [1m[94m|[0m                                                                 [92m+++++[0m
+[1m[94m12[0m [1m[94m|[0m     let x2 = x2.unsqueeze(1)?
+   [1m[94m|[0m                              [1m[91m^[0m [1m[91mhelp: add `;` here[0m
+[1m[94m13[0m [1m[94m|[0m     let out = x1
+   [1m[94m|[0m     [1m[94m---[0m [1m[94munexpected token[0m
 
-[1mFor more information about this error, try `rustc --explain E0277`.[0m
-[1m[91merror[0m: could not compile `rust-candle-course` (bin "rust-candle-course") due to 1 previous error
-[1m[38;5;255m[48;5;240m rust-candle-course [0m[1m[38;5;235m[48;5;204m check [0m[1m[38;5;235m[48;5;9m  1 error  [0m
+[1m[91merror[0m: could not compile `rust-candle-course` (bin "rust-candle-course") due to 2 previous errors
+[1m[38;5;255m[48;5;240m rust-candle-course [0m[1m[38;5;235m[48;5;204m check [0m[1m[38;5;235m[48;5;9m  2 errors  [0m
 [1m[92m    Checking[0m rust-candle-course v0.1.0 (/Users/stephen/Desktop/rust-candle-course)
 [1m[92m    Finished[0m `dev` profile [unoptimized + debuginfo] target(s) in 0.12s
 [1m[38;5;255m[48;5;240m rust-candle-course [0m[1m[38;5;235m[48;5;204m check [0m

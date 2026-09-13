@@ -9,7 +9,7 @@ use rand::prelude::*;
 
 fn cdist(x1: &Tensor, x2: &Tensor) -> Result<Tensor> {
     let x1 = x1.unsqueeze(0)?;
-    let x2 = x2.unsqueeze(0)?;
+    let x2 = x2.unsqueeze(1)?;
     let out = x1
         .broadcast_sub(&x2)? // distance
         .sqr()? // positive value dist
@@ -103,7 +103,6 @@ fn k_means(data: &Tensor, clusters: usize, max_iterations: usize, device: &Devic
 
     Ok((centers, cluster_assignments))
 }
-
 fn main() -> Result<()> {
     let file: &str = "data/iris.csv";
     let device: Device = Device::Cpu;
@@ -122,8 +121,6 @@ fn main() -> Result<()> {
 
     println!("{}", centers);
     println!("{}", cluster_assignments);
-
-
     println!("data: {data}");
     Ok(())
 }
